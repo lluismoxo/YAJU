@@ -52,7 +52,11 @@
     patchNavigation();
 
     if (path === "/ai-spend") {
-      document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => image.remove());
+      document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => {
+        const frame = image.closest(".campaign-slideshow__media-frame");
+        if (frame) frame.remove();
+        else image.remove();
+      });
     }
 
     if (path === "/labs/agentic-task-ecosystem") {
