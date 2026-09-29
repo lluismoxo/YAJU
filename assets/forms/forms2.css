@@ -570,3 +570,9 @@
     width: auto;
   }
 }
+
+/* Required age and privacy confirmation shared by all Yaju contact forms. */
+.mktoForm .yaju-required-consents{clear:both;width:100%;margin:20px 0;display:grid;gap:12px;font-size:14px;line-height:1.5}
+.mktoForm .yaju-required-consents label{display:flex!important;align-items:flex-start;gap:10px;cursor:pointer;width:auto!important;float:none!important}
+.mktoForm .yaju-required-consents input[type=checkbox]{appearance:auto!important;flex:none;width:18px!important;height:18px!important;margin:2px 0 0!important;position:static!important;opacity:1!important}
+.mktoForm .yaju-required-consents a{text-decoration:underline}

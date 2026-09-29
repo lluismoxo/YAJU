@@ -23,6 +23,9 @@
   function Formulario(el, id) {
     this.el = el; this.id = id; this.envios = []; this.exitos = []; this.enviable = true;
     var yo = this;
+    this._syncConsent();
+    el.addEventListener("change", function () { yo._syncConsent(); });
+    el.addEventListener("reset", function () { setTimeout(function () { yo._syncConsent(); }, 0); });
     el.setAttribute("novalidate", "novalidate");
     el.addEventListener("submit", function (e) { e.preventDefault(); yo.submit(); });
     var revisar = function (e) {
@@ -32,6 +35,16 @@
     el.addEventListener("input", revisar);
     el.addEventListener("change", revisar);
   }
+  Formulario.prototype._hasConsent = function () {
+    return ["yajuAgeConfirmed", "yajuPrivacyAccepted"].every(function (name) {
+      var field = this.el.querySelector('[name="' + name + '"]');
+      return !!field && field.checked;
+    }, this);
+  };
+  Formulario.prototype._syncConsent = function () {
+    var button = this.el.querySelector('button[type="submit"], .mktoButton');
+    if (button && !this.el.hasAttribute("data-yaju-sending")) button.disabled = !this._hasConsent();
+  };
   Formulario.prototype.getId = function () { return this.id; };
   Formulario.prototype.getFormElem = function () { var a = [this.el]; a.get = function (i) { return a[i]; }; return a; };
   Formulario.prototype.submittable = function (v) { if (arguments.length) { this.enviable = !!v; return this; } return this.enviable; };
@@ -50,6 +63,7 @@
           } else c.value = v == null ? "" : String(v);
         });
       });
+      this._syncConsent();
       return this;
     }
     var r = {};
@@ -105,7 +119,7 @@
     return true;
   };
   Formulario.prototype.submit = function () {
-    if (!this.validate()) return this;
+    if (!this._hasConsent() || !this.validate()) { this._syncConsent(); return this; }
     this.enviable = true;
     for (var i = 0; i < this.envios.length; i++) { try { this.envios[i](this); } catch (e) {} }
     if (!this.enviable) return this;
