@@ -52,17 +52,7 @@
     patchNavigation();
 
     if (path === "/ai-spend") {
-      const backgroundHashes = [
-        "06b1e787f69998777fb0118b8198387be13f54c3",
-        "75e6a4f57416d91958addaad0664a5c92ed5ac3f",
-        "d36972fd770aaf2bce128c81a1caefc40ac95d76",
-        "28933ea3fd936ee6cd5e15db0ab4c4429656a10c",
-        "873099d41649a3aaa2a80fce9172b6bc6d75d33f",
-      ];
-      document.querySelectorAll("main img").forEach((image) => {
-        const source = image.currentSrc || image.src;
-        if (backgroundHashes.some((hash) => source.includes(hash))) image.remove();
-      });
+      document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => image.remove());
     }
 
     if (path === "/labs/agentic-task-ecosystem") {
