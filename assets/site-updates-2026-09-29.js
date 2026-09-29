@@ -18,6 +18,82 @@
     });
   };
 
+  const blogCovers = [
+    ["/assets/blog-covers/yaju-blog-cover-01.webp", "/assets/blog-covers/yaju-logo-blanco.png"],
+    ["/assets/blog-covers/yaju-blog-cover-02.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-03.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-04.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-05.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-06.webp", "/assets/blog-covers/yaju-logo-blanco.png"],
+    ["/assets/blog-covers/yaju-blog-cover-07.webp", "/assets/blog-covers/yaju-logo-blanco.png"],
+    ["/assets/blog-covers/yaju-blog-cover-08.webp", "/assets/blog-covers/yaju-logo-turquesa.png"],
+    ["/assets/blog-covers/yaju-blog-cover-09.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-10.webp", "/assets/blog-covers/yaju-logo-fucsia.png"],
+    ["/assets/blog-covers/yaju-blog-cover-11.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-12.webp", "/assets/blog-covers/yaju-logo-blanco.png"],
+    ["/assets/blog-covers/yaju-blog-cover-13.webp", "/assets/blog-covers/yaju-logo-rosa-claro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-14.webp", "/assets/blog-covers/yaju-logo-negro.png"],
+    ["/assets/blog-covers/yaju-blog-cover-15.webp", "/assets/blog-covers/yaju-logo-blanco.png"],
+  ];
+
+  const stableCoverIndex = (value) => {
+    let hash = 2166136261;
+    for (let index = 0; index < value.length; index += 1) {
+      hash ^= value.charCodeAt(index);
+      hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0) % blogCovers.length;
+  };
+
+  const patchBlogCards = () => {
+    document.querySelectorAll("main a[href]").forEach((link) => {
+      let url;
+      try {
+        url = new URL(link.getAttribute("href"), window.location.origin);
+      } catch {
+        return;
+      }
+      const segments = url.pathname.split("/").filter(Boolean);
+      const isYajuHost = url.origin === window.location.origin || ["yajuas.com", "www.yajuas.com"].includes(url.hostname);
+      if (!isYajuHost || segments.length !== 2 || segments[0] !== "blog") return;
+
+      const cover = [...link.querySelectorAll("img")]
+        .find((image) => !image.hasAttribute("data-yaju-blog-logo"));
+      if (!cover) return;
+
+      const [coverPath, logoPath] = blogCovers[stableCoverIndex(url.pathname)];
+      if (cover.getAttribute("src") !== coverPath) cover.setAttribute("src", coverPath);
+      if (cover.getAttribute("srcset") !== coverPath) cover.setAttribute("srcset", coverPath);
+      cover.style.objectFit = "cover";
+      cover.style.objectPosition = "center";
+      cover.dataset.yajuBlogCover = "true";
+
+      const picture = cover.closest("picture");
+      picture?.querySelectorAll("source").forEach((source) => {
+        if (source.getAttribute("srcset") !== coverPath) source.setAttribute("srcset", coverPath);
+      });
+      const media = picture?.parentElement || cover.parentElement;
+      if (!media) return;
+      media.dataset.yajuBlogMedia = "true";
+      if (window.getComputedStyle(media).position === "static") media.style.position = "relative";
+      media.style.overflow = "hidden";
+
+      let logo = media.querySelector(":scope > [data-yaju-blog-logo]");
+      if (!logo) {
+        logo = document.createElement("img");
+        logo.dataset.yajuBlogLogo = "true";
+        logo.alt = "";
+        logo.setAttribute("aria-hidden", "true");
+        logo.loading = "lazy";
+        media.append(logo);
+      }
+      if (logo.getAttribute("src") !== logoPath) logo.setAttribute("src", logoPath);
+      logo.removeAttribute("srcset");
+      logo.style.cssText = "position:absolute;left:50%;top:50%;width:min(38%,320px);height:auto;transform:translate(-50%,-50%);z-index:3;pointer-events:none;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.08));";
+      link.dataset.yajuBlogCard = "true";
+    });
+  };
+
   const roundImage = (image, radius = "12px") => {
     if (!image) return;
     image.style.borderRadius = radius;
@@ -119,6 +195,7 @@
 
   const patchPage = () => {
     patchNavigation();
+    patchBlogCards();
 
     if (path === "/ai-spend") {
       document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => {
