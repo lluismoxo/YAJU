@@ -164,43 +164,6 @@
     const main = document.querySelector("main#main-content, main");
     if (!main) return;
 
-    const desktopNav = document.querySelector("nav.hidden.lg\\:block");
-    if (desktopNav) {
-      const navSurface = desktopNav.firstElementChild;
-      if (navSurface?.classList.contains("bg-neutral-15")) {
-        navSurface.classList.remove("bg-neutral-15");
-        navSurface.classList.add("bg-pureWhite");
-      }
-      desktopNav.classList.remove("text-pureWhite");
-      desktopNav.style.color = "rgb(0, 0, 0)";
-      const logo = desktopNav.querySelector("a[href='/'] img");
-      if (logo?.getAttribute("src") !== "/logo.svg") logo?.setAttribute("src", "/logo.svg");
-      const signIn = [...desktopNav.querySelectorAll("a")].find((link) => text(link) === "Sign in");
-      if (signIn) {
-        signIn.classList.remove("text-white");
-        signIn.classList.add("text-volcanic-900");
-        signIn.style.color = "rgb(33, 33, 33)";
-      }
-      const demo = [...desktopNav.querySelectorAll("a")].find((link) => text(link) === "Book demo");
-      if (demo) {
-        demo.classList.remove("bg-pureWhite", "text-neutral-15");
-        demo.classList.add("bg-neutral-15", "text-pureWhite");
-        demo.style.backgroundColor = "rgb(23, 23, 28)";
-        demo.style.color = "rgb(255, 255, 255)";
-      }
-    }
-
-    const mobileNav = document.querySelector("nav.lg\\:hidden");
-    if (mobileNav) {
-      mobileNav.classList.remove("bg-neutral-15", "text-pureWhite");
-      mobileNav.classList.add("bg-pureWhite");
-      mobileNav.style.color = "rgb(0, 0, 0)";
-      const logo = mobileNav.querySelector("a[href='/'] img");
-      if (logo?.getAttribute("src") !== "/logo.svg") logo?.setAttribute("src", "/logo.svg");
-      const menuIcon = mobileNav.querySelector("button img, img[src*='nav_icon']");
-      if (menuIcon?.getAttribute("src") !== "/nav_icon.svg") menuIcon?.setAttribute("src", "/nav_icon.svg");
-    }
-
     if (!document.getElementById("yaju-agent-academy-styles")) {
       const style = document.createElement("style");
       style.id = "yaju-agent-academy-styles";
@@ -663,23 +626,28 @@
     }
   };
 
-  patchPage();
-  window.addEventListener("DOMContentLoaded", patchPage, { once: true });
-  window.addEventListener("load", patchPage, { once: true });
-  window.setTimeout(patchPage, 250);
-  window.setTimeout(patchPage, 1200);
-  let patchScheduled = false;
-  new MutationObserver(() => {
-    if (patchScheduled) return;
-    patchScheduled = true;
-    window.requestAnimationFrame(() => {
-      patchScheduled = false;
-      patchPage();
+  const startPatches = () => {
+    patchPage();
+    window.setTimeout(patchPage, 500);
+    window.setTimeout(patchPage, 1500);
+
+    let patchScheduled = false;
+    new MutationObserver(() => {
+      if (patchScheduled) return;
+      patchScheduled = true;
+      window.requestAnimationFrame(() => {
+        patchScheduled = false;
+        patchPage();
+      });
+    }).observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["src", "srcset"],
     });
-  }).observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-    attributes: true,
-    attributeFilter: ["src", "srcset"],
-  });
+  };
+
+  const startAfterHydration = () => window.setTimeout(startPatches, 750);
+  if (document.readyState === "complete") startAfterHydration();
+  else window.addEventListener("load", startAfterHydration, { once: true });
 })();

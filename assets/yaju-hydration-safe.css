@@ -1,0 +1,72 @@
+/* Overrides that must be available before the post-hydration page patches run. */
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:first-child {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:first-child a,
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:first-child button {
+  color: #000 !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:first-child a.bg-neutral-30,
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:first-child a[href="/contact-sales"] {
+  color: #fff !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block > div:nth-child(2) a {
+  color: #fff !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block a[href="/register"] {
+  color: #212121 !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block a[href="/contact-sales"] {
+  background-color: #17171c !important;
+  color: #fff !important;
+}
+
+body:has(main [id^="module-"]) nav.hidden.lg\:block a[href="/"] img[src*="logo_dark"],
+body:has(main [id^="module-"]) nav.hidden.lg\:block a[href="/"] img[src*="logo.svg"] {
+  content: url("/logo.svg");
+}
+
+body:has(main [id^="module-"]) nav.lg\:hidden {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+body:has(main [id^="module-"]) nav.lg\:hidden a[href="/"] img {
+  content: url("/logo.svg");
+}
+
+body:has(main [id^="module-"]) nav.lg\:hidden button img,
+body:has(main [id^="module-"]) nav.lg\:hidden img[src*="nav_icon"] {
+  content: url("/nav_icon.svg");
+}
+
+main img:is(
+  [src*="4c9c873cbc2ad78cb29033278777bb9e756c1563"],
+  [src*="yaju-scholars-about-1781x1188"]
+) {
+  border-radius: 20px !important;
+  display: block;
+}
+
+main div:has(> img:is(
+  [src*="4c9c873cbc2ad78cb29033278777bb9e756c1563"],
+  [src*="yaju-scholars-about-1781x1188"]
+)) {
+  border-radius: 20px !important;
+  box-shadow: inset 0 0 0 1px rgba(23, 23, 28, 0.08) !important;
+  flex: 1.6 1 0% !important;
+  overflow: hidden !important;
+}
+
+main div:has(> img:is(
+  [src*="4c9c873cbc2ad78cb29033278777bb9e756c1563"],
+  [src*="yaju-scholars-about-1781x1188"]
+)) + div {
+  flex: 0.7 1 0% !important;
+}
