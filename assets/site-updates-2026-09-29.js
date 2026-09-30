@@ -300,6 +300,28 @@
       replaceImage("9f29f16467315f73ca9f9bf907912ea863a6fbdf", "/assets/img/yaju-careers-benefits-1360x1360.webp");
       replaceImage("f8f7d91a4c9b8f5314f4ea32e450b342eef330c9", "/assets/img/yaju-careers-culture-1360x1360.webp");
       replaceImage("656842f6e08943f18a31d4c34b19ce585ffc878b", "/assets/img/yaju-careers-working-1360x1360.webp");
+
+      const locationsHeading = [...document.querySelectorAll("main h1, main h2, main h3, main h4, main h5")]
+        .find((element) => text(element).includes("Born in Barcelona BCN Building worldwide"));
+      const locationsSection = locationsHeading?.closest("section")?.nextElementSibling;
+      const locationLogos = [
+        ["/assets/blog-covers/yaju-logo-turquesa.png", "#f4f3ee"],
+        ["/assets/blog-covers/yaju-logo-fucsia.png", "#f6e9f3"],
+        ["/assets/blog-covers/yaju-logo-rosa-claro.png", "#4c1745"],
+        ["/assets/blog-covers/yaju-logo-negro.png", "#f4f3ee"],
+        ["/assets/blog-covers/yaju-logo-blanco.png", "#171717"],
+      ];
+      locationsSection?.querySelectorAll("img").forEach((image, index) => {
+        const [logoPath, background] = locationLogos[index % locationLogos.length];
+        if (image.getAttribute("src") !== logoPath) image.setAttribute("src", logoPath);
+        if (image.getAttribute("srcset") !== logoPath) image.setAttribute("srcset", logoPath);
+        image.alt = "Yaju logo";
+        image.style.objectFit = "contain";
+        image.style.padding = "12px";
+        image.style.boxSizing = "border-box";
+        const frame = image.parentElement;
+        if (frame) frame.style.background = background;
+      });
     }
 
     if (path === "/labs/agentic-task-ecosystem") {
