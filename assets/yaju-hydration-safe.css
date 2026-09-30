@@ -51,6 +51,7 @@ main img:is(
   [src*="yaju-scholars-about-1781x1188"]
 ) {
   border-radius: 20px !important;
+  clip-path: inset(0 round 20px) !important;
   display: block;
 }
 
@@ -58,8 +59,10 @@ main div:has(> img:is(
   [src*="4c9c873cbc2ad78cb29033278777bb9e756c1563"],
   [src*="yaju-scholars-about-1781x1188"]
 )) {
+  border: 1px solid rgba(23, 23, 28, 0.14) !important;
   border-radius: 20px !important;
-  box-shadow: inset 0 0 0 1px rgba(23, 23, 28, 0.08) !important;
+  box-sizing: border-box !important;
+  clip-path: inset(0 round 20px) !important;
   flex: 1.6 1 0% !important;
   overflow: hidden !important;
 }

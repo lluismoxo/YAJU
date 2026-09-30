@@ -580,11 +580,17 @@
       roundImage(aboutImage, "20px");
       const frame = aboutImage?.parentElement;
       const siblingFrame = frame?.nextElementSibling;
+      if (aboutImage) {
+        aboutImage.style.clipPath = "inset(0 round 20px)";
+        aboutImage.style.boxSizing = "border-box";
+      }
       if (frame) {
         frame.style.flex = "1.6 1 0%";
         frame.style.borderRadius = "20px";
+        frame.style.clipPath = "inset(0 round 20px)";
+        frame.style.border = "1px solid rgba(23, 23, 28, 0.14)";
+        frame.style.boxSizing = "border-box";
         frame.style.overflow = "hidden";
-        frame.style.boxShadow = "inset 0 0 0 1px rgba(23, 23, 28, 0.08)";
       }
       if (siblingFrame) siblingFrame.style.flex = "0.7 1 0%";
     }
