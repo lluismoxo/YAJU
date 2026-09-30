@@ -614,12 +614,12 @@
     if (path === "/labs/scholars") {
       replaceImage("4c9c873cbc2ad78cb29033278777bb9e756c1563", "/assets/img/yaju-scholars-about-1781x1188.webp");
       const aboutImage = document.querySelector("main img[src*='yaju-scholars-about-1781x1188']");
-      roundImage(aboutImage, "24px");
+      roundImage(aboutImage, "20px");
       const frame = aboutImage?.parentElement;
       const siblingFrame = frame?.nextElementSibling;
       if (frame) {
         frame.style.flex = "1.6 1 0%";
-        frame.style.borderRadius = "24px";
+        frame.style.borderRadius = "20px";
         frame.style.overflow = "hidden";
         frame.style.boxShadow = "inset 0 0 0 1px rgba(23, 23, 28, 0.08)";
       }
