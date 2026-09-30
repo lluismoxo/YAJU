@@ -166,10 +166,15 @@
 
     const desktopNav = document.querySelector("nav.hidden.lg\\:block");
     if (desktopNav) {
+      const navSurface = desktopNav.firstElementChild;
+      if (navSurface?.classList.contains("bg-neutral-15")) {
+        navSurface.classList.remove("bg-neutral-15");
+        navSurface.classList.add("bg-pureWhite");
+      }
       desktopNav.classList.remove("text-pureWhite");
       desktopNav.style.color = "rgb(0, 0, 0)";
-      const logo = desktopNav.querySelector("a[href='/'] img[src='/logo_dark.svg']");
-      if (logo) logo.setAttribute("src", "/logo.svg");
+      const logo = desktopNav.querySelector("a[href='/'] img");
+      if (logo?.getAttribute("src") !== "/logo.svg") logo?.setAttribute("src", "/logo.svg");
       const signIn = [...desktopNav.querySelectorAll("a")].find((link) => text(link) === "Sign in");
       if (signIn) {
         signIn.classList.remove("text-white");
@@ -187,11 +192,13 @@
 
     const mobileNav = document.querySelector("nav.lg\\:hidden");
     if (mobileNav) {
+      mobileNav.classList.remove("bg-neutral-15", "text-pureWhite");
+      mobileNav.classList.add("bg-pureWhite");
       mobileNav.style.color = "rgb(0, 0, 0)";
-      const logo = mobileNav.querySelector("a[href='/'] img[src='/logo_dark.svg']");
-      if (logo) logo.setAttribute("src", "/logo.svg");
-      const menuIcon = mobileNav.querySelector("img[src='/nav_icon_dark.svg']");
-      if (menuIcon) menuIcon.setAttribute("src", "/nav_icon.svg");
+      const logo = mobileNav.querySelector("a[href='/'] img");
+      if (logo?.getAttribute("src") !== "/logo.svg") logo?.setAttribute("src", "/logo.svg");
+      const menuIcon = mobileNav.querySelector("button img, img[src*='nav_icon']");
+      if (menuIcon?.getAttribute("src") !== "/nav_icon.svg") menuIcon?.setAttribute("src", "/nav_icon.svg");
     }
 
     if (!document.getElementById("yaju-agent-academy-styles")) {
@@ -206,6 +213,9 @@
         .academy-global-copy p:last-child { margin-bottom:0; }
         .academy-global-art { align-self:flex-start; }
         .academy-global-art img { aspect-ratio:1/1; object-fit:cover; }
+        body:has(main[data-yaju-academy-template='globalmmlu']) nav.hidden.lg\\:block { color:#000 !important; }
+        body:has(main[data-yaju-academy-template='globalmmlu']) nav.hidden.lg\\:block > div.bg-neutral-15 { background-color:#fff !important; }
+        body:has(main[data-yaju-academy-template='globalmmlu']) nav.lg\\:hidden { color:#000 !important; background-color:#fff !important; }
         @media (min-width:1024px) {
           .academy-global-copy p { font-size:15px; line-height:1.75; }
           .academy-global-art { position:sticky; top:112px; }
@@ -434,6 +444,31 @@
     patchBlogCards();
     patchWallpaperCards();
 
+    document.querySelectorAll("a[href*='linkedin.com/company/cap-consultor']").forEach((link) => {
+      link.setAttribute("href", "https://www.linkedin.com/company/yaju-as");
+    });
+
+    if (path === "/about") {
+      ["Foundations", "Early growth", "Research focus", "Agentic AI for the enterprise"].forEach((label) => {
+        const heading = [...document.querySelectorAll("main h1, main h2, main h3, main h4, main h5")]
+          .find((element) => text(element) === label);
+        let card = heading?.parentElement;
+        while (card && ![...card.children].some((child) => child.classList.contains("left-text-container"))) {
+          card = card.parentElement;
+        }
+        if (!card || card === document.querySelector("main")) return;
+        const copy = [...card.children].find((child) => child.classList.contains("left-text-container"));
+        [...card.children].forEach((child) => {
+          if (child !== copy && child.querySelector("img, picture, video")) child.remove();
+        });
+        if (copy) {
+          copy.style.width = "100%";
+          copy.style.maxWidth = "800px";
+        }
+        card.style.justifyContent = "flex-start";
+      });
+    }
+
     if (path === "/ai-spend") {
       document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => {
         const frame = image.closest(".campaign-slideshow__media-frame");
@@ -523,6 +558,8 @@
     if (path === "/agent-academy") renderAgentAcademy();
 
     if (path === "/labs/futures-of-work") {
+      removeMainLinks(["Read the paper", "Read the paper "]);
+      document.querySelectorAll("main a[href*='arxiv.org/abs/2606.23633']").forEach((link) => link.remove());
       document.querySelectorAll("main a[href='/labs/agentic-task-ecosystem']").forEach((link) => {
         const icon = [...link.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.nodeValue.includes("\ue906"));
         [...link.childNodes].filter((node) => node.nodeType === Node.TEXT_NODE).forEach((node, index) => {
@@ -572,7 +609,12 @@
 
     if (path === "/labs/scholars") {
       replaceImage("4c9c873cbc2ad78cb29033278777bb9e756c1563", "/assets/img/yaju-scholars-about-1781x1188.webp");
-      roundImage(document.querySelector("main img[src*='yaju-scholars-about-1781x1188']"));
+      const aboutImage = document.querySelector("main img[src*='yaju-scholars-about-1781x1188']");
+      roundImage(aboutImage, "20px");
+      const frame = aboutImage?.parentElement;
+      const siblingFrame = frame?.nextElementSibling;
+      if (frame) frame.style.flex = "1.57 1 0%";
+      if (siblingFrame) siblingFrame.style.flex = "0.73 1 0%";
     }
 
     if (path === "/labs/oran") {
