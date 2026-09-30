@@ -220,19 +220,57 @@
     }
 
     if (path === "/ai-spend-explorer") {
-      const video = document.querySelector("main video[src*='jQkiowhjcNANEVOdEj02JRdSnvM5TaFudLXF9BmyAVms']");
-      if (video) {
-        video.style.width = "100%";
-        video.style.height = "auto";
-        video.style.aspectRatio = "1280 / 142";
-        video.style.objectFit = "contain";
-        video.style.background = "#080808";
-        if (video.parentElement) {
-          video.parentElement.style.height = "auto";
-          video.parentElement.style.aspectRatio = "1280 / 142";
-          video.parentElement.style.overflow = "hidden";
-        }
+      if (document.readyState === "complete") {
+        const video = document.querySelector("main video[src*='jQkiowhjcNANEVOdEj02JRdSnvM5TaFudLXF9BmyAVms']");
+        video?.closest("section")?.remove();
       }
+    }
+
+    if (path === "/developers") {
+      replaceImage("cfe4f577b190a8ee82694d68fbb94f93db2d79c2", "/assets/img/yaju-developers-silos-1360x1360.webp");
+      replaceImage("e71cec66475d467b4c439f956c31b9370bbd45e8", "/assets/img/yaju-developers-roi-1360x1360.webp");
+    }
+
+    if (path === "/solutions/financial-services") {
+      replaceImage("cfe4f577b190a8ee82694d68fbb94f93db2d79c2", "/assets/img/yaju-financial-evidence-1360x1360.webp");
+      replaceImage("e71cec66475d467b4c439f956c31b9370bbd45e8", "/assets/img/yaju-financial-cost-1360x1360.webp");
+    }
+
+    if (path === "/solutions/public-sector") {
+      replaceImage("a9a018529f9faf6586aee63094595844c20406c8", "/assets/img/yaju-public-access-1360x1360.webp");
+      replaceImage("d913223c52c3a4e27215ec1faffca0432a7af421", "/assets/img/yaju-public-evidence-1360x1360.webp");
+    }
+
+    if (path === "/solutions/engineering") {
+      replaceImage("e6d76cc77d1e49e03db5119e0b82632d0971091a", "/assets/img/yaju-engineering-cli-1360x1360.webp");
+      replaceImage("140f8c317688d03c3fe8a17414a50b20bb4b41d5", "/assets/img/yaju-engineering-catalogue-1360x1360.webp");
+    }
+
+    if (path === "/solutions/telecommunications") {
+      replaceImage("65536a6029c597568dae940f5fbf6bd012de397c", "/assets/img/yaju-telecom-trace-1360x1360.webp");
+      replaceImage("efbda42da49d00e5d8edcfb6ae400d5816194780", "/assets/img/yaju-telecom-spend-1360x1360.webp");
+
+      if (document.readyState === "complete") {
+        const heading = [...document.querySelectorAll("main h1, main h2, main h3, main h4, main h5")]
+          .find((element) => text(element) === "The Agent Orchestration System underneath every team");
+        const headingSection = heading?.closest("section");
+        let videoSection = headingSection?.nextElementSibling;
+        while (videoSection && !videoSection.querySelector("video, button[aria-label='Play video']")) {
+          videoSection = videoSection.nextElementSibling;
+        }
+        videoSection?.remove();
+        headingSection?.remove();
+      }
+    }
+
+    if (path === "/solutions/healthcare-and-life-sciences") {
+      replaceImage("9eff3ee4db7a342c15a67c1d7539154d97794fa1", "/assets/img/yaju-health-evidence-1360x1360.webp");
+      replaceImage("2a965ccc4817b8ee2147b283520096be069cde35", "/assets/img/yaju-health-catalogue-1360x1360.webp");
+    }
+
+    if (path === "/solutions/manufacturing") {
+      replaceImage("9612ef09adf145a1117181f767a7c366d0829bfc", "/assets/img/yaju-manufacturing-trace-1360x1360.webp");
+      replaceImage("3547fd834a2690332b1b6d133e05b1aaa5dfe94f", "/assets/img/yaju-manufacturing-spend-1360x1360.webp");
     }
 
     if (path === "/labs") {
