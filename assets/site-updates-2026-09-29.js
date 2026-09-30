@@ -514,8 +514,10 @@
     }
 
     if (path === "/solutions/engineering") {
-      replaceImage("e6d76cc77d1e49e03db5119e0b82632d0971091a", "/assets/img/yaju-engineering-cli-1360x1360.webp");
-      replaceImage("140f8c317688d03c3fe8a17414a50b20bb4b41d5", "/assets/img/yaju-engineering-catalogue-1360x1360.webp");
+      replaceImage("e6d76cc77d1e49e03db5119e0b82632d0971091a", "/assets/img/yaju-engineering-cli-photo-1360x1360.webp");
+      replaceImage("140f8c317688d03c3fe8a17414a50b20bb4b41d5", "/assets/img/yaju-engineering-catalogue-photo-1360x1360.webp");
+      roundImage(document.querySelector("main img[src*='yaju-engineering-cli-photo-1360x1360']"), "22px");
+      roundImage(document.querySelector("main img[src*='yaju-engineering-catalogue-photo-1360x1360']"), "22px");
     }
 
     if (path === "/solutions/telecommunications") {
@@ -536,8 +538,10 @@
     }
 
     if (path === "/solutions/healthcare-and-life-sciences") {
-      replaceImage("9eff3ee4db7a342c15a67c1d7539154d97794fa1", "/assets/img/yaju-health-evidence-1360x1360.webp");
-      replaceImage("2a965ccc4817b8ee2147b283520096be069cde35", "/assets/img/yaju-health-catalogue-1360x1360.webp");
+      replaceImage("9eff3ee4db7a342c15a67c1d7539154d97794fa1", "/assets/img/yaju-health-evidence-photo-1360x1360.webp");
+      replaceImage("2a965ccc4817b8ee2147b283520096be069cde35", "/assets/img/yaju-health-catalogue-photo-1360x1360.webp");
+      roundImage(document.querySelector("main img[src*='yaju-health-evidence-photo-1360x1360']"), "22px");
+      roundImage(document.querySelector("main img[src*='yaju-health-catalogue-photo-1360x1360']"), "22px");
     }
 
     if (path === "/solutions/manufacturing") {
@@ -610,11 +614,16 @@
     if (path === "/labs/scholars") {
       replaceImage("4c9c873cbc2ad78cb29033278777bb9e756c1563", "/assets/img/yaju-scholars-about-1781x1188.webp");
       const aboutImage = document.querySelector("main img[src*='yaju-scholars-about-1781x1188']");
-      roundImage(aboutImage, "20px");
+      roundImage(aboutImage, "24px");
       const frame = aboutImage?.parentElement;
       const siblingFrame = frame?.nextElementSibling;
-      if (frame) frame.style.flex = "1.57 1 0%";
-      if (siblingFrame) siblingFrame.style.flex = "0.73 1 0%";
+      if (frame) {
+        frame.style.flex = "1.6 1 0%";
+        frame.style.borderRadius = "24px";
+        frame.style.overflow = "hidden";
+        frame.style.boxShadow = "inset 0 0 0 1px rgba(23, 23, 28, 0.08)";
+      }
+      if (siblingFrame) siblingFrame.style.flex = "0.7 1 0%";
     }
 
     if (path === "/labs/oran") {
