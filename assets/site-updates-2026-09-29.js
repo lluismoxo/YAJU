@@ -106,60 +106,174 @@
     }
   };
 
-  const decorateAgentAcademy = () => {
-    const main = document.querySelector("main");
+  const renderAgentAcademy = () => {
+    const main = document.querySelector("main#main-content, main");
     if (!main) return;
-    main.classList.add("yaju-agent-academy-new");
 
-    const hero = main.querySelector("section");
-    const heading = hero?.querySelector("h1");
-    if (heading && !hero.querySelector("[data-academy-kicker]")) {
-      const kicker = document.createElement("p");
-      kicker.dataset.academyKicker = "true";
-      kicker.textContent = "AGENT ACADEMY";
-      kicker.style.cssText = "margin:0 0 18px;color:#ffb38b;font-size:12px;font-weight:600;letter-spacing:.14em;";
-      heading.before(kicker);
+    const desktopNav = document.querySelector("nav.hidden.lg\\:block");
+    if (desktopNav) {
+      desktopNav.classList.remove("text-pureWhite");
+      desktopNav.style.color = "rgb(0, 0, 0)";
+      const logo = desktopNav.querySelector("a[href='/'] img[src='/logo_dark.svg']");
+      if (logo) logo.setAttribute("src", "/logo.svg");
+      const signIn = [...desktopNav.querySelectorAll("a")].find((link) => text(link) === "Sign in");
+      if (signIn) {
+        signIn.classList.remove("text-white");
+        signIn.classList.add("text-volcanic-900");
+        signIn.style.color = "rgb(33, 33, 33)";
+      }
+      const demo = [...desktopNav.querySelectorAll("a")].find((link) => text(link) === "Book demo");
+      if (demo) {
+        demo.classList.remove("bg-pureWhite", "text-neutral-15");
+        demo.classList.add("bg-neutral-15", "text-pureWhite");
+        demo.style.backgroundColor = "rgb(23, 23, 28)";
+        demo.style.color = "rgb(255, 255, 255)";
+      }
     }
 
-    if (hero && !main.querySelector("[data-academy-overview]")) {
-      const overview = document.createElement("section");
-      overview.dataset.academyOverview = "true";
-      overview.className = "academy-overview";
-      overview.innerHTML = `
-        <div><strong>8</strong><span>Progressive modules</span></div>
-        <div><strong>0</strong><span>Prior experience required</span></div>
-        <div><strong>1</strong><span>Production-ready foundation</span></div>`;
-      hero.insertAdjacentElement("afterend", overview);
+    const mobileNav = document.querySelector("nav.lg\\:hidden");
+    if (mobileNav) {
+      mobileNav.style.color = "rgb(0, 0, 0)";
+      const logo = mobileNav.querySelector("a[href='/'] img[src='/logo_dark.svg']");
+      if (logo) logo.setAttribute("src", "/logo.svg");
+      const menuIcon = mobileNav.querySelector("img[src='/nav_icon_dark.svg']");
+      if (menuIcon) menuIcon.setAttribute("src", "/nav_icon.svg");
     }
-
-    main.querySelectorAll("[id^='module-']").forEach((module, index) => {
-      module.classList.add("academy-module-card");
-      module.dataset.academyTone = String(index % 3);
-    });
 
     if (!document.getElementById("yaju-agent-academy-styles")) {
       const style = document.createElement("style");
       style.id = "yaju-agent-academy-styles";
       style.textContent = `
-        .yaju-agent-academy-new > section:first-of-type { min-height: min(760px, 86vh); }
-        .yaju-agent-academy-new > section:first-of-type video { border: 0 !important; border-radius: 18px !important; box-shadow: 0 24px 70px rgba(0,0,0,.28); }
-        .academy-overview { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; margin:0; padding:0 3rem; background:#d9d8d2; }
-        .academy-overview > div { display:flex; flex-direction:column; gap:8px; padding:42px 32px; background:#f4f3ee; }
-        .academy-overview strong { font-size:clamp(34px,4vw,64px); font-weight:400; line-height:1; color:#181818; }
-        .academy-overview span { color:#565650; font-size:14px; }
-        .academy-module-card { margin-bottom:28px !important; padding:clamp(28px,5vw,64px) !important; border-radius:24px; overflow:hidden; }
-        .academy-module-card[data-academy-tone='0'] { background:#f3f1ec; }
-        .academy-module-card[data-academy-tone='1'] { background:#eef0f8; }
-        .academy-module-card[data-academy-tone='2'] { background:#f6eee9; }
-        .academy-module-card h5 { font-size:clamp(28px,4vw,52px) !important; line-height:1.05 !important; margin-bottom:28px !important; }
-        .academy-module-card p { max-width:780px; font-size:clamp(15px,1.3vw,18px) !important; line-height:1.65 !important; }
-        @media (max-width: 767px) {
-          .academy-overview { grid-template-columns:1fr; padding:0 20px; }
-          .academy-overview > div { padding:28px 24px; }
-          .academy-module-card { border-radius:16px; }
+        body:has(main#main-content) main#main-content:not([data-yaju-academy-template]) { opacity:0; }
+        main[data-yaju-academy-template='globalmmlu'] { opacity:1; transition:opacity .2s ease; }
+        .academy-hero-copy p { display:block; font-size:14px; line-height:1.55; margin:0 0 12px; }
+        .academy-hero-copy p:last-child { margin-bottom:0; }
+        .academy-global-copy p { font-size:14px; line-height:1.72; margin:0 0 16px; }
+        .academy-global-copy p:last-child { margin-bottom:0; }
+        .academy-global-art { align-self:flex-start; }
+        .academy-global-art img { aspect-ratio:1/1; object-fit:cover; }
+        @media (min-width:1024px) {
+          .academy-global-copy p { font-size:15px; line-height:1.75; }
+          .academy-global-art { position:sticky; top:112px; }
         }
       `;
       document.head.append(style);
+    }
+
+    if (main.dataset.yajuAcademyTemplate === "globalmmlu" || document.readyState !== "complete") return;
+
+    const originalHero = main.querySelector("section");
+    const originalIntro = [...(originalHero?.querySelectorAll("p") || [])]
+      .map((paragraph) => text(paragraph).replace(/([.!?])(?=[A-Z])/g, "$1 "))
+      .filter((value) => value && value !== "AGENT ACADEMY");
+    const modules = [...main.querySelectorAll("[id^='module-']")].map((module, index) => ({
+      id: module.id || `module-${index + 1}`,
+      number: index + 1,
+      title: text(module.querySelector("h1, h2, h3, h4, h5")),
+      paragraphs: [...module.querySelectorAll("p")]
+        .map((paragraph) => text(paragraph))
+        .filter((value) => value && !/^MODULE\s+\d+\.?$/i.test(value)),
+    }));
+    if (modules.length !== 8) return;
+
+    const schema = main.querySelector("script[type='application/ld+json']")?.cloneNode(true);
+    main.innerHTML = `
+      <section class="relative w-full px-4 lg:px-10 pt-28 md:pt-40 pb-12 md:pb-20 text-black">
+        <div class="relative z-content max-w-web3-full-screen mx-auto w-full max-w-web3-internal-wrapper h-full">
+          <div class="flex h-full md:gap-x-10 justify-center lg:gap-x-32 flex-col md:flex-row" style="align-items:center">
+            <div class="w-full mb-10 md:mb-14 md:w-1/2 [&>div]:lg:max-w-[550px] [&>div]:md:mr-auto">
+              <div class="text-left max-w-[350px] sm:max-w-full">
+                <p class="text-web3-14-eyebrow uppercase font-eyebrow mb-3">Agent Academy</p>
+                <div class="mb-4 break-words"><h1 class="text-web3-32-heading lg:text-web3-60 font-body-web2">Learn to build and operate AI agents</h1></div>
+                <div class="break-words mb-6 lg:mb-10 lg:w-[555px] academy-hero-copy"></div>
+                <div class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                  <div class="group relative z-10 inline-block"><a class="relative flex w-fit items-center justify-center bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent gap-2 outline-none" href="#module-1"><span class="text-web3-16 lg:text-web3-18 font-body">Start learning</span><span class="flex shrink-0 items-center"><i class="icon-default icon-arrow-down text-icon-md"></i></span></a></div>
+                  <a class="group inline-flex max-w-full outline-none" href="#academy-modules"><span class="flex items-center gap-2 text-volcanic-900"><span class="text-web3-16 lg:text-web3-18 font-body">View all modules</span><i class="icon-default icon-arrow-down"></i></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2"><img width="1080" height="1080" alt="Agent Academy" class="m-auto w-full rounded-lg md:rounded-xl" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/84bcfb26b51939c759243f7437b6cdfe57dffb2e-1080x1080.svg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="relative w-full px-4 lg:px-10 pb-12 md:pb-20 text-black" id="academy-modules">
+        <div class="relative z-content mx-auto w-full max-w-web3-internal-wrapper">
+          <div class="flex flex-col justify-start md:flex-row md:justify-center w-full gap-y-9 md:gap-x-5">
+            <div class="flex w-full flex-col items-start text-start"><img width="100" height="100" alt="" class="block pb-6 max-w-[100px]" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/c433addf3490554cad43f7fff4566747ac6dc88e-100x100.svg"><div class="flex flex-col gap-4 md:pe-6"><p class="text-web3-20 lg:text-web3-24 font-body">Understand the loop</p><p class="text-web3-14 lg:text-web3-16 font-body">Learn where agents differ from chatbots, scripts and traditional automation.</p></div></div>
+            <div class="flex w-full flex-col items-start text-start"><img width="100" height="100" alt="" class="block pb-6 max-w-[100px]" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/094dcf0886c902b7e3a00bec70ea17e9e6d0b089-100x100.svg"><div class="flex flex-col gap-4 md:pe-6"><p class="text-web3-20 lg:text-web3-24 font-body">Build deliberately</p><p class="text-web3-14 lg:text-web3-16 font-body">Design tools, context, permissions and evaluations before production.</p></div></div>
+            <div class="flex w-full flex-col items-start text-start"><img width="100" height="100" alt="" class="block pb-6 max-w-[100px]" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9e0070f08d59734929fbab1391b7b6a4a523155c-100x100.svg"><div class="flex flex-col gap-4 md:pe-6"><p class="text-web3-20 lg:text-web3-24 font-body">Operate at scale</p><p class="text-web3-14 lg:text-web3-16 font-body">Deploy, govern, observe and optimise a fleet through Yaju.</p></div></div>
+          </div>
+        </div>
+      </section>
+      <div data-academy-module-sections></div>
+      <section class="relative w-full px-4 lg:px-10 pt-12 md:pt-20 pb-12 md:pb-20 text-black">
+        <div class="relative z-content mx-auto w-full max-w-web3-internal-wrapper">
+          <div class="flex flex-col md:flex-row md:justify-between md:gap-x-12 lg:gap-x-32">
+            <div class="mb-12 md:mb-0 md:w-3/4 lg:w-1/2 lg:max-w-[555px]"><p class="text-web3-16 lg:text-web3-18 font-body">Work through the course in order. Each module builds on the last, from the first agent loop to identity, policy, tracing, cost control and fleet operations.</p></div>
+            <div class="grid grid-cols-2 gap-10 overflow-hidden lg:w-1/2">
+              <div class="flex min-w-[150px] flex-col md:min-w-[300px]"><span class="text-web3-48 sm:text-web3-60 xl:text-web3-96 font-body-web2 inline-flex items-baseline whitespace-nowrap leading-none">8</span><p class="text-web3-16 lg:text-web3-18 font-body pt-1 text-black">Progressive modules</p></div>
+              <div class="flex min-w-[150px] flex-col md:min-w-[300px]"><span class="text-web3-48 sm:text-web3-60 xl:text-web3-96 font-body-web2 inline-flex items-baseline whitespace-nowrap leading-none">0</span><p class="text-web3-16 lg:text-web3-18 font-body pt-1 text-black">Prior experience required</p></div>
+            </div>
+          </div>
+        </div>
+      </section>`;
+
+    if (schema) main.prepend(schema);
+    const heroCopy = main.querySelector(".academy-hero-copy");
+    (originalIntro.length ? originalIntro : ["A practical course on building and operating AI agents, from first principles to a production fleet."]).forEach((copy) => {
+      const paragraph = document.createElement("p");
+      paragraph.className = "text-web3-14 lg:text-web3-16 font-body mb-4";
+      paragraph.textContent = copy;
+      heroCopy?.append(paragraph);
+    });
+
+    const art = [
+      "/assets/img/0000000000001ca14b6f625152866e012987d05c-680x680.webp",
+      "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2aa87956099b42ee526b90c224113e453b495702-680x680.svg",
+      "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/84bcfb26b51939c759243f7437b6cdfe57dffb2e-1080x1080.svg",
+    ];
+    const moduleHost = main.querySelector("[data-academy-module-sections]");
+    modules.forEach((module, index) => {
+      const dark = index % 2 === 1;
+      const reverse = index % 2 === 0;
+      const section = document.createElement("section");
+      section.id = module.id;
+      section.className = `relative w-full px-4 lg:px-10 pt-12 md:pt-20 pb-12 md:pb-20 ${dark ? "text-pureWhite" : "text-black"}`;
+      if (dark) section.style.background = "rgb(41, 66, 150)";
+      section.innerHTML = `
+        <div class="relative z-content max-w-web3-full-screen mx-auto w-full max-w-web3-internal-wrapper h-full">
+          <div class="flex h-full md:gap-x-10 justify-center lg:gap-x-32 flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"}" style="align-items:flex-start">
+            <div class="w-full mb-10 md:mb-14 md:w-1/2">
+              <div class="text-left max-w-[620px] sm:max-w-full">
+                <p class="text-web3-14-eyebrow uppercase font-eyebrow mb-3">Module ${module.number}</p>
+                <div class="mb-6 break-words"><h2 class="text-web3-28 lg:text-web3-48-alt font-body" data-academy-title></h2></div>
+                <div class="academy-global-copy" data-academy-copy></div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 academy-global-art"><img width="680" height="680" alt="" class="m-auto w-full rounded-lg md:rounded-xl" src="${art[index % art.length]}"></div>
+          </div>
+        </div>`;
+      section.querySelector("[data-academy-title]").textContent = module.title;
+      const copy = section.querySelector("[data-academy-copy]");
+      module.paragraphs.forEach((value) => {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = value;
+        copy.append(paragraph);
+      });
+      moduleHost?.append(section);
+    });
+
+    main.dataset.yajuAcademyTemplate = "globalmmlu";
+
+    const footerHeading = [...document.querySelectorAll("footer h1, footer h2, footer h3")]
+      .find((heading) => text(heading) === "Ready to run your agents like production software?");
+    const footerSection = footerHeading?.closest("section");
+    if (footerSection) {
+      footerSection.className = "relative px-4 lg:px-10 pt-12 md:pt-20 pb-12 md:pb-20 text-pureWhite flex w-full flex-col overflow-hidden md:mb-0 md:min-h-[400px] md:justify-center lg:min-h-[500px] xl:min-h-[600px] z-0";
+      footerSection.style.background = "rgb(46, 46, 46)";
+      footerSection.innerHTML = `
+        <div class="absolute top-0 left-0 h-full w-full"><img alt="" class="h-full w-full object-cover object-center z-background" src="https://cdn.sanity.io/images/rjtqmwfu/web3-prod/da0e62189598c301160ac609fd5c893696e1dbc2-2880x1200.png"></div>
+        <div class="relative z-content mx-auto w-full max-w-web3-full-screen"><div class="flex h-full w-full flex-col justify-center items-center [&>*]:text-center"><div class="text-center md:max-w-[892px]"><h2 class="text-web3-32-heading lg:text-web3-60 font-body-web2">Start Agent Academy</h2></div><div class="flex flex-col items-center justify-center gap-4 sm:flex-row mt-8"><div class="group relative z-10 inline-block"><a class="relative flex w-fit items-center justify-center bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent gap-2 outline-none" href="#module-1"><span class="text-web3-16 lg:text-web3-18 font-body">Begin with module 1</span><i class="icon-default icon-arrow-up-right text-icon-md"></i></a></div><a class="text-web3-16 lg:text-web3-18 font-body border-b border-white pb-1" href="/labs">About Yaju Labs</a></div></div></div>`;
     }
   };
 
@@ -351,7 +465,7 @@
       });
     }
 
-    if (path === "/agent-academy") decorateAgentAcademy();
+    if (path === "/agent-academy") renderAgentAcademy();
 
     if (path === "/labs/futures-of-work") {
       document.querySelectorAll("main a[href='/labs/agentic-task-ecosystem']").forEach((link) => {
@@ -445,6 +559,7 @@
 
   patchPage();
   window.addEventListener("DOMContentLoaded", patchPage, { once: true });
+  window.addEventListener("load", patchPage, { once: true });
   window.setTimeout(patchPage, 250);
   window.setTimeout(patchPage, 1200);
   let patchScheduled = false;
