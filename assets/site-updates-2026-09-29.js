@@ -191,6 +191,74 @@
       if (paragraphs[1]) paragraphs[1].textContent = "Explore how AI tools are changing work";
       list.append(item);
     });
+
+    const featuredPromos = [
+      {
+        href: "/ai-observability",
+        label: "Observe every agent with Yaju",
+        cover: "/assets/blog-covers/yaju-blog-cover-01.webp",
+        logo: "/assets/blog-covers/yaju-logo-blanco.png",
+      },
+      {
+        href: "/credential-vault",
+        label: "Secure credentials with Yaju",
+        cover: "/assets/blog-covers/yaju-blog-cover-04.webp",
+        logo: "/assets/blog-covers/yaju-logo-negro.png",
+      },
+      {
+        href: "/customer-stories/support-triage-with-agents",
+        label: "Support triage, powered by Yaju",
+        cover: "/assets/blog-covers/yaju-blog-cover-07.webp",
+        logo: "/assets/blog-covers/yaju-logo-blanco.png",
+      },
+      {
+        href: "/labs/agentic-task-ecosystem",
+        label: "Explore agentic work with Yaju",
+        cover: "/assets/blog-covers/yaju-blog-cover-10.webp",
+        logo: "/assets/blog-covers/yaju-logo-fucsia.png",
+      },
+    ];
+
+    featuredPromos.forEach(({ href, label, cover, logo }) => {
+      document.querySelectorAll(`nav a[href='${href}']`).forEach((link) => {
+        if (!link.className.includes("group/featured")) return;
+        const coverImage = [...link.querySelectorAll("img")]
+          .find((image) => !image.hasAttribute("data-yaju-nav-logo"));
+        if (coverImage) {
+          if (coverImage.getAttribute("src") !== cover) coverImage.setAttribute("src", cover);
+          if (coverImage.getAttribute("srcset") !== cover) coverImage.setAttribute("srcset", cover);
+          const media = coverImage.parentElement === link ? link : coverImage.parentElement;
+          if (media) {
+            media.style.position = "relative";
+            media.style.overflow = "hidden";
+            let logoImage = media.querySelector(":scope > [data-yaju-nav-logo]");
+            if (!logoImage) {
+              logoImage = document.createElement("img");
+              logoImage.dataset.yajuNavLogo = "true";
+              logoImage.alt = "";
+              logoImage.setAttribute("aria-hidden", "true");
+              media.append(logoImage);
+            }
+            if (logoImage.getAttribute("src") !== logo) logoImage.setAttribute("src", logo);
+            logoImage.removeAttribute("srcset");
+            logoImage.style.cssText = "position:absolute;left:50%;top:50%;width:42%;height:auto;transform:translate(-50%,-50%);z-index:2;pointer-events:none;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.08));";
+          }
+        }
+
+        const textLabel = [...link.querySelectorAll("span")]
+          .find((span) => span.matches(".text-web3-14") && text(span) !== label);
+        if (textLabel && !textLabel.closest("a")?.querySelector("img[data-yaju-nav-logo]")) {
+          const icon = textLabel.querySelector("i")?.cloneNode(true);
+          textLabel.textContent = label;
+          if (icon) textLabel.append(" ", icon);
+        } else if (textLabel && text(link) !== label) {
+          const icon = textLabel.querySelector("i")?.cloneNode(true);
+          textLabel.textContent = label;
+          if (icon) textLabel.append(" ", icon);
+        }
+        if (link.getAttribute("aria-label")) link.setAttribute("aria-label", label);
+      });
+    });
   };
 
   const patchPage = () => {
