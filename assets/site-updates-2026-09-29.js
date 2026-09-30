@@ -45,6 +45,60 @@
     return (hash >>> 0) % blogCovers.length;
   };
 
+  const setWallpaperCover = (image, coverPath) => {
+    if (!image) return;
+    if (image.getAttribute("src") !== coverPath) image.setAttribute("src", coverPath);
+    if (image.getAttribute("srcset") !== coverPath) image.setAttribute("srcset", coverPath);
+    image.style.objectFit = "cover";
+    image.style.objectPosition = "center";
+    image.dataset.yajuWallpaperCover = "true";
+    image.closest("picture")?.querySelectorAll("source").forEach((source) => {
+      if (source.getAttribute("srcset") !== coverPath) source.setAttribute("srcset", coverPath);
+    });
+  };
+
+  const patchWallpaperCards = () => {
+    const targetedCards = {
+      "/labs": ["/agent-hub", "/labs/scholars", "/labs/open-development", "/labs/catalyst-grants"],
+      "/labs/futures-of-work": ["/labormap", "/labs"],
+    };
+
+    document.querySelectorAll("main a[href]").forEach((link) => {
+      let url;
+      try {
+        url = new URL(link.getAttribute("href"), window.location.origin);
+      } catch {
+        return;
+      }
+      const segments = url.pathname.split("/").filter(Boolean);
+      const isYajuHost = url.origin === window.location.origin || ["yajuas.com", "www.yajuas.com"].includes(url.hostname);
+      const isCustomerStory = isYajuHost && segments.length === 2 && segments[0] === "customer-stories";
+      const isTargetedCard = targetedCards[path]?.includes(url.pathname);
+      if (!isCustomerStory && !isTargetedCard) return;
+
+      const image = [...link.querySelectorAll("img")].find((candidate) =>
+        !candidate.hasAttribute("data-yaju-blog-logo") &&
+        !candidate.hasAttribute("data-yaju-nav-logo") &&
+        !candidate.getAttribute("src")?.includes("yaju-logo-")
+      );
+      if (!image) return;
+      const coverKey = isCustomerStory ? `${url.pathname}|wallpaper` : `${url.pathname}:${text(link)}`;
+      const coverPath = blogCovers[stableCoverIndex(coverKey)][0];
+      setWallpaperCover(image, coverPath);
+      link.dataset.yajuWallpaperCard = "true";
+    });
+
+    if (path === "/customer-stories") {
+      document.querySelectorAll("main a[href]").forEach((link) => {
+        const backgrounds = [...link.querySelectorAll("img[alt='Feature Box Background Image']")];
+        if (!backgrounds.length) return;
+        const coverPath = blogCovers[stableCoverIndex(link.getAttribute("href") || text(link))][0];
+        backgrounds.forEach((image) => setWallpaperCover(image, coverPath));
+        link.dataset.yajuWallpaperCard = "true";
+      });
+    }
+  };
+
   const patchBlogCards = () => {
     document.querySelectorAll("main a[href]").forEach((link) => {
       let url;
@@ -378,6 +432,7 @@
   const patchPage = () => {
     patchNavigation();
     patchBlogCards();
+    patchWallpaperCards();
 
     if (path === "/ai-spend") {
       document.querySelectorAll('main img[alt="Yaju"]').forEach((image) => {
