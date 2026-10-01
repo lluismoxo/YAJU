@@ -60,7 +60,7 @@
   const patchWallpaperCards = () => {
     const targetedCards = {
       "/labs": ["/agent-hub", "/labs/scholars", "/labs/open-development", "/labs/catalyst-grants"],
-      "/labs/futures-of-work": ["/labormap", "/labs"],
+      "/labs/futures-of-work": ["/agent-academy", "/labs"],
     };
 
     document.querySelectorAll("main a[href]").forEach((link) => {

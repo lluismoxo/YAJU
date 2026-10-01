@@ -12,7 +12,7 @@ find public -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' -o -name 
   | xargs -0 perl -pi -e 's#/_next/#/_yaju/#g'
 # Bust the browser cache for the shared page-fix script on every dated release.
 find public -type f -name '*.html' -print0 \
-  | xargs -0 perl -pi -e 's#site-updates-2026-09-29\.js(?:\?v=[^"'"'"']*)?#site-updates-2026-09-29.js?v=2026-09-30-5#g'
+  | xargs -0 perl -pi -e 's#site-updates-2026-09-29\.js(?:\?v=[^"'"'"']*)?#site-updates-2026-09-29.js?v=2026-10-01-1#g'
 node inject-google-tag.mjs public
 # Add visual overrides inside the existing CSS bundles so React receives untouched HTML.
 for css_file in public/_yaju/static/immutable/chunks/*.css; do
