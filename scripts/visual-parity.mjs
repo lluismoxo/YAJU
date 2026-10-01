@@ -118,7 +118,7 @@ try {
       await capture('scroll');
       const brokenImages = await Promise.all(pages.map(page => page.evaluate(() => [...document.images].filter(image => image.complete && !image.naturalWidth).map(image => ({src:image.getAttribute('src'), currentSrc:image.currentSrc})))));
       const errorParity = JSON.stringify(errors[0]) === JSON.stringify(errors[1]);
-      const result = { route, viewport:viewport.name, errorParity, states, baselineErrors:errors[0], candidateErrors:errors[1], brokenImages }; 
+      const result = { route, viewport:viewport.name, errorParity, states, baselineErrors:errors[0], candidateErrors:errors[1], brokenImages };
       report.results.push(result);
       await writeFile(resolve(artifacts,'report.json'),JSON.stringify(report,null,2)+'\n');
       console.log(`${key}: ${states.every(state=>state.pass) ? 'PASS' : 'DIFFERENCES'} (${states.map(state=>state.changedPixels ?? state.reason).join(', ')})`);

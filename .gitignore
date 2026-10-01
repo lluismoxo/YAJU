@@ -5,3 +5,5 @@
 /.build-previous/
 /node_modules/
 /artifacts/
+
+/public 2/
