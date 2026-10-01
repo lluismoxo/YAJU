@@ -1,0 +1,17 @@
+{
+  "name": "yaju-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:parity": "node scripts/check-parity.mjs",
+    "verify": "npm run build && npm test && npm run check:parity",
+    "check:visual": "node scripts/visual-parity.mjs",
+    "reference:freeze": "node scripts/freeze-reference.mjs"
+  }
+}
