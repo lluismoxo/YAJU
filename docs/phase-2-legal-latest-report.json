@@ -1,0 +1,498 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.92",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-02T10:00:20.064Z",
+  "results": [
+    {
+      "route": "/legal",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-legal-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-menu-solutions",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-menu-resources",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-menu-blog",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-menu-company",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-footer",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-language",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-legal-banner-closed",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/legal",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-legal-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-scroll",
+          "pass": false,
+          "changedPixels": 139111,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=768",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 531.234375,
+                    "width": 768,
+                    "height": 400,
+                    "top": 531.234375,
+                    "right": 768,
+                    "bottom": 931.234375,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:52423/logo_mobile_dark.svg",
+                  "width": 60,
+                  "rect": {
+                    "x": 16,
+                    "y": 1011.234375,
+                    "width": 60,
+                    "height": 48,
+                    "top": 1011.234375,
+                    "right": 76,
+                    "bottom": 1059.234375,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=768",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 531.234375,
+                    "width": 768,
+                    "height": 400,
+                    "top": 531.234375,
+                    "right": 768,
+                    "bottom": 931.234375,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:52424/logo_mobile_dark.svg",
+                  "width": 60,
+                  "rect": {
+                    "x": 16,
+                    "y": 1011.234375,
+                    "width": 60,
+                    "height": 48,
+                    "top": 1011.234375,
+                    "right": 76,
+                    "bottom": 1059.234375,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-legal-mobile-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-mobile-product",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-mobile-solutions",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-mobile-resources",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-mobile-blog",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-mobile-company",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-footer",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-language",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-legal-banner-closed",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/legal",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-legal-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-mobile-menu",
+          "pass": false,
+          "changedPixels": 390,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:52423/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 117.40625,
+                    "width": 118,
+                    "height": 28,
+                    "top": 117.40625,
+                    "right": 134,
+                    "bottom": 145.40625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:52423/nav_close.svg",
+                  "width": 18,
+                  "rect": {
+                    "x": 346,
+                    "y": 119.40625,
+                    "width": 24,
+                    "height": 24,
+                    "top": 119.40625,
+                    "right": 370,
+                    "bottom": 143.40625,
+                    "left": 346
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:52424/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 117.40625,
+                    "width": 118,
+                    "height": 28,
+                    "top": 117.40625,
+                    "right": 134,
+                    "bottom": 145.40625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:52424/nav_close.svg",
+                  "width": 18,
+                  "rect": {
+                    "x": 346,
+                    "y": 119.40625,
+                    "width": 24,
+                    "height": 24,
+                    "top": 119.40625,
+                    "right": 370,
+                    "bottom": 143.40625,
+                    "left": 346
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-legal-mobile-product",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-mobile-solutions",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-mobile-resources",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-mobile-blog",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-mobile-company",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-platform",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-product",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-functionalities",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-solutions",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-by-industry",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-deployment",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-resources",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-company",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-footer-legal",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-language",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-legal-banner-closed",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1f6b5d596ac283b5d9c14db03d3bd5863dec1fcc-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    }
+  ]
+}

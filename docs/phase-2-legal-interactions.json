@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-10-02T09:54:20.256Z",
+  "checks": [
+    "1440: keyboard skip to main",
+    "desktop: keyboard menu and Escape",
+    "1440: all policy destinations return 200",
+    "1440: no JavaScript exceptions",
+    "390: keyboard skip to main",
+    "mobile: keyboard open/submenu/back/Escape and scroll unlock",
+    "390: all policy destinations return 200",
+    "390: no JavaScript exceptions",
+    "policy content and nine links available without JavaScript"
+  ]
+}

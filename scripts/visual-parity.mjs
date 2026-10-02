@@ -104,7 +104,21 @@ try {
           await Promise.all([...document.images].filter(image => { const r=image.getBoundingClientRect(); return r.bottom>0 && r.top<innerHeight; }).map(image => image.decode().catch(() => {})));
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
         })));
-        const shots = await Promise.all(pages.map((page,index) => page.screenshot({ path: resolve(artifacts, `${key}-${state}-${index ? 'candidate' : 'reference'}.png`), animations:'disabled' })));
+        const shots = await Promise.all(pages.map(async (page,index) => {
+          // Image rasterisation can finish after decode. Require two stable paints,
+          // independently on each page, before comparing the two implementations.
+          let previous = await page.screenshot({animations:'disabled'});
+          for (let attempt=0;attempt<5;attempt++) {
+            await page.waitForTimeout(200);
+            const next = await page.screenshot({animations:'disabled'});
+            if (next.equals(previous)) {
+              await writeFile(resolve(artifacts, `${key}-${state}-${index ? 'candidate' : 'reference'}.png`),next);
+              return next;
+            }
+            previous=next;
+          }
+          throw new Error(`Unstable rendering: ${key}-${state}-${index}`);
+        }));
         const comparison = await compare(shots[0],shots[1],`${key}-${state}`);
         if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
           scrollY, images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))

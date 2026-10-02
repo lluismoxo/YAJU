@@ -14,6 +14,7 @@
     "check:visual": "node scripts/visual-parity.mjs",
     "reference:freeze": "node scripts/freeze-reference.mjs",
     "build:pilot": "node scripts/build.mjs --native-legal",
-    "check:pilot": "node scripts/check-native-pilot.mjs"
+    "check:pilot": "node scripts/check-native-pilot.mjs",
+    "check:interactions": "node scripts/check-pilot-interactions.mjs"
   }
 }

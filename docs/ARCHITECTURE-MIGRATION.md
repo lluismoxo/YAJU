@@ -131,3 +131,30 @@ archivos adicionales inesperados. El build normal y producción siguen intactos.
 Antes de activar este piloto: ampliar comprobación de teclado, consentimiento real
 sin envíos, animaciones durante la transición y capturas completas. Después migrar
 otra familia de páginas, manteniendo pruebas y la versión anterior disponible.
+
+
+### Vista previa y comprobaciones de teclado
+
+La vista previa del piloto se sirve sólo en `127.0.0.1:4180`, desde
+`artifacts/native-pilot`; no cambia el despliegue público. Para reiniciarla:
+
+```sh
+npm run build:pilot
+python3 -m http.server 4180 --bind 127.0.0.1 --directory artifacts/native-pilot
+```
+
+`npm run check:interactions` comprueba el salto al contenido por teclado, apertura
+por teclado, Escape, entrada del foco en enlaces del desplegable, navegación móvil
+con retorno y restauración del scroll, respuesta 200 de los nueve destinos legales,
+ausencia de excepciones JavaScript y disponibilidad del contenido sin JavaScript.
+El informe está en `phase-2-legal-interactions.json`. Se corrigió el cierre prematuro
+del desplegable al mover el foco desde su etiqueta a sus enlaces.
+
+Pendientes: consentimiento de terceros, paridad durante cada transición y migración
+de las demás páginas. El usuario solicita revisar un enlace local antes de publicar.
+
+Última comprobación (2026-10-02): 39/41 estados coinciden; hay diferencias en
+scroll de tablet y menú raíz móvil. El informe `phase-2-legal-latest-report.json`
+es la evidencia más reciente y prevalece sobre los informes anteriores aprobados.
+La espera de dos capturas estables no ha resuelto todas las diferencias. El piloto
+sigue pendiente de aceptación visual y no debe publicarse todavía.

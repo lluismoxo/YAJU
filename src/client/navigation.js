@@ -60,8 +60,8 @@
     item.querySelector('a').addEventListener('click',event=>{if(event.currentTarget.classList.contains('pointer-events-none'))event.preventDefault();});
     item.addEventListener('mouseenter',()=>setDesktop(index));
     item.addEventListener('focusin',()=>setDesktop(index));
-    item.addEventListener('focusout',event=>{if(!item.contains(event.relatedTarget))setDesktop(null);});
   });
+  desktop.addEventListener('focusout',event=>{if(!desktop.contains(event.relatedTarget))setDesktop(null);});
   desktop.addEventListener('mouseenter',()=>{desktopHover=true;clearTimeout(closeTimer);chrome();});
   desktop.addEventListener('mouseleave',()=>{desktopHover=false;closeTimer=setTimeout(()=>setDesktop(null),200);});
   desktop.querySelector('a[href="/"]').addEventListener('mouseenter',()=>setDesktop(null));
