@@ -18,7 +18,7 @@ test('every public source has exactly one manifest entry; private code is exclud
       else assert.ok(expected.delete(name), `Unregistered public source: ${name}`);
     }
   }
-  for (const dir of ['src/pages', 'static', 'legacy/runtime']) await walk(dir);
+  for (const dir of ['src/pages', 'src/content', 'src/client', 'static', 'legacy/runtime']) await walk(dir);
   assert.equal(expected.size, 0, `Missing sources: ${[...expected]}`);
   for (const entry of inputs) assert.ok(!/(^|\/)(supabase|scripts|tests|docs|config|\.env[^/]*)(\/|$)/.test(entry.output));
 });
@@ -33,6 +33,7 @@ test('rendered internal page links and script/style resources resolve in the bui
       if (!href || href.startsWith('#') || /^(mailto|tel|javascript|data):/.test(href)) continue;
       const url = new URL(href, `https://yajuas.com/${entry.output.replace(/index\.html$/, '')}`);
       if (!['yajuas.com', 'www.yajuas.com'].includes(url.hostname)) continue;
+      if (['/_vercel/insights/script.js', '/_vercel/speed-insights/script.js'].includes(url.pathname)) continue; // Served by Vercel, not static build files.
       const path = decodeURIComponent(url.pathname).replace(/^\//, '');
       const candidates = [path, `${path.replace(/\/$/, '')}/index.html`, `${path}.html`];
       if (!path) candidates.push('index.html');

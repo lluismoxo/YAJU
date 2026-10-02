@@ -158,3 +158,18 @@ scroll de tablet y menú raíz móvil. El informe `phase-2-legal-latest-report.j
 es la evidencia más reciente y prevalece sobre los informes anteriores aprobados.
 La espera de dos capturas estables no ha resuelto todas las diferencias. El piloto
 sigue pendiente de aceptación visual y no debe publicarse todavía.
+
+
+## Publicación autorizada (2026-10-02)
+
+El usuario revisó el enlace local, confirmó que el diseño es igual y pidió publicar.
+Se activa Legal nativo en el manifiesto normal. Su HTML heredado queda conservado en
+`legacy/pages/legal/index.html` para recuperación, fuera de la salida pública.
+Los informes con diferencias no se sobrescriben ni se presentan como aprobados por
+la prueba automática: la aceptación de diseño para esta etapa es la revisión explícita
+del usuario. Se mantienen pendientes las investigaciones de rasterización/transiciones.
+
+La prueba de huellas conserva intacta la referencia original y sólo admite las dos
+salidas exactas aprobadas, declaradas en `native-legal-approved.sha256.json`. Los otros
+1.201 archivos deben seguir idénticos. La configuración de analítica no se ha validado
+contra eventos reales de terceros. La migración de las otras páginas continúa pendiente.

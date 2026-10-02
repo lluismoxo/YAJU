@@ -13,5 +13,6 @@ públicos en `static/`, el runtime heredado en `legacy/runtime/` y el backend en
 copia carpetas completas del repositorio de forma indiscriminada.
 
 Estado y controles de aceptación: [plan de migración](docs/ARCHITECTURE-MIGRATION.md).
-La primera etapa conserva el runtime anterior: la migración a componentes nativos
-continúa pendiente. No editar los archivos generados de `public/`.
+Legal usa contenido y componentes nativos, incluidos header/footer y navegación.
+El resto conserva temporalmente el runtime anterior. El control de huellas exige
+1.201 archivos intactos y las dos salidas nativas aprobadas por el usuario. No editar los archivos generados de `public/`.

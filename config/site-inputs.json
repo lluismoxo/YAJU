@@ -4559,8 +4559,9 @@
     "output": "labs/scholars/index.html"
   },
   {
-    "source": "src/pages/legal/index.html",
-    "output": "legal/index.html"
+    "source": "src/content/legal.json",
+    "output": "legal/index.html",
+    "render": "legal"
   },
   {
     "source": "src/pages/llmu/index.json",
@@ -4854,5 +4855,9 @@
   {
     "source": "src/pages/versions/index.html",
     "output": "versions/index.html"
+  },
+  {
+    "source": "src/client/navigation.js",
+    "output": "assets/native-navigation.js"
   }
 ]
