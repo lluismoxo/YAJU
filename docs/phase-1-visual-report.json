@@ -1,0 +1,496 @@
+{
+  "browser": "154.0.8037.92",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-01T08:59:34.680Z",
+  "results": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-home-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-home-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-home-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-labs-scholars-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-labs-scholars-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-labs-scholars-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-agent-academy-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-academy-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-academy-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-home-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-home-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1232",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=308"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1232",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=308"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-labs-scholars-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-labs-scholars-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-agent-academy-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-academy-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-home-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-home-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1232",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=308"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1232",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=308"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/34119f5fc9acaa112cd70412d4c847045c917390-1232x928.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-labs-scholars-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-labs-scholars-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e2507a84fee2180463d04908651563cdc592b0c3-2880x1200.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-agent-academy-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-academy-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}

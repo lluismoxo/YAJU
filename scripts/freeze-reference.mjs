@@ -1,0 +1,14 @@
+import { mkdir, readFile, readdir } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('../', import.meta.url));
+const fixture = JSON.parse(await readFile(resolve(root, 'tests/fixtures/production-a1c700f.sha256.json'), 'utf8'));
+const directory = resolve(root, 'artifacts/reference-a1c700f');
+await mkdir(directory, { recursive:true });
+if ((await readdir(directory)).length) throw new Error('Reference directory already exists; preserve it or choose a fresh checkout.');
+const archive = resolve(root, 'artifacts/reference-a1c700f.tar');
+execFileSync('git', ['archive', '--format=tar', '--output='+archive, fixture.commit], { cwd:root, stdio:'inherit' });
+execFileSync('tar', ['-xf', archive, '-C', directory], { stdio:'inherit' });
+execFileSync('bash', ['vercel-build.sh'], { cwd:directory, stdio:'inherit' });
+console.log(`Frozen reference: ${directory}/public`);
