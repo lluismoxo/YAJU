@@ -21,7 +21,7 @@ for (const [name, hash] of Object.entries(fixture.files)) {
 }
 const artifacts = resolve(root, 'artifacts/visual-parity');
 await mkdir(artifacts, { recursive: true });
-const routes = ['/', '/labs/scholars', '/agent-academy'];
+const routes = process.argv[4]?.split(',') || ['/', '/labs/scholars', '/agent-academy'];
 const viewports = [
   { name: 'desktop', width: 1440, height: 900 },
   { name: 'tablet', width: 768, height: 1024 },
@@ -47,10 +47,11 @@ async function serve(directory) {
   return { origin: `http://127.0.0.1:${server.address().port}`, server };
 }
 const reference = await serve(baselineDirectory);
-const candidate = await serve(resolve(root, 'public'));
+const candidate = await serve(process.argv[3] || resolve(root, 'public'));
 const browser = await chromium.launch({ headless: true, channel: 'chrome' }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
 const externalMedia = new Map();
-const report = { browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
+const motion = process.env.YAJU_TEST_MOTION === 'normal' ? 'no-preference' : 'reduce';
+const report = { motion, browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
 
 async function prepare(page, origin, route) {
   const errors = [];
@@ -76,7 +77,7 @@ async function prepare(page, origin, route) {
   await page.evaluate(() => document.fonts.ready);
   // Existing compatibility layer runs 750ms after load, then at 500ms and 1500ms.
   await page.waitForTimeout(3000);
-  await page.addStyleTag({ content: '*,:before,:after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}' });
+  if (motion === 'reduce') await page.addStyleTag({ content: '*,:before,:after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}' });
   await page.evaluate(() => { document.querySelectorAll('video').forEach(video => { video.pause(); video.currentTime = 0; }); });
   assert.ok((await page.locator('main').innerText()).trim().length > 100, `Blank main: ${route}`);
   return errors;
@@ -94,7 +95,7 @@ try {
   for (const viewport of viewports) {
     for (const route of routes) {
       const key = `${viewport.name}-${route === '/' ? 'home' : route.slice(1).replaceAll('/', '-')}`;
-      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale:'en-US', timezoneId:'Europe/Madrid', reducedMotion:'reduce' })));
+      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale:'en-US', timezoneId:'Europe/Madrid', reducedMotion:motion })));
       const pages = await Promise.all(contexts.map(context => context.newPage()));
       const errors = await Promise.all(pages.map((page,index) => prepare(page, [reference,candidate][index].origin, route)));
       const states = [];
@@ -104,7 +105,11 @@ try {
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
         })));
         const shots = await Promise.all(pages.map((page,index) => page.screenshot({ path: resolve(artifacts, `${key}-${state}-${index ? 'candidate' : 'reference'}.png`), animations:'disabled' })));
-        states.push(await compare(shots[0],shots[1],`${key}-${state}`));
+        const comparison = await compare(shots[0],shots[1],`${key}-${state}`);
+        if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
+          scrollY, images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
+        }))));
+        states.push(comparison);
       }
       await capture('top');
       if (viewport.name === 'desktop') {
@@ -116,8 +121,53 @@ try {
       await Promise.all(pages.map(page => page.evaluate(() => window.scrollTo(0,800))));
       await Promise.all(pages.map(page => page.waitForTimeout(1500)));
       await capture('scroll');
+      if (route === '/legal') {
+        await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,0))));
+        await Promise.all(pages.map(page => page.waitForTimeout(500)));
+        if (viewport.name === 'desktop') {
+          for (const label of ['Solutions','Resources','Blog','Company']) {
+            await Promise.all(pages.map(page => page.getByRole('link',{name:label,exact:true}).first().locator('xpath=ancestor::li[1]').hover()));
+            await Promise.all(pages.map(page => page.waitForTimeout(350)));
+            await capture(`menu-${label.toLowerCase()}`);
+          }
+          await Promise.all(pages.map(page => page.mouse.move(5,700)));
+          await Promise.all(pages.map(page => page.waitForTimeout(400)));
+        } else {
+          await Promise.all(pages.map(page => page.getByRole('button',{name:'Open navigation menu',exact:true}).click()));
+          await Promise.all(pages.map(page => page.waitForTimeout(500)));
+          await capture('mobile-menu');
+          for (const label of ['Product','Solutions','Resources','Blog','Company']) {
+            await Promise.all(pages.map(page => page.getByRole('button',{name:label,exact:true}).first().click()));
+            await Promise.all(pages.map(page => page.waitForTimeout(500)));
+            await capture(`mobile-${label.toLowerCase()}`);
+            await Promise.all(pages.map(page => page.getByRole('button',{name:/Back/}).click()));
+            await Promise.all(pages.map(page => page.waitForTimeout(500)));
+          }
+          await Promise.all(pages.map(page => page.getByRole('button',{name:'Close navigation menu',exact:true}).click()));
+        }
+        await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,document.body.scrollHeight))));
+        await Promise.all(pages.map(page => page.waitForTimeout(500)));
+        await capture('footer');
+        if (viewport.name === 'mobile') {
+          for (const label of ['Platform','Product','Functionalities','Solutions','By Industry','Deployment','Resources','Company','Legal']) {
+            await Promise.all(pages.map(page => page.locator('footer').getByRole('button',{name:new RegExp(label)}).click()));
+            await Promise.all(pages.map(page => page.waitForTimeout(500)));
+            await capture(`footer-${label.toLowerCase().replaceAll(' ','-')}`);
+            await Promise.all(pages.map(page => page.locator('footer').getByRole('button',{name:new RegExp(label)}).click()));
+          }
+        }
+        await Promise.all(pages.map(page => page.locator('footer').getByRole('button',{name:/English/}).click()));
+        await Promise.all(pages.map(page => page.waitForTimeout(300)));
+        await capture('language');
+        await Promise.all(pages.map(page => page.mouse.click(5,5)));
+        await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,0))));
+        await Promise.all(pages.map(page => page.waitForTimeout(500)));
+        await Promise.all(pages.map(page => page.getByRole('button',{name:'Close banner',exact:true}).click()));
+        await Promise.all(pages.map(page => page.waitForTimeout(500)));
+        await capture('banner-closed');
+      }
       const brokenImages = await Promise.all(pages.map(page => page.evaluate(() => [...document.images].filter(image => image.complete && !image.naturalWidth).map(image => ({src:image.getAttribute('src'), currentSrc:image.currentSrc})))));
-      const errorParity = JSON.stringify(errors[0]) === JSON.stringify(errors[1]);
+      const errorParity = errors[1].every(error => errors[0].some(original => original.name === error.name && original.message === error.message));
       const result = { route, viewport:viewport.name, errorParity, states, baselineErrors:errors[0], candidateErrors:errors[1], brokenImages };
       report.results.push(result);
       await writeFile(resolve(artifacts,'report.json'),JSON.stringify(report,null,2)+'\n');

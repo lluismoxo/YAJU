@@ -12,6 +12,8 @@
     "check:parity": "node scripts/check-parity.mjs",
     "verify": "npm run build && npm test && npm run check:parity",
     "check:visual": "node scripts/visual-parity.mjs",
-    "reference:freeze": "node scripts/freeze-reference.mjs"
+    "reference:freeze": "node scripts/freeze-reference.mjs",
+    "build:pilot": "node scripts/build.mjs --native-legal",
+    "check:pilot": "node scripts/check-native-pilot.mjs"
   }
 }

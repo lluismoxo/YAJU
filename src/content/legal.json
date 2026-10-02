@@ -1,0 +1,77 @@
+{
+  "title": "Yaju Legal Terms & Policies",
+  "groups": [
+    {
+      "title": "Terms",
+      "columns": [
+        [
+          {
+            "label": "Website Terms of Use",
+            "href": "/terms-of-use"
+          }
+        ],
+        [
+          {
+            "label": "Terms of Service",
+            "href": "/terms"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Security",
+      "columns": [
+        [
+          {
+            "label": "Responsible Disclosure Policy",
+            "href": "/responsible-disclosure"
+          }
+        ],
+        [
+          {
+            "label": "Security",
+            "href": "/security"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Privacy and Data",
+      "columns": [
+        [
+          {
+            "label": "Data Commitments",
+            "href": "/data-commitments"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy"
+          }
+        ],
+        [
+          {
+            "label": "Cookie Policy",
+            "href": "/cookies"
+          }
+        ]
+      ]
+    },
+    {
+      "title": "AI Governance",
+      "columns": [
+        [
+          {
+            "label": "Usage Policy",
+            "href": "/usage-policy"
+          }
+        ],
+        [
+          {
+            "label": "YAJU AS AI Approach",
+            "href": "/ai-approach"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -27,7 +27,7 @@ No se actualizan las referencias para ocultar diferencias.
    comparados con cero píxeles diferentes. Resto de rutas/estados pendiente.
 3. **Piloto con código fuente nativo.** Elegir una página representativa; extraer
    contenido y construir componentes conservando DOM/CSS visual. Reemplazar su
-   comportamiento compilado sólo tras comprobar todos sus estados. Pendiente. Primer piloto simple completado: 48 redirecciones convertidas en
+   comportamiento compilado sólo tras comprobar todos sus estados. Piloto de Legal implementado en salida separada; validación adicional pendiente antes de activarlo por defecto. Primer piloto simple completado: 48 redirecciones convertidas en
    datos y una plantilla compartida, con salida binaria idéntica.
 4. **Componentes compartidos.** Header/footer, tarjetas, medios y acordeones.
    Migrar en grupos pequeños; comparación con la referencia para cada ruta.
@@ -105,3 +105,29 @@ npm run check:visual -- artifacts/reference-a1c700f/public
 
 La migración de páginas visuales a componentes propios y la retirada del runtime
 heredado siguen pendientes. Esta etapa no se publica automáticamente en main.
+
+
+## Piloto nativo de Legal (segunda etapa)
+
+`npm run build:pilot` usa el mismo constructor y genera `artifacts/native-pilot`.
+Sólo sustituye `/legal` y añade `assets/native-navigation.js`. `npm run check:pilot`
+exige que los otros 1.201 archivos conserven sus huellas originales y no aparezcan
+archivos adicionales inesperados. El build normal y producción siguen intactos.
+
+- Contenido de Legal separado en JSON; renderer propio; header y footer compartidos.
+- Navegación propia sin hidratación React, RSC ni script de modificaciones posteriores.
+- 41 estados con movimiento reducido y 41 estados finales con animaciones activadas,
+  todos con cero píxeles diferentes en las últimas ejecuciones. Los informes son
+  `phase-2-legal-visual-report.json` y `phase-2-legal-motion-report.json`.
+- En una ejecución anterior apareció una diferencia transitoria sólo en la imagen
+  de fondo del footer; no se cambió la tolerancia ni la referencia. Las dos siguientes
+  comparaciones completas pasaron. Se guardan diagnósticos si vuelve a suceder.
+- Las capturas de estados finales no demuestran igualdad de cada frame animado.
+- Cero excepciones JavaScript en el piloto durante estas pruebas; la referencia
+  registra el error React 418. Siete pruebas automatizadas pasan.
+- Se conserva la configuración de analítica y consentimiento del sitio; las pruebas
+  bloquean terceros y no verifican la recogida real de eventos ni el banner remoto.
+
+Antes de activar este piloto: ampliar comprobación de teclado, consentimiento real
+sin envíos, animaciones durante la transición y capturas completas. Después migrar
+otra familia de páginas, manteniendo pruebas y la versión anterior disponible.

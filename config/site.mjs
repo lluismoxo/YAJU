@@ -5,4 +5,5 @@ export const site = Object.freeze({
   compatibilityVersion: '2026-10-01-1',
   stylesheetVersion: 'yaju-v5',
   analyticsId: 'G-3T9YSET1R9',
+  legacyTagManagerId: 'GTM-5W6STPC',
 });

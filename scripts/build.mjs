@@ -5,10 +5,19 @@ import { site } from '../config/site.mjs';
 import { renderRedirect } from '../src/components/redirect.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const output = resolve(root, 'public');
-const staging = resolve(root, '.build-staging');
-const previous = resolve(root, '.build-previous');
+const nativeLegal = process.argv.includes('--native-legal');
+if (process.argv.slice(2).some(arg => arg !== '--native-legal')) throw new Error('Unknown build option');
+const output = resolve(root, nativeLegal ? 'artifacts/native-pilot' : 'public');
+const staging = resolve(root, nativeLegal ? 'artifacts/.native-staging' : '.build-staging');
+const previous = resolve(root, nativeLegal ? 'artifacts/.native-previous' : '.build-previous');
 const inputs = JSON.parse(await readFile(resolve(root, 'config/site-inputs.json'), 'utf8'));
+if (nativeLegal) {
+  const legal = inputs.find(entry => entry.output === 'legal/index.html');
+  if (!legal) throw new Error('Missing Legal route');
+  legal.source = 'src/content/legal.json';
+  legal.render = 'legal';
+  inputs.push({ source: 'src/client/navigation.js', output: 'assets/native-navigation.js' });
+}
 const textExtensions = /\.(html|js|css|json|webmanifest)$/;
 const override = await readFile(resolve(root, 'static/assets/yaju-hydration-safe.css'), 'utf8');
 const analyticsMarker = `gtag('config', '${site.analyticsId}')`;
@@ -33,7 +42,7 @@ function confined(base, name) {
 // Validate the complete input list before writing or replacing the last good build.
 const destinations = new Set();
 for (const entry of inputs) {
-  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source)) {
+  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !(nativeLegal && ['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source))) {
     throw new Error(`Input outside the public source allowlist: ${entry.source}`);
   }
   const source = confined(root, entry.source);
@@ -49,6 +58,10 @@ for (const entry of inputs) {
   let target = entry.output.replace(/^_next\//, '_yaju/');
   let bytes = await readFile(resolve(root, entry.source));
   if (entry.render === 'redirect') bytes = Buffer.from(renderRedirect(JSON.parse(bytes.toString('utf8'))));
+  else if (entry.render === 'legal' && nativeLegal) {
+    const { renderLegalPage } = await import('../src/components/site-layout.mjs');
+    bytes = Buffer.from(await renderLegalPage(JSON.parse(bytes.toString('utf8'))));
+  }
   else if (entry.render) throw new Error(`Unknown renderer: ${entry.render}`);
   if (textExtensions.test(target)) {
     let content = bytes.toString('utf8').replaceAll('/_next/', '/_yaju/');
