@@ -1,0 +1,22 @@
+{
+  "route": "/labs/agentic-task-ecosystem",
+  "title": "The Agentic Task Ecosystem (ATE)",
+  "key": "labs__agentic-task-ecosystem",
+  "header": "header-98f7832addfc",
+  "footer": "footer-9888600d8e29",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0 text-pureWhite",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out bg-neutral-15",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-neutral-15 text-pureWhite"
+  },
+  "buttons": [
+    "",
+    ""
+  ],
+  "forms": 0
+}

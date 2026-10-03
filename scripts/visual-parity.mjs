@@ -135,6 +135,34 @@ try {
       await Promise.all(pages.map(page => page.evaluate(() => window.scrollTo(0,800))));
       await Promise.all(pages.map(page => page.waitForTimeout(1500)));
       await capture('scroll');
+      if(process.env.YAJU_TEST_CAROUSELS === '1') {
+        const counts=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').count()));
+        assert.equal(counts[0],counts[1],`Carousel count: ${route}`);
+        for(let group=0;group<counts[0];group++){
+          await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).scrollIntoViewIfNeeded()));
+          await pages[0].waitForTimeout(1800);
+          await capture(`carousel-${group}-initial`);
+          const enabled=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).isEnabled()));
+          assert.equal(enabled[0],enabled[1],`Carousel availability: ${route}`);
+          if(enabled[0]){
+            await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).click()));
+            await pages[0].waitForTimeout(1800);
+            await capture(`carousel-${group}-next`);
+          }
+        }
+      }
+      if(process.env.YAJU_TEST_ACCORDIONS === '1') {
+        const selector='main button.pb-9';
+        const count=await pages[0].locator(selector).count();
+        assert.equal(await pages[1].locator(selector).count(),count,`Accordion count ${route}`);
+        for(let index=0;index<count;index++) {
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).scrollIntoViewIfNeeded()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(800)));
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).click()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1000)));
+          await capture(`accordion-${index}`);
+        }
+      }
       if (route === '/legal') {
         await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,0))));
         await Promise.all(pages.map(page => page.waitForTimeout(500)));

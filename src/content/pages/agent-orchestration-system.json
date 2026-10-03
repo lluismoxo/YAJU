@@ -1,0 +1,57 @@
+{
+  "route": "/agent-orchestration-system",
+  "title": "Agent Orchestration System — What is an agent orchestration system? | Yaju",
+  "key": "agent-orchestration-system",
+  "header": "header-38902ffd9614",
+  "footer": "footer-ab6ea7f4cb17",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent"
+  },
+  "buttons": [
+    "CLI",
+    "AI Observability",
+    "AI Governance",
+    "Token Monitoring"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "CLI",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Command Diagram\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, /assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, /assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, /assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"/assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "AI Observability",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Illustration of Transcribe interface generating a product description. \" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-aos-observability-1360x1360.webp\" src=\"/assets/img/yaju-aos-observability-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "AI Governance",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Embed Diagram\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-aos-governance-1360x1360.webp\" src=\"/assets/img/yaju-aos-governance-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Token Monitoring",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Rerank Diagram\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-aos-token-monitoring-1360x1360.webp\" src=\"/assets/img/yaju-aos-token-monitoring-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

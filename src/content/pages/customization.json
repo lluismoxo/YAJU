@@ -1,0 +1,44 @@
+{
+  "route": "/customization",
+  "title": "Bring Your Own Agent | Yaju",
+  "key": "customization",
+  "header": "header-38902ffd9614",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent"
+  },
+  "buttons": [
+    "Bring your own agent",
+    "Build with the SDK",
+    "Submit"
+  ],
+  "forms": 1,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Bring your own agent",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Bring your own agent\" class=\"rounded-xl object-cover p-0\" width=\"1344\" height=\"1344\" srcset=\"/assets/img/000000000000757697a625a1af10d5599d5415a6-1344x1344.webp?auto=format&amp;fit=max&amp;q=80&amp;w=336 336w, /assets/img/000000000000757697a625a1af10d5599d5415a6-1344x1344.webp?auto=format&amp;fit=max&amp;q=80&amp;w=672 672w, /assets/img/000000000000757697a625a1af10d5599d5415a6-1344x1344.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1008 1008w, /assets/img/000000000000757697a625a1af10d5599d5415a6-1344x1344.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1344 1344w\" src=\"/assets/img/000000000000757697a625a1af10d5599d5415a6-1344x1344.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1344\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Build with the SDK",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Build with the SDK\" class=\"rounded-xl object-cover p-0\" width=\"1344\" height=\"1344\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6593809006537bdae4407bc7de5354faa0c2621-1344x1344.png?auto=format&amp;fit=max&amp;q=80&amp;w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6593809006537bdae4407bc7de5354faa0c2621-1344x1344.png?auto=format&amp;fit=max&amp;q=80&amp;w=672 672w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6593809006537bdae4407bc7de5354faa0c2621-1344x1344.png?auto=format&amp;fit=max&amp;q=80&amp;w=1008 1008w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6593809006537bdae4407bc7de5354faa0c2621-1344x1344.png?auto=format&amp;fit=max&amp;q=80&amp;w=1344 1344w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/e6593809006537bdae4407bc7de5354faa0c2621-1344x1344.png?auto=format&amp;fit=max&amp;q=80&amp;w=1344\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

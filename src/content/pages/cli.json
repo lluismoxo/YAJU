@@ -1,0 +1,78 @@
+{
+  "route": "/cli",
+  "title": "CLI — Agent control that works with your workflows | Yaju",
+  "key": "cli",
+  "header": "header-38902ffd9614",
+  "footer": "footer-ed26d329e3a9",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent"
+  },
+  "buttons": [
+    "What is the Yaju CLI?",
+    "Do I need the dashboard at all?",
+    "Does it work in CI/CD?",
+    "Where are secrets stored?",
+    "Can I use it with agents built elsewhere?",
+    "Can I apply policies from the CLI?",
+    "Is the CLI the whole product?"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": true,
+        "states": [
+          {
+            "label": "What is the Yaju CLI?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Do I need the dashboard at all?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Does it work in CI/CD?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Where are secrets stored?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Can I use it with agents built elsewhere?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Can I apply policies from the CLI?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Is the CLI the whole product?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

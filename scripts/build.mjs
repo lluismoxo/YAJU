@@ -5,12 +5,21 @@ import { site } from '../config/site.mjs';
 import { renderRedirect } from '../src/components/redirect.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const allNative = process.argv.includes('--native-all');
 const pilotOutput = process.argv.includes('--native-legal');
-if (process.argv.slice(2).some(arg => arg !== '--native-legal')) throw new Error('Unknown build option');
-const output = resolve(root, pilotOutput ? 'artifacts/native-pilot' : 'public');
-const staging = resolve(root, pilotOutput ? 'artifacts/.native-staging' : '.build-staging');
-const previous = resolve(root, pilotOutput ? 'artifacts/.native-previous' : '.build-previous');
+if (process.argv.slice(2).some(arg => !['--native-legal','--native-all'].includes(arg))) throw new Error('Unknown build option');
+const output = resolve(root, allNative ? 'artifacts/native-all' : pilotOutput ? 'artifacts/native-pilot' : 'public');
+const staging = resolve(root, allNative ? 'artifacts/.all-staging' : pilotOutput ? 'artifacts/.native-staging' : '.build-staging');
+const previous = resolve(root, allNative ? 'artifacts/.all-previous' : pilotOutput ? 'artifacts/.native-previous' : '.build-previous');
 const inputs = JSON.parse(await readFile(resolve(root, 'config/site-inputs.json'), 'utf8'));
+if(allNative){
+ const pages=JSON.parse(await readFile(resolve(root,'config/native-pages.json'),'utf8'));
+ for(const page of pages){const index=inputs.findIndex(e=>e.output===page.output);if(index<0)throw new Error(`Unknown route ${page.output}`);inputs[index]=page;}
+ for(const [output,source] of [['assets/native-navigation.js','src/client/page-navigation.js'],['assets/forms/forms2.js','src/client/forms-adapter.js']]){
+  const entry=inputs.find(e=>e.output===output);if(!entry)throw new Error(`Missing candidate resource ${output}`);entry.source=source;
+ }
+ inputs.push({source:'src/client/page.js',output:'assets/native-page.js'},{source:'src/client/forms.js',output:'assets/native-forms.js'});
+}
 const textExtensions = /\.(html|js|css|json|webmanifest)$/;
 const override = await readFile(resolve(root, 'static/assets/yaju-hydration-safe.css'), 'utf8');
 const analyticsMarker = `gtag('config', '${site.analyticsId}')`;
@@ -35,7 +44,7 @@ function confined(base, name) {
 // Validate the complete input list before writing or replacing the last good build.
 const destinations = new Set();
 for (const entry of inputs) {
-  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source)) {
+  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source) && !(allNative && (/^src\/content\/pages\/[a-z0-9_-]+\.json$/.test(entry.source)||['src/client/page.js','src/client/forms.js','src/client/page-navigation.js','src/client/forms-adapter.js'].includes(entry.source)))) {
     throw new Error(`Input outside the public source allowlist: ${entry.source}`);
   }
   const source = confined(root, entry.source);
@@ -54,6 +63,10 @@ for (const entry of inputs) {
   else if (entry.render === 'legal') {
     const { renderLegalPage } = await import('../src/components/site-layout.mjs');
     bytes = Buffer.from(await renderLegalPage(JSON.parse(bytes.toString('utf8'))));
+  }
+  else if (entry.render === 'page') {
+    const {renderPage}=await import('../src/components/page.mjs');
+    bytes=Buffer.from(await renderPage(JSON.parse(bytes.toString('utf8'))));
   }
   else if (entry.render) throw new Error(`Unknown renderer: ${entry.render}`);
   if (textExtensions.test(target)) {

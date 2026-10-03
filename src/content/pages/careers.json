@@ -1,0 +1,83 @@
+{
+  "route": "/careers",
+  "title": "Careers — Join Yaju AS",
+  "key": "careers",
+  "header": "header-428b407b93e1",
+  "footer": "footer-a71fec51aec3",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out bg-pureWhite",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-pureWhite"
+  },
+  "buttons": [
+    "Benefits",
+    "Culture and Growth",
+    "Working at Yaju",
+    "What is it like working at Yaju?",
+    "Do remote employees get to meet team members in other cities or teams?",
+    "How does Yaju support professional development?",
+    "What should I expect from the interview process?"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Benefits",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-careers-benefits-1360x1360.webp\" src=\"/assets/img/yaju-careers-benefits-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Culture and Growth",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-careers-culture-1360x1360.webp\" src=\"/assets/img/yaju-careers-culture-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Working at Yaju",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-careers-working-1360x1360.webp\" src=\"/assets/img/yaju-careers-working-1360x1360.webp\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      },
+      {
+        "multiple": true,
+        "states": [
+          {
+            "label": "What is it like working at Yaju?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Do remote employees get to meet team members in other cities or teams?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "How does Yaju support professional development?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "What should I expect from the interview process?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

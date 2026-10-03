@@ -1,0 +1,51 @@
+{
+  "route": "/solutions/healthcare-and-life-sciences",
+  "title": "Healthcare and Life Sciences — Run agents near patient data, safely | Yaju",
+  "key": "solutions__healthcare-and-life-sciences",
+  "header": "header-428b407b93e1",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out bg-pureWhite",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-pureWhite"
+  },
+  "buttons": [
+    "Access controlled at the moment of action",
+    "Evidence for regulators, on demand",
+    "One catalogue across research teams",
+    "Submit"
+  ],
+  "forms": 1,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Access controlled at the moment of action",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1080\" height=\"1080\" srcset=\"/assets/img/000000000000df2a70f280194c1fc4f01987c4c1-1080x1080.jpg?auto=format&amp;fit=max&amp;q=80&amp;w=270 270w, /assets/img/000000000000df2a70f280194c1fc4f01987c4c1-1080x1080.jpg?auto=format&amp;fit=max&amp;q=80&amp;w=540 540w, /assets/img/000000000000df2a70f280194c1fc4f01987c4c1-1080x1080.jpg?auto=format&amp;fit=max&amp;q=80&amp;w=810 810w, /assets/img/000000000000df2a70f280194c1fc4f01987c4c1-1080x1080.jpg?auto=format&amp;fit=max&amp;q=80&amp;w=1080 1080w\" src=\"/assets/img/000000000000df2a70f280194c1fc4f01987c4c1-1080x1080.jpg?auto=format&amp;fit=max&amp;q=80&amp;w=1080\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "Evidence for regulators, on demand",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\" style=\"border-radius: 22px; overflow: hidden;\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-health-evidence-photo-1360x1360.webp\" src=\"/assets/img/yaju-health-evidence-photo-1360x1360.webp\" style=\"border-radius: 22px; overflow: hidden; display: block;\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "One catalogue across research teams",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\" style=\"border-radius: 22px; overflow: hidden;\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-health-catalogue-photo-1360x1360.webp\" src=\"/assets/img/yaju-health-catalogue-photo-1360x1360.webp\" style=\"border-radius: 22px; overflow: hidden; display: block;\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

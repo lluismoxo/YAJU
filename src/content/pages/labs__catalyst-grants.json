@@ -1,0 +1,104 @@
+{
+  "route": "/labs/catalyst-grants",
+  "title": "Yaju Labs - Catalyst Grants",
+  "key": "labs__catalyst-grants",
+  "header": "header-428b407b93e1",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out bg-pureWhite",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-pureWhite"
+  },
+  "buttons": [
+    "Agents in finance",
+    "Agents in software",
+    "Agents in health",
+    "Agents in operations",
+    "What types of projects do these grants support?",
+    "How do you decide who receives a grant?",
+    "Do we need your approval to publish what we build?",
+    "What if we need more resources to finish the project?",
+    "How can we monitor what the grant is spending?",
+    "Can we add colleagues working on the project?"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Agents in finance",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/f966cc61a2fbe351dfbfb4cd4f45f31a192e6145-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/f966cc61a2fbe351dfbfb4cd4f45f31a192e6145-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/f966cc61a2fbe351dfbfb4cd4f45f31a192e6145-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/f966cc61a2fbe351dfbfb4cd4f45f31a192e6145-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/f966cc61a2fbe351dfbfb4cd4f45f31a192e6145-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Agents in software",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/690c35063a4c485fb0c39a3e24ce6ff93d491d05-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/690c35063a4c485fb0c39a3e24ce6ff93d491d05-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/690c35063a4c485fb0c39a3e24ce6ff93d491d05-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/690c35063a4c485fb0c39a3e24ce6ff93d491d05-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/690c35063a4c485fb0c39a3e24ce6ff93d491d05-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Agents in health",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/cda71d8f99792d0640706f3a85b1380d472b3b30-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/cda71d8f99792d0640706f3a85b1380d472b3b30-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/cda71d8f99792d0640706f3a85b1380d472b3b30-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/cda71d8f99792d0640706f3a85b1380d472b3b30-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/cda71d8f99792d0640706f3a85b1380d472b3b30-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Agents in operations",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/680af91d376611da08e675edf3abc63bff77f887-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/680af91d376611da08e675edf3abc63bff77f887-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/680af91d376611da08e675edf3abc63bff77f887-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/680af91d376611da08e675edf3abc63bff77f887-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/680af91d376611da08e675edf3abc63bff77f887-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      },
+      {
+        "multiple": true,
+        "states": [
+          {
+            "label": "What types of projects do these grants support?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "How do you decide who receives a grant?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Do we need your approval to publish what we build?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "What if we need more resources to finish the project?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "How can we monitor what the grant is spending?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Can we add colleagues working on the project?",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": null,
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "route": "/labs/oran",
+  "title": "Oran Models | Yaju Labs",
+  "key": "labs__oran",
+  "header": "header-caddc8817940",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0 text-pureWhite",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent text-pureWhite"
+  },
+  "buttons": [
+    "Oran 3.1",
+    "Oran 3.2",
+    "Earlier generations"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Oran 3.1",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-[#E8FF85] from-50% via-80% via-[#5EA538] to-95% to-[#335C1E] bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"Oran 3.1\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/0000000000006ab3967901bc7eff7eaa9bc98f03-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, /assets/img/0000000000006ab3967901bc7eff7eaa9bc98f03-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, /assets/img/0000000000006ab3967901bc7eff7eaa9bc98f03-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, /assets/img/0000000000006ab3967901bc7eff7eaa9bc98f03-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"/assets/img/0000000000006ab3967901bc7eff7eaa9bc98f03-1360x1360.webp?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "Oran 3.2",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-[#E8FF85] from-50% via-80% via-[#5EA538] to-95% to-[#335C1E] bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\" style=\"border-radius: 12px; overflow: hidden;\"><img alt=\"Oran 3.2\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-oran-32-leaves-1360x1360.webp\" src=\"/assets/img/yaju-oran-32-leaves-1360x1360.webp\" style=\"border-radius: 12px; overflow: hidden; display: block;\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "Earlier generations",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-[#E8FF85] from-50% via-80% via-[#5EA538] to-95% to-[#335C1E] bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\" style=\"border-radius: 12px; overflow: hidden;\"><img alt=\"Earlier generations\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"/assets/img/yaju-oran-earlier-leaves-1360x1360.webp\" src=\"/assets/img/yaju-oran-earlier-leaves-1360x1360.webp\" style=\"border-radius: 12px; overflow: hidden; display: block;\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

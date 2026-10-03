@@ -11,6 +11,19 @@ test('every public source has exactly one manifest entry; private code is exclud
   const expected = new Set(inputs.map(entry => entry.source));
   assert.equal(expected.size, inputs.length);
   assert.equal(new Set(inputs.map(entry => entry.output)).size, inputs.length);
+  // Candidate templates are build dependencies, not individually published files.
+  const candidates = JSON.parse(await readFile(resolve(root, 'config/native-pages.json'), 'utf8'));
+  for (const entry of candidates) {
+    assert.ok(inputs.some(current => current.output === entry.output), `Unknown candidate output: ${entry.output}`);
+    const page = JSON.parse(await readFile(resolve(root, entry.source), 'utf8'));
+    assert.match(page.key, /^[a-z0-9_-]+$/);
+    for (const source of [entry.source, `src/content/pages/${page.key}.html`, `src/content/pages/${page.key}.head.html`]) expected.add(source);
+    for (const fragment of [page.header, page.footer]) {
+      assert.match(fragment, /^(header|footer)-[a-z0-9]+$/);
+      await access(resolve(root, `src/components/fragments/${fragment}.html`));
+    }
+  }
+  for (const file of ['page.js','forms.js','page-navigation.js','forms-adapter.js']) expected.add(`src/client/${file}`);
   async function walk(dir) {
     for (const entry of await readdir(resolve(root, dir), { withFileTypes: true })) {
       const name = `${dir}/${entry.name}`;

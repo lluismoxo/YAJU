@@ -173,3 +173,42 @@ La prueba de huellas conserva intacta la referencia original y sólo admite las 
 salidas exactas aprobadas, declaradas en `native-legal-approved.sha256.json`. Los otros
 1.201 archivos deben seguir idénticos. La configuración de analítica no se ha validado
 contra eventos reales de terceros. La migración de las otras páginas continúa pendiente.
+
+## Migración general en curso (2026-10-04)
+
+La opción `node scripts/build.mjs --native-all` construye 136 páginas candidatas
+con plantillas HTML locales, fragmentos compartidos y controladores propios en
+`artifacts/native-all`. Esta salida es experimental: no está activada en producción.
+La compilación normal conserva los archivos aprobados; la navegación y el adaptador
+de formularios nuevos se seleccionan únicamente con `--native-all`.
+
+Validación realizada hasta ahora:
+- 24 páginas con formularios: consentimiento, validación, respuesta simulada 429 y
+  reintento satisfactorio. No se enviaron contactos reales.
+- Cinco páginas con pestañas: 36 estados entre escritorio y móvil, y teclado.
+- 17 páginas con carruseles: 90 estados entre escritorio y móvil, avance y retorno.
+- Compilación pública: siete pruebas satisfactorias y huellas coincidentes con la
+  versión aprobada (1.201 archivos sin cambios, más Legal y navegación aprobados).
+
+Los informes reproducibles están en `artifacts/native-*-report.json`; los scripts
+`check-native-forms.mjs`, `check-native-tabs.mjs` y `check-native-carousels.mjs`
+verifican comportamiento, no equivalencia visual. La comparación visual mantiene
+su tolerancia de cero píxeles y no se sustituye por estas pruebas funcionales.
+
+Faltan validaciones y migraciones de búsqueda, modales, registro, controles
+especiales de vídeo/animación, paginación y ciertos elementos animados. También
+faltan las comparaciones visuales completas de las páginas candidatas, incluidas
+transiciones, antes de retirar el runtime heredado y activar la migración general.
+
+Comprobaciones adicionales de esta etapa:
+- Versions: sus cuatro filtros pasan en escritorio y móvil (8 estados).
+- 136 páginas: título presente, analítica una sola vez, recursos locales existentes
+  y ausencia de scripts Next/RSC o parches de compatibilidad en su HTML.
+- Se recuperaron los metadatos de nueve páginas legales: el original los transmitía
+  fuera de `<head>`; ahora se incluyen en la cabecera estática.
+- Se corrigió la transformación de los testimonios al entrar en pantalla en tablet.
+  Pricing coincide en los cinco estados de escritorio y cuatro de tablet. En móvil,
+  tres estados coinciden y el estado siguiente del carrusel difiere en 66 píxeles.
+  Esta diferencia sigue pendiente; no se considera aprobado el conjunto visual.
+- No se ha publicado esta etapa experimental. La web pública conserva la versión
+  aprobada. Persisten los pendientes funcionales y visuales enumerados arriba.
