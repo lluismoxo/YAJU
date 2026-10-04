@@ -11,10 +11,11 @@ for(const entry of entries){
  assert.ok(/<title>[^<]+<\/title>/.test(html),`Missing title: ${entry.output}`);
  assert.equal(html.split("gtag('config', 'G-3T9YSET1R9')").length-1,1,`Analytics: ${entry.output}`);
  assert.ok(!html.includes('self.__next_f'),`RSC payload: ${entry.output}`);
+ assert.ok(!/https?:\/\/(?:127\.0\.0\.1|localhost):\d+/.test(html),`Temporary development URL: ${entry.output}`);
  assert.ok(!/<script\b[^>]*src="[^\"]*(?:_yaju\/static|site-updates-)/.test(html),`Legacy runtime: ${entry.output}`);
  const model=JSON.parse(await readFile(entry.source,'utf8'));
  forms+=model.forms;
- for(const fragment of html.matchAll(/<(?:script|link|img|source)\b[^>]*>/g)){
+ for(const fragment of html.matchAll(/<(?:script|link|img|source|video)\b[^>]*>/g)){
   const value=fragment[0].match(/\b(?:src|href)="([^\"]+)"/)?.[1];
   if(!value?.startsWith('/')||value.startsWith('//')||value.startsWith('/_vercel/'))continue;
   const path=new URL(value,'https://yajuas.com').pathname;

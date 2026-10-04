@@ -19,6 +19,14 @@ if(allNative){
   const entry=inputs.find(e=>e.output===output);if(!entry)throw new Error(`Missing candidate resource ${output}`);entry.source=source;
  }
  inputs.push({source:'src/client/page.js',output:'assets/native-page.js'},{source:'src/client/forms.js',output:'assets/native-forms.js'});
+ // Once every complete page has a native renderer, the candidate needs neither
+ // the downloaded application chunks nor the DOM compatibility patcher.
+ const remaining=inputs.filter(e=>e.source.startsWith('src/pages/')&&e.source.endsWith('.html')&&!e.output.startsWith('assets/forms/'));
+ if(remaining.length)throw new Error(`Unmigrated full pages: ${remaining.map(e=>e.output).join(', ')}`);
+ for(let index=inputs.length-1;index>=0;index--){
+  const source=inputs[index].source;
+  if((source.startsWith('legacy/runtime/')&&source.endsWith('.js'))||source===`static/assets/${site.compatibilityScript}`)inputs.splice(index,1);
+ }
 }
 const textExtensions = /\.(html|js|css|json|webmanifest)$/;
 const override = await readFile(resolve(root, 'static/assets/yaju-hydration-safe.css'), 'utf8');

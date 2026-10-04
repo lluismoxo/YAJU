@@ -212,3 +212,50 @@ Comprobaciones adicionales de esta etapa:
   Esta diferencia sigue pendiente; no se considera aprobado el conjunto visual.
 - No se ha publicado esta etapa experimental. La web pública conserva la versión
   aprobada. Persisten los pendientes funcionales y visuales enumerados arriba.
+
+### Registro, medios y controles especiales
+
+- Registro se incorpora a las plantillas nativas: 137 páginas candidatas. Sus siete
+  estados visuales comparados (escritorio, tablet y móvil) coinciden exactamente.
+  Se mantiene el formulario POST `/register`; no se ha creado ni validado un servicio
+  de alta de cuentas. Este comportamiento preexistente requiere revisión independiente.
+- La compilación candidata excluye los 157 chunks JavaScript descargados (8.580.898
+  bytes de archivos, no una medición de transferencia por visita) y el parche DOM.
+  Los CSS y recursos visuales originales se conservan. Producción sigue independiente.
+- Auditoría de carga en navegador: 137 páginas sin excepciones JavaScript, respuestas
+  locales 404 ni solicitudes a los scripts retirados. Esto no demuestra paridad visual.
+- Carruseles numerados de Observability y Financial Services, índice del informe,
+  copia de enlaces y compartir: pruebas de escritorio y móvil, 18 estados. Las
+  acciones externas se simulan; no se publicaron mensajes ni contactos.
+- Corregidas cinco URLs de vídeos que conservaban el origen temporal de la captura,
+  y una URL temporal en un formulario. El verificador ahora rechaza orígenes temporales
+  e incluye archivos de vídeo entre los recursos comprobados.
+- Verificadas las propiedades originales de reproducción: Careers, Get Started y
+  Oran arrancan silenciados; Agent Hub y Observability conservan controles manuales.
+- Agent Hub pasa las cinco capturas de escritorio y cuatro de tablet. Quedan dos
+  diferencias móviles; una es de 66 píxeles en el borde del testimonio.
+- El informe mantiene diferencias importantes en su animación vinculada al scroll.
+  Sus botones funcionan, pero no debe activarse como reemplazo público hasta portar
+  esa animación y pasar la comparación visual. Búsqueda y otras animaciones siguen
+  pendientes. El modal de About no se pudo abrir en la referencia, tampoco por
+  teclado; no se ha supuesto una biografía ni un comportamiento nuevos.
+
+### Informe: scroll y texto responsive (2026-10-04)
+
+- Portada del informe: pinning mediante CSS sticky y recorrido proporcional al
+  viewport, sin el runtime descargado. El texto se recompone en líneas según el
+  ancho actual; se conserva el salto explícito del título y el marcado de énfasis.
+- Corregido el fondo del índice móvil al quedar fijo: el contenido ya no se
+  transparenta debajo. Paginación, índice, copia y compartir pasan nuevamente
+  18 estados funcionales, con acciones externas simuladas.
+- Comparación móvil con movimiento reducido: seis capturas idénticas, en portada
+  y scroll 800, 1700, 2800, 4000 y 5100. Evidencia:
+  `phase-3-report-mobile-visual.json`. Escritorio coincide en portada, menú y
+  scroll 800; persisten diferencias en escenas profundas y tablet. Las animaciones
+  con movimiento normal y el conjunto del sitio todavía no están aprobados.
+- Pruebas generales: siete tests pasan y los 1201 archivos de la compilación
+  publicada permanecen idénticos, además de los hashes aprobados de Legal/nav.
+- Se observaron desapariciones del directorio de salida y copias `native-all 2`,
+  etc. Las últimas comparaciones usan copias estables en `/private/tmp`, sin
+  modificar la referencia ni borrar las carpetas duplicadas. Preview estable:
+  `http://127.0.0.1:4184/`. Esta etapa no se publica todavía.

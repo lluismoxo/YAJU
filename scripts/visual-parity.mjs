@@ -26,7 +26,7 @@ const viewports = [
   { name: 'desktop', width: 1440, height: 900 },
   { name: 'tablet', width: 768, height: 1024 },
   { name: 'mobile', width: 390, height: 844 },
-];
+].filter(viewport=>!process.env.YAJU_TEST_VIEWPORTS||process.env.YAJU_TEST_VIEWPORTS.split(',').includes(viewport.name));
 const mime = { '.html':'text/html', '.js':'text/javascript', '.css':'text/css', '.json':'application/json',
   '.svg':'image/svg+xml', '.png':'image/png', '.jpg':'image/jpeg', '.webp':'image/webp',
   '.woff2':'font/woff2', '.woff':'font/woff', '.mp4':'video/mp4' };
@@ -79,7 +79,8 @@ async function prepare(page, origin, route) {
   await page.waitForTimeout(3000);
   if (motion === 'reduce') await page.addStyleTag({ content: '*,:before,:after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}' });
   await page.evaluate(() => { document.querySelectorAll('video').forEach(video => { video.pause(); video.currentTime = 0; }); });
-  assert.ok((await page.locator('main').innerText()).trim().length > 100, `Blank main: ${route}`);
+  const content=route==='/register' ? page.locator('body') : page.locator('main');
+  assert.ok((await content.innerText()).trim().length > 100, `Blank main: ${route}`);
   return errors;
 }
 async function compare(left, right, key) {
@@ -121,7 +122,7 @@ try {
         }));
         const comparison = await compare(shots[0],shots[1],`${key}-${state}`);
         if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
-          scrollY, images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
+          scrollY, hero: [...document.querySelectorAll('[data-slide1-copy], [data-slide2-copy]')].map(el=>({rect:el.getBoundingClientRect().toJSON(),styles:[el,...el.querySelectorAll('*')].map(node=>({tag:node.tagName,cls:node.className,width:getComputedStyle(node).width,maxWidth:getComputedStyle(node).maxWidth,transform:getComputedStyle(node).transform}))})), images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
         }))));
         states.push(comparison);
       }
@@ -135,6 +136,12 @@ try {
       await Promise.all(pages.map(page => page.evaluate(() => window.scrollTo(0,800))));
       await Promise.all(pages.map(page => page.waitForTimeout(1500)));
       await capture('scroll');
+      for(const offset of (process.env.YAJU_TEST_SCROLL_OFFSETS||'').split(',').filter(Boolean).map(Number)) {
+        assert.ok(Number.isFinite(offset)&&offset>=0,'Invalid scroll offset');
+        await Promise.all(pages.map(page=>page.evaluate(y=>window.scrollTo(0,y),offset)));
+        await Promise.all(pages.map(page=>page.waitForTimeout(1500)));
+        await capture(`scroll-${offset}`);
+      }
       if(process.env.YAJU_TEST_CAROUSELS === '1') {
         const counts=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').count()));
         assert.equal(counts[0],counts[1],`Carousel count: ${route}`);

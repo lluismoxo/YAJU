@@ -678,5 +678,10 @@
     "source": "src/content/pages/home.json",
     "output": "index.html",
     "render": "page"
+  },
+  {
+    "source": "src/content/pages/register.json",
+    "output": "register/index.html",
+    "render": "page"
   }
 ]

@@ -1,0 +1,38 @@
+[
+  {
+    "route": "/ai-observability",
+    "width": 1440,
+    "states": 3,
+    "passed": true
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/reports/state-of-sovereign-ai-adoption-2026",
+    "width": 1440,
+    "states": 4,
+    "passed": true
+  },
+  {
+    "route": "/ai-observability",
+    "width": 390,
+    "states": 3,
+    "passed": true
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/reports/state-of-sovereign-ai-adoption-2026",
+    "width": 390,
+    "states": 4,
+    "passed": true
+  }
+]

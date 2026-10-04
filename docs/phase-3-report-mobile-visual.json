@@ -1,0 +1,80 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-04T14:36:34.478Z",
+  "results": [
+    {
+      "route": "/reports/state-of-sovereign-ai-adoption-2026",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll-1700",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll-2800",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll-4000",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll-5100",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    }
+  ]
+}

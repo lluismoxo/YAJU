@@ -1,0 +1,824 @@
+[
+  {
+    "route": "/agent-academy/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/agent-hub/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/about/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-approach/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-governance/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/agent-orchestration-system/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-spend/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-spend-explorer/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-observability/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/ai-transformation/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/a-day-in-the-life-of-a-wealth-manager-with-and-without-ai/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/2026-summer-merch-collection/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agent-rollouts-across-business-units/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/a-small-agent-for-a-narrow-job/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agent-workloads-and-infrastructure/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agentic-task-ecosystem/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-and-systems-of-record/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-in-manufacturing-operations/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-in-regulated-industries/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-in-telecom-operations/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-on-your-own-hardware/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-that-plan-and-agents-that-react/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/agents-that-work-outside-english/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/air-gapped-agent-deployments/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/announcement/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/automating-fork-maintenance-with-ai-agents/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/automations-early-footprint/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/building-for-ai-regulation/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/choosing-a-model-is-an-operations-decision/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/chunking-for-rag-maximize-enterprise-knowledge-retrieval/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/community-research-across-regions/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/enterprise-ai-maturity-model/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/documents-are-not-text/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/connect-2025/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/exploring-ai-in-education/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/forward-deployed-engineers-capability-building/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/evaluating-an-agent-platform/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/hiring-engineers-new-to-agents/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/generative-ai-for-business/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/how-small-models-can-make-a-big-impact-for-enterprises/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/how-our-early-access-programme-works/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/hardware-aware-dynamic-speculative-decoding/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/how-we-are-growing-the-team/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/introducing-the-software-factory/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/latency-budgets-for-agents/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/meet-the-software-factory/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/multimodal-embeddings/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/megakernels/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/reranking-in-your-own-cloud/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/oran-in-the-wild/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/running-agents-under-eu-data-rules/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/retrieval-evaluation-from-a-public-corpus/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/reranking-is-the-cheapest-accuracy/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/small-agents-scoped-tightly/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/state-of-sovereign-ai-adoption-2026/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/ai-for-developers/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/ai-governance/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/company-news/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/enterprise-ai/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/financial-services/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/for-business/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/healthcare-life-sciences/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/partner/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/open-science/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/research/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/product-launch/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/technology/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/the-future-of-work-debate-has-an-evidence-problem/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/tag/sovereign-ai/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/the-total-cost-of-ai-ownership/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/the-yaju-approach-to-ai-governance/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/transcription-is-an-input-problem/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/transcription-outside-tuned-languages/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/what-changed-in-oran-3-6/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/what-an-embedding-commits-you-to/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/what-your-corpus-leaves-out/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/what-sovereign-deployment-requires/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/what-we-look-for-in-scholars/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/working-with-delivery-partners/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/when-a-bigger-model-is-the-wrong-answer/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/blog/why-agent-programmes-stall/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/careers/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/contact-sales/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/cli/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/cookies/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/credential-vault/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/cost-control/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customer-stories/agents-in-cloud-operations/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customer-stories/agents-in-contract-review/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customer-stories/agents-in-enterprise-integration/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customer-stories/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customization/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/customer-stories/support-triage-with-agents/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/data-commitments/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/deployment-options/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/developers/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/get-started/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/catalyst-grants/application/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/agentic-task-ecosystem/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/catalyst-grants/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/education/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/newsletter/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/futures-of-work/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/open-development/application/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/scholars/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/open-development/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/labs/oran/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/mcp-gateway/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/lp/thank-you/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/newsroom/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/optimizer/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/oran-mini-code/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/partners/application/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/partners/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/privacy/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/pricing/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/responsible-disclosure/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/reports/state-of-sovereign-ai-adoption-2026/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/security/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/software-factory-demo/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/self-hosted/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/software-factory/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/financial-services/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/engineering/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/healthcare-and-life-sciences/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/manufacturing/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/public-sector/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/solutions/telecommunications/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/terms-of-use/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/terms/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/versions/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/token-monitoring/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/usage-policy/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/register/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  },
+  {
+    "route": "/",
+    "errors": [],
+    "missing": [],
+    "legacy": []
+  }
+]
