@@ -122,7 +122,7 @@ try {
         }));
         const comparison = await compare(shots[0],shots[1],`${key}-${state}`);
         if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
-          scrollY, hero: [...document.querySelectorAll('[data-slide1-copy], [data-slide2-copy]')].map(el=>({rect:el.getBoundingClientRect().toJSON(),styles:[el,...el.querySelectorAll('*')].map(node=>({tag:node.tagName,cls:node.className,width:getComputedStyle(node).width,maxWidth:getComputedStyle(node).maxWidth,transform:getComputedStyle(node).transform}))})), images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
+          scrollY, heroMotion: [...document.querySelectorAll('[data-component="idc-report-hero"] [data-idc-grid], [data-component="idc-report-hero"] [data-idc-plane], [data-component="idc-report-hero"] [data-slide1-image], [data-component="idc-report-hero"] [data-slide2-image]')].map(el=>({attributes:[...el.attributes].filter(a=>a.name.startsWith('data-')).map(a=>a.name),transform:el.style.transform,rect:el.getBoundingClientRect().toJSON()})), hero: [...document.querySelectorAll('[data-slide1-copy], [data-slide2-copy]')].map(el=>({rect:el.getBoundingClientRect().toJSON(),styles:[el,...el.querySelectorAll('*')].map(node=>({tag:node.tagName,text:node.childElementCount?'':node.textContent,rect:node.getBoundingClientRect().toJSON(),font:getComputedStyle(node).font,cls:node.className,width:getComputedStyle(node).width,maxWidth:getComputedStyle(node).maxWidth,transform:getComputedStyle(node).transform}))})), images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
         }))));
         states.push(comparison);
       }
@@ -134,12 +134,12 @@ try {
         await Promise.all(pages.map(page => page.mouse.move(10,500)));
       }
       await Promise.all(pages.map(page => page.evaluate(() => window.scrollTo(0,800))));
-      await Promise.all(pages.map(page => page.waitForTimeout(1500)));
+      await Promise.all(pages.map(page => page.waitForTimeout(motion==='reduce'?1500:3500)));
       await capture('scroll');
       for(const offset of (process.env.YAJU_TEST_SCROLL_OFFSETS||'').split(',').filter(Boolean).map(Number)) {
         assert.ok(Number.isFinite(offset)&&offset>=0,'Invalid scroll offset');
         await Promise.all(pages.map(page=>page.evaluate(y=>window.scrollTo(0,y),offset)));
-        await Promise.all(pages.map(page=>page.waitForTimeout(1500)));
+        await Promise.all(pages.map(page=>page.waitForTimeout(motion==='reduce'?1500:3500)));
         await capture(`scroll-${offset}`);
       }
       if(process.env.YAJU_TEST_CAROUSELS === '1') {

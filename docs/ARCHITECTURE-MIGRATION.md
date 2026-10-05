@@ -259,3 +259,29 @@ Comprobaciones adicionales de esta etapa:
   etc. Las últimas comparaciones usan copias estables en `/private/tmp`, sin
   modificar la referencia ni borrar las carpetas duplicadas. Preview estable:
   `http://127.0.0.1:4184/`. Esta etapa no se publica todavía.
+
+### Animación del informe aislada y conservación del motor original (2026-10-05)
+
+- Se reutiliza GSAP **3.13.0**, la misma versión identificada en el original,
+  como dependencia fijada y con lockfile. Solo se publican sus distribuciones
+  minificadas de GSAP, ScrollTrigger y SplitText, servidas localmente y cargadas
+  exclusivamente en el informe. [Instalación oficial](https://gsap.com/docs/v3/Installation/).
+- `src/client/report.js` contiene la lógica específica. El módulo común deja de
+  incluirla. El template se ha limpiado de envoltorios y estilos de animación
+  capturados; conserva los textos, medios y clases. No se conserva React ni la
+  ejecución del sitio descargado para esta página.
+- Se mantienen pinning, scrub, secuencia de palabras, imágenes, cifras y brillo
+  de la cuadrícula con sus tiempos y curvas originales. Se descarta la
+  aproximación manual utilizada durante la investigación anterior.
+- **19 capturas idénticas con movimiento reducido**: escritorio, tablet y móvil,
+  portada, menú de escritorio y scroll 800/1700/2800/4000/5100.
+  Evidencia: `phase-3-report-responsive-visual.json`.
+- Movimiento normal: 13 de 19 capturas idénticas en la primera comparación;
+  seis aún difieren. No se declara aprobada la comparación normal completa.
+  Evidencia: `phase-3-report-motion-visual.json`.
+- Prueba funcional del movimiento: portada visible, imágenes aplazadas, cambio de
+  preferencia mientras se lee y cambio entre móvil/escritorio, sin excepciones.
+  También se repiten correctamente los 18 estados de controles especiales.
+- Los siete tests generales y la paridad de la compilación publicada pasan.
+  La migración experimental continúa sin publicarse; siguen pendientes las
+  verificaciones generales de páginas, búsqueda y otras animaciones.

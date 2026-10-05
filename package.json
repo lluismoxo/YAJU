@@ -16,5 +16,8 @@
     "build:pilot": "node scripts/build.mjs --native-legal",
     "check:pilot": "node scripts/check-native-pilot.mjs",
     "check:interactions": "node scripts/check-pilot-interactions.mjs"
+  },
+  "devDependencies": {
+    "gsap": "3.13.0"
   }
 }

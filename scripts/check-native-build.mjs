@@ -14,6 +14,8 @@ for(const entry of entries){
  assert.ok(!/https?:\/\/(?:127\.0\.0\.1|localhost):\d+/.test(html),`Temporary development URL: ${entry.output}`);
  assert.ok(!/<script\b[^>]*src="[^\"]*(?:_yaju\/static|site-updates-)/.test(html),`Legacy runtime: ${entry.output}`);
  const model=JSON.parse(await readFile(entry.source,'utf8'));
+ assert.equal(html.includes('/assets/native-report.js'),model.key==='reports__state-of-sovereign-ai-adoption-2026',`Report code loaded outside its route: ${entry.output}`);
+ for(const vendor of ['gsap','ScrollTrigger','SplitText'])assert.equal(html.includes(`/assets/vendor/${vendor}.min.js`),model.key==='reports__state-of-sovereign-ai-adoption-2026',`Animation vendor scope: ${entry.output}`);
  forms+=model.forms;
  for(const fragment of html.matchAll(/<(?:script|link|img|source|video)\b[^>]*>/g)){
   const value=fragment[0].match(/\b(?:src|href)="([^\"]+)"/)?.[1];
