@@ -285,3 +285,23 @@ Comprobaciones adicionales de esta etapa:
 - Los siete tests generales y la paridad de la compilación publicada pasan.
   La migración experimental continúa sin publicarse; siguen pendientes las
   verificaciones generales de páginas, búsqueda y otras animaciones.
+
+### Carruseles y desplegables: revisión incremental (2026-10-05)
+
+- Se conserva el nodo de imagen cuando se pulsa el desplegable que ya está
+  seleccionado. Sustituirlo innecesariamente producía diferencias de rasterizado.
+  El cambio de selección sigue reemplazando el medio correspondiente.
+- Agent Orchestration System: 7 capturas de escritorio y 6 de móvil idénticas
+  a la referencia, incluidos sus cuatro desplegables. Tablet mantiene cuatro
+  diferencias pendientes: tres en una imagen de la sección anterior y la última
+  con 13 px de diferencia de scroll y distinto estado del header.
+  Evidencia: `phase-3-aos-accordion-visual.json`.
+- Los 17 carruseles pasan sus controles de avance/retroceso y extremos en
+  escritorio y móvil, sin errores JS (34 pares ruta/viewport, 90 estados).
+  Evidencia: `phase-3-carousel-controls.json`. El verificador acepta ahora
+  `YAJU_TEST_ORIGIN` para poder usar una copia estable.
+- Pricing y Agent Hub siguen teniendo 66 píxeles diferentes en el borde de
+  la segunda tarjeta móvil. Geometría, estilos calculados y filtros SVG coinciden;
+  comparar el original consigo mismo arroja cero diferencias. No se considera
+  resuelto ni se relaja el umbral de comparación.
+- Esta etapa continúa en el candidato local, sin publicación.

@@ -82,7 +82,7 @@
  const accordions=[];
  main.querySelectorAll('[data-native-accordion]').forEach(list=>{
   const index=Number(list.dataset.nativeAccordion),model=data.accordions?.[index];if(!model)return;
-  const buttons=[...list.querySelectorAll(':scope > li > div > button')];const open=new Set();let started=false;
+  const buttons=[...list.querySelectorAll(':scope > li > div > button')];const open=new Set();let started=false,activeMedia=0;
   function paint(){buttons.forEach((button,i)=>{
    const expanded=open.has(i),drawer=button.nextElementSibling;
    button.parentElement.className=expanded?model.states[i].openClass:model.states[i].closedClass;
@@ -92,7 +92,7 @@
   function select(i){
    if(model.multiple){if(open.has(i))open.delete(i);else open.add(i);}else{open.clear();open.add(i);}
    const media=main.querySelector(`[data-accordion-media="${index}"]`);
-   if(media&&model.states[i].media){const template=document.createElement('template');template.innerHTML=model.states[i].media;const replacement=template.content.firstElementChild;replacement.dataset.accordionMedia=index;media.replaceWith(replacement);}
+   if(media&&i!==activeMedia&&model.states[i].media){const template=document.createElement('template');template.innerHTML=model.states[i].media;const replacement=template.content.firstElementChild;replacement.dataset.accordionMedia=index;media.replaceWith(replacement);activeMedia=i;}
    paint();
   }
   buttons.forEach((button,i)=>button.addEventListener('click',event=>{event.preventDefault();started=true;select(i);}));

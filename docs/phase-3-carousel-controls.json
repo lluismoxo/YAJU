@@ -1,0 +1,206 @@
+[
+  {
+    "route": "/about",
+    "width": 1440,
+    "states": 6,
+    "passed": true
+  },
+  {
+    "route": "/agent-hub",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/ai-spend-explorer",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/ai-observability",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/blog",
+    "width": 1440,
+    "states": 1,
+    "passed": true
+  },
+  {
+    "route": "/cost-control",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/get-started",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/labs/open-development",
+    "width": 1440,
+    "states": 4,
+    "passed": true
+  },
+  {
+    "route": "/optimizer",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/partners",
+    "width": 1440,
+    "states": 5,
+    "passed": true
+  },
+  {
+    "route": "/pricing",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/software-factory",
+    "width": 1440,
+    "states": 5,
+    "passed": true
+  },
+  {
+    "route": "/solutions/engineering",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/manufacturing",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/public-sector",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/telecommunications",
+    "width": 1440,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "states": 6,
+    "passed": true
+  },
+  {
+    "route": "/agent-hub",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/ai-spend-explorer",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/ai-observability",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/blog",
+    "width": 390,
+    "states": 1,
+    "passed": true
+  },
+  {
+    "route": "/cost-control",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/get-started",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/labs/open-development",
+    "width": 390,
+    "states": 4,
+    "passed": true
+  },
+  {
+    "route": "/optimizer",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/partners",
+    "width": 390,
+    "states": 5,
+    "passed": true
+  },
+  {
+    "route": "/pricing",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/software-factory",
+    "width": 390,
+    "states": 5,
+    "passed": true
+  },
+  {
+    "route": "/solutions/engineering",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/manufacturing",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/public-sector",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  },
+  {
+    "route": "/solutions/telecommunications",
+    "width": 390,
+    "states": 2,
+    "passed": true
+  }
+]

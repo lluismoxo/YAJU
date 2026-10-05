@@ -1,0 +1,702 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-05T15:41:20.783Z",
+  "results": [
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-0",
+          "pass": false,
+          "changedPixels": 29949,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&fit=max&q=80&w=1020",
+                  "width": 903,
+                  "rect": {
+                    "x": 432,
+                    "y": 646.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 646.609375,
+                    "right": 752,
+                    "bottom": 966.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/0000000000006277b3df4bfa52f7a31bc7f472c3-1360x1360.webp?auto=format&fit=max&q=80&w=1020",
+                  "width": 903,
+                  "rect": {
+                    "x": 432,
+                    "y": 646.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 646.609375,
+                    "right": 752,
+                    "bottom": 966.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-1",
+          "pass": false,
+          "changedPixels": 29949,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/yaju-aos-observability-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 623.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 623.609375,
+                    "right": 752,
+                    "bottom": 943.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/yaju-aos-observability-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 623.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 623.609375,
+                    "right": 752,
+                    "bottom": 943.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-2",
+          "pass": false,
+          "changedPixels": 29949,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/yaju-aos-governance-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 659.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 659.609375,
+                    "right": 752,
+                    "bottom": 979.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 1927,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/000000000000d772784b7a0932d81688b1c59b06-1128x1129.webp?auto=format&fit=max&q=80&w=846",
+                  "width": 1089,
+                  "rect": {
+                    "x": 16,
+                    "y": -162.53125,
+                    "width": 348,
+                    "height": 348.28125,
+                    "top": -162.53125,
+                    "right": 364,
+                    "bottom": 185.75,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/yaju-aos-governance-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 659.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 659.609375,
+                    "right": 752,
+                    "bottom": 979.609375,
+                    "left": 432
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-3",
+          "pass": false,
+          "changedPixels": 277065,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 2498,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55225/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 16,
+                    "width": 118,
+                    "height": 28,
+                    "top": 16,
+                    "right": 134,
+                    "bottom": 44,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/nav_icon.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 14,
+                    "width": 32,
+                    "height": 32,
+                    "top": 14,
+                    "right": 752,
+                    "bottom": 46,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/yaju-aos-token-monitoring-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 76.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 76.609375,
+                    "right": 752,
+                    "bottom": 396.609375,
+                    "left": 432
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55225/assets/img/000000000000174dd40ecb906c9da710d4a7c373-2720x1114.webp?auto=format&fit=max&q=80&w=960",
+                  "width": 960,
+                  "rect": {
+                    "x": 16,
+                    "y": 850.203125,
+                    "width": 736,
+                    "height": 301.140625,
+                    "top": 850.203125,
+                    "right": 752,
+                    "bottom": 1151.34375,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 2511,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/yaju-aos-token-monitoring-1360x1360.webp",
+                  "width": 1360,
+                  "rect": {
+                    "x": 432,
+                    "y": 63.609375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 63.609375,
+                    "right": 752,
+                    "bottom": 383.609375,
+                    "left": 432
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:55226/assets/img/000000000000174dd40ecb906c9da710d4a7c373-2720x1114.webp?auto=format&fit=max&q=80&w=960",
+                  "width": 960,
+                  "rect": {
+                    "x": 16,
+                    "y": 837.203125,
+                    "width": 736,
+                    "height": 301.140625,
+                    "top": 837.203125,
+                    "right": 752,
+                    "bottom": 1138.34375,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    }
+  ]
+}
