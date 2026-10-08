@@ -48,10 +48,11 @@ async function serve(directory) {
 }
 const reference = await serve(baselineDirectory);
 const candidate = await serve(process.argv[3] || resolve(root, 'public'));
-const browser = await chromium.launch({ headless: true, channel: 'chrome' }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
+const softwareRendering = process.env.YAJU_TEST_SOFTWARE_RENDERING === '1';
+const browser = await chromium.launch({ headless: true, channel: 'chrome', ...(softwareRendering ? {args:['--disable-gpu']} : {}) }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
 const externalMedia = new Map();
 const motion = process.env.YAJU_TEST_MOTION === 'normal' ? 'no-preference' : 'reduce';
-const report = { motion, browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
+const report = { motion, rendering:softwareRendering?'software':'default', browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
 
 async function prepare(page, origin, route) {
   const errors = [];
@@ -100,7 +101,14 @@ try {
       const pages = await Promise.all(contexts.map(context => context.newPage()));
       const errors = await Promise.all(pages.map((page,index) => prepare(page, [reference,candidate][index].origin, route)));
       const states = [];
-      async function capture(state) {
+      async function capture(state, selector) {
+        let clip;
+        if(selector){
+          const bounds=await Promise.all(pages.map(page=>page.locator(selector).boundingBox()));
+          assert.ok(bounds[0],`Missing comparison region: ${selector}`);
+          assert.deepEqual(bounds[1],bounds[0],`Region geometry: ${key}-${state}`);
+          clip=bounds[0];
+        }
         await Promise.all(pages.map(page => page.evaluate(async () => {
           await Promise.all([...document.images].filter(image => { const r=image.getBoundingClientRect(); return r.bottom>0 && r.top<innerHeight; }).map(image => image.decode().catch(() => {})));
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
@@ -108,10 +116,10 @@ try {
         const shots = await Promise.all(pages.map(async (page,index) => {
           // Image rasterisation can finish after decode. Require two stable paints,
           // independently on each page, before comparing the two implementations.
-          let previous = await page.screenshot({animations:'disabled'});
+          let previous = await page.screenshot({animations:'disabled',...(clip?{clip}:{})});
           for (let attempt=0;attempt<5;attempt++) {
             await page.waitForTimeout(200);
-            const next = await page.screenshot({animations:'disabled'});
+            const next = await page.screenshot({animations:'disabled',...(clip?{clip}:{})});
             if (next.equals(previous)) {
               await writeFile(resolve(artifacts, `${key}-${state}-${index ? 'candidate' : 'reference'}.png`),next);
               return next;
@@ -124,9 +132,23 @@ try {
         if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
           scrollY, heroMotion: [...document.querySelectorAll('[data-component="idc-report-hero"] [data-idc-grid], [data-component="idc-report-hero"] [data-idc-plane], [data-component="idc-report-hero"] [data-slide1-image], [data-component="idc-report-hero"] [data-slide2-image]')].map(el=>({attributes:[...el.attributes].filter(a=>a.name.startsWith('data-')).map(a=>a.name),transform:el.style.transform,rect:el.getBoundingClientRect().toJSON()})), hero: [...document.querySelectorAll('[data-slide1-copy], [data-slide2-copy]')].map(el=>({rect:el.getBoundingClientRect().toJSON(),styles:[el,...el.querySelectorAll('*')].map(node=>({tag:node.tagName,text:node.childElementCount?'':node.textContent,rect:node.getBoundingClientRect().toJSON(),font:getComputedStyle(node).font,cls:node.className,width:getComputedStyle(node).width,maxWidth:getComputedStyle(node).maxWidth,transform:getComputedStyle(node).transform}))})), images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
         }))));
+        if(selector)comparison.region={selector,...clip};
         states.push(comparison);
       }
       await capture('top');
+      if(process.env.YAJU_TEST_SEARCH==='1'){
+        await Promise.all(pages.map(page=>page.getByRole('button',{name:'Open blog search'}).first().click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(500)));
+        await capture('search-open');
+        await capture('search-dialog-open','[role="dialog"] > div > div');
+        await Promise.all(pages.map(page=>page.getByRole('searchbox',{name:'Search articles'}).fill('Yaju agents')));
+        await capture('search-query');
+        await capture('search-dialog-query','[role="dialog"] > div > div');
+        await Promise.all(pages.map(page=>page.keyboard.press('Escape')));
+        await Promise.all(pages.map(page=>page.waitForTimeout(400)));
+        await capture('search-closed');
+        await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
+      }
       if (viewport.name === 'desktop') {
         await Promise.all(pages.map(page => page.getByRole('link',{name:'Product',exact:true}).first().locator('xpath=ancestor::li[1]').hover()));
         await Promise.all(pages.map(page => page.waitForTimeout(300)));

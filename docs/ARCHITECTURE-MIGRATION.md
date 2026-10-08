@@ -305,3 +305,62 @@ Comprobaciones adicionales de esta etapa:
   comparar el original consigo mismo arroja cero diferencias. No se considera
   resuelto ni se relaja el umbral de comparación.
 - Esta etapa continúa en el candidato local, sin publicación.
+
+### Conservación del scroll y diagnóstico de renderizado (2026-10-05)
+
+- El cambio de selección actualiza los atributos del contenedor y su imagen
+  existentes en vez de reemplazar el nodo. Así se conserva el anclaje de scroll;
+  desaparecen los 13 px de desplazamiento y la discrepancia del header detectados
+  en el último desplegable de Agent Orchestration System en tablet.
+- Nuevo `check-native-accordions.mjs`: **327 estados en 24 páginas y tres anchos**
+  (72 pares ruta/viewport), sin excepciones. Comprueba apertura, fuente de imagen
+  y conservación del nodo. Espera dos frames tras hacer visible cada control para
+  dejar que el observador abra el primer elemento antes de interactuar.
+  Evidencia: `phase-3-accordion-controls.json`.
+- Se añade un diagnóstico opcional a la comparación visual mediante
+  `YAJU_TEST_SOFTWARE_RENDERING=1` (Chrome con `--disable-gpu`). No cambia los
+  recursos de ninguna página, la referencia, los estilos inyectados ni el umbral
+  de cero píxeles. El informe identifica el modo. La configuración predeterminada
+  sigue sin ese argumento.
+- Con ese modo, Developers coincide en sus 9 estados de escritorio. Agent
+  Orchestration System coincide en los 19 estados de sus tres anchos. Engineering
+  coincide en 15 de 16; quedan 6 píxeles en el último desplegable móvil.
+  Evidencias: `phase-3-developers-software-rendering.json` y
+  `phase-3-accordion-software-rendering.json`.
+- Se conservan también los resultados con renderizado predeterminado y el control
+  original contra original, que presenta diferencias en dos estados móviles.
+  Este diagnóstico no equivale a aprobar toda la migración ni todas las animaciones.
+- Pasan los siete tests generales, las huellas de producción y la validación de
+  las 137 páginas candidatas. No se publica esta etapa.
+- Pricing y Agent Hub: sus ocho capturas móviles coinciden con renderizado por
+  software, incluida la segunda tarjeta cuyo borde difería en el modo normal.
+  Evidencia: `phase-3-carousel-software-rendering.json`. No ha sido necesario
+  modificar el diseño ni los filtros de los carruseles.
+
+### Modal de búsqueda nativo (2026-10-08)
+
+- Blog y Newsroom incluyen ahora un template compartido del modal original,
+  cargado únicamente cuando hay un disparador de búsqueda. El controlador nativo
+  conserva fondo desenfocado, dimensiones, transición de entrada/salida, foco,
+  cierre con Escape/fondo/botón y restauración del scroll. Incluye el control para
+  borrar consultas y su espacio de reserva dentro del input.
+- `check-native-search.mjs` pasa en los seis pares página/viewport y prueba los
+  nueve disparadores: vacío sin navegar, teclado, borrado, tres formas de cierre,
+  foco/scroll restaurados y consulta recortada/codificada. El destino de envío está
+  **simulado**, no se afirma que haya resultados reales.
+- La ruta heredada `/{blog|newsroom}/search?q=...` se conserva. No hay una página
+  de resultados en el manifiesto actual: el 404 preexistente sigue pendiente.
+  No se ha creado un backend ni inventado una plantilla de resultados.
+- La comparación visual conserva capturas de pantalla completa y añade regiones
+  del modal con su posición y tamaño comprobados. Las seis aperturas coinciden
+  exactamente; cuatro de seis estados con consulta también. Newsroom en tablet
+  y móvil difiere en 36 píxeles del borde redondeado del input (canales ±1).
+  Persisten diferencias fuera del modal en las páginas de fondo. Evidencias:
+  `phase-3-search-visual.json`, `phase-3-search-controls.json`.
+- El diagnóstico de movimiento normal del informe con renderizado por software
+  no resuelve todas sus diferencias (11/19 estados idénticos). Las posiciones y
+  transformaciones inspeccionadas coinciden, pero no se da por aprobada toda la
+  animación. Evidencia: `phase-3-report-motion-software-rendering.json`.
+- Pruebas generales: siete tests, huellas publicadas y 137 páginas candidatas
+  verificadas. Preview local restablecida en `http://127.0.0.1:4184/`.
+  Esta etapa sigue sin publicarse.

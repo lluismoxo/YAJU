@@ -1,0 +1,1546 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-05T15:56:00.983Z",
+  "results": [
+    {
+      "route": "/developers",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-developers-top",
+          "pass": false,
+          "changedPixels": 216881,
+          "totalPixels": 1296000,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 62,
+                    "width": 118,
+                    "height": 28,
+                    "top": 62,
+                    "right": 158,
+                    "bottom": 90,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 164.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 164.796875,
+                    "right": 1400,
+                    "bottom": 326.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 225.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 225.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 265.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-04.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 523.546875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 523.546875,
+                    "right": 1400,
+                    "bottom": 685.546875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-logo-negro.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 584.7265625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 584.7265625,
+                    "right": 1316.4765625,
+                    "bottom": 624.3671875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-07.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 849.5,
+                    "width": 288,
+                    "height": 162,
+                    "top": 849.5,
+                    "right": 1400,
+                    "bottom": 1011.5,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": 208,
+                    "width": 660,
+                    "height": 660,
+                    "top": 208,
+                    "right": 1400,
+                    "bottom": 868,
+                    "left": 740
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 62,
+                    "width": 118,
+                    "height": 28,
+                    "top": 62,
+                    "right": 158,
+                    "bottom": 90,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 164.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 164.796875,
+                    "right": 1400,
+                    "bottom": 326.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 225.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 225.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 265.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-04.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 523.546875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 523.546875,
+                    "right": 1400,
+                    "bottom": 685.546875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-logo-negro.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 584.7265625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 584.7265625,
+                    "right": 1316.4765625,
+                    "bottom": 624.3671875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-07.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 849.5,
+                    "width": 288,
+                    "height": 162,
+                    "top": 849.5,
+                    "right": 1400,
+                    "bottom": 1011.5,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": 208,
+                    "width": 660,
+                    "height": 660,
+                    "top": 208,
+                    "right": 1400,
+                    "bottom": 868,
+                    "left": 740
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "desktop-developers-product-menu",
+          "pass": false,
+          "changedPixels": 92124,
+          "totalPixels": 1296000,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 62,
+                    "width": 118,
+                    "height": 28,
+                    "top": 62,
+                    "right": 158,
+                    "bottom": 90,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 165.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 165.796875,
+                    "right": 1400,
+                    "bottom": 327.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 226.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 226.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 266.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": 208,
+                    "width": 660,
+                    "height": 660,
+                    "top": 208,
+                    "right": 1400,
+                    "bottom": 868,
+                    "left": 740
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 62,
+                    "width": 118,
+                    "height": 28,
+                    "top": 62,
+                    "right": 158,
+                    "bottom": 90,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 165.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 165.796875,
+                    "right": 1400,
+                    "bottom": 327.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 226.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 226.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 266.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": 208,
+                    "width": 660,
+                    "height": 660,
+                    "top": 208,
+                    "right": 1400,
+                    "bottom": 868,
+                    "left": 740
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "desktop-developers-scroll",
+          "pass": false,
+          "changedPixels": 1434,
+          "totalPixels": 1296000,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": -592,
+                    "width": 660,
+                    "height": 660,
+                    "top": -592,
+                    "right": 1400,
+                    "bottom": 68,
+                    "left": 740
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/c12ffe623e04a7583511c0448a02448bd6d72093-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 40,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 140,
+                    "bottom": 585.59375,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/aa7a7457cfa2db8e490604be048640db05cef175-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 500,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 600,
+                    "bottom": 585.59375,
+                    "left": 500
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/ec9016b38d4b68b5a140fdcb4fb9e69abfca2b20-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 960,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 1060,
+                    "bottom": 585.59375,
+                    "left": 960
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 740,
+                    "y": -592,
+                    "width": 660,
+                    "height": 660,
+                    "top": -592,
+                    "right": 1400,
+                    "bottom": 68,
+                    "left": 740
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/c12ffe623e04a7583511c0448a02448bd6d72093-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 40,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 140,
+                    "bottom": 585.59375,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/aa7a7457cfa2db8e490604be048640db05cef175-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 500,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 600,
+                    "bottom": 585.59375,
+                    "left": 500
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/ec9016b38d4b68b5a140fdcb4fb9e69abfca2b20-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 1440,
+                  "rect": {
+                    "x": 960,
+                    "y": 461.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 461.59375,
+                    "right": 1060,
+                    "bottom": 585.59375,
+                    "left": 960
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "desktop-developers-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-developers-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-developers-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-developers-accordion-3",
+          "pass": false,
+          "changedPixels": 156631,
+          "totalPixels": 1296000,
+          "diagnostics": [
+            {
+              "scrollY": 3300,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000ebf741aee337c6a26d5608b7719d-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 40,
+                    "y": 263.015625,
+                    "width": 629,
+                    "height": 629,
+                    "top": 263.015625,
+                    "right": 669,
+                    "bottom": 892.015625,
+                    "left": 40
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 3300,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000ebf741aee337c6a26d5608b7719d-1080x1080.jpg?auto=format&fit=max&q=80&w=1080",
+                  "width": 1440,
+                  "rect": {
+                    "x": 40,
+                    "y": 263.015625,
+                    "width": 629,
+                    "height": 629,
+                    "top": 263.015625,
+                    "right": 669,
+                    "bottom": 892.015625,
+                    "left": 40
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "desktop-developers-accordion-4",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-developers-accordion-5",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-solutions-engineering-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/developers",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-developers-top",
+          "pass": false,
+          "changedPixels": 66091,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/nav_icon.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 404,
+                    "y": 216.40625,
+                    "width": 348,
+                    "height": 348,
+                    "top": 216.40625,
+                    "right": 752,
+                    "bottom": 564.40625,
+                    "left": 404
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/c12ffe623e04a7583511c0448a02448bd6d72093-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 16,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 116,
+                    "bottom": 1062.421875,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/aa7a7457cfa2db8e490604be048640db05cef175-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 268,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 368,
+                    "bottom": 1062.421875,
+                    "left": 268
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/ec9016b38d4b68b5a140fdcb4fb9e69abfca2b20-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 520,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 620,
+                    "bottom": 1062.421875,
+                    "left": 520
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/nav_icon.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000f13c414929e0bdd5d77f93faecbf-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 404,
+                    "y": 216.40625,
+                    "width": 348,
+                    "height": 348,
+                    "top": 216.40625,
+                    "right": 752,
+                    "bottom": 564.40625,
+                    "left": 404
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/c12ffe623e04a7583511c0448a02448bd6d72093-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 16,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 116,
+                    "bottom": 1062.421875,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/aa7a7457cfa2db8e490604be048640db05cef175-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 268,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 368,
+                    "bottom": 1062.421875,
+                    "left": 268
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/ec9016b38d4b68b5a140fdcb4fb9e69abfca2b20-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 520,
+                    "y": 938.421875,
+                    "width": 100,
+                    "height": 124,
+                    "top": 938.421875,
+                    "right": 620,
+                    "bottom": 1062.421875,
+                    "left": 520
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-developers-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-developers-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-developers-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-developers-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-developers-accordion-3",
+          "pass": false,
+          "changedPixels": 42311,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 2615,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000ebf741aee337c6a26d5608b7719d-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 16,
+                    "y": 587.375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 587.375,
+                    "right": 336,
+                    "bottom": 907.375,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 2615,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000ebf741aee337c6a26d5608b7719d-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 16,
+                    "y": 587.375,
+                    "width": 320,
+                    "height": 320,
+                    "top": 587.375,
+                    "right": 336,
+                    "bottom": 907.375,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-developers-accordion-4",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-developers-accordion-5",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-solutions-engineering-top",
+          "pass": false,
+          "changedPixels": 83739,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/nav_icon.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/000000000000ed8f1a6ac9ffdb3f7b32d3c4ace4-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 404,
+                    "y": 212,
+                    "width": 348,
+                    "height": 348,
+                    "top": 212,
+                    "right": 752,
+                    "bottom": 560,
+                    "left": 404
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1242616fd6907f1cb05631695dbd9b8a9fd85a41-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 16,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 116,
+                    "bottom": 1053.59375,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7c0e58d3e38f92c32eac67147bc3a74b89f9c59-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 268,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 368,
+                    "bottom": 1053.59375,
+                    "left": 268
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1c7eeaeaa991e08c7fff05a548edd564e240ae30-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 520,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 620,
+                    "bottom": 1053.59375,
+                    "left": 520
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/logo.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/nav_icon.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/000000000000ed8f1a6ac9ffdb3f7b32d3c4ace4-1080x1080.jpg?auto=format&fit=max&q=80&w=810",
+                  "width": 1024,
+                  "rect": {
+                    "x": 404,
+                    "y": 212,
+                    "width": 348,
+                    "height": 348,
+                    "top": 212,
+                    "right": 752,
+                    "bottom": 560,
+                    "left": 404
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1242616fd6907f1cb05631695dbd9b8a9fd85a41-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 16,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 116,
+                    "bottom": 1053.59375,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7c0e58d3e38f92c32eac67147bc3a74b89f9c59-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 268,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 368,
+                    "bottom": 1053.59375,
+                    "left": 268
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/1c7eeaeaa991e08c7fff05a548edd564e240ae30-200x200.png?auto=format&fit=max&q=80&w=200",
+                  "width": 768,
+                  "rect": {
+                    "x": 520,
+                    "y": 929.59375,
+                    "width": 100,
+                    "height": 124,
+                    "top": 929.59375,
+                    "right": 620,
+                    "bottom": 1053.59375,
+                    "left": 520
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/developers",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-developers-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-4",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-developers-accordion-5",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-solutions-engineering-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-0",
+          "pass": false,
+          "changedPixels": 74995,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 2151,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58340/assets/img/00000000000077820f52401bf7d978cbd2e80abb-1080x1080.jpg?auto=format&fit=max&q=80&w=540",
+                  "width": 780,
+                  "rect": {
+                    "x": 16,
+                    "y": 14.453125,
+                    "width": 358,
+                    "height": 358,
+                    "top": 14.453125,
+                    "right": 374,
+                    "bottom": 372.453125,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 2151,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "http://127.0.0.1:58341/assets/img/00000000000077820f52401bf7d978cbd2e80abb-1080x1080.jpg?auto=format&fit=max&q=80&w=540",
+                  "width": 780,
+                  "rect": {
+                    "x": 16,
+                    "y": 14.453125,
+                    "width": 358,
+                    "height": 358,
+                    "top": 14.453125,
+                    "right": 374,
+                    "bottom": 372.453125,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}
