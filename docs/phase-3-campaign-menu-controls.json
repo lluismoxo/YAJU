@@ -1,0 +1,38 @@
+[
+  {
+    "width": 1440,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "shareDestinationsMocked": true
+  },
+  {
+    "width": 1440,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "shareDestinationsMocked": true
+  },
+  {
+    "width": 768,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "shareDestinationsMocked": true
+  },
+  {
+    "width": 768,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "shareDestinationsMocked": true
+  },
+  {
+    "width": 390,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "shareDestinationsMocked": true
+  },
+  {
+    "width": 390,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "shareDestinationsMocked": true
+  }
+]

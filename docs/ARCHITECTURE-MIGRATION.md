@@ -389,3 +389,27 @@ Comprobaciones adicionales de esta etapa:
 - Pendiente en esta campaña: drawer de navegación, colores del header por
   superficie, recorrido de diapositivas, cursor/video y animaciones móviles.
   La coincidencia de estas seis capturas no aprueba esos comportamientos.
+
+### Menú de campaña AI Spend (2026-10-09)
+
+- Migrada la apertura/cierre del drawer original, conservando clases, clip-path,
+  secuencia de frames, retrasos y giro del icono durante el cierre. Se mantiene
+  visible el header mientras el menú está abierto. Escape, fondo, botón y enlaces
+  lo cierran. El contenido cerrado usa `inert`; el teclado permanece en el menú.
+- Migrados el selector English y los botones X/LinkedIn, con destinos canónicos
+  y título de página. Las pruebas sustituyen `window.open`: no envían ninguna
+  publicación ni certifican la respuesta de esas redes.
+- Los seis pares viewport/movimiento pasan apertura, tres cierres, selector,
+  recorrido de teclado, cierre al seguir un enlace y destinos de compartir.
+- Las 15 capturas con movimiento reducido coinciden exactamente, manteniendo
+  la comparación de pantalla completa: `phase-3-campaign-menu-visual.json`.
+  Con movimiento normal, móvil coincide en sus cinco estados; quedan diferencias
+  en escritorio/tablet, sobre todo por el recorrido y animación de fondo pendientes.
+  No se ocultan ni se aprueban esas diferencias. Evidencia:
+  `phase-3-campaign-menu-motion-visual.json`.
+- Pasan los siete tests generales, aislamiento de producción y comprobación de
+  137 páginas candidatas. El controlador añadido solo encuentra un header de
+  campaña en AI Spend. Sigue pendiente comprobar el consentimiento de terceros
+  (`Manage Cookies`); no se cambia su integración ni se simula consentimiento.
+- Sin publicación. El siguiente bloque es el recorrido animado de AI Spend y sus
+  superficies/cursor/vídeo; quedan también las comprobaciones globales anteriores.

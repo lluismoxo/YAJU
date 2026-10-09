@@ -149,6 +149,19 @@ try {
         await capture('search-closed');
         await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
       }
+      if(process.env.YAJU_TEST_CAMPAIGN_MENU==='1'){
+        const selector='button[data-campaign-chrome-mark]';
+        await Promise.all(pages.map(page=>page.locator(selector).click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(1200)));
+        await capture('campaign-menu');
+        await Promise.all(pages.map(page=>page.getByRole('dialog',{name:'Navigation',exact:true}).locator('button').filter({hasText:/^English$/}).click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(500)));
+        await capture('campaign-language');
+        await Promise.all(pages.map(page=>page.keyboard.press('Escape')));
+        await Promise.all(pages.map(page=>page.mouse.move(2,400)));
+        await Promise.all(pages.map(page=>page.waitForTimeout(800)));
+        await capture('campaign-menu-closed');
+      }
       const productMenus=await Promise.all(pages.map(page=>page.getByRole('link',{name:'Product',exact:true}).count()));
       assert.equal(productMenus[1],productMenus[0],`Product navigation count: ${route}`);
       if (viewport.name === 'desktop'&&productMenus[0]) {

@@ -139,22 +139,95 @@
   chrome();
 })();
 
-// Campaign chrome follows the original small-screen scroll visibility rule.
-// Its drawer and surface-dependent colour transitions are migrated separately.
+// The campaign has its own drawer and chrome, separate from the standard header.
 (() => {
   const toggle=document.querySelector('button[data-campaign-chrome-mark]');
   const bar=toggle?.parentElement;
-  if(!bar)return;
-  let previous=window.scrollY;
-  function update(){
-    const y=window.scrollY,open=toggle.getAttribute('aria-expanded')==='true';
-    const visible=matchMedia('(min-width: 1024px)').matches||open||y<=previous||y<=30;
+  const dialog=document.querySelector('[role="dialog"][aria-label="Navigation"]');
+  if(!bar||!dialog)return;
+  const aside=dialog.querySelector('aside'),backdrop=dialog.querySelector('button');
+  const icon=toggle.querySelector('img'),logo=bar.querySelector('a img');
+  let previous=window.scrollY,open=false,closing=false,timer=0,sequence=0;
+  const language=[...aside.querySelectorAll('button')].find(button=>button.textContent.trim()==='English');
+  const options=language?.nextElementSibling;
+  function setLanguage(value){
+    if(!options)return;
+    language.setAttribute('aria-expanded',String(value));
+    ['pointer-events-none','invisible','opacity-0'].forEach(name=>options.classList.toggle(name,!value));
+    ['pointer-events-auto','visible','opacity-100'].forEach(name=>options.classList.toggle(name,value));
+    language.querySelector('.icon-chevron-down')?.classList.toggle('motion-safe:rotate-180',value);
+  }
+  function chrome(){
+    const y=window.scrollY,busy=open||closing;
+    const visible=matchMedia('(min-width: 1024px)').matches||busy||y<=previous||y<=30;
+    const white=matchMedia('(max-width: 767px)').matches&&y>30&&!busy;
     bar.classList.toggle('translate-y-0',visible);
     bar.classList.toggle('-translate-y-full',!visible);
-    bar.classList.toggle('bg-pureWhite',matchMedia('(max-width: 767px)').matches&&y>30&&!open);
+    bar.classList.toggle('bg-pureWhite',white);
+    logo.classList.toggle('brightness-0',!busy&&(white||document.documentElement.dataset.campaignChromeLogo!=='light'));
+    icon.src=busy?'/nav_close_dark.svg':'/nav_icon_dark.svg';
+    icon.className=busy?'m-1 h-6 w-6 p-1':'h-8 w-8 p-1';
+    icon.classList.toggle('brightness-0',!busy&&(white||document.documentElement.dataset.campaignChromeBurger!=='light'));
+    ['transition-transform','duration-300','ease-out','motion-reduce:transition-none'].forEach(name=>toggle.classList.toggle(name,busy));
+    ['hover:rotate-90','motion-reduce:hover:rotate-0'].forEach(name=>toggle.classList.toggle(name,open&&!closing));
+    ['rotate-180','motion-reduce:rotate-0'].forEach(name=>toggle.classList.toggle(name,closing));
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',busy?'Close navigation menu':'Open navigation menu');
     previous=y;
   }
-  window.addEventListener('scroll',update,{passive:true});
-  window.addEventListener('resize',update,{passive:true});
-  update();
+  function reveal(value){
+    dialog.classList.toggle('pointer-events-none',!value);
+    dialog.setAttribute('aria-hidden',String(!value));dialog.inert=!value;
+    backdrop.classList.toggle('opacity-100',value);backdrop.classList.toggle('opacity-0',!value);backdrop.tabIndex=value?0:-1;
+    aside.classList.toggle('[clip-path:inset(0_0_0_0)]',value);
+    aside.classList.toggle('[clip-path:inset(0_0_100%_0)]',!value);
+    aside.classList.toggle('pointer-events-auto',value);aside.classList.toggle('pointer-events-none',!value);
+    if(!value)aside.dataset.navAnimated='false';
+  }
+  function setOpen(value){
+    const id=++sequence;clearTimeout(timer);open=value;closing=!value;
+    if(value){
+      closing=false;
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        if(id!==sequence)return;reveal(true);
+        requestAnimationFrame(()=>requestAnimationFrame(()=>{if(id===sequence)aside.dataset.navAnimated='true';}));
+      }));
+    }else{
+      reveal(false);setLanguage(false);
+      timer=setTimeout(()=>{closing=false;chrome();},300);
+    }
+    chrome();
+  }
+  toggle.addEventListener('click',()=>setOpen(!(open||closing)));
+  backdrop.addEventListener('click',()=>setOpen(false));
+  aside.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setOpen(false)));
+  document.addEventListener('keydown',event=>{
+    if(!open)return;
+    if(event.key==='Escape'){setOpen(false);toggle.focus();}
+    if(event.key==='Tab'){
+      const targets=[toggle,...aside.querySelectorAll('a[href],button')].filter(el=>el.getClientRects().length);
+      const first=targets[0],last=targets.at(-1);
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+    }
+  });
+  language?.addEventListener('click',()=>setLanguage(options.classList.contains('invisible')));
+  options?.addEventListener('click',()=>setLanguage(false));
+  document.addEventListener('click',event=>{if(language&&!language.parentElement.contains(event.target))setLanguage(false);});
+  aside.querySelectorAll('.react-share__ShareButton').forEach(button=>{
+    const label=button.querySelector('img')?.alt;
+    const endpoint=label==='X'?'https://twitter.com/intent/tweet':label==='LinkedIn'?'https://linkedin.com/shareArticle':null;
+    if(!endpoint)return;
+    button.setAttribute('aria-label',`Share on ${label}`);
+    button.addEventListener('click',()=>{
+      const url=new URL(endpoint);url.searchParams.set('url',`https://yajuas.com${location.pathname}`);
+      if(label==='X')url.searchParams.set('text',document.title);
+      else{url.searchParams.set('mini','true');url.searchParams.set('title',document.title);}
+      window.open(url.href,'_blank','noopener,noreferrer,width=550,height=400');setOpen(false);
+    });
+  });
+  window.addEventListener('scroll',chrome,{passive:true});
+  window.addEventListener('resize',chrome,{passive:true});
+  new MutationObserver(chrome).observe(document.documentElement,{attributes:true,attributeFilter:['data-campaign-chrome-logo','data-campaign-chrome-burger']});
+  dialog.inert=true;chrome();
 })();
