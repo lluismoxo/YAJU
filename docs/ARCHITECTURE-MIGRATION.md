@@ -413,3 +413,34 @@ Comprobaciones adicionales de esta etapa:
   (`Manage Cookies`); no se cambia su integración ni se simula consentimiento.
 - Sin publicación. El siguiente bloque es el recorrido animado de AI Spend y sus
   superficies/cursor/vídeo; quedan también las comprobaciones globales anteriores.
+
+### Recorrido animado de AI Spend (2026-10-09)
+
+- Nuevo controlador `campaign.js`, exclusivo de AI Spend, con GSAP/ScrollTrigger
+  3.13.0 ya fijados en el proyecto. Conserva la secuencia original de pinning,
+  desplazamientos, pausas, escalas, interpolación de fondos y colores del header.
+  Se elimina la dependencia de React para estas operaciones. No carga SplitText.
+- Migradas las entradas verticales de móvil y los enlaces al final del recorrido.
+  `matchMedia` revierte timelines y estilos al cambiar de layout o preferencia.
+  Un ResizeObserver mantiene la escala del escenario original de 1680 × 1080.
+- Corregida una dependencia heredada: el zoom del fondo final estaba dentro del
+  condicional de una tarjeta eliminada por el antiguo parche tras inicializarse.
+  Ahora el fondo conserva su zoom aunque esa tarjeta ya no exista en la plantilla.
+- Las posiciones, dimensiones, opacidades y transformaciones de ocho alturas
+  (0–9600) coinciden con el original, incluyendo el fondo final. La prueba también
+  comprueba la limpieza de pin-spacers, el cambio móvil/escritorio y el header en
+  tablet horizontal. La referencia emite su error de hidratación React #418; se
+  registra por separado y no se permiten errores en el candidato.
+- Comparación visual estricta con renderizado por software: 6/6 estados de
+  movimiento reducido idénticos. Movimiento normal: 4/6 capturas iniciales de
+  escritorio idénticas (las otras difieren en 36/24 píxeles); 8/12 de móvil/tablet
+  idénticas (diferencias de 36/76 píxeles); 4/6 del recorrido tardío de escritorio
+  idénticas. Siguen diferencias en los enlaces finales (7008/14253 píxeles).
+  No se aprueba toda la paridad visual ni se modifica el umbral o la referencia.
+- Evidencias: `phase-3-campaign-timeline-visual.json`,
+  `phase-3-campaign-mobile-motion-visual.json`,
+  `phase-3-campaign-late-motion-visual.json`,
+  `phase-3-campaign-reduced-visual.json` y `phase-3-campaign-timeline-controls.json`.
+- Pasan los siete tests generales, huellas de producción y validación de 137
+  páginas candidatas. Sin publicación. Pendientes cursor/miniaturas/vídeo de la
+  campaña, diferencias visuales indicadas, Labs y verificaciones globales previas.

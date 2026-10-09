@@ -1,0 +1,890 @@
+{
+  "results": [
+    {
+      "offset": 0,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": 0,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -0.001, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": 33.33,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 40, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": 283.33,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 40, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 1715.86,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -172.8, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 6465.6,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": 0,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -0.001, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": 33.33,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 40, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": 283.33,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 40, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 1715.86,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -172.8, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 6465.6,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 800,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -786.09,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -786.086, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -871.8,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0.2064",
+          "transform": "matrix(1, 0, 0, 1, -102.857, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -836.09,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 929.77,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -172.8, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 5679.51,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -786.09,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -786.086, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -871.8,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0.2064",
+          "transform": "matrix(1, 0, 0, 1, -102.857, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -836.09,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 929.77,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -172.8, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 5679.51,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 1700,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -878.44,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -878.436, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -995.1,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -928.44,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 978.39,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0.99",
+          "transform": "matrix(1, 0, 0, 1, -3.638, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 5587.16,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -878.44,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -878.436, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -995.1,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -928.44,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": 978.39,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0.99",
+          "transform": "matrix(1, 0, 0, 1, -3.638, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 5587.16,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 2800,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -1959.31,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -1959.31, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -2075.97,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -2009.31,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -329.46,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0.2394",
+          "transform": "matrix(1, 0, 0, 1, -276.017, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 4506.29,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -1959.31,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -1959.31, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -2075.97,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -2009.31,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -329.46,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0.2394",
+          "transform": "matrix(1, 0, 0, 1, -276.017, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 4506.29,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 4000,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -2548.04,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -2548.04, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -2664.71,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -2598.04,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -990.58,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 3917.56,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -2548.04,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -2548.04, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -2664.71,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -2598.04,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -990.58,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 3917.56,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 5100,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -3628.91,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -3628.91, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -3745.58,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -3678.91,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -2071.45,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 2836.69,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -3628.91,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -3628.91, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -3745.58,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -3678.91,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -2071.45,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 2836.69,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 7200,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -4396.38,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -4396.38, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -4513.05,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -4446.38,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -2838.92,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 2069.22,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -4396.38,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -4396.38, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -4513.05,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -4446.38,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -2838.92,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 2069.22,
+          "y": -99,
+          "width": 1756.8,
+          "height": 1098,
+          "opacity": "1",
+          "transform": "matrix(1.22, 0, 0, 1.22, 0, 0)"
+        }
+      },
+      "passed": true
+    },
+    {
+      "offset": 9600,
+      "reference": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -5962.64,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -5962.64, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -6079.31,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -6012.64,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -4405.18,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 555.52,
+          "y": -66.15,
+          "width": 1651.68,
+          "height": 1032.3,
+          "opacity": "1",
+          "transform": "matrix(1.147, 0, 0, 1.147, 0, 0)"
+        }
+      },
+      "candidate": {
+        ".campaign-slideshow__pin": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".campaign-slideshow__track": {
+          "x": -5962.64,
+          "y": 0,
+          "width": 8064,
+          "height": 900,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, -5962.64, 0)"
+        },
+        ".campaign-slideshow__hero-line": {
+          "x": -6079.31,
+          "y": 150.99,
+          "width": 554.86,
+          "height": 180,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -140, 0)"
+        },
+        ".campaign-slideshow__hero-body": {
+          "x": -6012.64,
+          "y": 495.99,
+          "width": 265.83,
+          "height": 63.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -360, 0)"
+        },
+        ".campaign-slideshow__trans-quote-block": {
+          "x": -4405.18,
+          "y": 553.33,
+          "width": 283.33,
+          "height": 52.01,
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, -362.88, 0)"
+        },
+        ".campaign-slideshow__split-type-media": null,
+        ".campaign-slideshow__split-zoom-media": null,
+        ".campaign-slideshow__final-media": null,
+        ".campaign-slideshow__final-bg .campaign-slideshow__media-frame": {
+          "x": 555.52,
+          "y": -66.15,
+          "width": 1651.68,
+          "height": 1032.3,
+          "opacity": "1",
+          "transform": "matrix(1.147, 0, 0, 1.147, 0, 0)"
+        }
+      },
+      "passed": true
+    }
+  ],
+  "errors": [
+    {
+      "index": 0,
+      "error": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    }
+  ]
+}

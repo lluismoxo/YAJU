@@ -147,7 +147,7 @@
   if(!bar||!dialog)return;
   const aside=dialog.querySelector('aside'),backdrop=dialog.querySelector('button');
   const icon=toggle.querySelector('img'),logo=bar.querySelector('a img');
-  let previous=window.scrollY,open=false,closing=false,timer=0,sequence=0;
+  let previous=window.scrollY,open=false,closing=false,timer=0,sequence=0,visible=true;
   const language=[...aside.querySelectorAll('button')].find(button=>button.textContent.trim()==='English');
   const options=language?.nextElementSibling;
   function setLanguage(value){
@@ -157,9 +157,10 @@
     ['pointer-events-auto','visible','opacity-100'].forEach(name=>options.classList.toggle(name,value));
     language.querySelector('.icon-chevron-down')?.classList.toggle('motion-safe:rotate-180',value);
   }
-  function chrome(){
+  function chrome(updateScroll=false){
     const y=window.scrollY,busy=open||closing;
-    const visible=matchMedia('(min-width: 1024px)').matches||busy||y<=previous||y<=30;
+    if(updateScroll)visible=matchMedia('(min-width: 1024px)').matches||busy||y<=previous||y<=30;
+    if(busy)visible=true;
     const white=matchMedia('(max-width: 767px)').matches&&y>30&&!busy;
     bar.classList.toggle('translate-y-0',visible);
     bar.classList.toggle('-translate-y-full',!visible);
@@ -173,7 +174,7 @@
     ['rotate-180','motion-reduce:rotate-0'].forEach(name=>toggle.classList.toggle(name,closing));
     toggle.setAttribute('aria-expanded',String(open));
     toggle.setAttribute('aria-label',busy?'Close navigation menu':'Open navigation menu');
-    previous=y;
+    if(updateScroll)previous=y;
   }
   function reveal(value){
     dialog.classList.toggle('pointer-events-none',!value);
@@ -226,8 +227,8 @@
       window.open(url.href,'_blank','noopener,noreferrer,width=550,height=400');setOpen(false);
     });
   });
-  window.addEventListener('scroll',chrome,{passive:true});
-  window.addEventListener('resize',chrome,{passive:true});
-  new MutationObserver(chrome).observe(document.documentElement,{attributes:true,attributeFilter:['data-campaign-chrome-logo','data-campaign-chrome-burger']});
+  window.addEventListener('scroll',()=>chrome(true),{passive:true});
+  window.addEventListener('resize',()=>chrome(true),{passive:true});
+  new MutationObserver(()=>chrome()).observe(document.documentElement,{attributes:true,attributeFilter:['data-campaign-chrome-logo','data-campaign-chrome-burger']});
   dialog.inert=true;chrome();
 })();
