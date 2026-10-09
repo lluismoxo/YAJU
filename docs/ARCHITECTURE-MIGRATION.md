@@ -444,3 +444,37 @@ Comprobaciones adicionales de esta etapa:
 - Pasan los siete tests generales, huellas de producción y validación de 137
   páginas candidatas. Sin publicación. Pendientes cursor/miniaturas/vídeo de la
   campaña, diferencias visuales indicadas, Labs y verificaciones globales previas.
+
+### Cursores y límites de texto de AI Spend (2026-10-09)
+
+- Migrados el cursor general de campaña y las miniaturas flotantes de los tres
+  enlaces finales. Con puntero táctil se muestran las miniaturas estáticas, con
+  el mismo marcado y tipografía originales. Las imágenes se reutilizan desde las
+  tarjetas iniciales; no se generan recursos ni se cambian destinos.
+- La prueba comparativa pasa para ambos tipos de puntero: apariencia/posición del
+  cursor, tres imágenes, entrada/salida y modo táctil. Confirma cero activadores de
+  vídeo en el DOM vigente de ambas versiones: las tarjetas se habían eliminado.
+  No se añade un reproductor para contenido ausente. Evidencia:
+  `phase-3-campaign-pointer-controls.json`.
+- Se identifica la causa de las diferencias de 36/76 píxeles en comillas: al
+  serializar React se unían nodos de texto adyacentes, cambiando su kerning. Los
+  importadores conservan esas separaciones mediante comentarios HTML vacíos.
+  No se modifica texto, CSS ni tamaño. Se preservan cinco grupos de escritorio y
+  cuatro de móvil. Las 12 capturas animadas móvil/tablet ahora son idénticas:
+  `phase-3-campaign-text-boundaries-visual.json`.
+- Las 16 capturas de escritorio que incluyen hover y recorrido dejan diferencias
+  en cinco estados; dos miniaturas completas y sus regiones son idénticas. La
+  tercera región difiere en 22 píxeles y su pantalla completa en 2868; pendiente
+  de clasificar. Informe: `phase-3-campaign-pointer-visual.json`.
+- Un control original contra original reproduce las diferencias de scroll y
+  enlaces finales (539, 7008, 14253 píxeles) con el mismo navegador/software.
+  Las tres miniaturas del autocontrol coinciden. No se alteran referencia, umbral
+  ni capturas para ocultar discrepancias. Informe:
+  `phase-3-campaign-reference-self-visual.json`. Además coinciden la geometría de
+  cada carácter y los estilos de los tres enlaces finales en scroll 11500:
+  `phase-3-campaign-text-geometry.json`.
+- La validación de 137 páginas vuelve a pasar tras regenerar la carpeta de build,
+  que había perdido archivos en el entorno local. La copia de
+  preview en /private/tmp permanece separada. Siete tests generales y huellas
+  publicadas correctas. Sin despliegue; continúan las verificaciones pendientes
+  de Labs, informe animado, consentimiento y revisión global.

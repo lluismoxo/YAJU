@@ -1,0 +1,112 @@
+[
+  {
+    "hasTouch": false,
+    "reference": {
+      "touch": false,
+      "videoHits": 0,
+      "staticThumbs": 0,
+      "cursorCount": 1,
+      "cards": [
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 307px, 0px) translate(-50%, -50%)"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 667px, 0px) translate(-50%, -50%)"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 758px, 0px) translate(-50%, -50%)"
+        }
+      ],
+      "cursor": {
+        "opacity": "1",
+        "transform": "translate3d(300px, 400px, 0px)",
+        "play": false
+      }
+    },
+    "candidate": {
+      "touch": false,
+      "videoHits": 0,
+      "staticThumbs": 0,
+      "cursorCount": 1,
+      "cards": [
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 307px, 0px) translate(-50%, -50%)"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 667px, 0px) translate(-50%, -50%)"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672",
+          "srcset": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=336 336w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672 672w",
+          "visible": true,
+          "transform": "translate3d(958.27px, 758px, 0px) translate(-50%, -50%)"
+        }
+      ],
+      "cursor": {
+        "opacity": "1",
+        "transform": "translate3d(300px, 400px, 0px)",
+        "play": false
+      }
+    },
+    "passed": true
+  },
+  {
+    "hasTouch": true,
+    "reference": {
+      "touch": true,
+      "videoHits": 0,
+      "staticThumbs": 3,
+      "cursorCount": 0,
+      "cards": [
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        }
+      ]
+    },
+    "candidate": {
+      "touch": true,
+      "videoHits": 0,
+      "staticThumbs": 3,
+      "cursorCount": 0,
+      "cards": [
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b5dee63ca8f5b5012470d402779921ba18d67ee1-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/76e597d1a4d1d9d678c4ba8583f806c0aef3eef7-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        },
+        {
+          "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dc13e866ed4f643ec68d4c3064ce29fae31ce50-672x480.png?auto=format&fit=max&q=80&w=672",
+          "description": "text-web3-14 font-body campaign-up-next__description"
+        }
+      ]
+    },
+    "passed": true
+  }
+]

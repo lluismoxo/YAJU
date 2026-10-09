@@ -162,6 +162,20 @@ try {
         await Promise.all(pages.map(page=>page.waitForTimeout(800)));
         await capture('campaign-menu-closed');
       }
+      if(process.env.YAJU_TEST_CAMPAIGN_THUMBS==='1'){
+        const selector='.campaign-up-next__copy';
+        for(let index=0;index<3;index++){
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).scrollIntoViewIfNeeded()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1800)));
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).hover()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(600)));
+          await capture(`campaign-thumbnail-${index}`);
+          await capture(`campaign-thumbnail-${index}-region`,'.campaign-up-next__thumb-cursor-frame');
+          await Promise.all(pages.map(page=>page.mouse.move(2,400)));
+        }
+        await Promise.all(pages.map(page=>page.mouse.move(10,10)));
+        await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
+      }
       const productMenus=await Promise.all(pages.map(page=>page.getByRole('link',{name:'Product',exact:true}).count()));
       assert.equal(productMenus[1],productMenus[0],`Product navigation count: ${route}`);
       if (viewport.name === 'desktop'&&productMenus[0]) {
