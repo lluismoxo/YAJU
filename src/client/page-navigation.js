@@ -138,3 +138,23 @@
   }
   chrome();
 })();
+
+// Campaign chrome follows the original small-screen scroll visibility rule.
+// Its drawer and surface-dependent colour transitions are migrated separately.
+(() => {
+  const toggle=document.querySelector('button[data-campaign-chrome-mark]');
+  const bar=toggle?.parentElement;
+  if(!bar)return;
+  let previous=window.scrollY;
+  function update(){
+    const y=window.scrollY,open=toggle.getAttribute('aria-expanded')==='true';
+    const visible=matchMedia('(min-width: 1024px)').matches||open||y<=previous||y<=30;
+    bar.classList.toggle('translate-y-0',visible);
+    bar.classList.toggle('-translate-y-full',!visible);
+    bar.classList.toggle('bg-pureWhite',matchMedia('(max-width: 767px)').matches&&y>30&&!open);
+    previous=y;
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update,{passive:true});
+  update();
+})();

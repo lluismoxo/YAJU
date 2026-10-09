@@ -1,0 +1,42 @@
+[
+  {
+    "index": 0,
+    "reference": {
+      "active": true,
+      "width": 998,
+      "height": 606,
+      "style": "width: 998px; height: 606px; left: -159px; top: -181px; opacity: 1;",
+      "mask": "radial-gradient(126px 86.4px at 314.807px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 348.807px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 338.807px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 324.807px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+      "pixelHash": "8f64c250820bcd2770585a20549fe438e2fc9da5779c8177bf8f9e9f2d9b22a7"
+    },
+    "candidate": {
+      "active": true,
+      "width": 998,
+      "height": 606,
+      "style": "width: 998px; height: 606px; left: -159px; top: -181px; opacity: 1;",
+      "mask": "radial-gradient(126px 86.4px at 314.807px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 348.807px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 338.807px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 324.807px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+      "pixelHash": "8f64c250820bcd2770585a20549fe438e2fc9da5779c8177bf8f9e9f2d9b22a7"
+    },
+    "passed": true
+  },
+  {
+    "index": 1,
+    "reference": {
+      "active": true,
+      "width": 1350,
+      "height": 606,
+      "style": "width: 1350px; height: 606px; left: -159px; top: -181px; opacity: 1;",
+      "mask": "radial-gradient(126px 86.4px at 490.806px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 524.806px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 514.806px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 500.806px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+      "pixelHash": "8adec0b2010e64b4ae5256b053c291524730c9dee36d0b51b05f078ff5c82196"
+    },
+    "candidate": {
+      "active": true,
+      "width": 1350,
+      "height": 606,
+      "style": "width: 1350px; height: 606px; left: -159px; top: -181px; opacity: 1;",
+      "mask": "radial-gradient(126px 86.4px at 490.806px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 524.806px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 514.806px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 500.806px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+      "pixelHash": "8adec0b2010e64b4ae5256b053c291524730c9dee36d0b51b05f078ff5c82196"
+    },
+    "passed": true
+  }
+]

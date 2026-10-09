@@ -16,6 +16,8 @@ for(const entry of entries){
  const model=JSON.parse(await readFile(entry.source,'utf8'));
  assert.equal(html.includes('/assets/native-report.js'),model.key==='reports__state-of-sovereign-ai-adoption-2026',`Report code loaded outside its route: ${entry.output}`);
  for(const vendor of ['gsap','ScrollTrigger','SplitText'])assert.equal(html.includes(`/assets/vendor/${vendor}.min.js`),model.key==='reports__state-of-sovereign-ai-adoption-2026',`Animation vendor scope: ${entry.output}`);
+ assert.equal(html.includes('/assets/native-dissolve-headline.js'),model.key==='ai-spend',`Headline effect scope: ${entry.output}`);
+ assert.equal(html.includes('class="campaign-slideshow-mobile-root"'),model.key==='ai-spend',`Campaign mobile template scope: ${entry.output}`);
  forms+=model.forms;
  for(const fragment of html.matchAll(/<(?:script|link|img|source|video)\b[^>]*>/g)){
   const value=fragment[0].match(/\b(?:src|href)="([^\"]+)"/)?.[1];

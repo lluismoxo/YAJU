@@ -149,7 +149,9 @@ try {
         await capture('search-closed');
         await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
       }
-      if (viewport.name === 'desktop') {
+      const productMenus=await Promise.all(pages.map(page=>page.getByRole('link',{name:'Product',exact:true}).count()));
+      assert.equal(productMenus[1],productMenus[0],`Product navigation count: ${route}`);
+      if (viewport.name === 'desktop'&&productMenus[0]) {
         await Promise.all(pages.map(page => page.getByRole('link',{name:'Product',exact:true}).first().locator('xpath=ancestor::li[1]').hover()));
         await Promise.all(pages.map(page => page.waitForTimeout(300)));
         await capture('product-menu');

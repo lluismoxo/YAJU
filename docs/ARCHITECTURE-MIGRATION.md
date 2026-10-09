@@ -364,3 +364,28 @@ Comprobaciones adicionales de esta etapa:
 - Pruebas generales: siete tests, huellas publicadas y 137 páginas candidatas
   verificadas. Preview local restablecida en `http://127.0.0.1:4184/`.
   Esta etapa sigue sin publicarse.
+
+### AI Spend: partículas y plantilla móvil (2026-10-09)
+
+- El efecto de disolución del titular usa un controlador nativo exclusivo de
+  AI Spend. Conserva muestreo, máscaras, formas y constantes de movimiento del
+  original; libera el bucle al terminar, al redimensionar o al reducir movimiento.
+  Los dos primeros dibujos de partículas coinciden exactamente con la referencia
+  (dimensiones, posición, máscara y hash de píxeles). Evidencia:
+  `phase-3-dissolve-first-paint.json`. El control de ocho estados comprueba entrada,
+  salida y cambio de preferencia; no certifica toda la animación aleatoria.
+- Se recupera la plantilla móvil original, distinta del escenario de escritorio.
+  El render estático elige su visibilidad con el mismo media query original,
+  incluida la excepción de tablet horizontal. El importador espera a que termine
+  la eliminación de las imágenes YAJU heredadas para no reintroducirlas.
+- El header de campaña conserva ahora la regla original de ocultación al bajar
+  en pantallas menores de 1024 px y fondo blanco móvil tras 30 px.
+- Seis capturas (inicio y scroll 800, tres anchos, movimiento reducido y renderizado
+  por software) coinciden sin diferencias. Se comprueban también las dimensiones
+  completas, sin recortar las diferencias. Evidencia:
+  `phase-3-campaign-responsive-visual.json`.
+- Pasan siete tests generales, las huellas de la versión publicada y la validación
+  estructural de 137 páginas candidatas. No se publica esta etapa.
+- Pendiente en esta campaña: drawer de navegación, colores del header por
+  superficie, recorrido de diapositivas, cursor/video y animaciones móviles.
+  La coincidencia de estas seis capturas no aprueba esos comportamientos.
