@@ -18,6 +18,11 @@
     "check:interactions": "node scripts/check-pilot-interactions.mjs"
   },
   "devDependencies": {
-    "gsap": "3.13.0"
+    "esbuild": "0.25.9",
+    "globe.gl": "2.44.0",
+    "gsap": "3.13.0",
+    "three": "0.179.1",
+    "three-globe": "2.44.0",
+    "three-render-objects": "1.40.0"
   }
 }

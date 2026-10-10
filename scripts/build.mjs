@@ -12,9 +12,10 @@ const output = resolve(root, allNative ? 'artifacts/native-all' : pilotOutput ? 
 const staging = resolve(root, allNative ? 'artifacts/.all-staging' : pilotOutput ? 'artifacts/.native-staging' : '.build-staging');
 const previous = resolve(root, allNative ? 'artifacts/.all-previous' : pilotOutput ? 'artifacts/.native-previous' : '.build-previous');
 const inputs = JSON.parse(await readFile(resolve(root, 'config/site-inputs.json'), 'utf8'));
+const globeTextures=['earth-blue-marble.jpg','earth-topology.png'].map(name=>({source:`node_modules/three-globe/example/img/${name}`,output:`assets/globe/${name}`}));
 const animationVendors=['gsap','ScrollTrigger','SplitText'].map(name=>({source:`node_modules/gsap/dist/${name}.min.js`,output:`assets/vendor/${name}.min.js`}));
 if(allNative){
- inputs.push(...animationVendors);
+ inputs.push(...animationVendors,...globeTextures);
  const pages=JSON.parse(await readFile(resolve(root,'config/native-pages.json'),'utf8'));
  for(const page of pages){const index=inputs.findIndex(e=>e.output===page.output);if(index<0)throw new Error(`Unknown route ${page.output}`);inputs[index]=page;}
  for(const [output,source] of [['assets/native-navigation.js','src/client/page-navigation.js'],['assets/forms/forms2.js','src/client/forms-adapter.js']]){
@@ -54,7 +55,7 @@ function confined(base, name) {
 // Validate the complete input list before writing or replacing the last good build.
 const destinations = new Set();
 for (const entry of inputs) {
-  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source) && !(allNative && (animationVendors.some(vendor=>vendor.source===entry.source)||/^src\/content\/pages\/[a-z0-9_-]+\.json$/.test(entry.source)||['src/client/campaign.js','src/client/dissolve-headline.js','src/client/page.js','src/client/report.js','src/client/forms.js','src/client/page-navigation.js','src/client/forms-adapter.js'].includes(entry.source)))) {
+  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source) && !(allNative && ([...animationVendors,...globeTextures].some(vendor=>vendor.source===entry.source)||/^src\/content\/pages\/[a-z0-9_-]+\.json$/.test(entry.source)||['src/client/campaign.js','src/client/dissolve-headline.js','src/client/page.js','src/client/report.js','src/client/forms.js','src/client/page-navigation.js','src/client/forms-adapter.js'].includes(entry.source)))) {
     throw new Error(`Input outside the public source allowlist: ${entry.source}`);
   }
   const source = confined(root, entry.source);
@@ -103,6 +104,10 @@ for (const entry of inputs) {
 }
 // Keep the preceding build recoverable until the new output has been completed.
 await rm(previous, { recursive: true, force: true });
+if(allNative){
+ const {build}=await import('esbuild');
+ await build({entryPoints:[resolve(root,'src/client/globe.js')],bundle:true,minify:true,format:'iife',target:'es2020',outfile:resolve(staging,'assets/native-globe.js'),legalComments:'linked'});
+}
 try { await rename(output, previous); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 try { await rename(staging, output); }
 catch (error) { await rename(previous, output).catch(() => {}); throw error; }

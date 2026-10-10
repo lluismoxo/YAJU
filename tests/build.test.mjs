@@ -23,7 +23,7 @@ test('every public source has exactly one manifest entry; private code is exclud
       await access(resolve(root, `src/components/fragments/${fragment}.html`));
     }
   }
-  for (const file of ['campaign.js','dissolve-headline.js','page.js','report.js','forms.js','page-navigation.js','forms-adapter.js']) expected.add(`src/client/${file}`);
+  for (const file of ['globe.js','globe-ascii.js','campaign.js','dissolve-headline.js','page.js','report.js','forms.js','page-navigation.js','forms-adapter.js']) expected.add(`src/client/${file}`);
   async function walk(dir) {
     for (const entry of await readdir(resolve(root, dir), { withFileTypes: true })) {
       const name = `${dir}/${entry.name}`;

@@ -19,6 +19,7 @@ for(const entry of entries){
  assert.equal(html.includes('/assets/native-dissolve-headline.js'),model.key==='ai-spend',`Headline effect scope: ${entry.output}`);
  assert.equal(html.includes('class="campaign-slideshow-mobile-root"'),model.key==='ai-spend',`Campaign mobile template scope: ${entry.output}`);
  assert.equal(html.includes('/assets/native-campaign.js'),model.key==='ai-spend',`Campaign animation scope: ${entry.output}`);
+ assert.equal(html.includes('/assets/native-globe.js'),model.key==='labs',`Globe route scope: ${entry.output}`);
  forms+=model.forms;
  for(const fragment of html.matchAll(/<(?:script|link|img|source|video)\b[^>]*>/g)){
   const value=fragment[0].match(/\b(?:src|href)="([^\"]+)"/)?.[1];

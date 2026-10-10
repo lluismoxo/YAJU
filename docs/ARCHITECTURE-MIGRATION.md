@@ -478,3 +478,50 @@ Comprobaciones adicionales de esta etapa:
   preview en /private/tmp permanece separada. Siete tests generales y huellas
   publicadas correctas. Sin despliegue; continúan las verificaciones pendientes
   de Labs, informe animado, consentimiento y revisión global.
+
+### Separación del filtro ASCII de Labs (2026-10-09)
+
+- Identificado el módulo original 573931: escena globe.gl/Three.js r179 con
+  textura terrestre y relieve, convertida en caracteres mediante un segundo
+  canvas. El HTML capturado contiene canvases sin su comportamiento; no basta
+  con conservar ese marcado para completar la migración.
+- Extraído `src/client/globe-ascii.js` con nombres legibles, conservando orden de
+  muestreo, luminancia, contraste, fuente, posiciones, aparición y distancias
+  de cámara por tamaño de pantalla. Aún no se carga ni publica este módulo:
+  falta integrar la escena y comprobar su apariencia y controles completos.
+- `tests/globe-ascii.test.mjs` ejecuta directamente el filtro del bundle original
+  como referencia independiente. Coinciden todos los caracteres, coordenadas y
+  estilos en 72 combinaciones de viewport, canvas y fase de aparición, incluidos
+  límites de muestreo. También se verifican siete límites responsive de cámara.
+- Esto valida la conversión del filtro, no la paridad visual del globo completo.
+  Siguiente paso: separar las dependencias 3D sin React/Next, conectar el ciclo
+  de vida con limpieza de RAF/listeners y revisar escritorio/táctil/resize.
+
+### Integración nativa del globo de Labs (2026-10-10)
+
+- `globe.js` conecta el filtro ASCII a globe.gl 2.44.0, three-globe 2.44.0,
+  three-render-objects 1.40.0 y Three.js 0.179.1 (r179, como el original).
+  Versiones y dependencias transitivas fijadas en package-lock. Esbuild 0.25.9
+  genera un bundle independiente, cargado exclusivamente en `/labs`.
+- Se conservan cámara, luz, relieve, caracteres, rotación 1.5, damping 0.05,
+  zoom deshabilitado y arrastre solo para dispositivos sin pantalla táctil.
+  El controlador elimina RAF, temporizador, listeners, controles y renderer al
+  salir y monta una única instancia al restaurar la página desde historial.
+- Las URLs relativas al protocolo del original se bloqueaban por CORS en HTTP
+  local. Las texturas del paquete fijado coinciden byte a byte con el CDN:
+  tierra `228deba2e4b600146bdcb6cfa359b8ead6aacc2b1c13550a29cd82824cfa1c01`,
+  relieve `839b12da2e4dd346b256cebae72e10c479a102c8980a22084c41275e4b9a0e12`.
+  La candidata las sirve desde `/assets/globe/`; la prueba suministra al original
+  esos mismos bytes con CORS para no comparar dos globos vacíos.
+- `check-native-globe.mjs` revisa visibilidad real, desktop/touch, resize,
+  limpieza y restauración. En modo `YAJU_GLOBE_STATIC=1` detiene la rotación
+  **solo en ambas instancias de prueba** y exige igualdad exacta de controles,
+  cámara y bytes PNG del canvas a 1440 y 390 px de viewport.
+- El canvas coincide exactamente en ambos tamaños. Esto no equivale a aprobar
+  toda la página: las capturas con el fondo alrededor aún tienen diferencias
+  (134786 píxeles en desktop y 77750 en móvil), aunque el dibujo del globo es
+  idéntico. Queda revisar la composición/fondo del hero de Labs y la revisión
+  visual global. No se relaja el umbral ni se publica esta fase.
+- Pasan las nueve pruebas generales, las huellas publicadas y el aislamiento de
+  recursos de las 137 páginas candidatas. Bundle 3D aproximado: 1.7 MB sin gzip,
+  únicamente en Labs; no se atribuye a esto una mejora de velocidad medida.

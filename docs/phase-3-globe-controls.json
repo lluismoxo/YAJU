@@ -1,0 +1,182 @@
+{
+  "mode": "static rotation disabled only in both test instances",
+  "results": [
+    {
+      "port": 4185,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 30971
+      },
+      "errors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "controls": [
+        {
+          "requested": true,
+          "speed": 1.5,
+          "damping": 0.05,
+          "zoom": false,
+          "rotate": true,
+          "camera": [
+            1.469576158976824e-14,
+            1.469576158976824e-14,
+            240
+          ]
+        }
+      ],
+      "canvasSha256": "c492c593c8b79e330e24c3467db5134d20adf610680ffabfacd5f9786594a1e7"
+    },
+    {
+      "port": 4184,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 30971
+      },
+      "errors": [],
+      "controls": [
+        {
+          "requested": true,
+          "speed": 1.5,
+          "damping": 0.05,
+          "zoom": false,
+          "rotate": true,
+          "camera": [
+            1.469576158976824e-14,
+            1.469576158976824e-14,
+            240
+          ]
+        }
+      ],
+      "canvasSha256": "c492c593c8b79e330e24c3467db5134d20adf610680ffabfacd5f9786594a1e7"
+    },
+    {
+      "port": 4185,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 14828
+      },
+      "errors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "controls": [
+        {
+          "requested": true,
+          "speed": 1.5,
+          "damping": 0.05,
+          "zoom": false,
+          "rotate": false,
+          "camera": [
+            1.7145055188062946e-14,
+            1.7145055188062946e-14,
+            280
+          ]
+        }
+      ],
+      "canvasSha256": "f8c1f685151b03f9750e55138fa127afe5238ff04238b162dae5042b32a2ba96"
+    },
+    {
+      "port": 4184,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 14828
+      },
+      "errors": [],
+      "controls": [
+        {
+          "requested": true,
+          "speed": 1.5,
+          "damping": 0.05,
+          "zoom": false,
+          "rotate": false,
+          "camera": [
+            1.7145055188062946e-14,
+            1.7145055188062946e-14,
+            280
+          ]
+        }
+      ],
+      "canvasSha256": "f8c1f685151b03f9750e55138fa127afe5238ff04238b162dae5042b32a2ba96"
+    }
+  ],
+  "checks": {
+    "visible": true,
+    "resize": true,
+    "dispose": true,
+    "historyRestore": true,
+    "exactCanvasBytes": true,
+    "exactControls": true
+  },
+  "fullPageParity": false
+}
