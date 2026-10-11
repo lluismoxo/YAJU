@@ -1,0 +1,142 @@
+[
+  {
+    "route": "/about",
+    "width": 1440,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1163,
+        "equal": true
+      },
+      {
+        "scroll": 1463,
+        "equal": true
+      },
+      {
+        "scroll": 1763,
+        "equal": true
+      },
+      {
+        "scroll": 2063,
+        "equal": true
+      },
+      {
+        "scroll": 2463,
+        "equal": true
+      },
+      {
+        "scroll": 3063,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 1024,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 940,
+        "equal": true
+      },
+      {
+        "scroll": 1240,
+        "equal": true
+      },
+      {
+        "scroll": 1540,
+        "equal": true
+      },
+      {
+        "scroll": 1840,
+        "equal": true
+      },
+      {
+        "scroll": 2240,
+        "equal": true
+      },
+      {
+        "scroll": 2840,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 682,
+        "equal": true
+      },
+      {
+        "scroll": 982,
+        "equal": true
+      },
+      {
+        "scroll": 1282,
+        "equal": true
+      },
+      {
+        "scroll": 1582,
+        "equal": true
+      },
+      {
+        "scroll": 1982,
+        "equal": true
+      },
+      {
+        "scroll": 2582,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1039,
+        "equal": true
+      },
+      {
+        "scroll": 1339,
+        "equal": true
+      },
+      {
+        "scroll": 1639,
+        "equal": true
+      },
+      {
+        "scroll": 1939,
+        "equal": true
+      },
+      {
+        "scroll": 2339,
+        "equal": true
+      },
+      {
+        "scroll": 2939,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  }
+]

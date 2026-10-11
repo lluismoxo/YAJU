@@ -601,3 +601,33 @@ Comprobaciones adicionales de esta etapa:
   `phase-3-stack-reference-repeat-controls.json` y
   `phase-3-stack-reference-repeat-visual.json`. Próximo paso: aislar las medidas
   de los disparadores del texto y el orden de refresco al cargar imágenes.
+
+### Medidas de texto y restauración del apilado (2026-10-11)
+
+- El controlador espera a las fuentes antes de medir. La inicialización está
+  protegida frente a montajes duplicados y al retorno desde el historial.
+- Se localiza la diferencia de About: la aplicación antigua calcula el movimiento
+  con dos columnas y después su parche retira las imágenes y ensancha el texto.
+  El componente nativo conserva esas medidas con un elemento invisible temporal,
+  sin recuperar imágenes, peticiones ni runtime antiguo. Recalcula al variar el
+  ancho y retira inmediatamente el elemento de medición.
+- El original presenta dos recorridos según el orden de carga: a 768 px y scroll
+  1582, el texto de la primera tarjeta queda en y=187.5845 o y=143.5600, pese a
+  empezar con idénticas dimensiones. Se conserva esa evidencia en
+  `phase-3-about-original-variability.json`; no se disimula con tolerancias.
+- La implementación final coincide con el recorrido original de dos columnas:
+  28/28 estados y cero píxeles en cuatro capturas (1440, 1024, 768 y 390 px).
+  Evidencias: `phase-3-about-stack-final-controls.json` y `...-visual.json`.
+- About y Ecosystem pasan además desmontaje/restauración de historial, cambio
+  móvil/escritorio y ausencia de contenedores duplicados. Sus capturas móviles
+  también coinciden: `phase-3-stack-history-controls.json` y `...-visual.json`.
+- La regresión de Labs pasa 21 estados y tres capturas. Pasan las nueve pruebas
+  generales y la revisión de las 137 rutas. No se cambia el build publicado.
+- Sigue pendiente el botón de la segunda tarjeta de Inicio a 1440 px: 586 píxeles
+  diferentes con geometría, estilos calculados y contenedores equivalentes.
+  El control original/original coincide. Diagnóstico guardado en
+  `phase-3-stack-button-diagnostics.json`; no se declara aprobado ese resultado.
+- Se identifica otra interacción pendiente para la siguiente revisión: el botón
+  sólido original alterna clases de hover/active mediante React (módulo 788415).
+  El controlador nativo aún no reproduce ese estado. Debe verificarse por variante
+  antes de trasladarlo; no basta con aprobar la captura estática.

@@ -21,17 +21,24 @@ try{
   await page.goto(origin+route);await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(3000);
   const count=await page.locator('.left-text-container').count();
   if(port===4185)bases.set(`${route}/${width}`,Math.round(await page.locator('.left-text-container').first().evaluate(el=>el.parentElement.getBoundingClientRect().top+scrollY)));
-  const base=bases.get(`${route}/${width}`),states=[];
+  const base=bases.get(`${route}/${width}`),states=[];let diagnostics;
   for(const y of [0,Math.max(0,base-300),base,base+300,base+600,base+1000,base+1600]){
    await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(1000);
    const cards=await page.locator('.left-text-container').evaluateAll(texts=>texts.map(text=>{const card=text.parentElement,r=card.getBoundingClientRect(),t=text.getBoundingClientRect(),s=getComputedStyle(card);return {rect:[r.x,r.y,r.width,r.height],textRect:[t.x,t.y,t.width,t.height],transform:s.transform,position:s.position};}));
    states.push({y,cards});
-   if(y===base+600)await page.screenshot({path:`${output}/stack-${key}-${port}-${width}.png`});
+   if(y===base+600){diagnostics=await page.locator('.left-text-container').evaluateAll(texts=>texts.map(text=>[text,...text.querySelectorAll('a, a span')].map(el=>({tag:el.tagName,classes:el.className,inline:el.style.cssText,ancestors:(()=>{const result=[];for(let p=el.parentElement;p&&p.tagName!=='BODY';p=p.parentElement)result.push({tag:p.tagName,classes:p.className,style:p.style.cssText});return result;})(),rect:el.getBoundingClientRect().toJSON(),css:Object.fromEntries(['font-family','font-size','font-weight','line-height','letter-spacing','color','background-color','border-radius','border-width','padding','transform','filter','opacity','will-change','position','z-index'].map(key=>[key,getComputedStyle(el).getPropertyValue(key)]))}))));await page.screenshot({path:`${output}/stack-${key}-${port}-${width}.png`});}
   }
   const media=await page.locator('.left-text-container').evaluateAll(texts=>texts.map(text=>({buttons:[...text.querySelectorAll('a')].map(a=>a.outerHTML),images:[...text.parentElement.querySelectorAll('img')].map(img=>({src:img.currentSrc,width:img.naturalWidth,height:img.naturalHeight,rect:img.getBoundingClientRect().toJSON()}))})));
-  if(port===4184&&process.env.YAJU_COMPARE_REFERENCE!=='1'){assert.deepEqual(errors,[]);await page.setViewportSize({width:390,height:844});await page.waitForTimeout(600);assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),0);await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(600);assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),count);}
+  if(port===4184&&process.env.YAJU_COMPARE_REFERENCE!=='1'){assert.deepEqual(errors,[]);await page.setViewportSize({width:390,height:844});await page.waitForTimeout(600);assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),0);await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(600);assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),count);
+   await page.evaluate(()=>dispatchEvent(new PageTransitionEvent('pagehide',{persisted:true})));
+   assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),0);
+   await page.evaluate(()=>dispatchEvent(new PageTransitionEvent('pageshow',{persisted:true})));
+   await page.waitForTimeout(600);
+   assert.equal(await page.locator('[data-native-stack] > .pin-spacer').count(),count);
+   assert.equal(await page.locator('[data-native-stack] .left-text-container').count(),count);
+  }
 
-  report.push({route,port,width,base,states,errors,media});console.log(`Checked ${route} ${width}px ${port}`);await page.close();
+  report.push({route,port,width,base,states,errors,media,diagnostics});console.log(`Checked ${route} ${width}px ${port}`);await page.close();
  }
 }finally{await browser.close();await writeFile(`${output}/stacking-pages.json`,JSON.stringify(report,null,2)+'\n');}
 const differences=[];

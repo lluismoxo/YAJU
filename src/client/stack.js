@@ -6,8 +6,32 @@ document.querySelectorAll('[data-native-stack]').forEach(stack => {
   const cards = [...stack.children];
   const textBlocks = cards.slice(0,-1).map(card=>card.querySelector('.left-text-container'));
   const hasEyebrow = cards.some(card=>card.querySelector('.font-eyebrow'));
-  let context, media;
+  // About's visible copy was widened after its original scroll measurements.
+  // Keep that motion geometry without loading or displaying the removed media.
+  function measurePreviousColumn(text,index) {
+    const column=cards[index].dataset.stackMotionColumn;
+    if(!column)return null;
+    const clone=cards[index].cloneNode(true);
+    clone.style.cssText=`position:absolute;visibility:hidden;pointer-events:none;left:0;top:0;width:${stack.offsetWidth}px`;
+    clone.setAttribute('aria-hidden','true');
+    const copy=clone.querySelector('.left-text-container');
+    copy.removeAttribute('style');
+    clone.replaceChildren(copy);
+    const columnBox=document.createElement('div');
+    columnBox.style.cssText=`width:${column==='viewport'?innerWidth:Number(column)}px;max-width:620px;height:480px;flex-shrink:1`;
+    clone.append(columnBox);
+    stack.append(clone);
+    const offset=copy.getBoundingClientRect().top-clone.getBoundingClientRect().top;
+    columnBox.remove();
+    copy.style.width='100%';copy.style.maxWidth='800px';
+    const currentOffset=copy.getBoundingClientRect().top-clone.getBoundingClientRect().top;
+    clone.remove();
+    return {offset,delta:offset-currentOffset};
+  }
+  let context, media, mounted=false, active=true;
   function mount() {
+    if(mounted||!active)return;
+    mounted=true;
     context = gsap.context(() => {
       media = gsap.matchMedia();
       media.add('(max-width: 767px)', () => {
@@ -30,10 +54,18 @@ document.querySelectorAll('[data-native-stack]').forEach(stack => {
       });
       media.add({isMobile:'(max-width: 767px)',isDesktop:'(min-width: 768px)'}, ({conditions}) => {
         if (conditions.isMobile || !hasEyebrow) return;
-        textBlocks.forEach((text,index)=>gsap.to(text,{
-          y:()=>text.parentElement.getBoundingClientRect().top-text.getBoundingClientRect().top+25,
-          ease:'power1.inOut',scrollTrigger:{trigger:text,start:`-100 ${35+100*index+1}`,end:`100 ${35+100*index+1}`,scrub:true,toggleActions:'play none none reverse',pinSpacing:false,invalidateOnRefresh:true},
-        }));
+        textBlocks.forEach((text,index)=>{
+          let measure, measuredWidth;
+          const measurement=()=>{
+            const width=`${stack.offsetWidth}/${innerWidth}`;
+            if(width!==measuredWidth){measure=measurePreviousColumn(text,index);measuredWidth=width;}
+            return measure;
+          };
+          return gsap.to(text,{
+          y:()=>{const measured=measurement();return measured?25-measured.offset:text.parentElement.getBoundingClientRect().top-text.getBoundingClientRect().top+25;},
+          ease:'power1.inOut',scrollTrigger:{trigger:text,start:()=>`${-100+(measurement()?.delta||0)} ${35+100*index+1}`,end:()=>`${100+(measurement()?.delta||0)} ${35+100*index+1}`,scrub:true,toggleActions:'play none none reverse',pinSpacing:false,invalidateOnRefresh:true},
+          });
+        });
       });
       media.add({isMobile:'(max-width: 767px)',isDesktop:'(min-width: 768px)'}, ({conditions}) => {
         const mobile=conditions.isMobile, spacing=mobile?35:28;
@@ -45,7 +77,8 @@ document.querySelectorAll('[data-native-stack]').forEach(stack => {
       });
     },stack);
   }
-  mount();
-  window.addEventListener('pagehide',()=>{media?.revert();context?.revert();});
-  window.addEventListener('pageshow',event=>{if(event.persisted)mount();});
+  const mountWhenReady=()=>document.fonts.ready.then(()=>{if(active)mount();});
+  mountWhenReady();
+  window.addEventListener('pagehide',()=>{active=false;media?.revert();context?.revert();mounted=false;});
+  window.addEventListener('pageshow',event=>{if(event.persisted){active=true;mountWhenReady();}});
 });
