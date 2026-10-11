@@ -1,0 +1,2960 @@
+[
+  {
+    "port": 4185,
+    "width": 1440,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              40,
+              1740.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1950.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2366.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2576.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2992.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              3202.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              40,
+              140.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              350.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              766.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              976.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1392.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1602.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              40.88397216796875,
+              115.4381103515625,
+              1358.23193359375,
+              649.155029296875
+            ],
+            "textRect": [
+              126.77217102050781,
+              325.55523681640625,
+              439.42803955078125,
+              220.93115234375
+            ],
+            "transform": "matrix(0.9987, 0, 0, 0.9987, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              466.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              676.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1092.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1302.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              43.8079833984375,
+              116.83563232421875,
+              1352.384033203125,
+              646.3599853515625
+            ],
+            "textRect": [
+              129.32638549804688,
+              326.048095703125,
+              437.5360412597656,
+              219.97991943359375
+            ],
+            "transform": "matrix(0.9944, 0, 0, 0.9944, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              180.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              390.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              792.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1002.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              50.8800048828125,
+              120.21560668945312,
+              1338.239990234375,
+              639.60009765625
+            ],
+            "textRect": [
+              135.50399780273438,
+              327.239990234375,
+              432.9599914550781,
+              217.67926025390625
+            ],
+            "transform": "matrix(0.984, 0, 0, 0.984, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              43.8759765625,
+              181.86813354492188,
+              1352.248046875,
+              646.294921875
+            ],
+            "textRect": [
+              129.38577270507812,
+              391.0595397949219,
+              437.4920349121094,
+              219.95779418945312
+            ],
+            "transform": "matrix(0.9943, 0, 0, 0.9943, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              392.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              602.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -107.8018798828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              97.9390869140625,
+              430.2760314941406,
+              216.329833984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -53.409423828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              154.66693115234375,
+              435.15997314453125,
+              218.78533935546875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              211.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -507.8018798828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              -302.0609130859375,
+              430.2760314941406,
+              216.329833984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -453.409423828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              -245.33306884765625,
+              435.15997314453125,
+              218.78533935546875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              -398.984375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              -188.59375,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 758.1380615234375,
+              "y": -428.592041015625,
+              "width": 606.2979736328125,
+              "height": 469.39208984375,
+              "top": -428.592041015625,
+              "right": 1364.43603515625,
+              "bottom": 40.800048828125,
+              "left": 758.1380615234375
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=1240",
+            "width": 1393,
+            "height": 1078,
+            "rect": {
+              "x": 758.5709838867188,
+              "y": -373.3004150390625,
+              "width": 613.1799926757812,
+              "height": 474.6890869140625,
+              "top": -373.3004150390625,
+              "right": 1371.7509765625,
+              "bottom": 101.388671875,
+              "left": 758.5709838867188
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=1240",
+            "width": 1393,
+            "height": 1078,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 759,
+              "y": -317.984375,
+              "width": 620,
+              "height": 480,
+              "top": -317.984375,
+              "right": 1379,
+              "bottom": 162.015625,
+              "left": 759
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "port": 4184,
+    "width": 1440,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              40,
+              1740.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1950.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2366.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2576.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2992.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              3202.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              40,
+              140.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              350.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              766.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              976.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1392.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1602.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              40.88397216796875,
+              115.4381103515625,
+              1358.23193359375,
+              649.155029296875
+            ],
+            "textRect": [
+              126.77217102050781,
+              325.55523681640625,
+              439.42803955078125,
+              220.93115234375
+            ],
+            "transform": "matrix(0.9987, 0, 0, 0.9987, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              466.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              676.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1092.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1302.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              43.8079833984375,
+              116.83563232421875,
+              1352.384033203125,
+              646.3599853515625
+            ],
+            "textRect": [
+              129.32638549804688,
+              326.048095703125,
+              437.5360412597656,
+              219.97991943359375
+            ],
+            "transform": "matrix(0.9944, 0, 0, 0.9944, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              180.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              390.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              792.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1002.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              50.8800048828125,
+              120.21560668945312,
+              1338.239990234375,
+              639.60009765625
+            ],
+            "textRect": [
+              135.50399780273438,
+              327.239990234375,
+              432.9599914550781,
+              217.67926025390625
+            ],
+            "transform": "matrix(0.984, 0, 0, 0.984, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              43.8759765625,
+              181.86813354492188,
+              1352.248046875,
+              646.294921875
+            ],
+            "textRect": [
+              129.38577270507812,
+              391.0595397949219,
+              437.4920349121094,
+              219.95779418945312
+            ],
+            "transform": "matrix(0.9943, 0, 0, 0.9943, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              392.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              602.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -107.8018798828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              97.9390869140625,
+              430.2760314941406,
+              216.329833984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -53.409423828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              154.66693115234375,
+              435.15997314453125,
+              218.78533935546875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1.015625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              211.40625,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -507.8018798828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              -302.0609130859375,
+              430.2760314941406,
+              216.329833984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -453.409423828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              -245.33306884765625,
+              435.15997314453125,
+              218.78533935546875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              -398.984375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              -188.59375,
+              440,
+              221.21875
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 758.1380615234375,
+              "y": -428.592041015625,
+              "width": 606.2979736328125,
+              "height": 469.39208984375,
+              "top": -428.592041015625,
+              "right": 1364.43603515625,
+              "bottom": 40.800048828125,
+              "left": 758.1380615234375
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=1240",
+            "width": 1393,
+            "height": 1078,
+            "rect": {
+              "x": 758.5709838867188,
+              "y": -373.3004150390625,
+              "width": 613.1799926757812,
+              "height": 474.6890869140625,
+              "top": -373.3004150390625,
+              "right": 1371.7509765625,
+              "bottom": 101.388671875,
+              "left": 758.5709838867188
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=1240",
+            "width": 1393,
+            "height": 1078,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 759,
+              "y": -317.984375,
+              "width": 620,
+              "height": 480,
+              "top": -317.984375,
+              "right": 1379,
+              "bottom": 162.015625,
+              "left": 759
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=1240",
+            "width": 1440,
+            "height": 1114,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "port": 4185,
+    "width": 768,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1610.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1777.390625,
+              242.578125,
+              244.828125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2172.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2328.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2734.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2887.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              16.147216796875,
+              114.9296875,
+              735.70556640625,
+              585.765625
+            ],
+            "textRect": [
+              41.13721466064453,
+              281.441162109375,
+              242.48110961914062,
+              244.730224609375
+            ],
+            "transform": "matrix(0.9996, 0, 0, 0.9996, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              572.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              728.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1134.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1287.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              18.355194091796875,
+              116.68768310546875,
+              731.28955078125,
+              582.2496337890625
+            ],
+            "textRect": [
+              43.195194244384766,
+              282.19970703125,
+              241.025634765625,
+              243.26123046875
+            ],
+            "transform": "matrix(0.9936, 0, 0, 0.9936, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              272.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              428.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              834.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              987.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              23.175994873046875,
+              120.5260009765625,
+              721.64794921875,
+              574.572998046875
+            ],
+            "textRect": [
+              47.68849182128906,
+              283.8558349609375,
+              237.8478546142578,
+              240.053955078125
+            ],
+            "transform": "matrix(0.9805, 0, 0, 0.9805, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              17.21441650390625,
+              180.77938842773438,
+              733.5711669921875,
+              584.066162109375
+            ],
+            "textRect": [
+              42.13191604614258,
+              336.4359130859375,
+              204.10546875,
+              264.76397705078125
+            ],
+            "transform": "matrix(0.9967, 0, 0, 0.9967, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              534.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              687.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              39.766845703125,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              199.548583984375,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              91.7896728515625,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              244.775634765625,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              143.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              296.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -360.233154296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -200.451416015625,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -308.2103271484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -155.224365234375,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -256.1875,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -103.203125,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -760.233154296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -600.451416015625,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -708.2103271484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -555.224365234375,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -656.1875,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -503.203125,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 306.8593444824219,
+              "y": -713.2322998046875,
+              "width": 406.1462707519531,
+              "height": 314.4227294921875,
+              "top": -713.2322998046875,
+              "right": 713.005615234375,
+              "bottom": -398.8095703125,
+              "left": 306.8593444824219
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=930",
+            "width": 990,
+            "height": 767,
+            "rect": {
+              "x": 268.19293212890625,
+              "y": -660.2098999023438,
+              "width": 451.80987548828125,
+              "height": 349.76312255859375,
+              "top": -660.2098999023438,
+              "right": 720.0028076171875,
+              "bottom": -310.44677734375,
+              "left": 268.19293212890625
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=930",
+            "width": 990,
+            "height": 767,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 303.578125,
+              "y": -607.1875,
+              "width": 423.421875,
+              "height": 327.796875,
+              "top": -607.1875,
+              "right": 727,
+              "bottom": -279.390625,
+              "left": 303.578125
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "port": 4184,
+    "width": 768,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1610.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1777.390625,
+              242.578125,
+              244.828125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2172.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2328.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2734.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2887.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              16.147216796875,
+              114.9296875,
+              735.70556640625,
+              585.765625
+            ],
+            "textRect": [
+              41.13721466064453,
+              281.441162109375,
+              242.48110961914062,
+              244.730224609375
+            ],
+            "transform": "matrix(0.9996, 0, 0, 0.9996, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              572.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              728.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1134.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1287.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              18.355194091796875,
+              116.68768310546875,
+              731.28955078125,
+              582.2496337890625
+            ],
+            "textRect": [
+              43.195194244384766,
+              282.19970703125,
+              241.025634765625,
+              243.26123046875
+            ],
+            "transform": "matrix(0.9936, 0, 0, 0.9936, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              272.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              428.984375,
+              204.78125,
+              265.640625
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              834.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              987.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              23.175994873046875,
+              120.5260009765625,
+              721.64794921875,
+              574.572998046875
+            ],
+            "textRect": [
+              47.68849182128906,
+              283.8558349609375,
+              237.8478546142578,
+              240.053955078125
+            ],
+            "transform": "matrix(0.9805, 0, 0, 0.9805, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              17.21441650390625,
+              180.77938842773438,
+              733.5711669921875,
+              584.066162109375
+            ],
+            "textRect": [
+              42.13191604614258,
+              336.4359130859375,
+              204.10546875,
+              264.76397705078125
+            ],
+            "transform": "matrix(0.9967, 0, 0, 0.9967, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              534.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              687.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              39.766845703125,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              199.548583984375,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              91.7896728515625,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              244.775634765625,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              143.8125,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              296.796875,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -360.233154296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -200.451416015625,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -308.2103271484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -155.224365234375,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -256.1875,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -103.203125,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -760.233154296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -600.451416015625,
+              232.68093872070312,
+              234.839111328125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -708.2103271484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -555.224365234375,
+              200.60372924804688,
+              260.2215576171875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -656.1875,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -503.203125,
+              242.578125,
+              272.03125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 306.8593444824219,
+              "y": -713.2322998046875,
+              "width": 406.1462707519531,
+              "height": 314.4227294921875,
+              "top": -713.2322998046875,
+              "right": 713.005615234375,
+              "bottom": -398.8095703125,
+              "left": 306.8593444824219
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=930",
+            "width": 990,
+            "height": 767,
+            "rect": {
+              "x": 268.19293212890625,
+              "y": -660.2098999023438,
+              "width": 451.80987548828125,
+              "height": 349.76312255859375,
+              "top": -660.2098999023438,
+              "right": 720.0028076171875,
+              "bottom": -310.44677734375,
+              "left": 268.19293212890625
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=930",
+            "width": 990,
+            "height": 767,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-16 lg:[&amp;&gt;*]:text-web3-18\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 303.578125,
+              "y": -607.1875,
+              "width": 423.421875,
+              "height": 327.796875,
+              "top": -607.1875,
+              "right": 727,
+              "bottom": -279.390625,
+              "left": 303.578125
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=930",
+            "width": 768,
+            "height": 594,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "port": 4185,
+    "width": 390,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1253.8125,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              1282.8125,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1860.671875,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              1889.671875,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2449.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              2478.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -346.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -317.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              260.671875,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              289.671875,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              849.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              878.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -646.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -617.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -39.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -10.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              549.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              578.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -946.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -917.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -339.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -310.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              249.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              278.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1346.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -1317.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -739.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -710.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -150.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -121.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1746.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -1717.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1139.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -1110.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -550.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -521.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -2146.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -2117.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1539.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -1510.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -950.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -921.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 41,
+              "y": -1802.765625,
+              "width": 308,
+              "height": 238.4375,
+              "top": -1802.765625,
+              "right": 349,
+              "bottom": -1564.328125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=620",
+            "width": 754,
+            "height": 584,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=620",
+            "width": 754,
+            "height": 584,
+            "rect": {
+              "x": 41,
+              "y": -1213.5,
+              "width": 308,
+              "height": 238.4375,
+              "top": -1213.5,
+              "right": 349,
+              "bottom": -975.0625,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 41,
+              "y": -624.234375,
+              "width": 308,
+              "height": 238.4375,
+              "top": -624.234375,
+              "right": 349,
+              "bottom": -385.796875,
+              "left": 41
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "port": 4184,
+    "width": 390,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1253.8125,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              1282.8125,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1860.671875,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              1889.671875,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2449.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              2478.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1600,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -346.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -317.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              260.671875,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              289.671875,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              849.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              878.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1900,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -646.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -617.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -39.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -10.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              549.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              578.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2200,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -946.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -917.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -339.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -310.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              249.9375,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              278.9375,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2600,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1346.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -1317.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -739.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -710.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -150.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -121.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3000,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1746.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -1717.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1139.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -1110.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -550.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -521.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3400,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -2146.1875,
+              358,
+              618.859375
+            ],
+            "textRect": [
+              41,
+              -2117.1875,
+              308,
+              222.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1539.328125,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -1510.328125,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -950.0625,
+              358,
+              601.265625
+            ],
+            "textRect": [
+              41,
+              -921.0625,
+              308,
+              204.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/futures-of-work\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Explore the research</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>",
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/agentic-task-ecosystem\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Agent Productivity</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/01f98af8945a1ca93ecce135b3c1b56bd8c5a870-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 41,
+              "y": -1802.765625,
+              "width": 308,
+              "height": 238.4375,
+              "top": -1802.765625,
+              "right": 349,
+              "bottom": -1564.328125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/labs/oran\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-pureWhite\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-pureWhite\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=620",
+            "width": 754,
+            "height": 584,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/00000000000041e1d16e6b243be28f790274ecde-1240x960.webp?auto=format&fit=max&q=80&w=620",
+            "width": 754,
+            "height": 584,
+            "rect": {
+              "x": 41,
+              "y": -1213.5,
+              "width": 308,
+              "height": 238.4375,
+              "top": -1213.5,
+              "right": 349,
+              "bottom": -975.0625,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a class=\"group inline-flex max-w-full disabled:cursor-not-allowed outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2\" target=\"_self\" href=\"/agent-orchestration-system\"><span class=\"flex items-center gap-2 visited:text-coral-700 text-volcanic-900\"><span class=\"[&amp;&gt;*]:text-web3-14\"><span class=\"text-web3-14 font-body\">Learn more</span></span><span class=\"flex shrink-0 items-center duration-400 transition-transform ease-in-out group-hover:translate-x-1 rtl:group-hover:-translate-x-1\"><i class=\"icon-default icon-arrow-right visited:text-coral-700 text-volcanic-900\"></i></span></span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2022fa0dd6619aac1f3eccab8241e7a70ee41e33-1240x960.png?auto=format&fit=max&q=80&w=620",
+            "width": 390,
+            "height": 301,
+            "rect": {
+              "x": 41,
+              "y": -624.234375,
+              "width": 308,
+              "height": 238.4375,
+              "top": -624.234375,
+              "right": 349,
+              "bottom": -385.796875,
+              "left": 41
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

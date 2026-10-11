@@ -1,0 +1,21 @@
+{
+  "scroll": 2200,
+  "sharedMediaBytes": true,
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "differentPixels": 0
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "differentPixels": 0
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "differentPixels": 0
+    }
+  ]
+}

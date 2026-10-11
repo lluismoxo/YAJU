@@ -30,7 +30,9 @@ try {
    await writeFile(`artifacts/globe-canvas-${port}-${width}.png`,Buffer.from((await globe.locator(':scope > canvas').evaluate(c=>c.toDataURL())).split(',')[1],'base64'));
    await globe.screenshot({path:`artifacts/globe-${port}-${width}.png`});
    const controls=await page.evaluate(()=>window.__globeControls?.map(({control:c,requested})=>({requested,speed:c.autoRotateSpeed,damping:c.dampingFactor,zoom:c.enableZoom,rotate:c.enableRotate,camera:c.object?.position.toArray()}))||[]);
-   report.push({port,width,state,errors,network,controls});
+   const composition=await globe.evaluate(el=>{const result=[];for(let node=el;node&&node!==document.body;node=node.parentElement){const s=getComputedStyle(node),r=node.getBoundingClientRect();result.push({tag:node.tagName,className:node.className,rect:{x:r.x,y:r.y,width:r.width,height:r.height},background:s.background,transform:s.transform,padding:s.padding});}return result;});
+   const mission=await globe.evaluate(el=>{const section=el.closest('section');return {html:section.querySelector('.z-20').outerHTML,rect:section.querySelector('.z-20').getBoundingClientRect().toJSON()};});
+   report.push({port,width,state,errors,network,controls,composition,mission});
    if(port===4184){assert.equal(state.canvases.length,2);assert.ok(state.pixels>100,'ASCII globe must be visible');assert.deepEqual(errors,[]);await page.setViewportSize({width:900,height:700});await page.waitForTimeout(500);assert.equal(await globe.locator(':scope > canvas').evaluate(c=>c.width),500);
     await page.evaluate(()=>dispatchEvent(new PageTransitionEvent('pagehide')));
     assert.equal(await globe.locator('canvas').count(),0,'Leaving the page must dispose both canvases');
@@ -43,6 +45,7 @@ try {
  if(process.env.YAJU_GLOBE_STATIC==='1')for(const width of [1440,390]){
   const pair=report.filter(item=>item.width===width);
   assert.deepEqual(pair[1].controls,pair[0].controls,'Camera and interaction settings must match');
+  assert.deepEqual(await readFile(`artifacts/globe-4184-${width}.png`),await readFile(`artifacts/globe-4185-${width}.png`),'The globe and surrounding gradient must match byte for byte');
   assert.deepEqual(await readFile(`artifacts/globe-canvas-4184-${width}.png`),await readFile(`artifacts/globe-canvas-4185-${width}.png`),'The static ASCII canvas must match byte for byte');
  }
 }finally{await browser.close();await writeFile('artifacts/globe-controls.json',JSON.stringify(report,null,2)+'\n');}

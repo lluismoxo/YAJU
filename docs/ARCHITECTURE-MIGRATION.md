@@ -525,3 +525,43 @@ Comprobaciones adicionales de esta etapa:
 - Pasan las nueve pruebas generales, las huellas publicadas y el aislamiento de
   recursos de las 137 páginas candidatas. Bundle 3D aproximado: 1.7 MB sin gzip,
   únicamente en Labs; no se atribuye a esto una mejora de velocidad medida.
+
+### Fondo y misión de Labs (2026-10-11)
+
+- El degradado difería porque el párrafo de misión había sido serializado con
+  divs de SplitText dentro de un `p`. El parser HTML cerraba el párrafo antes
+  de tiempo, alterando la tipografía y la altura de toda la sección.
+- Se restaura el texto semántico limpio. `labs.js` genera las capas de palabras
+  y reproduce la animación original solo en Labs, con limpieza y restauración.
+  Se conservan las dos capas de opacidad que presenta el original en ejecución.
+- Las capturas del globo **incluido el fondo** son ahora idénticas byte a byte
+  en escritorio y móvil (cero píxeles diferentes). Evidencia:
+  `phase-3-globe-background.json`; el comparador incorpora esa aserción estricta.
+- Diez estados de scroll coinciden en geometría del bloque/párrafo y opacidad de
+  cada palabra. La opacidad del pequeño eyebrow en el punto intermedio desktop
+  continúa registrada aparte: el original varió entre 0.9988 y 0.9982 y el
+  candidato dio 0.9977; no se sustituye esta diferencia por una tolerancia.
+  Evidencia: `phase-3-labs-mission-controls.json`.
+- Nueve pruebas generales y comprobación de 137 rutas aprobadas. Sin publicación;
+  aún no se afirma paridad completa del recorrido de Labs ni del sitio entero.
+
+### Apilado de Featured work en Labs (2026-10-11)
+
+- Se limpian los `pin-spacer` y las dimensiones/transformaciones capturadas de
+  sus tres tarjetas con `scripts/migration/clean-labs-stack.mjs`, conservando
+  contenido, imágenes, colores y clases originales. El grupo queda identificado
+  explícitamente y no se modifica el resto de páginas.
+- `labs.js` reproduce pinning, escalado y desplazamiento del texto con los mismos
+  cálculos y breakpoints originales. También conserva los enlaces de 14 px en
+  móvil. Al cambiar de dispositivo o restaurar desde historial se reconstruyen
+  los comportamientos a partir de elementos limpios, sin duplicar pin-spacers.
+- Pasan 21 estados de geometría/escala (7 puntos × 3 tamaños) y la limpieza móvil
+  seguida de reconstrucción desktop. Las capturas de scroll 2200 son idénticas
+  píxel a píxel a 1440, 768 y 390 px. Las pruebas comparten los bytes de recursos
+  remotos entre original/candidato; no se modifica el umbral ni las imágenes.
+- Evidencias: `phase-3-labs-stack-controls.json` y `phase-3-labs-stack-visual.json`.
+  El comparador incorpora aserciones estrictas de geometría y píxeles.
+- Inventario adicional: el mismo tipo de tarjeta aparece en home, About y
+  Agentic Task Ecosystem. Su migración/validación específica sigue pendiente;
+  no se extrapola el resultado de Labs a esas rutas. Sigue sin publicarse la
+  candidata completa y no se declara acabada la migración global.
