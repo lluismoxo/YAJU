@@ -565,3 +565,39 @@ Comprobaciones adicionales de esta etapa:
   Agentic Task Ecosystem. Su migración/validación específica sigue pendiente;
   no se extrapola el resultado de Labs a esas rutas. Sigue sin publicarse la
   candidata completa y no se declara acabada la migración global.
+
+### Controlador compartido de tarjetas (2026-10-11)
+
+- Se extrae el apilado de Labs a `src/client/stack.js` y se carga solo en Labs,
+  Inicio, About y Agentic Task Ecosystem. Los proveedores de animación se incluyen
+  una sola vez; SplitText continúa limitado a Labs y al informe.
+- Se eliminan contenedores y medidas capturados de las tres nuevas plantillas.
+  Los botones conservan sus variantes originales: enlace mínimo en Labs y botón
+  sólido con icono opcional en Inicio/Ecosystem, también al cambiar de tamaño.
+- About conserva 586 px de altura en tableta. El original mantenía esa medida
+  después de retirar las imágenes laterales; eliminarla comprimía las tarjetas.
+- Inicio recupera los dos fondos verticales originales en móvil. No se generan
+  ni sustituyen imágenes: son las variantes existentes del mismo componente.
+- La comparación de Ecosystem pasa 21 estados y tres capturas con cero píxeles
+  distintos. About pasa escritorio y móvil, pero conserva diferencias de
+  desplazamiento del texto en tableta: sigue pendiente, sin tolerancias nuevas.
+- La regresión de Labs vuelve a pasar sus 21 estados, tres capturas y limpieza
+  de pinning al alternar móvil/escritorio. El primer ajuste general de botones
+  detectó una diferencia de fuente móvil; se corrigió antes de guardar el paso.
+- Evidencias de la matriz inicial corregida: `phase-3-shared-stack-controls.json`
+  y `phase-3-shared-stack-visual.json`. La comprobación estricta global sigue
+  fallando por About/tableta e Inicio; esos resultados no autorizan publicación.
+- Pasan nueve pruebas generales, hashes del build publicado y comprobación de
+  recursos/aislamiento de las 137 rutas candidatas. La candidata sigue local.
+- Verificación posterior de Inicio: móvil coincide en 7/7 estados y cero píxeles
+  distintos; escritorio coincide en geometría, con 586 píxeles diferentes
+  limitados al botón de la segunda tarjeta. En tableta la repetición pasó de
+  7/7 a 2/7 estados: se registra la variación y se compara el original consigo
+  mismo antes de atribuirla a la candidata. Evidencias actualizadas de Inicio:
+  `phase-3-home-stack-controls.json` y `phase-3-home-stack-visual.json`.
+- Control original/original a 768 px: Inicio y About coinciden en 7/7 estados y
+  cero píxeles. Esta ejecución no reproduce la variación observada; por tanto no
+  se descarta como ruido ni se aprueba la tableta. Evidencias:
+  `phase-3-stack-reference-repeat-controls.json` y
+  `phase-3-stack-reference-repeat-visual.json`. Próximo paso: aislar las medidas
+  de los disparadores del texto y el orden de refresco al cargar imágenes.

@@ -1,0 +1,107 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1744,
+        "equal": true
+      },
+      {
+        "scroll": 2044,
+        "equal": true
+      },
+      {
+        "scroll": 2344,
+        "equal": true
+      },
+      {
+        "scroll": 2644,
+        "equal": true
+      },
+      {
+        "scroll": 3044,
+        "equal": true
+      },
+      {
+        "scroll": 3644,
+        "equal": true
+      }
+    ],
+    "differentPixels": 586
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1331,
+        "equal": true
+      },
+      {
+        "scroll": 1631,
+        "equal": false
+      },
+      {
+        "scroll": 1931,
+        "equal": false
+      },
+      {
+        "scroll": 2231,
+        "equal": false
+      },
+      {
+        "scroll": 2631,
+        "equal": false
+      },
+      {
+        "scroll": 3231,
+        "equal": false
+      }
+    ],
+    "differentPixels": 18780
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1542,
+        "equal": true
+      },
+      {
+        "scroll": 1842,
+        "equal": true
+      },
+      {
+        "scroll": 2142,
+        "equal": true
+      },
+      {
+        "scroll": 2442,
+        "equal": true
+      },
+      {
+        "scroll": 2842,
+        "equal": true
+      },
+      {
+        "scroll": 3442,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  }
+]

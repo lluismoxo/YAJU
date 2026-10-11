@@ -1,10 +1,13 @@
-// Strip only capture-time pinning from the three Labs featured-work cards.
+// Strip capture-time pinning only from the reviewed stacking-card templates.
 import {readFile,writeFile} from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import assert from 'node:assert/strict';
 const require=createRequire(import.meta.url);
 const {chromium}=require(require.resolve('playwright',{paths:[process.env.YAJU_BROWSER_MODULES||process.cwd()]}));
-const file='src/content/pages/labs.html';
+const counts={labs:3,home:3,about:4,'labs__agentic-task-ecosystem':3};
+const key=process.argv[2]||'labs';
+assert.ok(Object.hasOwn(counts,key),'Unreviewed template');
+const file=`src/content/pages/${key}.html`;
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
  const page=await browser.newPage();
@@ -23,6 +26,6 @@ try{
   for(const parent of parents)parent.dataset.nativeStack='';
   return {html:doc.body.innerHTML+'\n',cards:cards.length,groups:parents.size};
  },await readFile(file,'utf8'));
- assert.equal(result.cards,3);assert.equal(result.groups,1);
+ assert.equal(result.cards,counts[key]);assert.equal(result.groups,1);
  await writeFile(file,result.html);
 }finally{await browser.close();}

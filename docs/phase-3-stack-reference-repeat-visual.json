@@ -1,0 +1,72 @@
+[
+  {
+    "route": "/",
+    "width": 768,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1331,
+        "equal": true
+      },
+      {
+        "scroll": 1631,
+        "equal": true
+      },
+      {
+        "scroll": 1931,
+        "equal": true
+      },
+      {
+        "scroll": 2231,
+        "equal": true
+      },
+      {
+        "scroll": 2631,
+        "equal": true
+      },
+      {
+        "scroll": 3231,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 682,
+        "equal": true
+      },
+      {
+        "scroll": 982,
+        "equal": true
+      },
+      {
+        "scroll": 1282,
+        "equal": true
+      },
+      {
+        "scroll": 1582,
+        "equal": true
+      },
+      {
+        "scroll": 1982,
+        "equal": true
+      },
+      {
+        "scroll": 2582,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  }
+]

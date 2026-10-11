@@ -15,12 +15,13 @@ for(const entry of entries){
  assert.ok(!/<script\b[^>]*src="[^\"]*(?:_yaju\/static|site-updates-)/.test(html),`Legacy runtime: ${entry.output}`);
  const model=JSON.parse(await readFile(entry.source,'utf8'));
  assert.equal(html.includes('/assets/native-report.js'),model.key==='reports__state-of-sovereign-ai-adoption-2026',`Report code loaded outside its route: ${entry.output}`);
- for(const vendor of ['gsap','ScrollTrigger','SplitText'])assert.equal(html.includes(`/assets/vendor/${vendor}.min.js`),model.key==='labs'||model.key==='reports__state-of-sovereign-ai-adoption-2026'||(model.key==='ai-spend'&&vendor!=='SplitText'),`Animation vendor scope: ${entry.output}`);
+ for(const vendor of ['gsap','ScrollTrigger','SplitText'])assert.equal(html.split(`/assets/vendor/${vendor}.min.js`).length-1,Number(model.key==='labs'||model.key==='reports__state-of-sovereign-ai-adoption-2026'||(vendor!=='SplitText'&&['ai-spend','home','about','labs__agentic-task-ecosystem'].includes(model.key))),`Animation vendor scope: ${entry.output}`);
  assert.equal(html.includes('/assets/native-dissolve-headline.js'),model.key==='ai-spend',`Headline effect scope: ${entry.output}`);
  assert.equal(html.includes('class="campaign-slideshow-mobile-root"'),model.key==='ai-spend',`Campaign mobile template scope: ${entry.output}`);
  assert.equal(html.includes('/assets/native-campaign.js'),model.key==='ai-spend',`Campaign animation scope: ${entry.output}`);
  assert.equal(html.includes('/assets/native-globe.js'),model.key==='labs',`Globe route scope: ${entry.output}`);
  assert.equal(html.includes('/assets/native-labs.js'),model.key==='labs',`Labs animation route scope: ${entry.output}`);
+ assert.equal(html.includes('/assets/native-stack.js'),['labs','home','about','labs__agentic-task-ecosystem'].includes(model.key),`Stack route scope: ${entry.output}`);
  forms+=model.forms;
  for(const fragment of html.matchAll(/<(?:script|link|img|source|video)\b[^>]*>/g)){
   const value=fragment[0].match(/\b(?:src|href)="([^\"]+)"/)?.[1];
