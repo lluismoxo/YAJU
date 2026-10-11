@@ -2,6 +2,44 @@
 (() => {
  const main=document.querySelector('main');if(!main)return;
  const data=JSON.parse(document.getElementById('native-page-data')?.textContent||'{}');
+ // Solid CTA colours and glow were previously driven by React mouse state.
+ // Delegate so cards inserted by the native carousels keep the same behaviour.
+ const buttonStates=new WeakMap(), activeButtons=new Set();
+ const solidButton=event=>event.target.closest?.('.web3-primary-solid-btn');
+ function buttonState(button){
+  if(!buttonStates.has(button)){
+   const dark=button.classList.contains('bg-pureWhite');
+   if(!dark&&!button.classList.contains('bg-neutral-15'))return null;
+   buttonStates.set(button,{dark,hover:false,pressed:false});
+  }
+  return buttonStates.get(button);
+ }
+ function paintButton(button,state){
+  const disabled=button.disabled||button.getAttribute('aria-disabled')==='true';
+  const highlighted=!disabled&&(state.hover||state.pressed);
+  button.classList.toggle('web3-primary-solid-btn-hover',!disabled&&state.hover);
+  const base=state.dark?'text-neutral-15':'bg-neutral-15';
+  const highlight=state.dark?'text-pureBlack':'bg-pureBlack';
+  // Do not overwrite a separate disabled theme applied by a form controller.
+  if(button.classList.contains(base)||button.classList.contains(highlight)){
+   button.classList.remove(base,highlight);button.classList.add(highlighted?highlight:base);
+  }
+  if(state.hover||state.pressed)activeButtons.add(button);else activeButtons.delete(button);
+ }
+ for(const type of ['mouseover','mouseout','mousedown','mouseup'])main.addEventListener(type,event=>{
+  const button=solidButton(event);if(!button||!main.contains(button))return;
+  if((type==='mouseover'||type==='mouseout')&&button.contains(event.relatedTarget))return;
+  const state=buttonState(button);if(!state)return;
+  if(type==='mouseover')state.hover=true;
+  if(type==='mouseout'){state.hover=false;state.pressed=false;}
+  if(type==='mousedown')state.pressed=true;
+  if(type==='mouseup')state.pressed=false;
+  paintButton(button,state);
+ });
+ window.addEventListener('pagehide',()=>{
+  for(const button of activeButtons){const state=buttonStates.get(button);state.hover=false;state.pressed=false;paintButton(button,state);}
+ });
+
  main.querySelectorAll('video[data-native-autoplay]').forEach(video=>{
   video.muted=true;
   video.play().catch(()=>{}); // Browsers can defer playback until media is ready or interacted with.

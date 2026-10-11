@@ -1,0 +1,730 @@
+[
+  {
+    "width": 390,
+    "index": 1,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgb(76, 110, 230) 0px 0px 0px 4px, rgb(255, 255, 255) 0px 0px 0px 6px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgb(76, 110, 230) 0px 0px 0px 4px, rgb(255, 255, 255) 0px 0px 0px 6px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 2,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(76, 110, 230) 0px 0px 0px 2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 2,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(76, 110, 230) 0px 0px 0px 2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgb(76, 110, 230) 0px 0px 0px 4px, rgb(255, 255, 255) 0px 0px 0px 6px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgb(76, 110, 230) 0px 0px 0px 4px, rgb(255, 255, 255) 0px 0px 0px 6px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 2,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(76, 110, 230) 0px 0px 0px 2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 2,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "glow": true,
+          "before": {
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, -8, 8)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": false,
+          "boxShadow": "none"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, -6, 6)"
+          },
+          "focus": true,
+          "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(76, 110, 230) 0px 0px 0px 2px"
+        }
+      }
+    ]
+  }
+]

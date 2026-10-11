@@ -631,3 +631,31 @@ Comprobaciones adicionales de esta etapa:
   sólido original alterna clases de hover/active mediante React (módulo 788415).
   El controlador nativo aún no reproduce ese estado. Debe verificarse por variante
   antes de trasladarlo; no basta con aprobar la captura estática.
+
+### Estados nativos de botones sólidos (2026-10-11)
+
+- Se trasladan los estados de ratón del componente original (módulos 788415 y
+  882168) a eventos delegados en `main`: hover, pulsación, liberación y salida.
+  Se conservan las dos paletas sólidas y el resplandor original. El foco sigue
+  usando sus clases CSS existentes. Los botones insertados por carruseles usan
+  el mismo controlador sin registrar nuevas colecciones de listeners.
+- Se respeta `disabled`/`aria-disabled` y se limpia el estado al abandonar la
+  página. No se interceptan enlaces, envíos, clics ni comportamiento de teclado.
+- `check-native-buttons.mjs` compara dos paletas a 390 y 1440 px, en seis estados:
+  normal, hover, pulsado, liberado, salida y foco de teclado. Pasan 24/24 estados,
+  24 capturas del botón y 24 capturas ampliadas que incluyen el resplandor, todas
+  con cero píxeles diferentes. También pasan deshabilitación y limpieza de estado.
+  Evidencias: `phase-3-button-states-controls.json` y `...-visual.json`.
+- Pasan las nueve pruebas generales y la revisión de recursos de las 137 rutas.
+  La revisión de Inicio en su punto concreto de scroll conserva los 586 píxeles
+  diferentes anteriores; no se confunde esa comparación con las capturas de
+  estados que sí pasan. No se publica la candidata ni se aprueba paridad global.
+- Este paso cubre botones sólidos de contenido; botones outlined/secondary y
+  otros controles conservan su revisión específica pendiente.
+- Diagnóstico adicional del botón escalado: tres capturas consecutivas sin
+  modificaciones conservan los mismos 586 píxeles; no es una captura prematura.
+  Cambiar temporalmente transform/backface/isolation después de pintar produce
+  una coincidencia exacta, pero aplicar backface desde la carga no la reproduce.
+  Se retira esa prueba del código; no se introduce un repintado forzado ni un
+  cambio cosmético sin verificar. Se guardan los resultados en
+  `phase-3-button-repeat-paints.json` y `phase-3-button-layer-experiment.json`.
