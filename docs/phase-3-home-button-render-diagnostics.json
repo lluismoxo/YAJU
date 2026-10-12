@@ -1,0 +1,242 @@
+[
+  {
+    "name": "stack-home-current",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": false
+          },
+          {
+            "scroll": 2344,
+            "equal": false
+          },
+          {
+            "scroll": 2644,
+            "equal": false
+          },
+          {
+            "scroll": 3044,
+            "equal": false
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 998
+      }
+    ]
+  },
+  {
+    "name": "stack-home-original-repeat",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": true
+          },
+          {
+            "scroll": 2344,
+            "equal": true
+          },
+          {
+            "scroll": 2644,
+            "equal": true
+          },
+          {
+            "scroll": 3044,
+            "equal": true
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 0
+      }
+    ]
+  },
+  {
+    "name": "stack-home-synced-paint",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": true
+          },
+          {
+            "scroll": 2344,
+            "equal": true
+          },
+          {
+            "scroll": 2644,
+            "equal": true
+          },
+          {
+            "scroll": 3044,
+            "equal": true
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 586
+      }
+    ]
+  },
+  {
+    "name": "stack-home-software",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": true
+          },
+          {
+            "scroll": 2344,
+            "equal": true
+          },
+          {
+            "scroll": 2644,
+            "equal": true
+          },
+          {
+            "scroll": 3044,
+            "equal": true
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 616
+      }
+    ]
+  },
+  {
+    "name": "stack-home-layer-transform",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": true
+          },
+          {
+            "scroll": 2344,
+            "equal": true
+          },
+          {
+            "scroll": 2644,
+            "equal": true
+          },
+          {
+            "scroll": 3044,
+            "equal": true
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 1119
+      }
+    ]
+  },
+  {
+    "name": "stack-home-layer-isolation",
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "geometry": [
+          {
+            "scroll": 0,
+            "equal": true
+          },
+          {
+            "scroll": 1744,
+            "equal": true
+          },
+          {
+            "scroll": 2044,
+            "equal": true
+          },
+          {
+            "scroll": 2344,
+            "equal": true
+          },
+          {
+            "scroll": 2644,
+            "equal": true
+          },
+          {
+            "scroll": 3044,
+            "equal": true
+          },
+          {
+            "scroll": 3644,
+            "equal": true
+          }
+        ],
+        "differentPixels": 586
+      }
+    ]
+  }
+]

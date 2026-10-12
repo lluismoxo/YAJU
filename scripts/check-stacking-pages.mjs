@@ -7,13 +7,22 @@ const mediaCache=new Map();
 const output=process.env.YAJU_STACK_OUTPUT||'artifacts';await mkdir(output,{recursive:true});
 const widths=process.env.YAJU_STACK_WIDTHS?process.env.YAJU_STACK_WIDTHS.split(',').map(Number):[1440,768,390];
 const {PNG}=require(require.resolve('pngjs',{paths:[process.env.YAJU_BROWSER_MODULES||process.cwd()]}));
-const browser=await chromium.launch({channel:'chrome',headless:true});const report=[],bases=new Map();
+const browser=await chromium.launch({channel:'chrome',headless:true,...(process.env.YAJU_TEST_SOFTWARE_RENDERING==='1'?{args:['--disable-gpu']}: {})});const report=[],bases=new Map();
 const routes=process.argv.slice(2);if(!routes.length)routes.push('/','/about','/labs/agentic-task-ecosystem');
 try{
  for(const route of routes)for(const width of widths)for(const port of [4185,4184]){
   const page=await browser.newPage({viewport:{width,height:900}}),origin=`http://127.0.0.1:${port===4184&&process.env.YAJU_COMPARE_REFERENCE==='1'?4185:port}`,key=route.replaceAll('/','_')||'home';
   const errors=[];page.on('pageerror',error=>errors.push(error.message));
-  await page.route('**/*',async route=>{const req=route.request(),url=new URL(req.url());if(url.hostname==='cdn.jsdelivr.net'&&url.pathname.startsWith('/npm/three-globe/example/img/'))return readFile('node_modules/three-globe/example/img/'+url.pathname.split('/').pop()).then(body=>route.fulfill({body,headers:{'access-control-allow-origin':'*','content-type':url.pathname.endsWith('.jpg')?'image/jpeg':'image/png'}}));if(url.origin===origin)return route.continue();
+  await page.route('**/*',async route=>{const req=route.request(),url=new URL(req.url());if(url.hostname==='cdn.jsdelivr.net'&&url.pathname.startsWith('/npm/three-globe/example/img/'))return readFile('node_modules/three-globe/example/img/'+url.pathname.split('/').pop()).then(body=>route.fulfill({body,headers:{'access-control-allow-origin':'*','content-type':url.pathname.endsWith('.jpg')?'image/jpeg':'image/png'}}));if(url.origin===origin){
+    const layer=process.env.YAJU_STACK_BUTTON_LAYER;
+    if(port===4184&&layer&&req.resourceType()==='document'){
+     const styles={transform:'transform:translateZ(0)',isolation:'isolation:isolate',willchange:'will-change:transform'};
+     assert.ok(styles[layer],'Unknown diagnostic layer');
+     const response=await route.fetch();
+     return route.fulfill({response,body:(await response.text()).replace('</head>',`<style>.left-text-container a.web3-primary-solid-btn{${styles[layer]}}</style></head>`)});
+    }
+    return route.continue();
+   }
    if(['image','font'].includes(req.resourceType())&&req.method()==='GET'){
     if(!mediaCache.has(url.href))mediaCache.set(url.href,(async()=>{const response=await route.fetch({timeout:15000});return {body:await response.body(),status:response.status(),contentType:response.headers()['content-type']};})().catch(()=>null));
     const resource=await mediaCache.get(url.href);if(resource)return route.fulfill(resource);
@@ -24,6 +33,7 @@ try{
   const base=bases.get(`${route}/${width}`),states=[];let diagnostics;
   for(const y of [0,Math.max(0,base-300),base,base+300,base+600,base+1000,base+1600]){
    await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(1000);
+   if(process.env.YAJU_STACK_SYNC_PAINT==='1'){await page.screenshot();await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));}
    const cards=await page.locator('.left-text-container').evaluateAll(texts=>texts.map(text=>{const card=text.parentElement,r=card.getBoundingClientRect(),t=text.getBoundingClientRect(),s=getComputedStyle(card);return {rect:[r.x,r.y,r.width,r.height],textRect:[t.x,t.y,t.width,t.height],transform:s.transform,position:s.position};}));
    states.push({y,cards});
    if(y===base+600){diagnostics=await page.locator('.left-text-container').evaluateAll(texts=>texts.map(text=>[text,...text.querySelectorAll('a, a span')].map(el=>({tag:el.tagName,classes:el.className,inline:el.style.cssText,ancestors:(()=>{const result=[];for(let p=el.parentElement;p&&p.tagName!=='BODY';p=p.parentElement)result.push({tag:p.tagName,classes:p.className,style:p.style.cssText});return result;})(),rect:el.getBoundingClientRect().toJSON(),css:Object.fromEntries(['font-family','font-size','font-weight','line-height','letter-spacing','color','background-color','border-radius','border-width','padding','transform','filter','opacity','will-change','position','z-index'].map(key=>[key,getComputedStyle(el).getPropertyValue(key)]))}))));await page.screenshot({path:`${output}/stack-${key}-${port}-${width}.png`});}

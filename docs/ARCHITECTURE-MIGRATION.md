@@ -737,3 +737,22 @@ Comprobaciones adicionales de esta etapa:
 - Este paso no cambia la web servida ni requiere repetir las pruebas generales
   que ya pasaron para ed49468. Continúan pendientes las verificaciones globales
   y el caso específico del botón escalado en Inicio; no se publica la candidata.
+
+### 2026-10-12 — Diagnóstico del CTA escalado de Inicio
+
+- Se reproduce el caso a 1440×900 y scroll 2644. Una ejecución sin sincronización
+  midió 0,421875 px de desplazamiento antes de la captura y 998 píxeles distintos;
+  no se interpreta esa medición previa como una nueva regresión de layout.
+- Se añade un modo diagnóstico `YAJU_STACK_SYNC_PAINT=1` que captura y espera dos
+  frames antes de medir cada punto. Con ese modo coinciden los siete estados
+  geométricos y reaparece la diferencia estable de 586 píxeles del botón. El
+  original comparado consigo mismo coincide en siete estados y cero píxeles.
+- Una prueba sin GPU (`YAJU_TEST_SOFTWARE_RENDERING=1`) conserva geometría exacta
+  pero 616 píxeles distintos. Por tanto, no se declara resuelto al cambiar renderer.
+- Se prueban estilos exclusivamente interceptando el documento en el navegador:
+  `translateZ(0)` desde la carga empeora a 1119 píxeles; `isolation:isolate` conserva
+  586. Ninguno se aplica al código del frontend. Las opciones diagnósticas no
+  intervienen en las pruebas normales ni en ningún build publicado.
+- Evidencia: `phase-3-home-button-render-diagnostics.json`. La causa precisa de
+  rasterización sigue abierta; no se cambia el diseño, la referencia ni el umbral.
+  No se publica y no se marca como aprobada la paridad visual de Inicio.
