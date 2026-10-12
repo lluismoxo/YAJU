@@ -1,33 +1,57 @@
 // Native content behaviours. Page content is already present in the server-rendered HTML.
 (() => {
  const main=document.querySelector('main');if(!main)return;
+ // The original page enables its keyboard focus theme after the first Tab.
+ function enableKeyboardFocus(event){
+  if(event.code!=='Tab')return;
+  document.body.classList.add('user-is-tabbing');
+  window.removeEventListener('keydown',enableKeyboardFocus);
+ }
+ window.addEventListener('keydown',enableKeyboardFocus);
  const data=JSON.parse(document.getElementById('native-page-data')?.textContent||'{}');
- // Solid CTA colours and glow were previously driven by React mouse state.
+ // CTA colours, outlines and underlines were previously driven by React mouse state.
  // Delegate so cards inserted by the native carousels keep the same behaviour.
  const buttonStates=new WeakMap(), activeButtons=new Set();
- const solidButton=event=>event.target.closest?.('.web3-primary-solid-btn');
+ const nativeButton=event=>event.target.closest?.('.web3-primary-solid-btn, a.ease-button-gradient, button.ease-button-gradient');
  function buttonState(button){
   if(!buttonStates.has(button)){
-   const dark=button.classList.contains('bg-pureWhite');
-   if(!dark&&!button.classList.contains('bg-neutral-15'))return null;
-   buttonStates.set(button,{dark,hover:false,pressed:false});
+   const classes=button.classList;
+   const kind=classes.contains('web3-primary-solid-btn')?'solid':classes.contains('rounded-full')&&classes.contains('border')?'outlined':classes.contains('pb-1.5')?'secondary':null;
+   if(!kind)return null;
+   const dark=kind==='solid'?classes.contains('bg-pureWhite'):kind==='outlined'?classes.contains('border-pureWhite'):classes.contains('text-white');
+   if(kind==='solid'&&!dark&&!classes.contains('bg-neutral-15'))return null;
+   buttonStates.set(button,{kind,dark,hover:false,pressed:false});
   }
   return buttonStates.get(button);
  }
  function paintButton(button,state){
   const disabled=button.disabled||button.getAttribute('aria-disabled')==='true';
   const highlighted=!disabled&&(state.hover||state.pressed);
-  button.classList.toggle('web3-primary-solid-btn-hover',!disabled&&state.hover);
-  const base=state.dark?'text-neutral-15':'bg-neutral-15';
-  const highlight=state.dark?'text-pureBlack':'bg-pureBlack';
-  // Do not overwrite a separate disabled theme applied by a form controller.
-  if(button.classList.contains(base)||button.classList.contains(highlight)){
-   button.classList.remove(base,highlight);button.classList.add(highlighted?highlight:base);
+  if(state.kind==='solid'){
+   button.classList.toggle('web3-primary-solid-btn-hover',!disabled&&state.hover);
+   const base=state.dark?'text-neutral-15':'bg-neutral-15';
+   const highlight=state.dark?'text-pureBlack':'bg-pureBlack';
+   // Do not overwrite a separate disabled theme applied by a form controller.
+   if(button.classList.contains(base)||button.classList.contains(highlight)){
+    button.classList.remove(base,highlight);button.classList.add(highlighted?highlight:base);
+   }
+  }else if(!disabled&&state.kind==='outlined'){
+   button.classList.remove('bg-transparent','bg-neutral-15','bg-pureWhite','text-neutral-15','text-pureWhite','text-pureBlack');
+   button.classList.add(highlighted?(state.dark?'bg-pureWhite':'bg-neutral-15'):'bg-transparent',highlighted?(state.dark?'text-pureBlack':'text-pureWhite'):(state.dark?'text-pureWhite':'text-neutral-15'));
+  }else if(!disabled&&state.kind==='secondary'){
+   const line=button.querySelector('[aria-hidden="true"].h-px');
+   if(line){line.classList.toggle('w-full',state.hover);line.classList.toggle('w-0',!state.hover);}
+   else{
+    const colours=state.dark?['from-coral-85','via-quartz-500','to-blue-325']:['from-coral-500','via-violet-500','to-blue-500'];
+    const base=state.dark?['from-white','to-white']:['from-neutral-15','to-neutral-15'];
+    button.classList.remove(...colours,...base);
+    button.classList.add(...(state.hover&&!state.pressed?colours:base));
+   }
   }
   if(state.hover||state.pressed)activeButtons.add(button);else activeButtons.delete(button);
  }
  for(const type of ['mouseover','mouseout','mousedown','mouseup'])main.addEventListener(type,event=>{
-  const button=solidButton(event);if(!button||!main.contains(button))return;
+  const button=nativeButton(event);if(!button||!main.contains(button))return;
   if((type==='mouseover'||type==='mouseout')&&button.contains(event.relatedTarget))return;
   const state=buttonState(button);if(!state)return;
   if(type==='mouseover')state.hover=true;

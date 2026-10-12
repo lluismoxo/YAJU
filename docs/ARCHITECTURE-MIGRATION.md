@@ -659,3 +659,30 @@ Comprobaciones adicionales de esta etapa:
   Se retira esa prueba del código; no se introduce un repintado forzado ni un
   cambio cosmético sin verificar. Se guardan los resultados en
   `phase-3-button-repeat-paints.json` y `phase-3-button-layer-experiment.json`.
+
+### 2026-10-12 — Contorno, subrayado y activación del foco
+
+- Se amplía el controlador delegado de CTA a las paletas clara/oscura de botones
+  outlined y secondary, conservando los estados de los módulos originales 788415
+  y 882168. El inventario de plantillas encuentra 41 botones de contorno y cinco
+  secundarios repartidos entre 16 páginas. No se cambian textos ni destinos.
+- La inspección de Chrome detectó que el modo de teclado original no se había
+  migrado: `body:not(.user-is-tabbing)` anulaba el contorno con `!important`.
+  Se restaura el listener del módulo 531845: el primer Tab añade la clase y retira
+  el listener. Se conserva el CSS original, sin imponer nuevos estilos de foco.
+- El comparador admite `YAJU_BUTTON_VARIANTS=extended` y usa selectores estables
+  mientras cambian los colores. Ahora registra también outline y outlineOffset.
+- Pasan las nueve pruebas generales, los 1201 archivos invariantes y el control
+  de recursos/aislamiento de las 137 páginas nativas. La candidata sigue local;
+  los resultados visuales de este paso se registran a continuación.
+- Resultado: 48/48 estados coinciden en estilos computados, incluido el foco;
+  41/48 capturas del propio botón y 39/48 capturas con margen son exactas.
+  Permanecen 15 píxeles en el secundario oscuro de Catalyst Grants a 390 px,
+  dos en su captura de foco a 1440 px y pequeñas diferencias de 14–26 píxeles
+  en el margen del outlined oscuro. No se declaran resueltas ni se atribuyen
+  a antialiasing sin una prueba adicional. El comparador estricto sigue fallando
+  por esas diferencias. Evidencias: `phase-3-button-extended-controls.json` y
+  `phase-3-button-extended-visual.json`.
+- Regresión de sólidos: 24/24 estados y ambas regiones de captura exactos,
+  incluido el foco restaurado (`phase-3-button-solid-regression-visual.json`).
+  No se publica ni se aprueba paridad global con estos resultados parciales.

@@ -5,10 +5,17 @@ const require=createRequire(import.meta.url);
 const modules=process.env.YAJU_BROWSER_MODULES||process.cwd();
 const {chromium}=require(require.resolve('playwright',{paths:[modules]}));
 const {PNG}=require(require.resolve('pngjs',{paths:[modules]}));
-const output='artifacts/native-buttons';await mkdir(output,{recursive:true});
+const extended=process.env.YAJU_BUTTON_VARIANTS==='extended';
+const cases=extended?[
+ {route:'/',selector:'main a.rounded-full.border.border-neutral-15'},
+ {route:'/solutions/healthcare-and-life-sciences',selector:'main a.rounded-full.border.border-pureWhite'},
+ {route:'/agent-orchestration-system',selector:'main a.ease-button-gradient[href="/mcp-gateway"]'},
+ {route:'/labs/catalyst-grants',selector:'main a.ease-button-gradient[href="/labs"]'}
+]:[1,2].map(index=>({route:'/',selector:`.left-text-container >> nth=${index} >> a.web3-primary-solid-btn`}));
+const output=extended?'artifacts/native-buttons-extended':'artifacts/native-buttons';await mkdir(output,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true}),report=[],cache=new Map(),screens=new Map(),surroundings=new Map();
 try{
- for(const width of [390,1440])for(const index of [1,2])for(const port of [4185,4184]){
+ for(const width of [390,1440])for(const index of cases.keys())for(const port of [4185,4184]){
   const origin=`http://127.0.0.1:${port}`,page=await browser.newPage({viewport:{width,height:900}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
   await page.route('**/*',async route=>{
@@ -19,8 +26,8 @@ try{
    }
    return route.abort();
   });
-  await page.goto(origin+'/');await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(2500);
-  const button=page.locator('.left-text-container').nth(index).locator('a.web3-primary-solid-btn').first();
+  await page.goto(origin+cases[index].route);await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(2500);
+  const button=page.locator(cases[index].selector).first();
   await button.scrollIntoViewIfNeeded();await page.waitForTimeout(800);
   const states=[];
   for(const state of ['idle','hover','pressed','released','leave','keyboard']){
@@ -30,7 +37,7 @@ try{
    if(state==='leave')await page.mouse.move(0,0);
    if(state==='keyboard'){await page.keyboard.press('Tab');await button.focus();}
    await page.waitForTimeout(650);
-   const style=await button.evaluate(el=>{const s=getComputedStyle(el),p=getComputedStyle(el,'::before');return{background:s.backgroundColor,color:s.color,glow:el.classList.contains('web3-primary-solid-btn-hover'),before:{opacity:p.opacity,transform:p.transform},focus:el.matches(':focus-visible'),boxShadow:s.boxShadow}});
+   const style=await button.evaluate(el=>{const s=getComputedStyle(el),p=getComputedStyle(el,'::before');return{background:s.backgroundColor,backgroundImage:s.backgroundImage,color:s.color,glow:el.classList.contains('web3-primary-solid-btn-hover'),before:{opacity:p.opacity,transform:p.transform},focus:el.matches(':focus-visible'),boxShadow:s.boxShadow,outline:s.outline,outlineOffset:s.outlineOffset}});
    const buffer=await button.screenshot();screens.set(`${width}/${index}/${port}/${state}`,PNG.sync.read(buffer));
    await writeFile(`${output}/${width}-${index}-${port}-${state}.png`,buffer);
    const rect=await button.boundingBox();
@@ -52,7 +59,7 @@ try{
  }
 }finally{await browser.close();await writeFile(`${output}/controls.json`,JSON.stringify(report,null,2)+'\n');}
 const comparisons=[];
-for(const width of [390,1440])for(const index of [1,2]){
+for(const width of [390,1440])for(const index of cases.keys()){
  const [a,b]=report.filter(r=>r.width===width&&r.index===index);
  for(let i=0;i<a.states.length;i++){
   const state=a.states[i].state,ref=screens.get(`${width}/${index}/4185/${state}`),next=screens.get(`${width}/${index}/4184/${state}`);

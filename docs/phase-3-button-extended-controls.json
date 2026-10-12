@@ -1,0 +1,1746 @@
+[
+  {
+    "width": 390,
+    "index": 0,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 0,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 2,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 2,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 0,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 0,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(23, 23, 28)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(23, 23, 28)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "color": "rgb(0, 0, 0)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "color": "rgb(255, 255, 255)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 2,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 2,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 119, 89), rgb(118, 112, 197), rgb(76, 110, 230))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(23, 23, 28), rgb(23, 23, 28))",
+          "color": "rgb(33, 33, 33)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "port": 4185,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "port": 4184,
+    "states": [
+      {
+        "state": "idle",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "hover",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "pressed",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "released",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(255, 217, 208), rgb(209, 142, 226), rgb(143, 166, 249))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "leave",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": false,
+          "boxShadow": "none",
+          "outline": "rgba(0, 0, 0, 0) solid 2px",
+          "outlineOffset": "2px"
+        }
+      },
+      {
+        "state": "keyboard",
+        "style": {
+          "background": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(to right, rgb(250, 250, 250), rgb(250, 250, 250))",
+          "color": "rgb(250, 250, 250)",
+          "glow": false,
+          "before": {
+            "opacity": "1",
+            "transform": "none"
+          },
+          "focus": true,
+          "boxShadow": "none",
+          "outline": "rgb(76, 110, 230) solid 2px",
+          "outlineOffset": "2px"
+        }
+      }
+    ]
+  }
+]
