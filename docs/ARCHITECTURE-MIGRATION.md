@@ -756,3 +756,32 @@ Comprobaciones adicionales de esta etapa:
 - Evidencia: `phase-3-home-button-render-diagnostics.json`. La causa precisa de
   rasterización sigue abierta; no se cambia el diseño, la referencia ni el umbral.
   No se publica y no se marca como aprobada la paridad visual de Inicio.
+
+### 2026-10-12 — Cabecera compartida y recorrido completo de un artículo
+
+- La comparación del artículo `/blog/the-future-of-work-debate-has-an-evidence-problem`
+  detectó 49.693 píxeles distintos en Product: la cabecera nativa conservaba las
+  cuatro promociones anteriores a las actualizaciones de marca. Se restauran las
+  imágenes, logos, textos y destino del Blog ya presentes en la referencia, dentro
+  del fragmento estático `header-3f7462eb5ea0`; no se añade un parche de navegador.
+- Se restaura también el enlace Agentic Task Ecosystem en Explorations, ausente en
+  ese fragmento. La cabecera la comparten el artículo, `/blog/tag/technology` y
+  `/labs/open-development/application`. Las plantillas móviles no se sustituyen
+  por las de escritorio: su contenido actual coincide con el original probado.
+- El comparador admite ahora carpeta de salida independiente, recorrido vertical
+  completo con solapamiento y prueba de todos los menús en cualquier ruta. Se
+  mantiene el umbral de cero píxeles y la validación de hashes de la referencia.
+- Recorrido del artículo con movimiento normal: 25/25 capturas exactas en
+  1440×900, 768×1024 y 390×844, incluyendo inicio y final de página. Vídeos pausados
+  y animaciones CSS finalizadas durante la captura, como en el comparador existente.
+- Navegación tras la corrección: 22/23 capturas exactas. Todos los desplegables
+  coinciden; queda una línea de 390 píxeles distinta en la apertura del menú raíz
+  móvil, con las posiciones medidas del logo y cierre idénticas. En la ejecución
+  anterior esa apertura coincidía y el menú Blog de tablet variaba 54 píxeles en
+  el borde inferior; no se atribuye una causa sin demostrarla ni se relaja el umbral.
+- Evidencia: `phase-3-article-header-and-scroll.json`. Pasan los nueve tests de
+  `npm run verify`, la paridad de 1201 archivos de producción y la comprobación
+  de recursos/runtime de las 137 páginas nativas. Se actualiza la vista local;
+  la migración global sigue pendiente y no se publica esta candidata.
+- Las otras dos rutas que comparten la cabecera pasan 14/14 capturas de portada,
+  Product y scroll en las tres anchuras (seis pares ruta/viewport).

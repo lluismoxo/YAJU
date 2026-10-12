@@ -19,7 +19,7 @@ for (const [name, hash] of Object.entries(fixture.files)) {
   const bytes = await readFile(resolve(baselineDirectory, name));
   assert.equal(createHash('sha256').update(bytes).digest('hex'), hash, `Modified reference: ${name}`);
 }
-const artifacts = resolve(root, 'artifacts/visual-parity');
+const artifacts = resolve(root, process.env.YAJU_VISUAL_OUTPUT || 'artifacts/visual-parity');
 await mkdir(artifacts, { recursive: true });
 const routes = process.argv[4]?.split(',') || ['/', '/labs/scholars', '/agent-academy'];
 const viewports = [
@@ -193,6 +193,17 @@ try {
         await Promise.all(pages.map(page=>page.waitForTimeout(motion==='reduce'?1500:3500)));
         await capture(`scroll-${offset}`);
       }
+      if(process.env.YAJU_TEST_FULL_SCROLL==='1') {
+        const heights=await Promise.all(pages.map(page=>page.evaluate(()=>document.documentElement.scrollHeight)));
+        const maximum=Math.max(...heights)-viewport.height;
+        const step=Math.floor(viewport.height*0.8);
+        for(let offset=0;offset<maximum+step;offset+=step){
+          const y=Math.min(offset,maximum);
+          await Promise.all(pages.map(page=>page.evaluate(y=>scrollTo(0,y),y)));
+          await Promise.all(pages.map(page=>page.waitForTimeout(motion==='reduce'?1500:3500)));
+          await capture(`sweep-${y}`);
+        }
+      }
       if(process.env.YAJU_TEST_CAROUSELS === '1') {
         const counts=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').count()));
         assert.equal(counts[0],counts[1],`Carousel count: ${route}`);
@@ -221,7 +232,7 @@ try {
           await capture(`accordion-${index}`);
         }
       }
-      if (route === '/legal') {
+      if (route === '/legal' || process.env.YAJU_TEST_NAVIGATION === '1') {
         await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,0))));
         await Promise.all(pages.map(page => page.waitForTimeout(500)));
         if (viewport.name === 'desktop') {
@@ -245,6 +256,8 @@ try {
           }
           await Promise.all(pages.map(page => page.getByRole('button',{name:'Close navigation menu',exact:true}).click()));
         }
+      }
+      if (route === '/legal') {
         await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,document.body.scrollHeight))));
         await Promise.all(pages.map(page => page.waitForTimeout(500)));
         await capture('footer');
