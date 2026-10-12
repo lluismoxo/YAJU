@@ -812,3 +812,24 @@ Comprobaciones adicionales de esta etapa:
 - Evidencia: `phase-3-editorial-and-browser-coverage.json`. No se cambia código
   servido ni se publica. Sigue pendiente el borde móvil, el CTA escalado de Inicio
   y las demás limitaciones registradas en las fases anteriores.
+
+### 2026-10-12 — Recorrido completo de Agent Academy y Scholars
+
+- Se comparan `/agent-academy` y `/labs/scholars` con movimiento normal en
+  1440×900, 768×1024 y 390×844. Se recorren con capturas solapadas hasta el pie
+  y se abren los cinco desplegables de navegación en cada anchura.
+- Resultado: 133/133 capturas con cero píxeles distintos. Esto amplía la cobertura
+  de ambas páginas completas y sus menús, sin extrapolarla al resto de rutas.
+  Se mantienen las condiciones del comparador: medios externos compartidos,
+  vídeos pausados y animaciones CSS finalizadas durante la captura.
+- Evidencia: `phase-3-academy-scholars-full.json`. No se modifica el código servido.
+- Se añade `scripts/check-native-navigation.mjs`: un consumidor por cada
+  una de las siete cabeceras estándar, a 1440/768/390 px. Pasan 119 comprobaciones
+  en 21 pares ruta/anchura: navegación con teclado por los cinco submenús, Back,
+  Escape, devolución del foco en móvil y cierre/desbloqueo del scroll al pasar
+  a escritorio. Campaña y registro tienen navegación separada y no se incluyen.
+- La prueba usa un selector estable para el botón que cambia de nombre al abrir
+  y el selector accesible de Back empleado por las pruebas previas. Los errores
+  iniciales de selectores pertenecían al test, no al código del sitio. Evidencia:
+  `phase-3-standard-header-keyboard.json`. No se publica: continúan pendientes
+  las diferencias de composición ya documentadas y el resto de cobertura global.
