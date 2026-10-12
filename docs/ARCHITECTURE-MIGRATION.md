@@ -785,3 +785,30 @@ Comprobaciones adicionales de esta etapa:
   la migración global sigue pendiente y no se publica esta candidata.
 - Las otras dos rutas que comparten la cabecera pasan 14/14 capturas de portada,
   Product y scroll en las tres anchuras (seis pares ruta/viewport).
+
+### 2026-10-12 — Control del menú móvil y carga de todas las rutas
+
+- Se repite la prueba de navegación móvil del artículo con comparación estricta:
+  7/8 estados exactos; la apertura del menú raíz conserva 390 píxeles distintos,
+  todos en la fila y=161. El único cambio es el canal verde: RGBA (232,231,230,255)
+  frente a (232,232,230,255). El control original/original pasa 8/8 estados.
+- Las mediciones del panel, la cabecera y el overlay coinciden: límite fraccional
+  161,40625 px, fondo blanco, overlay rgba(33,33,33,.2), blur(30px), opacidad 1 y
+  mismos z-index. No se ha demostrado la causa de composición y no se introduce
+  un ajuste visual ni tolerancia para ocultar la diferencia.
+- Evidencia reproducible del control y capas: `phase-3-mobile-menu-edge-control.json`.
+- `check-native-browser.mjs` admite `YAJU_TEST_ORIGIN`, conservando 4183 por defecto.
+  Esto permite auditar directamente la vista actual en 4184 sin modificar el script
+  en cada ejecución. Las 137 páginas cargan con contenido, sin excepciones JS,
+  respuestas locales >=400 detectadas ni peticiones al runtime legado monitorizado.
+  La prueba usa escritorio y movimiento reducido, bloquea recursos externos y no
+  sustituye la revisión visual ni una prueba real del backend de formularios.
+- Se recorren completos `/blog/what-your-corpus-leaves-out` y
+  `/customer-stories/agents-in-enterprise-integration`, incluyendo sus cinco menús,
+  en escritorio/tablet/móvil: 78/79 capturas exactas. La única diferencia son
+  388 píxeles en la apertura del menú raíz del artículo en móvil. Todos los
+  estados de contenido y submenús coinciden. Ambas páginas usan la cabecera
+  compartida por 100 rutas; no se extrapola la paridad a esas cien páginas.
+- Evidencia: `phase-3-editorial-and-browser-coverage.json`. No se cambia código
+  servido ni se publica. Sigue pendiente el borde móvil, el CTA escalado de Inicio
+  y las demás limitaciones registradas en las fases anteriores.
