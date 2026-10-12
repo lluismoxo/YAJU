@@ -47,13 +47,21 @@ try{
    if(state==='keyboard'){await page.keyboard.press('Tab');await button.focus();}
    await page.waitForTimeout(650);
    const style=await button.evaluate(el=>{const s=getComputedStyle(el),p=getComputedStyle(el,'::before');return{background:s.backgroundColor,backgroundImage:s.backgroundImage,color:s.color,glow:el.classList.contains('web3-primary-solid-btn-hover'),before:{opacity:p.opacity,transform:p.transform},focus:el.matches(':focus-visible'),boxShadow:s.boxShadow,outline:s.outline,outlineOffset:s.outlineOffset}});
-   const buffer=await button.screenshot();screens.set(`${width}/${index}/${port}/${state}`,PNG.sync.read(buffer));
-   await writeFile(`${output}/${width}-${index}-${port}-${state}.png`,buffer);
-   const rect=await button.boundingBox();
-   const clip={x:Math.max(0,Math.floor(rect.x)-24),y:Math.max(0,Math.floor(rect.y)-24),width:Math.ceil(rect.width)+48,height:Math.ceil(rect.height)+48};
-   const surrounding=await page.screenshot({clip});
-   surroundings.set(`${width}/${index}/${port}/${state}`,PNG.sync.read(surrounding));
-   await writeFile(`${output}/${width}-${index}-${port}-${state}-glow.png`,surrounding);
+   // Derive both regions from one viewport paint. Separate clipped screenshots can
+   // rerasterize the same text/background differently, even in original/original runs.
+   const rect=await button.boundingBox(),viewport=PNG.sync.read(await page.screenshot());
+   function crop(padding){
+    const x=Math.max(0,Math.floor(rect.x)-padding),y=Math.max(0,Math.floor(rect.y)-padding);
+    const right=Math.min(viewport.width,Math.ceil(rect.x+rect.width)+padding);
+    const bottom=Math.min(viewport.height,Math.ceil(rect.y+rect.height)+padding);
+    const result=new PNG({width:right-x,height:bottom-y});
+    PNG.bitblt(viewport,result,x,y,result.width,result.height,0,0);return result;
+   }
+   const buttonImage=crop(0),surrounding=crop(24);
+   screens.set(`${width}/${index}/${port}/${state}`,buttonImage);
+   surroundings.set(`${width}/${index}/${port}/${state}`,surrounding);
+   await writeFile(`${output}/${width}-${index}-${port}-${state}.png`,PNG.sync.write(buttonImage));
+   await writeFile(`${output}/${width}-${index}-${port}-${state}-glow.png`,PNG.sync.write(surrounding));
    states.push({state,style,geometry:await button.evaluate(el=>{const r=el.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,scrollY}})});
   }
   if(port===4184&&!referenceOnly){
@@ -75,8 +83,8 @@ for(const width of widths)for(const index of indices){
   let pixels=0;if(ref.width!==next.width||ref.height!==next.height)pixels=-1;else for(let n=0;n<ref.data.length;n+=4)if(ref.data.subarray(n,n+4).some((v,j)=>v!==next.data[n+j]))pixels++;
   const refGlow=surroundings.get(`${width}/${index}/4185/${state}`),nextGlow=surroundings.get(`${width}/${index}/4184/${state}`);
   let glowPixels=0;if(refGlow.width!==nextGlow.width||refGlow.height!==nextGlow.height)glowPixels=-1;else for(let n=0;n<refGlow.data.length;n+=4)if(refGlow.data.subarray(n,n+4).some((v,j)=>v!==nextGlow.data[n+j]))glowPixels++;
-  comparisons.push({width,index,state,glowRegionPixels:glowPixels,stylesMatch:JSON.stringify(a.states[i].style)===JSON.stringify(b.states[i].style),differentPixels:pixels});
+  comparisons.push({width,index,state,geometryMatch:JSON.stringify(a.states[i].geometry)===JSON.stringify(b.states[i].geometry),glowRegionPixels:glowPixels,stylesMatch:JSON.stringify(a.states[i].style)===JSON.stringify(b.states[i].style),differentPixels:pixels});
  }
 }
 await writeFile(`${output}/visual.json`,JSON.stringify(comparisons,null,2)+'\n');console.log(JSON.stringify(comparisons,null,2));
-assert.ok(comparisons.every(r=>r.stylesMatch&&r.differentPixels===0&&r.glowRegionPixels===0),'Review native button differences');
+assert.ok(comparisons.every(r=>r.geometryMatch&&r.stylesMatch&&r.differentPixels===0&&r.glowRegionPixels===0),'Review native button differences');

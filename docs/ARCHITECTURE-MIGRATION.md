@@ -715,3 +715,25 @@ Comprobaciones adicionales de esta etapa:
   dentro del botón oscuro móvil aun con geometría idéntica. Esto no demuestra que
   todas las diferencias nativo/original tengan esa causa. Evidencia:
   `phase-3-button-original-variability.json`. La candidata sigue sin publicarse.
+
+### 2026-10-12 — Comparaciones de CTA desde una sola captura
+
+- Se cambia únicamente el instrumento de verificación: el botón y su margen se
+  recortan de un mismo PNG del viewport. Antes se pedían dos capturas independientes
+  a Chrome, que podían rasterizar otra vez el contenido. No se alteran CSS, HTML,
+  animaciones ni comportamiento de la candidata. No hay máscaras ni tolerancias.
+- Se incorpora la geometría del botón y el scroll a la condición de aprobación,
+  junto a colores, foco y comparación RGBA exacta. Se comprueba la sintaxis y se
+  aplica esa condición también a los resultados de las ejecuciones terminadas.
+- Resultado de esta ejecución: 72/72 estados nativo/original coinciden en estilos,
+  geometría, botón y margen. Incluye seis variantes (sólidos, contorno y secundarios,
+  en paletas clara/oscura), seis estados y dos anchuras (390/1440).
+  Evidencia consolidada: `phase-3-buttons-single-paint-visual.json`.
+- Control independiente original/original: 18/24 comparaciones exactas. Los seis
+  estados del secundario oscuro móvil todavía varían entre cargas del original,
+  aun con geometría/estilos idénticos. El cambio de captura elimina las pequeñas
+  discrepancias de la comparación nativa observada, pero no elimina toda la
+  variabilidad de la referencia; no se afirma reproducibilidad universal.
+- Este paso no cambia la web servida ni requiere repetir las pruebas generales
+  que ya pasaron para ed49468. Continúan pendientes las verificaciones globales
+  y el caso específico del botón escalado en Inicio; no se publica la candidata.
