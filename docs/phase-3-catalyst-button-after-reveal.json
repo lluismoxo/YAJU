@@ -1,0 +1,50 @@
+[
+  {
+    "width": 390,
+    "index": 3,
+    "state": "idle",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "hover",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "pressed",
+    "glowRegionPixels": 10,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "released",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "leave",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "keyboard",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  }
+]

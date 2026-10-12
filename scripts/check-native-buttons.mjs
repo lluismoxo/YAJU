@@ -12,11 +12,14 @@ const cases=extended?[
  {route:'/agent-orchestration-system',selector:'main a.ease-button-gradient[href="/mcp-gateway"]'},
  {route:'/labs/catalyst-grants',selector:'main a.ease-button-gradient[href="/labs"]'}
 ]:[1,2].map(index=>({route:'/',selector:`.left-text-container >> nth=${index} >> a.web3-primary-solid-btn`}));
-const output=extended?'artifacts/native-buttons-extended':'artifacts/native-buttons';await mkdir(output,{recursive:true});
+const referenceOnly=process.env.YAJU_COMPARE_REFERENCE==='1';
+const widths=(process.env.YAJU_BUTTON_WIDTHS||'390,1440').split(',').map(Number);
+const indices=process.env.YAJU_BUTTON_CASES?process.env.YAJU_BUTTON_CASES.split(',').map(Number):[...cases.keys()];
+const output=process.env.YAJU_BUTTON_OUTPUT||(extended?'artifacts/native-buttons-extended':'artifacts/native-buttons');await mkdir(output,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true}),report=[],cache=new Map(),screens=new Map(),surroundings=new Map();
 try{
- for(const width of [390,1440])for(const index of cases.keys())for(const port of [4185,4184]){
-  const origin=`http://127.0.0.1:${port}`,page=await browser.newPage({viewport:{width,height:900}}),errors=[];
+ for(const width of widths)for(const index of indices)for(const port of [4185,4184]){
+  const origin=`http://127.0.0.1:${referenceOnly?4185:port}`,page=await browser.newPage({viewport:{width,height:900}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
   await page.route('**/*',async route=>{
    const req=route.request(),url=new URL(req.url());if(url.origin===origin)return route.continue();
@@ -30,6 +33,12 @@ try{
   const button=page.locator(cases[index].selector).first();
   await button.scrollIntoViewIfNeeded();await page.waitForTimeout(800);
   const states=[];
+  if(process.env.YAJU_BUTTON_DIAGNOSTICS==='1'){
+   const diagnostic=await button.evaluate(el=>{const items=[];for(let n=el;n;n=n.parentElement){const css=getComputedStyle(n);items.push({html:n===el?n.outerHTML:undefined,tag:n.tagName,classes:n.className,style:n.getAttribute('style'),rect:n.getBoundingClientRect().toJSON(),css:Object.fromEntries([...css].map(k=>[k,css.getPropertyValue(k)]))});}return items});
+   await writeFile(`${output}/${width}-${index}-${port}-diagnostics.json`,JSON.stringify(diagnostic,null,2));
+   const sections=await page.locator('main > *').evaluateAll(nodes=>nodes.map(n=>({tag:n.tagName,classes:n.className,text:n.textContent.slice(0,140),rect:n.getBoundingClientRect().toJSON(),children:[...n.children].map(c=>({tag:c.tagName,classes:c.className,height:c.getBoundingClientRect().height}))})));
+   await writeFile(`${output}/${width}-${index}-${port}-sections.json`,JSON.stringify(sections,null,2));
+  }
   for(const state of ['idle','hover','pressed','released','leave','keyboard']){
    if(state==='hover')await button.hover();
    if(state==='pressed')await button.dispatchEvent('mousedown',{button:0,buttons:1});
@@ -45,9 +54,9 @@ try{
    const surrounding=await page.screenshot({clip});
    surroundings.set(`${width}/${index}/${port}/${state}`,PNG.sync.read(surrounding));
    await writeFile(`${output}/${width}-${index}-${port}-${state}-glow.png`,surrounding);
-   states.push({state,style});
+   states.push({state,style,geometry:await button.evaluate(el=>{const r=el.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,scrollY}})});
   }
-  if(port===4184){
+  if(port===4184&&!referenceOnly){
    assert.deepEqual(errors,[]);
    await page.mouse.move(0,0);await button.evaluate(el=>el.setAttribute('aria-disabled','true'));await button.hover();
    assert.equal(await button.evaluate(el=>el.classList.contains('web3-primary-solid-btn-hover')),false);
@@ -59,7 +68,7 @@ try{
  }
 }finally{await browser.close();await writeFile(`${output}/controls.json`,JSON.stringify(report,null,2)+'\n');}
 const comparisons=[];
-for(const width of [390,1440])for(const index of cases.keys()){
+for(const width of widths)for(const index of indices){
  const [a,b]=report.filter(r=>r.width===width&&r.index===index);
  for(let i=0;i<a.states.length;i++){
   const state=a.states[i].state,ref=screens.get(`${width}/${index}/4185/${state}`),next=screens.get(`${width}/${index}/4184/${state}`);

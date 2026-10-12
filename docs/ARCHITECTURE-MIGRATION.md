@@ -686,3 +686,32 @@ Comprobaciones adicionales de esta etapa:
 - Regresión de sólidos: 24/24 estados y ambas regiones de captura exactos,
   incluido el foco restaurado (`phase-3-button-solid-regression-visual.json`).
   No se publica ni se aprueba paridad global con estos resultados parciales.
+
+### 2026-10-12 — Apertura de FAQ y geometría de Catalyst Grants
+
+- La investigación de los píxeles del CTA encontró una diferencia real de altura:
+  las FAQ nativas de Catalyst Grants abrían la primera respuesta durante un salto
+  directo al final de la página. Añadían 192 px que no estaban en el original.
+- El módulo original 712852 (`16-v97tszng7x.js`) usa `useInView` sobre la columna
+  que contiene la lista, con `threshold: .3` y `triggerOnce: true`. Se restaura
+  ese objetivo y umbral en acordeones múltiples, comprobando `intersectionRatio`
+  además de `isIntersecting`. Los acordeones de selección única no se modifican.
+- `check-native-faq-reveal.mjs` contrasta Catalyst Grants y Pricing a 390/1440 px:
+  salto al final, 15% y 50% visible, apertura de segunda respuesta y cierre de
+  primera. Coinciden las alturas y estados de las cinco etapas en los cuatro pares.
+  Evidencia: `phase-3-faq-reveal-controls.json`.
+- Regresión completa: 327 interacciones, 24 páginas, 72 combinaciones de página
+  y anchura pasan. También pasan las nueve pruebas generales, los 1201 archivos
+  invariantes y la revisión de recursos de las 137 rutas nativas.
+- Catalyst Grants móvil recupera la geometría exacta de todas sus secciones y
+  del CTA, incluida la posición de scroll. Los seis estados del botón ahora dan
+  cero píxeles distintos. Cinco de sus seis capturas ampliadas también coinciden;
+  la de pulsación conserva diez píxeles en el margen. Se registra como pendiente,
+  sin reducir el umbral ni imponer un repintado al producto. Evidencias:
+  `phase-3-catalyst-reveal-geometry.json`, `phase-3-catalyst-button-after-reveal.json`.
+- El comparador admite casos/anchuras/salida elegibles, diagnósticos y dos cargas
+  del propio original (`YAJU_COMPARE_REFERENCE=1`). Esa prueba también muestra
+  variabilidad: ocho de 24 capturas ampliadas difieren, seis de ellas con cambios
+  dentro del botón oscuro móvil aun con geometría idéntica. Esto no demuestra que
+  todas las diferencias nativo/original tengan esa causa. Evidencia:
+  `phase-3-button-original-variability.json`. La candidata sigue sin publicarse.

@@ -224,7 +224,10 @@
    paint();
   }
   buttons.forEach((button,i)=>button.addEventListener('click',event=>{event.preventDefault();started=true;select(i);}));
-  const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)&&!started){started=true;open.add(0);paint();observer.disconnect();}},{threshold:0.1});observer.observe(list);
+  // FAQ sections originally reveal at 30% of their content column (useInView).
+  // Merely intersecting the viewport can open a drawer during a jump past it.
+  const threshold=model.multiple?0.3:0.1;
+  const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting&&(!model.multiple||e.intersectionRatio>=threshold))&&!started){started=true;open.add(0);paint();observer.disconnect();}},{threshold});observer.observe(model.multiple?list.parentElement:list);
   accordions.push(paint);
  });
  window.addEventListener('resize',()=>accordions.forEach(paint=>paint()),{passive:true});
