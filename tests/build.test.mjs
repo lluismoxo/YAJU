@@ -11,6 +11,8 @@ test('every public source has exactly one manifest entry; private code is exclud
   const expected = new Set(inputs.map(entry => entry.source));
   assert.equal(expected.size, inputs.length);
   assert.equal(new Set(inputs.map(entry => entry.output)).size, inputs.length);
+  const optimized=JSON.parse(await readFile(resolve(root,'config/optimized-images.json'),'utf8'));
+  for(const path of new Set(Object.values(optimized).flatMap(image=>[image.src,...(image.variants||[]).map(v=>v.src)])))expected.add('static'+path);
   // Candidate templates are build dependencies, not individually published files.
   expected.add('src/content/card-dates.json');
   const candidates = JSON.parse(await readFile(resolve(root, 'config/native-pages.json'), 'utf8'));

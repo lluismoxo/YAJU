@@ -74,10 +74,14 @@
   for(const button of activeButtons){const state=buttonStates.get(button);state.hover=false;state.pressed=false;paintButton(button,state);}
  });
 
- main.querySelectorAll('video[data-native-autoplay]').forEach(video=>{
-  video.muted=true;
-  video.play().catch(()=>{}); // Browsers can defer playback until media is ready or interacted with.
- });
+ const autoplayVideos=[...main.querySelectorAll('video[data-native-autoplay]')];
+ function startVideo(video){video.muted=true;video.play().catch(()=>{});}
+ if('IntersectionObserver' in window){
+  const videoObserver=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>{
+   if(isIntersecting){startVideo(target);videoObserver.unobserve(target);}
+  }),{rootMargin:'250px'});
+  autoplayVideos.forEach(video=>videoObserver.observe(video));
+ }else autoplayVideos.forEach(startVideo);
  const searchTemplate=document.getElementById('native-search-template');
  if(searchTemplate){
   let overlay=null,opener=null,previousOverflow='',closing=false;
