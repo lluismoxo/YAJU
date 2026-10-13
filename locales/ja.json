@@ -5060,5 +5060,7 @@
   "Monitor agents in production with Yaju. Inspect session traces, review audit trails, and use evaluations to understand agent behavior and catch failed checks.": "Yajuで本番環境のAIエージェントを監視。セッショントレースと監査証跡を確認し、評価を通じて動作を把握してチェックの失敗を検出します。",
   "Turn your backlog into review-ready code with Yaju Software Factory. Agents plan, build, test, and review changes before handing a pull request to engineers.": "Yaju Software Factoryでバックログをレビュー可能なコードへ。エージェントが計画、開発、テスト、レビューを行い、エンジニアにプルリクエストを渡します。",
   "See where your AI agent spend goes with Yaju AI Spend Explorer. Connect read-only to explore costs and understand spending before deciding what to optimize.": "Yaju AI Spend ExplorerでAIエージェントへの支出を可視化。読み取り専用で接続し、最適化に進む前にコストの内訳と支出を把握できます。",
-  "Learn to build and operate AI agents with Yaju Agent Academy. Start with basics and progress to running agents in production, with no prior experience needed.": "Yaju Agent AcademyでAIエージェントの構築と運用を学びましょう。経験がなくても、基礎から本番環境でのエージェント運用まで段階的に学べます。"
+  "Learn to build and operate AI agents with Yaju Agent Academy. Start with basics and progress to running agents in production, with no prior experience needed.": "Yaju Agent AcademyでAIエージェントの構築と運用を学びましょう。経験がなくても、基礎から本番環境でのエージェント運用まで段階的に学べます。",
+  "Yaju is the infrastructure layer that deploys, governs and observes AI agents between your teams’ frameworks and enterprise systems.": "Yajuは、チームのフレームワークと企業システムの間でAIエージェントをデプロイし、統制・監視するインフラストラクチャ層です。",
+  "Yaju attributes costs to each AI agent, enforces budget limits and measures results against your teams’ own evaluations.": "Yajuは各AIエージェントにコストを割り当て、予算上限を適用し、チーム独自の評価基準で結果を測定します。"
 }
