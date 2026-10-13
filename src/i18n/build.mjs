@@ -1,3 +1,4 @@
+import {optimizeSeo} from '../components/seo.mjs';
 import {secureHtml} from '../components/security.mjs';
 import {readFile,writeFile,mkdir,readdir} from 'node:fs/promises';
 import {dirname,resolve} from 'node:path';
@@ -20,9 +21,9 @@ export async function buildLanguages(staging,root,inputs){
   const tr=createTranslator({language,dictionary,routes,scripts});
   for(const page of pages){
    const route=routeFor(page),source=sources.get(page.output);
-   const html=secureHtml(localizedPage(source,route,language,dictionary,routes,scripts));
+   const html=secureHtml(optimizeSeo(localizedPage(source,route,language,dictionary,routes,scripts),route,language,dictionary));
    await emit(resolve(staging,'.'+language.prefix+'/'+page.output),html);
-   if(!/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(source))sitemap.push('<url><loc>https://yajuas.com'+languagePath(route,language)+'</loc>'+alternates(route).map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${a.href}" />`).join('')+'</url>');
+   if(!/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html))sitemap.push('<url><loc>https://yajuas.com'+languagePath(route,language)+'</loc>'+alternates(route).map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${a.href}" />`).join('')+'</url>');
   }
   if(language.prefix){
    for(const [path,source] of resources){let js=tr.js(source);if(path.endsWith('/forms2.js'))js=js.replace('fetch(BASE + id','fetch('+JSON.stringify(language.prefix)+' + BASE + id');await emit(resolve(staging,'.'+language.prefix+path),js);}
