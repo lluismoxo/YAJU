@@ -70,7 +70,7 @@
   desktop.addEventListener('focusout',event=>{if(!desktop.contains(event.relatedTarget))setDesktop(null);});
   desktop.addEventListener('mouseenter',()=>{desktopHover=true;clearTimeout(closeTimer);chrome();});
   desktop.addEventListener('mouseleave',()=>{desktopHover=false;closeTimer=setTimeout(()=>setDesktop(null),200);});
-  desktop.querySelector('a[href="/"]').addEventListener('mouseenter',()=>setDesktop(null));
+  desktop.querySelector('a[href="/"],a[data-locale-home]').addEventListener('mouseenter',()=>setDesktop(null));
 
   function setMobile(open, index = null) {
     mobileOpen=open;activeMobile=index;visible=true;
@@ -123,7 +123,7 @@
       drawer.querySelector('[class*="group/footer-drawer"]').dataset.animated=String(open);
     });
   });
-  const language = [...document.querySelectorAll('footer button')].find(button=>button.textContent.trim()==='English');
+  const language = [...document.querySelectorAll('footer button')].find(button=>!button.hasAttribute('data-language-trigger')&&button.textContent.trim()==='English');
   if(language) {
     const options=language.nextElementSibling;
     const setLanguageOpen=open=>{
@@ -148,7 +148,7 @@
   const aside=dialog.querySelector('aside'),backdrop=dialog.querySelector('button');
   const icon=toggle.querySelector('img'),logo=bar.querySelector('a img');
   let previous=window.scrollY,open=false,closing=false,timer=0,sequence=0,visible=true;
-  const language=[...aside.querySelectorAll('button')].find(button=>button.textContent.trim()==='English');
+  const language=[...aside.querySelectorAll('button')].find(button=>!button.hasAttribute('data-language-trigger')&&button.textContent.trim()==='English');
   const options=language?.nextElementSibling;
   function setLanguage(value){
     if(!options)return;
@@ -219,7 +219,7 @@
     const label=button.querySelector('img')?.alt;
     const endpoint=label==='X'?'https://twitter.com/intent/tweet':label==='LinkedIn'?'https://linkedin.com/shareArticle':null;
     if(!endpoint)return;
-    button.setAttribute('aria-label',`Share on ${label}`);
+    button.setAttribute('aria-label',label==='LinkedIn'?'Share on LinkedIn':'Share on X');
     button.addEventListener('click',()=>{
       const url=new URL(endpoint);url.searchParams.set('url',`https://yajuas.com${location.pathname}`);
       if(label==='X')url.searchParams.set('text',document.title);

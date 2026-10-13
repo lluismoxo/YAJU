@@ -1,0 +1,12 @@
+import {readFile,writeFile,readdir} from 'node:fs/promises';
+import {createTranslator} from '../src/i18n/translate.mjs';
+const collect=new Set(),tr=createTranslator({collect});
+import {renderPage} from '../src/components/page.mjs';
+import {renderLegalPage} from '../src/components/site-layout.mjs';
+const pages=JSON.parse(await readFile('config/native-pages.json','utf8'));
+for(const p of pages)tr.html(await renderPage(JSON.parse(await readFile(p.source,'utf8'))));
+tr.html(await renderLegalPage(JSON.parse(await readFile('src/content/legal.json','utf8'))));
+for(const name of await readdir('src/client'))if(name.endsWith('.js'))tr.js(await readFile('src/client/'+name,'utf8'));
+for(const name of await readdir('public/assets/forms'))if(name.endsWith('.html'))tr.html(await readFile('public/assets/forms/'+name,'utf8'),true);
+await writeFile('locales/en-US.json',JSON.stringify(Object.fromEntries([...collect].sort().map(s=>[s,s])),null,2)+'\n');
+console.log({strings:collect.size,words:[...collect].join(' ').split(/\s+/).length});

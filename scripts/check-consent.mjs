@@ -4,6 +4,7 @@ import {mkdir,writeFile} from 'node:fs/promises';
 const require=createRequire(import.meta.url);
 const {chromium}=require(require.resolve('playwright',{paths:[process.env.YAJU_BROWSER_MODULES||process.cwd()]}));
 const origin=process.env.YAJU_TEST_ORIGIN||'http://127.0.0.1:4190';
+const locale=process.env.YAJU_LOCALE?'/'+process.env.YAJU_LOCALE:'';
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const KEY='yaju.cookie-consent.v1';
 const results=[];
@@ -21,7 +22,7 @@ try {
    return new URL(url).origin===origin?route.continue():route.abort();
   });
   const page=await context.newPage();
-  await page.goto(origin+'/');
+  await page.goto(origin+locale+'/');
   await page.locator('#yaju-cookie-banner').waitFor({state:'visible'});
   await page.waitForTimeout(400);
   assert.equal(requests.length,0,'No analytics before consent');
@@ -46,7 +47,7 @@ try {
   assert.equal(config.filter(v=>v[0]==='config'&&v[1]==='G-3T9YSET1R9').length,1);
   await page.reload();
   await page.waitForFunction(()=>Boolean(document.querySelector('#yaju-google-analytics')));
-  const other=await context.newPage();await other.goto(origin+'/legal/');
+  const other=await context.newPage();await other.goto(origin+locale+'/legal/');
   await other.waitForFunction(()=>Boolean(document.querySelector('#yaju-google-analytics')));
   await page.locator('.cky-banner-element').first().click();
   await page.locator('[data-choice="reject"]').last().click();
@@ -70,7 +71,7 @@ try {
  const context=await browser.newContext();
  const requests=[];context.on('request',r=>{if(analytic(r.url()))requests.push(r.url());});
  await context.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage denied');}});});
- const page=await context.newPage();await page.goto(origin+'/');await page.locator('#yaju-cookie-banner').waitFor({state:'visible'});await page.locator('[data-choice="reject"]').first().click();assert.equal(requests.length,0);await context.close();
+ const page=await context.newPage();await page.goto(origin+locale+'/');await page.locator('#yaju-cookie-banner').waitFor({state:'visible'});await page.locator('[data-choice="reject"]').first().click();assert.equal(requests.length,0);await context.close();
  results.push({storageUnavailable:true,pass:true});
 } finally {await browser.close();await mkdir('artifacts',{recursive:true});await writeFile('artifacts/consent-report.json',JSON.stringify({origin,results},null,2));}
 console.log(JSON.stringify(results,null,2));
