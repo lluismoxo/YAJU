@@ -1,0 +1,21 @@
+#yaju-consent{font-family:inherit;color:#212121;font-size:14px;line-height:1.5;text-align:left}
+#yaju-consent [hidden]{display:none!important}
+#yaju-cookie-banner{position:fixed;z-index:2147483000;bottom:20px;left:20px;right:20px;max-width:1120px;margin:auto;padding:24px;background:#f5f3ee;border:1px solid #c9c5bc;border-radius:20px;box-shadow:0 8px 40px #0002;display:flex;align-items:center;gap:28px}
+#yaju-consent h2{font-size:20px;line-height:1.25;font-weight:500;margin:0 0 10px;color:#212121}
+#yaju-consent p{font-size:14px;line-height:1.5;margin:8px 0;color:#454540}
+#yaju-consent a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+#yaju-consent button{font:inherit;color:#212121;background:transparent;border:1px solid #85857e;border-radius:999px;padding:11px 18px;cursor:pointer;white-space:nowrap;min-height:44px}
+#yaju-consent button:hover{background:#e5e2db}
+#yaju-consent :focus-visible{outline:2px solid #145e59;outline-offset:4px}
+#yaju-consent .yc-actions{display:flex;flex-wrap:wrap;gap:10px}
+#yaju-cookie-banner .yc-actions{min-width:310px}
+#yaju-cookie-panel{color:#212121;background:#f5f3ee;border:1px solid #c9c5bc;border-radius:20px;padding:28px;width:calc(100% - 32px);max-width:580px;max-height:85dvh;overflow:auto;margin:auto;box-shadow:0 12px 60px #0003}
+#yaju-cookie-panel::backdrop{background:#0006}
+#yaju-consent .yc-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#yaju-consent .yc-heading button{font-size:24px;padding:2px 12px}
+#yaju-consent .yc-category{border-top:1px solid #c9c5bc;padding:18px 0 10px;margin-top:18px}
+#yaju-consent h3,#yaju-consent label{font-size:16px;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0}
+#yaju-consent h3 span{font-size:12px;font-weight:400}
+#yaju-consent input{appearance:auto;width:22px;height:22px;accent-color:#145e59;cursor:pointer}
+#yaju-consent .yc-reopen{position:fixed;bottom:12px;left:12px;background:#f5f3ee;z-index:1000;font-size:12px}
+@media(max-width:767px){#yaju-cookie-banner{left:12px;right:12px;bottom:12px;padding:20px;display:block;max-height:85dvh;overflow:auto}#yaju-cookie-banner .yc-actions{min-width:0;margin-top:16px}#yaju-consent .yc-actions button{flex:1}#yaju-cookie-panel{padding:22px}}

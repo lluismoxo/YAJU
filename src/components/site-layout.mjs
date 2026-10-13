@@ -8,5 +8,5 @@ async function template(name) {
 }
 export async function renderLegalPage(content) {
   const [head,header,footer] = await Promise.all(['legal-head','header','footer'].map(template));
-  return `<!DOCTYPE html><html lang="en-US" dir="ltr"><head>${renderAnalytics()}${head}<script src="/assets/native-navigation.js" defer></script></head><body class="bg-surface-inverse"><div>${header}<div class="h-full">${renderLegal(content)}</div>${footer}</div><script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script></body></html>`;
+  return `<!DOCTYPE html><html lang="en-US" dir="ltr"><head>${renderAnalytics()}${head}<script src="/assets/native-navigation.js" defer></script></head><body class="bg-surface-inverse"><div>${header}<div class="h-full">${renderLegal(content)}</div>${footer}</div></body></html>`;
 }
