@@ -204,7 +204,7 @@
    if(!target.className.includes('animate-'))target.classList.add('motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out]');
    reveal.unobserve(target);
  }),{threshold:0.1});
- main.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>reveal.observe(el));
+ main.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>{if(!el.closest('[data-native-pagination]'))reveal.observe(el);});
  const accordions=[];
  main.querySelectorAll('[data-native-accordion]').forEach(list=>{
   const index=Number(list.dataset.nativeAccordion),model=data.accordions?.[index];if(!model)return;
@@ -243,14 +243,30 @@
  window.addEventListener('resize',()=>accordions.forEach(paint=>paint()),{passive:true});
  main.querySelectorAll('[data-native-pagination]').forEach(section=>{
   const model=data.pagination?.[Number(section.dataset.nativePagination)];if(!model?.states?.length)return;
-  let selected=0;
+  let selected=0,started=false;
+  const entryAnimation='motion-safe:animate-[fadeInUp_0.8s_forwards]';
+  const arrowsAnimation='motion-safe:animate-[fadeInRight_0.8s_ease_forwards_200ms]';
+  let pending=[];
+  // The original card group reveals once when 20% of the whole grid is visible.
+  const observer=new IntersectionObserver(entries=>{
+   if(started||!entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=0.2))return;
+   started=true;pending.forEach(({node,classes})=>node.classList.add(...classes));observer.disconnect();
+  },{threshold:0.2});
+  function prepareCardReveal(){
+   if(started)return;
+   pending=[...section.querySelectorAll('[class*="motion-safe:animate-"]')].map(node=>({node,classes:[entryAnimation,arrowsAnimation].filter(name=>node.classList.contains(name))}));
+   pending.forEach(({node,classes})=>node.classList.remove(...classes));
+   const grid=section.querySelector('a[class~="group/calloutCard"]')?.parentElement;
+   if(grid)observer.observe(grid);
+  }
+  prepareCardReveal();
   section.addEventListener('click',event=>{
    const button=event.target.closest('button[data-native-page-item],button[data-native-page-step]');
    if(!button||button.disabled)return;
    const next=button.hasAttribute('data-native-page-item')?Number(button.dataset.nativePageItem):selected+Number(button.dataset.nativePageStep);
-   if(!model.states[next])return;
+   if(next===selected||!model.states[next])return;
    selected=next;section.innerHTML=model.states[next].html;formatCardDates(section);
-   section.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>reveal.observe(el));
+   observer.disconnect();prepareCardReveal();
   });
  });
  // Tab content is captured at build time; selection never needs a network request.

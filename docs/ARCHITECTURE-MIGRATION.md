@@ -867,3 +867,29 @@ Comprobaciones adicionales de esta etapa:
 - `phase-3-pagination-visual-findings.json` conserva los resultados exploratorios
   y sus límites; no se consideran aceptación visual final. La vista local queda
   actualizada. No se publica la candidata mientras continúen las diferencias abiertas.
+
+### 2026-10-13 — Entrada de tarjetas paginadas
+
+- Se recupera el comportamiento del grupo original: las tarjetas se revelan una
+  sola vez cuando el 20% de su cuadrícula entra en pantalla. El observador genérico
+  deja de intervenir en esos bloques. Pulsar la página ya seleccionada conserva
+  sus nodos y evita reiniciar las animaciones.
+- `scripts/check-native-pagination-reveal.mjs` compara Observability y Financial
+  Services con la referencia a 1440, 768 y 390 px. Pasan 36 comprobaciones en seis
+  pares: antes de entrar, al 15% y 25%, al salir, al repetir la página seleccionada
+  y al cambiar de página. Son comprobaciones de comportamiento y clases de
+  animación, no una aprobación visual. Evidencia: `phase-3-pagination-entry-controls.json`.
+- Una comprobación anterior encontró incompleta la carpeta generada
+  `artifacts/native-all` (faltaba About). No se ha confirmado su causa. Se ha
+  reconstruido secuencialmente y verificado de nuevo antes y después de los tests
+  generales: las 137 páginas tienen títulos, analítica y recursos locales válidos.
+  La prueba de fallo de compilación usa una carpeta temporal independiente.
+- Los 12 tests generales y los 1201 archivos de referencia publicados siguen
+  pasando. La candidata local se actualiza con la compilación completa.
+- El recorrido en Chrome carga las 137 páginas sin errores JavaScript, recursos
+  locales ausentes ni solicitudes del runtime antiguo. Este recorrido comprueba
+  la carga inicial; no sustituye las comparaciones visuales ni todas las interacciones.
+- Las comparaciones exploratorias de portadas siguen mostrando diferencias;
+  no se relaja la tolerancia ni se declaran resueltas. Las capturas realizadas
+  alrededor del incidente de archivos ausentes tampoco se usan como aceptación.
+  No se publica esta candidata.
