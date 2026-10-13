@@ -86,17 +86,17 @@ test('an invalid input cannot replace the last successful build', async () => {
   const { spawnSync } = await import('node:child_process');
   const temp = await mkdtemp(resolve(tmpdir(), 'yaju-build-failure-'));
   try {
-    for (const dir of ['scripts', 'config', 'static/assets', 'src/components', 'public']) await mkdir(resolve(temp, dir), { recursive: true });
+    for (const dir of ['scripts', 'config', 'static/assets', 'src/components', 'artifacts/legacy-reference']) await mkdir(resolve(temp, dir), { recursive: true });
     await cp(resolve(root, 'scripts/build.mjs'), resolve(temp, 'scripts/build.mjs'));
     await cp(resolve(root, 'config/site.mjs'), resolve(temp, 'config/site.mjs'));
     await cp(resolve(root, 'src/components/redirect.mjs'), resolve(temp, 'src/components/redirect.mjs'));
     await writeFile(resolve(temp, 'static/assets/yaju-hydration-safe.css'), '');
-    await writeFile(resolve(temp, 'public/index.html'), 'last good build');
+    await writeFile(resolve(temp, 'artifacts/legacy-reference/index.html'), 'last good build');
     for (const badSource of ['.env.local', 'src/pages/../../.env.local', 'src/pages/missing.html']) {
       await writeFile(resolve(temp, 'config/site-inputs.json'), JSON.stringify([{source:badSource, output:'index.html'}]));
-      const result = spawnSync(process.execPath, ['scripts/build.mjs'], {cwd:temp, encoding:'utf8'});
+      const result = spawnSync(process.execPath, ['scripts/build.mjs','--legacy-reference'], {cwd:temp, encoding:'utf8'});
       assert.notEqual(result.status, 0, `Accepted invalid source: ${badSource}`);
-      assert.equal(await readFile(resolve(temp, 'public/index.html'), 'utf8'), 'last good build');
+      assert.equal(await readFile(resolve(temp, 'artifacts/legacy-reference/index.html'), 'utf8'), 'last good build');
     }
   } finally { await rm(temp, {recursive:true,force:true}); }
 });

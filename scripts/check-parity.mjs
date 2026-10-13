@@ -4,7 +4,7 @@ import { resolve, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const output = resolve(root, 'public');
+const output = resolve(root, process.argv[2] || 'artifacts/legacy-reference');
 const baseline = JSON.parse(await readFile(resolve(root, 'tests/fixtures/production-a1c700f.sha256.json'), 'utf8'));
 const approved = JSON.parse(await readFile(resolve(root, 'tests/fixtures/native-legal-approved.sha256.json'), 'utf8'));
 const expected = {...baseline.files, ...approved.files};

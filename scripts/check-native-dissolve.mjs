@@ -23,6 +23,8 @@ try{for(const reducedMotion of ['no-preference','reduce']){
   results.push({index,reducedMotion,passed:true,...state});
  }
  if(reducedMotion==='no-preference'){
+  // The preceding loop can leave the horizontally pinned hero out of view.
+  await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await page.waitForTimeout(1800);
   const title=page.locator('.dissolve-headline').first();await title.hover();await page.waitForTimeout(200);
   await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);
   assert.equal(await title.evaluate(el=>el.classList.contains('is-dissolved')),false);

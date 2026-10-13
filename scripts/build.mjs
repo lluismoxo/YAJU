@@ -5,12 +5,14 @@ import { site } from '../config/site.mjs';
 import { renderRedirect } from '../src/components/redirect.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const allNative = process.argv.includes('--native-all');
+const nativeReview = process.argv.includes('--native-all');
 const pilotOutput = process.argv.includes('--native-legal');
-if (process.argv.slice(2).some(arg => !['--native-legal','--native-all'].includes(arg))) throw new Error('Unknown build option');
-const output = resolve(root, allNative ? 'artifacts/native-all' : pilotOutput ? 'artifacts/native-pilot' : 'public');
-const staging = resolve(root, allNative ? 'artifacts/.all-staging' : pilotOutput ? 'artifacts/.native-staging' : '.build-staging');
-const previous = resolve(root, allNative ? 'artifacts/.all-previous' : pilotOutput ? 'artifacts/.native-previous' : '.build-previous');
+const legacyReference = process.argv.includes('--legacy-reference');
+if (process.argv.slice(2).length>1||process.argv.slice(2).some(arg => !['--native-legal','--native-all','--legacy-reference'].includes(arg))) throw new Error('Unknown or conflicting build option');
+const allNative = !pilotOutput && !legacyReference;
+const output = resolve(root, nativeReview ? 'artifacts/native-all' : pilotOutput ? 'artifacts/native-pilot' : legacyReference ? 'artifacts/legacy-reference' : 'public');
+const staging = `${output}.staging`;
+const previous = `${output}.previous`;
 const inputs = JSON.parse(await readFile(resolve(root, 'config/site-inputs.json'), 'utf8'));
 const globeTextures=['earth-blue-marble.jpg','earth-topology.png'].map(name=>({source:`node_modules/three-globe/example/img/${name}`,output:`assets/globe/${name}`}));
 const animationVendors=['gsap','ScrollTrigger','SplitText'].map(name=>({source:`node_modules/gsap/dist/${name}.min.js`,output:`assets/vendor/${name}.min.js`}));
@@ -70,7 +72,7 @@ let htmlCount = 0;
 for (const entry of inputs) {
   let target = entry.output.replace(/^_next\//, '_yaju/');
   let bytes = await readFile(resolve(root, entry.source));
-  if (entry.render === 'redirect') bytes = Buffer.from(renderRedirect(JSON.parse(bytes.toString('utf8'))));
+  if (entry.render === 'redirect') bytes = Buffer.from(renderRedirect(JSON.parse(bytes.toString('utf8')), {legacy:!allNative}));
   else if (entry.render === 'legal') {
     const { renderLegalPage } = await import('../src/components/site-layout.mjs');
     bytes = Buffer.from(await renderLegalPage(JSON.parse(bytes.toString('utf8'))));

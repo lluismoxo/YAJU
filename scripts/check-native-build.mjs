@@ -1,8 +1,8 @@
 // Validate the candidate independently: it is deliberately not the production build.
 import assert from 'node:assert/strict';
-import {readFile,access,writeFile} from 'node:fs/promises';
+import {readFile,access,writeFile,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
-const root=resolve('artifacts/native-all');
+const root=resolve(process.argv[2]||'artifacts/native-all');
 const entries=JSON.parse(await readFile('config/native-pages.json','utf8'));
 const missing=[];let forms=0;
 for(const entry of entries){
@@ -30,5 +30,6 @@ for(const entry of entries){
   try{await access(resolve(root,'.'+decodeURIComponent(path)));}catch{missing.push({page:entry.output,path});}
  }
 }
+await mkdir('artifacts',{recursive:true});
 await writeFile('artifacts/native-build-report.json',JSON.stringify({pages:entries.length,forms,missing},null,2)+'\n');
 assert.deepEqual(missing,[]);console.log(`PASS: ${entries.length} native pages; titles, analytics, runtime isolation and local media/resources verified.`);

@@ -2,7 +2,7 @@ import { site } from '../../config/site.mjs';
 
 // These compatibility routes deliberately retain the existing HTML and behavior.
 // HTTP redirects can replace them in a later, separately verified routing stage.
-export function renderRedirect({ destination, notice = 'moved' }) {
+export function renderRedirect({ destination, notice = 'moved' }, {legacy=true} = {}) {
   if (typeof destination !== 'string' || !/^\/[a-z0-9/-]*$/.test(destination) || destination.startsWith('//')) {
     throw new Error('Redirect destination must be a local route without markup');
   }
@@ -20,6 +20,6 @@ a{color:#1a1a1a}</style>
 </head><body>
 <p>${message}</p>
 <script>location.replace("${destination}");</script>
-<script src="/assets/${site.compatibilityScript}" defer=""></script></body></html>
+${legacy?`<script src="/assets/${site.compatibilityScript}" defer=""></script>`:''}</body></html>
 `;
 }

@@ -11,6 +11,10 @@ la aceptación visual global y la publicación completa siguen pendientes. El pl
 y los recuentos iniciales que siguen conservan el contexto de cada etapa; los
 resultados posteriores se documentan cronológicamente al final.
 
+La preparación de publicación al final de este documento sustituye el build
+heredado por el nativo como opción predeterminada. Las observaciones históricas
+de rasterización se conservan; no se declara igualdad universal de píxeles.
+
 ## Regla de aceptación
 
 El frontend actual es la referencia: imágenes, fuentes, textos, dimensiones, recortes,
@@ -936,3 +940,34 @@ Comprobaciones adicionales de esta etapa:
 - Los controles de comportamiento de paginación siguen pasando en los seis pares
   ruta/anchura, junto con los 12 tests generales y los 1201 archivos publicados
   de referencia. La vista local queda actualizada con el ajuste conservado.
+
+### 2026-10-13 — Preparación de la publicación nativa
+
+- A petición expresa del usuario se prepara la entrega completa a GitHub y Vercel.
+  `npm run build` genera ahora la salida nativa en `public`; el modo de referencia
+  usa `--legacy-reference` y una carpeta separada. La salida de revisión
+  `--native-all` se conserva. No se alteran las referencias históricas.
+- Vercel instala las dependencias fijadas con `npm ci --include=dev` y ejecuta
+  `npm run verify` dentro del build. La compilación no puede publicarse si fallan
+  los tests, enlaces, recursos, analítica o controles de aislamiento.
+- La prueba completa de enlaces detectó que las 48 redirecciones aún solicitaban
+  el parche retirado. El renderer omite esa solicitud en modo nativo y conserva
+  exactamente el HTML antiguo al reconstruir la referencia. Las redirecciones
+  mantienen sus destinos, canonical y comportamiento de navegación.
+- Pasan los 12 tests, el control de las 137 páginas y las huellas de 850 recursos
+  compartidos. Se comprueba que no se publican los 157 chunks antiguos ni el parche
+  de compatibilidad. La reconstrucción heredada sigue pasando sus huellas.
+- La batería de navegador pasa: 137 cargas, 24 formularios con respuestas simuladas,
+  pestañas, carruseles, navegación, búsqueda, controles especiales, vídeo,
+  acordeones, menú de campaña, fechas y efecto dissolve. La comprobación final de
+  dissolve vuelve al inicio antes de enfocar el título de la primera escena;
+  el fallo anterior correspondía a intentar hacer hover fuera de pantalla.
+- Evidencia: `phase-4-native-release-checks.json`. Los envíos se simulan: no se
+  certifican aquí la entrega de contactos ni un servicio de registro inexistente
+  en la versión original. Las diferencias de rasterización documentadas continúan
+  visibles en los informes, sin tolerancias ni sustitución de referencias; los
+  recursos de diseño se mantienen byte a byte. No se afirma paridad matemática
+  de cada fotograma ni una mejora de velocidad medida.
+- Proyecto de destino confirmado: `lluismoxo/YAJU`, rama de producción `main`,
+  Vercel `prj_CHdX7fssVp2IknHplQ81OnEkpVKK`. La versión anterior recuperable es
+  `dpl_7nyD93GyZLjJUyxs1dZjrJBKp3oB`.
