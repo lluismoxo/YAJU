@@ -12,6 +12,7 @@ test('every public source has exactly one manifest entry; private code is exclud
   assert.equal(expected.size, inputs.length);
   assert.equal(new Set(inputs.map(entry => entry.output)).size, inputs.length);
   // Candidate templates are build dependencies, not individually published files.
+  expected.add('src/content/card-dates.json');
   const candidates = JSON.parse(await readFile(resolve(root, 'config/native-pages.json'), 'utf8'));
   for (const entry of candidates) {
     assert.ok(inputs.some(current => current.output === entry.output), `Unknown candidate output: ${entry.output}`);

@@ -833,3 +833,37 @@ Comprobaciones adicionales de esta etapa:
   iniciales de selectores pertenecían al test, no al código del sitio. Evidencia:
   `phase-3-standard-header-keyboard.json`. No se publica: continúan pendientes
   las diferencias de composición ya documentadas y el resto de cobertura global.
+
+### 2026-10-13 — Fechas de tarjetas y paginación
+
+- La comparación de todas las páginas de artículos en Observability detectó una
+  regresión real: las instantáneas nativas conservaban abreviaturas españolas
+  (`abr`, `sept`) aunque el navegador de referencia estaba configurado en inglés.
+- Se incorporan metadatos de fecha al HTML de las tarjetas y sus estados dinámicos.
+  El cliente aplica el formateador original (`new Date`, mes corto del idioma del
+  navegador, día de dos dígitos y año local) al cargar y al cambiar de estado.
+  Se mantienen las etiquetas, clases, estilos, enlaces y textos de las tarjetas.
+- Se recuperan 22 valores de publicación originales para 21 enlaces desde los
+  datos de la referencia congelada; se guardan en `src/content/card-dates.json`,
+  sin dependencia de esa referencia durante la compilación. Un enlace de Financial
+  Services aparece con dos fechas distintas: se conserva cada variante. La hora
+  original importa para el cambio de día en otros husos horarios.
+- Alcance: nueve páginas, 22 fechas iniciales y 14 apariciones en estados de
+  paginación. Tres tests cubren abreviaturas de ambos idiomas, idempotencia,
+  preservación de contenido y horas distintas del mismo enlace.
+- El comparador visual permite elegir idioma y recorrer la paginación, validando
+  número de tarjetas, enlaces y textos. Captura cada tarjeta y su pantalla completa.
+  La exploración en escritorio produjo 9/14 regiones exactas tanto en inglés como
+  en español; otras cinco portadas difieren pese a geometría coincidente. El ensayo
+  de tablet se detuvo por rasterización inestable de la referencia. Estos resultados
+  no aprueban visualmente los bloques ni se ocultan con tolerancias; quedan pendientes.
+- Verificación final de fechas: 27/27 pares página/configuración, 42 estados y
+  108 fechas idénticas a la referencia (en-US/Madrid, es-ES/Madrid y en-US/Los
+  Ángeles). Incluye la carga inicial de las nueve rutas y todas las páginas de
+  ambos bloques numerados. Evidencia: `phase-3-card-dates-locale-parity.json`.
+- Los 12 tests generales pasan, junto con la paridad de 1201 archivos publicados
+  y el control de recursos/runtime de las 137 páginas nativas. El nuevo JSON se
+  registra explícitamente como dependencia de compilación, no como archivo público.
+- `phase-3-pagination-visual-findings.json` conserva los resultados exploratorios
+  y sus límites; no se consideran aceptación visual final. La vista local queda
+  actualizada. No se publica la candidata mientras continúen las diferencias abiertas.

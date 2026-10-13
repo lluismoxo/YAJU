@@ -1,6 +1,16 @@
 // Native content behaviours. Page content is already present in the server-rendered HTML.
 (() => {
  const main=document.querySelector('main');if(!main)return;
+ function formatCardDates(root){
+  root.querySelectorAll('[data-native-card-date]').forEach(node=>{
+   const date=new Date(node.dataset.nativeCardDate);
+   const year=date.getFullYear(),day=date.getDate();
+   const label=date.toLocaleString('default',{month:'short'});
+   node.textContent=node.textContent.replace(/ - [^<>]*$/,` - ${label} ${String(day).padStart(2,'0')}, ${year}`);
+  });
+ }
+ formatCardDates(main);
+
  // The original page enables its keyboard focus theme after the first Tab.
  function enableKeyboardFocus(event){
   if(event.code!=='Tab')return;
@@ -239,7 +249,7 @@
    if(!button||button.disabled)return;
    const next=button.hasAttribute('data-native-page-item')?Number(button.dataset.nativePageItem):selected+Number(button.dataset.nativePageStep);
    if(!model.states[next])return;
-   selected=next;section.innerHTML=model.states[next].html;
+   selected=next;section.innerHTML=model.states[next].html;formatCardDates(section);
    section.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>reveal.observe(el));
   });
  });
@@ -265,7 +275,7 @@
   }
   function select(index,focus=false){
    if(!model.states[index])return;
-   selected=index;section.innerHTML=model.states[index].html;
+   selected=index;section.innerHTML=model.states[index].html;formatCardDates(section);
    section.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>reveal.observe(el));
    closeMenu();positionIndicator();
    if(focus)section.querySelector(`button[data-native-tab-item="${index}"]`)?.focus({preventScroll:true});
@@ -318,7 +328,7 @@
    if(!button||button.disabled)return;
    const direction=button.getAttribute('aria-label')==='Next'?1:-1;
    const next=selected+direction;if(!model.states[next])return;
-   selected=next;section.innerHTML=model.states[selected].html;
+   selected=next;section.innerHTML=model.states[selected].html;formatCardDates(section);
    observeTestimonials();
    section.querySelectorAll('[class*="motion-safe:opacity-0"]').forEach(el=>reveal.observe(el));
    section.querySelector(`button[aria-label="${direction===1?'Next':'Previous'}"]`)?.focus({preventScroll:true});

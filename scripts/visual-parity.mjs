@@ -52,7 +52,8 @@ const softwareRendering = process.env.YAJU_TEST_SOFTWARE_RENDERING === '1';
 const browser = await chromium.launch({ headless: true, channel: 'chrome', ...(softwareRendering ? {args:['--disable-gpu']} : {}) }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
 const externalMedia = new Map();
 const motion = process.env.YAJU_TEST_MOTION === 'normal' ? 'no-preference' : 'reduce';
-const report = { motion, rendering:softwareRendering?'software':'default', browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
+const locale=process.env.YAJU_TEST_LOCALE || 'en-US';
+const report = { locale, motion, rendering:softwareRendering?'software':'default', browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
 
 async function prepare(page, origin, route) {
   const errors = [];
@@ -97,7 +98,7 @@ try {
   for (const viewport of viewports) {
     for (const route of routes) {
       const key = `${viewport.name}-${route === '/' ? 'home' : route.slice(1).replaceAll('/', '-')}`;
-      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale:'en-US', timezoneId:'Europe/Madrid', reducedMotion:motion })));
+      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale, timezoneId:'Europe/Madrid', reducedMotion:motion })));
       const pages = await Promise.all(contexts.map(context => context.newPage()));
       const errors = await Promise.all(pages.map((page,index) => prepare(page, [reference,candidate][index].origin, route)));
       const states = [];
@@ -217,6 +218,28 @@ try {
             await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).click()));
             await pages[0].waitForTimeout(1800);
             await capture(`carousel-${group}-next`);
+          }
+        }
+      }
+      if(process.env.YAJU_TEST_PAGINATION === '1') {
+        const sections=pages.map(page=>page.getByRole('button',{name:'1',exact:true}).first().locator('xpath=ancestor::section[1]'));
+        for(const section of sections) assert.equal(await section.count(),1,`Numbered pagination section: ${route}`);
+        const counts=await Promise.all(sections.map(section=>section.getByRole('button',{name:/^\d+$/}).count()));
+        assert.equal(counts[1],counts[0],`Pagination count: ${route}`);
+        for(let index=0;index<counts[0];index++) {
+          await Promise.all(sections.map(section=>section.getByRole('button',{name:String(index+1),exact:true}).click()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1800)));
+          const cards=sections.map(section=>section.locator('a.group\\/calloutCard'));
+          const links=await Promise.all(cards.map(group=>group.evaluateAll(nodes=>nodes.map(node=>({href:node.getAttribute('href'),text:node.textContent.trim()})))));
+          assert.ok(links[0].length>0,`Missing pagination cards: ${route} page ${index+1}`);
+          assert.deepEqual(links[1],links[0],`Pagination content: ${route} page ${index+1}`);
+          for(let card=0;card<links[0].length;card++) {
+            await Promise.all(cards.map(group=>group.nth(card).scrollIntoViewIfNeeded()));
+            await Promise.all(pages.map(page=>page.waitForTimeout(1200)));
+            await capture(`pagination-${index+1}-card-${card+1}`);
+            await Promise.all(cards.map(group=>group.nth(card).evaluate(node=>node.setAttribute('data-parity-pagination-card',''))));
+            await capture(`pagination-${index+1}-card-${card+1}-region`,'[data-parity-pagination-card]');
+            await Promise.all(pages.map(page=>page.locator('[data-parity-pagination-card]').evaluate(node=>node.removeAttribute('data-parity-pagination-card'))));
           }
         }
       }
