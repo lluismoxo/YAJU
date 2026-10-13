@@ -41,5 +41,5 @@ for(const language of languages){
   checked++;
  }
 }
-const xml=await readFile('public/sitemap.xml','utf8');assert.equal((xml.match(/<url>/g)||[]).length,360);assert.equal((xml.match(/<xhtml:link /g)||[]).length,360*7);
-console.log(`PASS: ${checked} pages, six languages, reciprocal hreflang/canonicals/metadata, complete catalogs, 360 sitemap URLs.`);
+const xml=await readFile('public/sitemap.xml','utf8');assert.equal((xml.match(/<url>/g)||[]).length,408);assert.equal((xml.match(/<xhtml:link /g)||[]).length,408*7);
+console.log(`PASS: ${checked} pages, six languages, reciprocal hreflang/canonicals/metadata, complete catalogs, 408 sitemap URLs.`);
