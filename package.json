@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "acorn": "^8.19.0",
-    "esbuild": "0.25.9",
+    "esbuild": "0.28.2",
     "globe.gl": "2.44.0",
     "gsap": "3.13.0",
     "parse5": "^7.3.0",
