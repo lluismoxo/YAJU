@@ -247,6 +247,24 @@
   const entryAnimation='motion-safe:animate-[fadeInUp_0.8s_forwards]';
   const arrowsAnimation='motion-safe:animate-[fadeInRight_0.8s_ease_forwards_200ms]';
   let pending=[];
+  // Images loaded before their translated entrance can retain Chromium's
+  // animation raster. Refresh once at rest and fully visible, retaining attributes.
+  const settledMedia=new WeakSet();
+  const mediaReveal=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting,intersectionRatio})=>{
+   if(!isIntersecting||intersectionRatio<1)return;
+   mediaReveal.unobserve(target);
+   // Let visibility paint before renewing the shared cover/logo layer.
+   requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if(!target.isConnected)return;
+    target.querySelectorAll('img').forEach(image=>image.replaceWith(image.cloneNode(true)));
+   }));
+  }),{threshold:1});
+  section.addEventListener('animationend',event=>{
+   const media=event.target;
+   if(event.animationName!=='fadeInUp'||!media.matches('[data-yaju-blog-media]')||settledMedia.has(media))return;
+   settledMedia.add(media);
+   mediaReveal.observe(media);
+  });
   // The original card group reveals once when 20% of the whole grid is visible.
   const observer=new IntersectionObserver(entries=>{
    if(started||!entries.some(entry=>entry.isIntersecting&&entry.intersectionRatio>=0.2))return;
@@ -265,7 +283,7 @@
    if(!button||button.disabled)return;
    const next=button.hasAttribute('data-native-page-item')?Number(button.dataset.nativePageItem):selected+Number(button.dataset.nativePageStep);
    if(next===selected||!model.states[next])return;
-   selected=next;section.innerHTML=model.states[next].html;formatCardDates(section);
+   selected=next;mediaReveal.disconnect();section.innerHTML=model.states[next].html;formatCardDates(section);
    observer.disconnect();prepareCardReveal();
   });
  });

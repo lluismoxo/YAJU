@@ -1,0 +1,1387 @@
+{
+  "generatedAt": "2026-10-13T10:29:24.945Z",
+  "scope": "Visible card regions and their complete viewports; two routes at 1440, 768 and 390 pixels",
+  "implementation": "Refresh the shared cover/logo layer once after its entrance, full visibility and two animation frames",
+  "summary": {
+    "states": 42,
+    "exactCardRegions": 39,
+    "exactViewports": 37,
+    "remainingCardPixels": 5
+  },
+  "referenceControl": {
+    "control": true,
+    "browser": "155.0.8059.40",
+    "motion": "no-preference",
+    "results": [
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 1,
+        "card": 1,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 40,
+            "top": 59,
+            "right": 478,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 1,
+        "card": 2,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 501,
+            "top": 59,
+            "right": 939,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 1,
+        "card": 3,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 962,
+            "top": 59,
+            "right": 1400,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 2,
+        "card": 1,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 40,
+            "top": 59,
+            "right": 478,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 2,
+        "card": 2,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 501,
+            "top": 59,
+            "right": 939,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 2,
+        "card": 3,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 962,
+            "top": 59,
+            "right": 1400,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 3,
+        "card": 1,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 40,
+            "top": 59,
+            "right": 478,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 3,
+        "card": 2,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 501,
+            "top": 59,
+            "right": 939,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/ai-observability",
+        "page": 3,
+        "card": 3,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 962,
+            "top": 59,
+            "right": 1400,
+            "bottom": 498
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/solutions/financial-services",
+        "page": 1,
+        "card": 1,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 40,
+            "top": 60,
+            "right": 478,
+            "bottom": 523
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/solutions/financial-services",
+        "page": 1,
+        "card": 2,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 501,
+            "top": 60,
+            "right": 939,
+            "bottom": 523
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/solutions/financial-services",
+        "page": 1,
+        "card": 3,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 962,
+            "top": 60,
+            "right": 1400,
+            "bottom": 523
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/solutions/financial-services",
+        "page": 2,
+        "card": 1,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 40,
+            "top": 60,
+            "right": 478,
+            "bottom": 522
+          }
+        }
+      },
+      {
+        "width": 1440,
+        "route": "/solutions/financial-services",
+        "page": 2,
+        "card": 2,
+        "viewport": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 0,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900
+          }
+        },
+        "region": {
+          "changedPixels": 0,
+          "bounds": {
+            "left": 501,
+            "top": 60,
+            "right": 939,
+            "bottom": 522
+          }
+        }
+      }
+    ]
+  },
+  "runs": [
+    {
+      "control": false,
+      "browser": "155.0.8059.40",
+      "motion": "no-preference",
+      "generatedAt": "2026-10-13T10:18:24.037Z",
+      "complete": true,
+      "results": [
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 40,
+              "top": 59,
+              "right": 478,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 501,
+              "top": 59,
+              "right": 939,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 962,
+              "top": 59,
+              "right": 1400,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 40,
+              "top": 59,
+              "right": 478,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 501,
+              "top": 59,
+              "right": 939,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 962,
+              "top": 59,
+              "right": 1400,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 40,
+              "top": 59,
+              "right": 478,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 501,
+              "top": 59,
+              "right": 939,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 962,
+              "top": 59,
+              "right": 1400,
+              "bottom": 498
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 40,
+              "top": 60,
+              "right": 478,
+              "bottom": 523
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 501,
+              "top": 60,
+              "right": 939,
+              "bottom": 523
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 962,
+              "top": 60,
+              "right": 1400,
+              "bottom": 523
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 40,
+              "top": 60,
+              "right": 478,
+              "bottom": 522
+            }
+          }
+        },
+        {
+          "width": 1440,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 501,
+              "top": 60,
+              "right": 939,
+              "bottom": 522
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 220,
+              "right": 693,
+              "bottom": 741
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 2,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 2,
+            "bounds": {
+              "left": 75,
+              "top": 379,
+              "right": 693,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 219,
+              "right": 693,
+              "bottom": 740
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 207,
+              "right": 693,
+              "bottom": 754
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 353,
+              "right": 693,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 219,
+              "right": 693,
+              "bottom": 740
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 220,
+              "right": 693,
+              "bottom": 741
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 379,
+              "right": 693,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 206,
+              "right": 693,
+              "bottom": 753
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 201,
+              "right": 693,
+              "bottom": 758
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 1,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 1,
+            "bounds": {
+              "left": 75,
+              "top": 343,
+              "right": 693,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 2,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 2,
+            "bounds": {
+              "left": 75,
+              "top": 201,
+              "right": 693,
+              "bottom": 758
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 201,
+              "right": 693,
+              "bottom": 758
+            }
+          }
+        },
+        {
+          "width": 768,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 768,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 75,
+              "top": 343,
+              "right": 693,
+              "bottom": 900
+            }
+          }
+        }
+      ]
+    },
+    {
+      "control": false,
+      "browser": "155.0.8059.40",
+      "motion": "no-preference",
+      "generatedAt": "2026-10-13T10:16:29.189Z",
+      "complete": true,
+      "results": [
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 293,
+              "right": 374,
+              "bottom": 668
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 526,
+              "right": 374,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 292,
+              "right": 374,
+              "bottom": 667
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 293,
+              "right": 374,
+              "bottom": 668
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 526,
+              "right": 374,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 2,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 292,
+              "right": 374,
+              "bottom": 667
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 306,
+              "right": 374,
+              "bottom": 655
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 526,
+              "right": 374,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/ai-observability",
+          "page": 3,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 292,
+              "right": 374,
+              "bottom": 667
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 27987,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 283,
+              "right": 374,
+              "bottom": 677
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 506,
+              "right": 374,
+              "bottom": 900
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/solutions/financial-services",
+          "page": 1,
+          "card": 3,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 283,
+              "right": 374,
+              "bottom": 677
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 1,
+          "viewport": {
+            "changedPixels": 1139,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 283,
+              "right": 374,
+              "bottom": 677
+            }
+          }
+        },
+        {
+          "width": 390,
+          "route": "/solutions/financial-services",
+          "page": 2,
+          "card": 2,
+          "viewport": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "right": 390,
+              "bottom": 900
+            }
+          },
+          "region": {
+            "changedPixels": 0,
+            "bounds": {
+              "left": 16,
+              "top": 506,
+              "right": 374,
+              "bottom": 900
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Card regions are clipped to the viewport when a card extends beyond it.",
+    "Five pixels differ in three tablet card regions; full viewport differences also remain.",
+    "This is not global visual acceptance and does not authorize publication."
+  ]
+}

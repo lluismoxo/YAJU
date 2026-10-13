@@ -2,6 +2,15 @@
 
 Referencia inicial: commit `a1c700f`. Rama de trabajo: `codex/architecture-parity`.
 
+## Estado actual — 2026-10-13
+
+La candidata local ya construye las 137 páginas del manifiesto nativo, además de
+Legal y las redirecciones. Sus interacciones no cargan el runtime anterior ni el
+parche de compatibilidad. La migración de código está implementada en esa salida;
+la aceptación visual global y la publicación completa siguen pendientes. El plan
+y los recuentos iniciales que siguen conservan el contexto de cada etapa; los
+resultados posteriores se documentan cronológicamente al final.
+
 ## Regla de aceptación
 
 El frontend actual es la referencia: imágenes, fuentes, textos, dimensiones, recortes,
@@ -893,3 +902,37 @@ Comprobaciones adicionales de esta etapa:
   no se relaja la tolerancia ni se declaran resueltas. Las capturas realizadas
   alrededor del incidente de archivos ausentes tampoco se usan como aceptación.
   No se publica esta candidata.
+
+### 2026-10-13 — Rasterización de las portadas paginadas
+
+- Se restablecen los servidores locales de revisión. El fallo de conexión de la
+  prueba de control procedía del servidor de referencia apagado, no de producción.
+  El nuevo comparador abre y cierra sus propios servidores en puertos libres y
+  verifica las huellas de la referencia antes de iniciar Chrome.
+- `scripts/check-native-pagination-pixels.mjs` obtiene pantalla y región de tarjeta
+  desde el mismo PNG, exige estabilidad de captura, compara textos/enlaces y
+  recursos/dimensiones intrínsecas, y termina con error si hay diferencias. Registra
+  también si el recorrido se completó. El control original/original de escritorio
+  produjo 14/14 regiones y pantallas exactas.
+- Se aísla una diferencia de rasterización de las imágenes tras su entrada
+  animada: en la prueba inicial había 76.355 píxeles distintos; renovar los nodos
+  de imagen después de la animación los reducía a cero sin cambiar atributos,
+  geometría ni archivos. Retirar la animación en ambas versiones también eliminaba
+  la diferencia, pero cambiaba píxeles de la propia referencia y se descarta.
+- La candidata renueva una vez la capa de portada y logo cuando termina la entrada,
+  la imagen está completamente visible y han transcurrido dos fotogramas. Conserva
+  los atributos y el enlace; ignora nodos ya retirados al paginar y desconecta el
+  observador de medios anteriores. Con movimiento reducido no se activa este paso.
+  Renovar solo la portada empeoró el móvil y se descartó esa variante.
+- Evidencia del ajuste conservado: 42 estados en Observability y Financial Services,
+  a 1440, 768 y 390 px. Coinciden exactamente 39/42 regiones visibles de tarjeta y
+  37/42 pantallas completas. Las tres regiones restantes de tablet difieren en
+  cinco píxeles en total. Las regiones que rebasan la pantalla se comparan solo
+  dentro del viewport; no se presentan como capturas completas de esas tarjetas.
+- `phase-3-pagination-raster-parity.json` conserva los dos recorridos del mismo
+  ajuste (escritorio/tablet y móvil) y el control independiente. Las diferencias
+  de pantallas completas fuera de la región seleccionada siguen pendientes. No
+  se aplica tolerancia, no se declara aceptación global y no se publica.
+- Los controles de comportamiento de paginación siguen pasando en los seis pares
+  ruta/anchura, junto con los 12 tests generales y los 1201 archivos publicados
+  de referencia. La vista local queda actualizada con el ajuste conservado.
