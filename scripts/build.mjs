@@ -18,6 +18,8 @@ const globeTextures=['earth-blue-marble.jpg','earth-topology.png'].map(name=>({s
 const animationVendors=['gsap','ScrollTrigger','SplitText'].map(name=>({source:`node_modules/gsap/dist/${name}.min.js`,output:`assets/vendor/${name}.min.js`}));
 if(allNative){
  inputs.push(...animationVendors,...globeTextures);
+ const optimizedImages=JSON.parse(await readFile(resolve(root,'config/optimized-images.json'),'utf8'));
+ for(const path of new Set(Object.values(optimizedImages).flatMap(image=>[image.src,...(image.variants||[]).map(v=>v.src)])))inputs.push({source:'static'+path,output:path.slice(1)});
  const pages=JSON.parse(await readFile(resolve(root,'config/native-pages.json'),'utf8'));
  for(const page of pages){const index=inputs.findIndex(e=>e.output===page.output);if(index<0)throw new Error(`Unknown route ${page.output}`);inputs[index]=page;}
  for(const [output,source] of [['assets/native-navigation.js','src/client/page-navigation.js'],['assets/forms/forms2.js','src/client/forms-adapter.js']]){
@@ -107,6 +109,18 @@ for (const entry of inputs) {
 if (allNative) {
  const {buildLanguages}=await import('../src/i18n/build.mjs');
  await buildLanguages(staging,root,inputs);
+ // Minify after translation so locale extraction still reads readable source.
+ const {transform}=await import('esbuild');
+ const {readdir}=await import('node:fs/promises');
+ for(const prefix of ['', 'de/', 'fr/', 'es/', 'ja/', 'ko/']){
+  const directory=resolve(staging,prefix+'assets');
+  for(const name of await readdir(directory)){
+   if(!/^native-.*\.js$/.test(name))continue;
+   const path=resolve(directory,name);
+   const result=await transform(await readFile(path,'utf8'),{minify:true,target:'es2020',legalComments:'none'});
+   await writeFile(path,result.code);
+  }
+ }
 }
 // Keep the preceding build recoverable until the new output has been completed.
 await rm(previous, { recursive: true, force: true });

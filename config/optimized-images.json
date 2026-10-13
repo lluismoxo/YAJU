@@ -1,0 +1,270 @@
+{
+  "/assets/blog-covers/yaju-logo-fucsia.png": {
+    "variants": [],
+    "src": "/assets/optimized/418f5d8425f351b74b95.webp",
+    "width": 720,
+    "height": 236,
+    "originalBytes": 35050,
+    "bytes": 18094
+  },
+  "/assets/blog-covers/yaju-logo-rosa-claro.png": {
+    "variants": [],
+    "src": "/assets/optimized/7c5b37031a62a62b04f6.webp",
+    "width": 720,
+    "height": 236,
+    "originalBytes": 39349,
+    "bytes": 20142
+  },
+  "/assets/blog-covers/yaju-logo-turquesa.png": {
+    "variants": [],
+    "src": "/assets/optimized/57805d51b5394fb267b0.webp",
+    "width": 720,
+    "height": 236,
+    "originalBytes": 34994,
+    "bytes": 18212
+  },
+  "/assets/img/000000000000040394f6f47284d25ab6adc378ec-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/93febd293e1a7771b09f.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930866,
+    "bytes": 619144
+  },
+  "/assets/img/000000000000750eb7a77983905766e6da88a144-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/1c969e9961964c96c080.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 917012,
+    "bytes": 605070
+  },
+  "/assets/img/0000000000007a089365004ece6b0b1330c34591-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/fbe485afd40e2c44bedc.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930406,
+    "bytes": 612080
+  },
+  "/assets/img/00000000000094f8f6dc0f9acfec88570b35d4e8-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/6a9bfdc0d004a469b0a8.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930154,
+    "bytes": 615830
+  },
+  "/assets/img/0000000000009c753406b02bfd5e7f1ab4bab1e4-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/1e7d3627763b0c599096.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 928546,
+    "bytes": 612620
+  },
+  "/assets/img/000000000000c92e710b9f324a62247d8091d3bf-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/0cb2d2cb108f3dc9c9e1.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 928280,
+    "bytes": 612838
+  },
+  "/assets/img/000000000000ce02506475d9971d690e01bc1ef1-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/d9c0ed369b5c1eeb4da2.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930089,
+    "bytes": 614992
+  },
+  "/assets/img/000000000000e8bd015bbd859bb1f7b03da99422-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/e0cee4628a44f4399217.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930365,
+    "bytes": 616480
+  },
+  "/assets/img/000000000000fcdd9fd488b0a341f5708848892a-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/b7da1586d284ac4cbfb9.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930594,
+    "bytes": 616872
+  },
+  "/assets/img/blog-ai-for-developers-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/609f26f569b89f45efc1.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 929450,
+    "bytes": 615164
+  },
+  "/assets/img/blog-ai-governance-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/0cb2d2cb108f3dc9c9e1.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 928280,
+    "bytes": 612838
+  },
+  "/assets/img/blog-company-news-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/d9c0ed369b5c1eeb4da2.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930089,
+    "bytes": 614992
+  },
+  "/assets/img/blog-enterprise-ai-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/4efaac7004de294a5a0f.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930162,
+    "bytes": 617416
+  },
+  "/assets/img/blog-for-business-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/6a9bfdc0d004a469b0a8.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930154,
+    "bytes": 615830
+  },
+  "/assets/img/blog-open-science-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/fbe485afd40e2c44bedc.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930406,
+    "bytes": 612080
+  },
+  "/assets/img/blog-partner-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/b7da1586d284ac4cbfb9.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930594,
+    "bytes": 616872
+  },
+  "/assets/img/blog-product-launch-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/a96416eef7543d23fedf.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930059,
+    "bytes": 618290
+  },
+  "/assets/img/blog-research-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/93febd293e1a7771b09f.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 930866,
+    "bytes": 619144
+  },
+  "/assets/img/blog-sovereign-ai-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/1e7d3627763b0c599096.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 928546,
+    "bytes": 612620
+  },
+  "/assets/img/blog-technology-1600x900.png": {
+    "variants": [],
+    "src": "/assets/optimized/1c969e9961964c96c080.webp",
+    "width": 1600,
+    "height": 900,
+    "originalBytes": 917012,
+    "bytes": 605070
+  },
+  "/assets/img/yaju-aes-256-240x240.png": {
+    "variants": [
+      {
+        "src": "/assets/optimized/f9e72984184db9f36e59.webp",
+        "width": 240,
+        "bytes": 13274
+      },
+      {
+        "src": "/assets/optimized/bb0c333b963f28efec6f.webp",
+        "width": 480,
+        "bytes": 38322
+      }
+    ],
+    "src": "/assets/optimized/a9f006ae57d20f52540b.webp",
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 321537,
+    "bytes": 177008
+  },
+  "/assets/img/yaju-owasp-240x240.png": {
+    "variants": [
+      {
+        "src": "/assets/optimized/e4c5e111334f0f09b542.webp",
+        "width": 240,
+        "bytes": 15548
+      },
+      {
+        "src": "/assets/optimized/29d70f7e80983c8f1887.webp",
+        "width": 480,
+        "bytes": 45752
+      }
+    ],
+    "src": "/assets/optimized/aa66b9a2ef948b91c843.webp",
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 430927,
+    "bytes": 215974
+  },
+  "/assets/img/yaju-rbac-240x240.png": {
+    "variants": [
+      {
+        "src": "/assets/optimized/2a7bc819d7852dca9c1d.webp",
+        "width": 331,
+        "bytes": 27900
+      },
+      {
+        "src": "/assets/optimized/574888b9f863cb6a14da.webp",
+        "width": 662,
+        "bytes": 85858
+      }
+    ],
+    "src": "/assets/optimized/6c090e0688be6fa8b46c.webp",
+    "width": 1324,
+    "height": 1188,
+    "originalBytes": 454285,
+    "bytes": 238540
+  },
+  "/assets/img/yaju-tls-240x240.png": {
+    "variants": [
+      {
+        "src": "/assets/optimized/e4c698f5dd1b83968c3e.webp",
+        "width": 240,
+        "bytes": 17834
+      },
+      {
+        "src": "/assets/optimized/2a12c682db8ab9d3fffa.webp",
+        "width": 480,
+        "bytes": 54776
+      }
+    ],
+    "src": "/assets/optimized/09cc214037be53c94aff.webp",
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 457937,
+    "bytes": 243284
+  },
+  "/footer-cta-assets/home-cta-desktop.png": {
+    "variants": [],
+    "src": "/assets/optimized/c8966cfc69aa6c668884.webp",
+    "width": 1440,
+    "height": 600,
+    "originalBytes": 337096,
+    "bytes": 291762
+  }
+}
