@@ -1,0 +1,72 @@
+{
+  "route": "/token-monitoring",
+  "title": "Token Monitoring — Make every token count | Yaju",
+  "key": "token-monitoring",
+  "header": "header-38902ffd9614",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent"
+  },
+  "buttons": [
+    "By agent",
+    "By workspace",
+    "By user",
+    "By provider",
+    "By model",
+    "Normalised attribution",
+    "Submit"
+  ],
+  "forms": 1,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "By agent",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "By workspace",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "By user",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "By provider",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "By model",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          },
+          {
+            "label": "Normalised attribution",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureWhite pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img alt=\"infrasctructure image\" class=\"rounded-xl object-cover p-0\" width=\"1360\" height=\"1360\" srcset=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=340 340w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=680 680w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1020 1020w, https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360 1360w\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/554448aed101ca15fc64934476482fe6b46866f2-1360x1360.png?auto=format&amp;fit=max&amp;q=80&amp;w=1360\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureWhite pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

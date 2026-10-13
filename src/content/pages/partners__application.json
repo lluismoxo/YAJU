@@ -1,0 +1,21 @@
+{
+  "route": "/partners/application",
+  "title": "Partner Program Application | Yaju",
+  "key": "partners__application",
+  "header": "header-38902ffd9614",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent"
+  },
+  "buttons": [
+    "Submit"
+  ],
+  "forms": 1
+}

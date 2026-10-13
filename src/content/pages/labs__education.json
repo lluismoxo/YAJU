@@ -1,0 +1,57 @@
+{
+  "route": "/labs/education",
+  "title": "Advancing Education through AI",
+  "key": "labs__education",
+  "header": "header-428b407b93e1",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out bg-pureWhite",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-pureWhite"
+  },
+  "buttons": [
+    "Students",
+    "Educators",
+    "Builders",
+    "Institutions"
+  ],
+  "forms": 0,
+  "interactions": {
+    "accordions": [
+      {
+        "multiple": false,
+        "states": [
+          {
+            "label": "Students",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img width=\"1080\" height=\"1080\" alt=\"\" class=\"rounded-xl object-cover p-0\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/6e6dd02a7275b541f245fcd8afd8bc9cf742236c-1080x1080.svg\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Educators",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img width=\"1080\" height=\"1080\" alt=\"\" class=\"rounded-xl object-cover p-0\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/bcd795235b830b37d57738d7a0212b039ae17d02-1080x1080.svg\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Builders",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img width=\"1080\" height=\"1080\" alt=\"\" class=\"rounded-xl object-cover p-0\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/8fe4279a96203041798405b4d736c8031a0d1918-1080x1080.svg\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          },
+          {
+            "label": "Institutions",
+            "openClass": "w-full transition-colors bg-no-repeat border-t-pureBlack pt-2 border-t-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500 bg-[length:100%_2px] bg-top",
+            "media": "<div class=\"mb-10 motion-safe:animate-[fadeInUp_0.5s_forwards_ease-in-out] motion-safe:opacity-0 md:mb-0\"><img width=\"1080\" height=\"1080\" alt=\"\" class=\"rounded-xl object-cover p-0\" src=\"https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d3b366e738816cb16ae2e4b8fc95fb2246136548-1080x1080.svg\"></div>",
+            "closedClass": "w-full transition-colors border-t bg-gradient-to-r bg-[length:100%_2px] bg-bottom bg-no-repeat border-t-pureBlack pt-2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2600 @@
+[
+  {
+    "route": "/",
+    "port": 4185,
+    "width": 1440,
+    "base": 2044,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              40,
+              2043.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2220.046875,
+              440,
+              289.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2669.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2857.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              3295.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              3483.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1744,
+        "cards": [
+          {
+            "rect": [
+              40,
+              299.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              476.046875,
+              440,
+              289.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              925.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1113.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1551.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1739.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2044,
+        "cards": [
+          {
+            "rect": [
+              40.135986328125,
+              114.92437744140625,
+              1359.72802734375,
+              649.8699951171875
+            ],
+            "textRect": [
+              126.11878967285156,
+              291.07666015625,
+              439.91204833984375,
+              289.55145263671875
+            ],
+            "transform": "matrix(0.9998, 0, 0, 0.9998, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              625.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              813.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1251.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1439.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2344,
+        "cards": [
+          {
+            "rect": [
+              41.97198486328125,
+              115.8018798828125,
+              1356.05615234375,
+              648.114990234375
+            ],
+            "textRect": [
+              127.72258758544922,
+              140.72938537597656,
+              438.7239990234375,
+              288.76953125
+            ],
+            "transform": "matrix(0.9971, 0, 0, 0.9971, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              325.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              513.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              951.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1139.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2644,
+        "cards": [
+          {
+            "rect": [
+              45.8480224609375,
+              117.65438842773438,
+              1348.303955078125,
+              644.409912109375
+            ],
+            "textRect": [
+              131.10842895507812,
+              142.43939208984375,
+              436.2159729003906,
+              287.1187438964844
+            ],
+            "transform": "matrix(0.9914, 0, 0, 0.9914, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40.54400634765625,
+              180.119384765625,
+              1358.912109375,
+              649.47998046875
+            ],
+            "textRect": [
+              126.47520446777344,
+              363.0683288574219,
+              553.4786987304688,
+              266.9893493652344
+            ],
+            "transform": "matrix(0.9992, 0, 0, 0.9992, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              651.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              839.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3044,
+        "cards": [
+          {
+            "rect": [
+              54.2120361328125,
+              121.65188598632812,
+              1331.575927734375,
+              636.4150390625
+            ],
+            "textRect": [
+              138.41464233398438,
+              146.12937927246094,
+              430.8039855957031,
+              283.5565185546875
+            ],
+            "transform": "matrix(0.9791, 0, 0, 0.9791, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              46.93603515625,
+              183.17437744140625,
+              1346.1279296875,
+              643.3699951171875
+            ],
+            "textRect": [
+              132.058837890625,
+              207.91940307617188,
+              548.2718505859375,
+              264.4776611328125
+            ],
+            "transform": "matrix(0.9898, 0, 0, 0.9898, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              251.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              439.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3644,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -447.9581298828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              -423.5106201171875,
+              430.2760314941406,
+              283.208984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -393.565673828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              -368.84063720703125,
+              547.8287353515625,
+              264.26385498046875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              -339.140625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              -151.75,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Cannot read properties of null (reading 'parentNode')",
+      "Cannot read properties of null (reading 'parentNode')",
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/token-monitoring\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/ai-governance\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=1136",
+            "width": 1440,
+            "height": 1110,
+            "rect": {
+              "x": 758.5709838867188,
+              "y": -313.4566650390625,
+              "width": 613.1799926757812,
+              "height": 472.834716796875,
+              "top": -313.4566650390625,
+              "right": 1371.7509765625,
+              "bottom": 159.3780517578125,
+              "left": 758.5709838867188
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=1136",
+            "width": 1440,
+            "height": 1110,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/credential-vault\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "port": 4184,
+    "width": 1440,
+    "base": 2044,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              40,
+              2043.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2220.046875,
+              440,
+              289.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              2669.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              2857.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              3295.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              3483.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1744,
+        "cards": [
+          {
+            "rect": [
+              40,
+              299.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              476.046875,
+              440,
+              289.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              925.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1113.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1551.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1739.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2044,
+        "cards": [
+          {
+            "rect": [
+              40.135986328125,
+              114.92437744140625,
+              1359.72802734375,
+              649.8699951171875
+            ],
+            "textRect": [
+              126.11878967285156,
+              291.07666015625,
+              439.91204833984375,
+              289.55145263671875
+            ],
+            "transform": "matrix(0.9998, 0, 0, 0.9998, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              625.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              813.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              1251.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1439.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2344,
+        "cards": [
+          {
+            "rect": [
+              41.97198486328125,
+              115.8018798828125,
+              1356.05615234375,
+              648.114990234375
+            ],
+            "textRect": [
+              127.72258758544922,
+              140.72938537597656,
+              438.7239990234375,
+              288.76953125
+            ],
+            "transform": "matrix(0.9971, 0, 0, 0.9971, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              325.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              513.25,
+              553.921875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              951.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              1139.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2644,
+        "cards": [
+          {
+            "rect": [
+              45.8480224609375,
+              117.65438842773438,
+              1348.303955078125,
+              644.409912109375
+            ],
+            "textRect": [
+              131.10842895507812,
+              142.43939208984375,
+              436.2159729003906,
+              287.1187438964844
+            ],
+            "transform": "matrix(0.9914, 0, 0, 0.9914, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40.54400634765625,
+              180.119384765625,
+              1358.912109375,
+              649.47998046875
+            ],
+            "textRect": [
+              126.47520446777344,
+              363.0683288574219,
+              553.4786987304688,
+              266.9893493652344
+            ],
+            "transform": "matrix(0.9992, 0, 0, 0.9992, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              651.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              839.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3044,
+        "cards": [
+          {
+            "rect": [
+              54.2120361328125,
+              121.65188598632812,
+              1331.575927734375,
+              636.4150390625
+            ],
+            "textRect": [
+              138.41464233398438,
+              146.12937927246094,
+              430.8039855957031,
+              283.5565185546875
+            ],
+            "transform": "matrix(0.9791, 0, 0, 0.9791, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              46.93603515625,
+              183.17437744140625,
+              1346.1279296875,
+              643.3699951171875
+            ],
+            "textRect": [
+              132.058837890625,
+              207.91940307617188,
+              548.2718505859375,
+              264.4776611328125
+            ],
+            "transform": "matrix(0.9898, 0, 0, 0.9898, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              40,
+              251.859375,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              439.25,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3644,
+        "cards": [
+          {
+            "rect": [
+              55.0279541015625,
+              -447.9581298828125,
+              1329.944091796875,
+              635.635009765625
+            ],
+            "textRect": [
+              139.12734985351562,
+              -423.5106201171875,
+              430.2760314941406,
+              283.208984375
+            ],
+            "transform": "matrix(0.9779, 0, 0, 0.9779, 0, 1145)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              47.47998046875,
+              -393.565673828125,
+              1345.0400390625,
+              642.85009765625
+            ],
+            "textRect": [
+              132.5339813232422,
+              -368.84063720703125,
+              547.8287353515625,
+              264.26385498046875
+            ],
+            "transform": "matrix(0.989, 0, 0, 0.989, 0, 577)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              40,
+              -339.140625,
+              1360,
+              650
+            ],
+            "textRect": [
+              126,
+              -151.75,
+              535.6875,
+              267.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/token-monitoring\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/ai-governance\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=1136",
+            "width": 1440,
+            "height": 1110,
+            "rect": {
+              "x": 758.5709838867188,
+              "y": -313.4566650390625,
+              "width": 613.1799926757812,
+              "height": 472.834716796875,
+              "top": -313.4566650390625,
+              "right": 1371.7509765625,
+              "bottom": 159.3780517578125,
+              "left": 758.5709838867188
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=1136",
+            "width": 1440,
+            "height": 1110,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/credential-vault\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "port": 4185,
+    "width": 768,
+    "base": 1631,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1630.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1787.171875,
+              440,
+              265.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2192.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2321.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2754.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2922.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1331,
+        "cards": [
+          {
+            "rect": [
+              16,
+              299.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              456.171875,
+              440,
+              265.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              861.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              990.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1423.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1591.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1631,
+        "cards": [
+          {
+            "rect": [
+              16.18402099609375,
+              115.34963989257812,
+              735.6319580078125,
+              585.70703125
+            ],
+            "textRect": [
+              41.1715202331543,
+              271.45904541015625,
+              439.7799987792969,
+              265.4765625
+            ],
+            "transform": "matrix(0.9995, 0, 0, 0.9995, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              561.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              690.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1123.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1291.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1931,
+        "cards": [
+          {
+            "rect": [
+              18.502410888671875,
+              117.19552612304688,
+              730.9951171875,
+              582.01513671875
+            ],
+            "textRect": [
+              43.33241271972656,
+              142.02552795410156,
+              437.00799560546875,
+              263.80322265625
+            ],
+            "transform": "matrix(0.9932, 0, 0, 0.9932, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              261.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              390.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              823.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              991.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2231,
+        "cards": [
+          {
+            "rect": [
+              23.39678955078125,
+              121.09243774414062,
+              721.2064208984375,
+              574.221435546875
+            ],
+            "textRect": [
+              47.894287109375,
+              145.58993530273438,
+              431.156005859375,
+              260.2706298828125
+            ],
+            "transform": "matrix(0.9799, 0, 0, 0.9799, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              17.361602783203125,
+              181.2872314453125,
+              733.27685546875,
+              583.831787109375
+            ],
+            "textRect": [
+              42.26910400390625,
+              229.81211853027344,
+              241.68057250976562,
+              320.41943359375
+            ],
+            "transform": "matrix(0.9963, 0, 0, 0.9963, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              523.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              691.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2631,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              28.938720703125,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              52.918701171875,
+              422.0480041503906,
+              254.7725830078125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              80.9615478515625,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              67.04818725585938,
+              237.62954711914062,
+              315.0485534667969
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              132.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              300.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3231,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -571.061279296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -547.081298828125,
+              422.0480041503906,
+              254.7725830078125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -519.0384521484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -532.9517822265625,
+              237.62954711914062,
+              315.04852294921875
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -467.015625,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -299.625,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Cannot read properties of null (reading 'parentNode')",
+      "Cannot read properties of null (reading 'parentNode')",
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/token-monitoring\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/ai-governance\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=852",
+            "width": 768,
+            "height": 592,
+            "rect": {
+              "x": 305.21875,
+              "y": -471.03802490234375,
+              "width": 414.7840576171875,
+              "height": 319.83941650390625,
+              "top": -471.03802490234375,
+              "right": 720.0028076171875,
+              "bottom": -151.1986083984375,
+              "left": 305.21875
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=852",
+            "width": 768,
+            "height": 592,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/credential-vault\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "port": 4184,
+    "width": 768,
+    "base": 1631,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1630.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1787.171875,
+              440,
+              265.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2192.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2321.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2754.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              2922.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1331,
+        "cards": [
+          {
+            "rect": [
+              16,
+              299.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              456.171875,
+              440,
+              265.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              861.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              990.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1423.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1591.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1631,
+        "cards": [
+          {
+            "rect": [
+              16.18402099609375,
+              115.13088989257812,
+              735.6319580078125,
+              585.70703125
+            ],
+            "textRect": [
+              41.1715202331543,
+              271.24029541015625,
+              439.7799987792969,
+              265.4765625
+            ],
+            "transform": "matrix(0.9995, 0, 0, 0.9995, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              561.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              690.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1123.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              1291.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1931,
+        "cards": [
+          {
+            "rect": [
+              18.502410888671875,
+              116.97677612304688,
+              730.9951171875,
+              582.01513671875
+            ],
+            "textRect": [
+              43.33241271972656,
+              141.80677795410156,
+              437.00799560546875,
+              263.80322265625
+            ],
+            "transform": "matrix(0.9932, 0, 0, 0.9932, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              261.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              390.171875,
+              242.578125,
+              321.609375
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              823.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              991.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2231,
+        "cards": [
+          {
+            "rect": [
+              23.39678955078125,
+              120.87368774414062,
+              721.2064208984375,
+              574.221435546875
+            ],
+            "textRect": [
+              47.894287109375,
+              145.37118530273438,
+              431.156005859375,
+              260.2706298828125
+            ],
+            "transform": "matrix(0.9799, 0, 0, 0.9799, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              17.361602783203125,
+              181.0684814453125,
+              733.27685546875,
+              583.831787109375
+            ],
+            "textRect": [
+              42.26910400390625,
+              220.9650115966797,
+              241.68057250976562,
+              320.41937255859375
+            ],
+            "transform": "matrix(0.9963, 0, 0, 0.9963, 0, 0)",
+            "position": "fixed"
+          },
+          {
+            "rect": [
+              16,
+              523.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              691.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2631,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              28.938720703125,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              52.918701171875,
+              422.0480041503906,
+              254.7725830078125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              80.9615478515625,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              105.4515380859375,
+              237.62954711914062,
+              315.048583984375
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              132.984375,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              300.375,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3231,
+        "cards": [
+          {
+            "rect": [
+              31.014404296875,
+              -571.061279296875,
+              705.97119140625,
+              562.0911865234375
+            ],
+            "textRect": [
+              54.994407653808594,
+              -547.081298828125,
+              422.0480041503906,
+              254.7725830078125
+            ],
+            "transform": "matrix(0.9592, 0, 0, 0.9592, 0, 1017)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              23.5072021484375,
+              -519.0384521484375,
+              720.985595703125,
+              574.0455322265625
+            ],
+            "textRect": [
+              47.99720001220703,
+              -494.5484619140625,
+              237.62954711914062,
+              315.048583984375
+            ],
+            "transform": "matrix(0.9796, 0, 0, 0.9796, 0, 513)",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -467.015625,
+              736,
+              586
+            ],
+            "textRect": [
+              41,
+              -299.625,
+              440,
+              243.203125
+            ],
+            "transform": "matrix(1, 0, 0, 1, 0, 9)",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/token-monitoring\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/ai-governance\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=852",
+            "width": 768,
+            "height": 592,
+            "rect": {
+              "x": 305.21875,
+              "y": -471.03802490234375,
+              "width": 414.7840576171875,
+              "height": 319.83941650390625,
+              "top": -471.03802490234375,
+              "right": 720.0028076171875,
+              "bottom": -151.1986083984375,
+              "left": 305.21875
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=852",
+            "width": 768,
+            "height": 592,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full px-6 py-3 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-18 outline-none\" href=\"/credential-vault\"><span class=\"text-web3-16 lg:text-web3-18 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "port": 4185,
+    "width": 390,
+    "base": 1842,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1841.8125,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              1870.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2230.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              2259.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2868.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              2897.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1542,
+        "cards": [
+          {
+            "rect": [
+              16,
+              299.8125,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              328.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              688.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              717.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1326.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              1355.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1842,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -0.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              28.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              388.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              417.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1026.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              1055.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2142,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -300.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -271.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              88.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              117.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              726.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              755.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2442,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -600.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -571.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -211.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -182.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              426.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              455.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2842,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1000.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -971.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -611.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -582.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              26.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              55.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3442,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1600.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -1571.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1211.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -1182.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -573.875,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              -544.875,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Cannot read properties of null (reading 'parentNode')",
+      "Cannot read properties of null (reading 'parentNode')",
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none\" href=\"/token-monitoring\"><span class=\"text-web3-14 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none\" href=\"/ai-governance\"><span class=\"text-web3-14 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=568",
+            "width": 390,
+            "height": 300,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=568",
+            "width": 390,
+            "height": 300,
+            "rect": {
+              "x": 41,
+              "y": -836.375,
+              "width": 308,
+              "height": 237.5,
+              "top": -836.375,
+              "right": 349,
+              "bottom": -598.875,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none\" href=\"/credential-vault\"><span class=\"text-web3-14 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "port": 4184,
+    "width": 390,
+    "base": 1842,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1841.8125,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              1870.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2230.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              2259.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2868.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              2897.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1542,
+        "cards": [
+          {
+            "rect": [
+              16,
+              299.8125,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              328.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              688.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              717.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1326.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              1355.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1842,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -0.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              28.8125,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              388.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              417.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1026.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              1055.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2142,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -300.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -271.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              88.625,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              117.625,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              726.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              755.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2442,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -600.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -571.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -211.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -182.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              426.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              455.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2842,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1000.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -971.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -611.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -582.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              26.125,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              55.125,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 3442,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1600.1875,
+              358,
+              400.8125
+            ],
+            "textRect": [
+              41,
+              -1571.1875,
+              308,
+              242.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1211.375,
+              358,
+              649.5
+            ],
+            "textRect": [
+              41,
+              -1182.375,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -573.875,
+              358,
+              412
+            ],
+            "textRect": [
+              41,
+              -544.875,
+              308,
+              254
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none h-9 px-4\" href=\"/token-monitoring\"><span class=\"text-web3-14 font-body\">Explore Token Monitoring</span></a>"
+        ],
+        "images": []
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none h-9 px-4\" href=\"/ai-governance\"><span class=\"text-web3-14 font-body\">Explore AI Governance</span></a>"
+        ],
+        "images": [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=568",
+            "width": 390,
+            "height": 300,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/355edf263d3fcfb67ccb61fc84b938e5714ba44c-1136x876.png?auto=format&fit=max&q=80&w=568",
+            "width": 390,
+            "height": 300,
+            "rect": {
+              "x": 41,
+              "y": -836.375,
+              "width": 308,
+              "height": 237.5,
+              "top": -836.375,
+              "right": 349,
+              "bottom": -598.875,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_self\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 outline-none h-9 px-4\" href=\"/credential-vault\"><span class=\"text-web3-14 font-body\">Learn more</span></a>"
+        ],
+        "images": []
+      }
+    ]
+  }
+]

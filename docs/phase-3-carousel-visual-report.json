@@ -1,0 +1,180 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-03T22:50:29.977Z",
+  "results": [
+    {
+      "route": "/pricing",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-pricing-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-pricing-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-pricing-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-pricing-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-pricing-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/pricing",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-pricing-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-pricing-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-pricing-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-pricing-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/pricing",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-pricing-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-carousel-0-next",
+          "pass": false,
+          "changedPixels": 66,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 3384,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:59696/assets/img/0000000000005d51b83347a8c0f6f1c8c6f87756-174x32.png?auto=format&fit=max&q=80&w=120",
+                  "width": 1130,
+                  "rect": {
+                    "x": 41,
+                    "y": 533.4375,
+                    "width": 261,
+                    "height": 48,
+                    "top": 533.4375,
+                    "right": 302,
+                    "bottom": 581.4375,
+                    "left": 41
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 3384,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:59697/assets/img/0000000000005d51b83347a8c0f6f1c8c6f87756-174x32.png?auto=format&fit=max&q=80&w=120",
+                  "width": 1130,
+                  "rect": {
+                    "x": 41,
+                    "y": 533.4375,
+                    "width": 261,
+                    "height": 48,
+                    "top": 533.4375,
+                    "right": 302,
+                    "bottom": 581.4375,
+                    "left": 41
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}

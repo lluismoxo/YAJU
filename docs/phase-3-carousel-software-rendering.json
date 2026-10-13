@@ -1,0 +1,147 @@
+{
+  "motion": "reduce",
+  "rendering": "software",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-05T16:04:02.346Z",
+  "results": [
+    {
+      "route": "/pricing",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-pricing-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-pricing-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/agent-hub",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-agent-hub-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-hub-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-hub-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-hub-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    }
+  ]
+}

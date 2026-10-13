@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "active": true,
+    "mask": "radial-gradient(126px 86.4px at 324.404px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 358.404px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 348.404px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 334.404px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+    "ink": 6243,
+    "width": 998,
+    "height": 606
+  },
+  {
+    "index": 1,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "active": true,
+    "mask": "radial-gradient(126px 86.4px at 500.404px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 534.404px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 524.404px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 510.404px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+    "ink": 4200,
+    "width": 1350,
+    "height": 606
+  },
+  {
+    "index": 13,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "active": true,
+    "mask": "radial-gradient(126px 86.4px at 224.477px 108.657px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 258.477px 84.6566px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 248.477px 114.657px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 234.477px 90.6566px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+    "ink": 6862,
+    "width": 657,
+    "height": 539
+  },
+  {
+    "index": 14,
+    "reducedMotion": "no-preference",
+    "passed": true,
+    "active": true,
+    "mask": "radial-gradient(126px 86.4px at 168.303px 108.657px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 202.303px 84.6566px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 192.303px 114.657px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 178.303px 90.6566px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+    "ink": 6584,
+    "width": 832,
+    "height": 539
+  },
+  {
+    "index": 0,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "active": false,
+    "mask": "",
+    "ink": 0,
+    "width": 300,
+    "height": 150
+  },
+  {
+    "index": 1,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "active": false,
+    "mask": "",
+    "ink": 0,
+    "width": 300,
+    "height": 150
+  },
+  {
+    "index": 13,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "active": false,
+    "mask": "",
+    "ink": 0,
+    "width": 300,
+    "height": 150
+  },
+  {
+    "index": 14,
+    "reducedMotion": "reduce",
+    "passed": true,
+    "active": false,
+    "mask": "",
+    "ink": 0,
+    "width": 300,
+    "height": 150
+  }
+]

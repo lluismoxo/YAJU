@@ -1,0 +1,1145 @@
+{
+  "scope": "Native article shared header and full article scroll; strict zero-pixel comparisons. No production deployment.",
+  "fullScroll": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:16:48.681Z",
+    "results": [
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "desktop",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-product-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-0",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-720",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-1440",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-2160",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-2839",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "tablet",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-0",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-819",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-1638",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-2457",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-3106",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-0",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-675",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-1350",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-2025",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-2700",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-3375",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-4050",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-sweep-4064",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  "navigationBeforeExplorationsFix": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:17:06.233Z",
+    "results": [
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "desktop",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-product-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-blog",
+            "pass": false,
+            "changedPixels": 2086,
+            "totalPixels": 1296000,
+            "diagnostics": [
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65322/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 40,
+                      "y": 62,
+                      "width": 118,
+                      "height": 28,
+                      "top": 62,
+                      "right": 158,
+                      "bottom": 90,
+                      "left": 40
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65322/assets/blog-covers/yaju-blog-cover-10.webp",
+                    "width": 1088,
+                    "rect": {
+                      "x": 1112,
+                      "y": 165.796875,
+                      "width": 288,
+                      "height": 162,
+                      "top": 165.796875,
+                      "right": 1400,
+                      "bottom": 327.796875,
+                      "left": 1112
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65322/assets/blog-covers/yaju-logo-fucsia.png",
+                    "width": 720,
+                    "rect": {
+                      "x": 1195.5234375,
+                      "y": 226.9765625,
+                      "width": 120.953125,
+                      "height": 39.640625,
+                      "top": 226.9765625,
+                      "right": 1316.4765625,
+                      "bottom": 266.6171875,
+                      "left": 1195.5234375
+                    }
+                  }
+                ]
+              },
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65323/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 40,
+                      "y": 62,
+                      "width": 118,
+                      "height": 28,
+                      "top": 62,
+                      "right": 158,
+                      "bottom": 90,
+                      "left": 40
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65323/assets/blog-covers/yaju-blog-cover-10.webp",
+                    "width": 1088,
+                    "rect": {
+                      "x": 1112,
+                      "y": 165.796875,
+                      "width": 288,
+                      "height": 162,
+                      "top": 165.796875,
+                      "right": 1400,
+                      "bottom": 327.796875,
+                      "left": 1112
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65323/assets/blog-covers/yaju-logo-fucsia.png",
+                    "width": 720,
+                    "rect": {
+                      "x": 1195.5234375,
+                      "y": 226.9765625,
+                      "width": 120.953125,
+                      "height": 39.640625,
+                      "top": 226.9765625,
+                      "right": 1316.4765625,
+                      "bottom": 266.6171875,
+                      "left": 1195.5234375
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "tablet",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": false,
+            "changedPixels": 54,
+            "totalPixels": 786432,
+            "diagnostics": [
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65322/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 68,
+                      "width": 118,
+                      "height": 28,
+                      "top": 68,
+                      "right": 134,
+                      "bottom": 96,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65322/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 724,
+                      "y": 70,
+                      "width": 24,
+                      "height": 24,
+                      "top": 70,
+                      "right": 748,
+                      "bottom": 94,
+                      "left": 724
+                    }
+                  },
+                  {
+                    "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/98f33120b4f129c21dc0ccc27defa21c05aa738c-2260x1271.avif?auto=format&fit=max&q=80&w=960",
+                    "width": 768,
+                    "rect": {
+                      "x": 16,
+                      "y": 750.1875,
+                      "width": 736,
+                      "height": 414,
+                      "top": 750.1875,
+                      "right": 752,
+                      "bottom": 1164.1875,
+                      "left": 16
+                    }
+                  }
+                ]
+              },
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65323/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 68,
+                      "width": 118,
+                      "height": 28,
+                      "top": 68,
+                      "right": 134,
+                      "bottom": 96,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65323/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 724,
+                      "y": 70,
+                      "width": 24,
+                      "height": 24,
+                      "top": 70,
+                      "right": 748,
+                      "bottom": 94,
+                      "left": 724
+                    }
+                  },
+                  {
+                    "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/98f33120b4f129c21dc0ccc27defa21c05aa738c-2260x1271.avif?auto=format&fit=max&q=80&w=960",
+                    "width": 768,
+                    "rect": {
+                      "x": 16,
+                      "y": 750.1875,
+                      "width": 736,
+                      "height": 414,
+                      "top": 750.1875,
+                      "right": 752,
+                      "bottom": 1164.1875,
+                      "left": 16
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  "navigationAfterFix": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:18:22.496Z",
+    "results": [
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "desktop",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-product-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-the-future-of-work-debate-has-an-evidence-problem-menu-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "tablet",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": false,
+            "changedPixels": 390,
+            "totalPixels": 329160,
+            "diagnostics": [
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65460/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 117.40625,
+                      "width": 118,
+                      "height": 28,
+                      "top": 117.40625,
+                      "right": 134,
+                      "bottom": 145.40625,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65460/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 346,
+                      "y": 119.40625,
+                      "width": 24,
+                      "height": 24,
+                      "top": 119.40625,
+                      "right": 370,
+                      "bottom": 143.40625,
+                      "left": 346
+                    }
+                  }
+                ]
+              },
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:65461/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 117.40625,
+                      "width": 118,
+                      "height": 28,
+                      "top": 117.40625,
+                      "right": 134,
+                      "bottom": 145.40625,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:65461/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 346,
+                      "y": 119.40625,
+                      "width": 24,
+                      "height": 24,
+                      "top": 119.40625,
+                      "right": 370,
+                      "bottom": 143.40625,
+                      "left": 346
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  "otherSharedHeaderRoutes": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:19:14.330Z",
+    "results": [
+      {
+        "route": "/blog/tag/technology",
+        "viewport": "desktop",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "desktop-blog-tag-technology-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-tag-technology-product-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-blog-tag-technology-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/labs/open-development/application",
+        "viewport": "desktop",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "desktop-labs-open-development-application-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-labs-open-development-application-product-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          },
+          {
+            "key": "desktop-labs-open-development-application-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 1296000
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1024",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=256"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=320",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=160"
+            }
+          ],
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1024",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=256"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=320",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=160"
+            }
+          ]
+        ]
+      },
+      {
+        "route": "/blog/tag/technology",
+        "viewport": "tablet",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "tablet-blog-tag-technology-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-blog-tag-technology-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/labs/open-development/application",
+        "viewport": "tablet",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "tablet-labs-open-development-application-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          },
+          {
+            "key": "tablet-labs-open-development-application-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 786432
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1440",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=360"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=320",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=160"
+            }
+          ],
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1440",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=360"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=320",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2ad4a2f43cde0557fbf4f47faeb3397f5178993b-320x608.png?auto=format&fit=max&q=80&w=160"
+            }
+          ]
+        ]
+      },
+      {
+        "route": "/blog/tag/technology",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-tag-technology-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-tag-technology-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      },
+      {
+        "route": "/labs/open-development/application",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-labs-open-development-application-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-labs-open-development-application-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1440",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=360"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1024",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=256"
+            }
+          ],
+          [
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1440",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=360"
+            },
+            {
+              "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=1024",
+              "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/056644e71c45729a4f68a1734497d5aca65c98d4-1440x609.png?auto=format&fit=max&q=80&w=256"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

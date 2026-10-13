@@ -1,0 +1,72 @@
+[
+  {
+    "route": "/about",
+    "width": 390,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 1039,
+        "equal": true
+      },
+      {
+        "scroll": 1339,
+        "equal": true
+      },
+      {
+        "scroll": 1639,
+        "equal": true
+      },
+      {
+        "scroll": 1939,
+        "equal": true
+      },
+      {
+        "scroll": 2339,
+        "equal": true
+      },
+      {
+        "scroll": 2939,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  },
+  {
+    "route": "/labs/agentic-task-ecosystem",
+    "width": 390,
+    "geometry": [
+      {
+        "scroll": 0,
+        "equal": true
+      },
+      {
+        "scroll": 423,
+        "equal": true
+      },
+      {
+        "scroll": 723,
+        "equal": true
+      },
+      {
+        "scroll": 1023,
+        "equal": true
+      },
+      {
+        "scroll": 1323,
+        "equal": true
+      },
+      {
+        "scroll": 1723,
+        "equal": true
+      },
+      {
+        "scroll": 2323,
+        "equal": true
+      }
+    ],
+    "differentPixels": 0
+  }
+]

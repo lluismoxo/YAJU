@@ -5,12 +5,34 @@ import { site } from '../config/site.mjs';
 import { renderRedirect } from '../src/components/redirect.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const nativeReview = process.argv.includes('--native-all');
 const pilotOutput = process.argv.includes('--native-legal');
-if (process.argv.slice(2).some(arg => arg !== '--native-legal')) throw new Error('Unknown build option');
-const output = resolve(root, pilotOutput ? 'artifacts/native-pilot' : 'public');
-const staging = resolve(root, pilotOutput ? 'artifacts/.native-staging' : '.build-staging');
-const previous = resolve(root, pilotOutput ? 'artifacts/.native-previous' : '.build-previous');
+const legacyReference = process.argv.includes('--legacy-reference');
+if (process.argv.slice(2).length>1||process.argv.slice(2).some(arg => !['--native-legal','--native-all','--legacy-reference'].includes(arg))) throw new Error('Unknown or conflicting build option');
+const allNative = !pilotOutput && !legacyReference;
+const output = resolve(root, nativeReview ? 'artifacts/native-all' : pilotOutput ? 'artifacts/native-pilot' : legacyReference ? 'artifacts/legacy-reference' : 'public');
+const staging = `${output}.staging`;
+const previous = `${output}.previous`;
 const inputs = JSON.parse(await readFile(resolve(root, 'config/site-inputs.json'), 'utf8'));
+const globeTextures=['earth-blue-marble.jpg','earth-topology.png'].map(name=>({source:`node_modules/three-globe/example/img/${name}`,output:`assets/globe/${name}`}));
+const animationVendors=['gsap','ScrollTrigger','SplitText'].map(name=>({source:`node_modules/gsap/dist/${name}.min.js`,output:`assets/vendor/${name}.min.js`}));
+if(allNative){
+ inputs.push(...animationVendors,...globeTextures);
+ const pages=JSON.parse(await readFile(resolve(root,'config/native-pages.json'),'utf8'));
+ for(const page of pages){const index=inputs.findIndex(e=>e.output===page.output);if(index<0)throw new Error(`Unknown route ${page.output}`);inputs[index]=page;}
+ for(const [output,source] of [['assets/native-navigation.js','src/client/page-navigation.js'],['assets/forms/forms2.js','src/client/forms-adapter.js']]){
+  const entry=inputs.find(e=>e.output===output);if(!entry)throw new Error(`Missing candidate resource ${output}`);entry.source=source;
+ }
+ inputs.push({source:'src/client/stack.js',output:'assets/native-stack.js'},{source:'src/client/labs.js',output:'assets/native-labs.js'},{source:'src/client/campaign.js',output:'assets/native-campaign.js'},{source:'src/client/dissolve-headline.js',output:'assets/native-dissolve-headline.js'},{source:'src/client/page.js',output:'assets/native-page.js'},{source:'src/client/report.js',output:'assets/native-report.js'},{source:'src/client/forms.js',output:'assets/native-forms.js'});
+ // Once every complete page has a native renderer, the candidate needs neither
+ // the downloaded application chunks nor the DOM compatibility patcher.
+ const remaining=inputs.filter(e=>e.source.startsWith('src/pages/')&&e.source.endsWith('.html')&&!e.output.startsWith('assets/forms/'));
+ if(remaining.length)throw new Error(`Unmigrated full pages: ${remaining.map(e=>e.output).join(', ')}`);
+ for(let index=inputs.length-1;index>=0;index--){
+  const source=inputs[index].source;
+  if((source.startsWith('legacy/runtime/')&&source.endsWith('.js'))||source===`static/assets/${site.compatibilityScript}`)inputs.splice(index,1);
+ }
+}
 const textExtensions = /\.(html|js|css|json|webmanifest)$/;
 const override = await readFile(resolve(root, 'static/assets/yaju-hydration-safe.css'), 'utf8');
 const analyticsMarker = `gtag('config', '${site.analyticsId}')`;
@@ -35,7 +57,7 @@ function confined(base, name) {
 // Validate the complete input list before writing or replacing the last good build.
 const destinations = new Set();
 for (const entry of inputs) {
-  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source)) {
+  if (!/^(src\/pages|static|legacy\/runtime)\//.test(entry.source) && !['src/content/legal.json', 'src/client/navigation.js'].includes(entry.source) && !(allNative && ([...animationVendors,...globeTextures].some(vendor=>vendor.source===entry.source)||/^src\/content\/pages\/[a-z0-9_-]+\.json$/.test(entry.source)||['src/client/stack.js','src/client/labs.js','src/client/campaign.js','src/client/dissolve-headline.js','src/client/page.js','src/client/report.js','src/client/forms.js','src/client/page-navigation.js','src/client/forms-adapter.js'].includes(entry.source)))) {
     throw new Error(`Input outside the public source allowlist: ${entry.source}`);
   }
   const source = confined(root, entry.source);
@@ -50,10 +72,14 @@ let htmlCount = 0;
 for (const entry of inputs) {
   let target = entry.output.replace(/^_next\//, '_yaju/');
   let bytes = await readFile(resolve(root, entry.source));
-  if (entry.render === 'redirect') bytes = Buffer.from(renderRedirect(JSON.parse(bytes.toString('utf8'))));
+  if (entry.render === 'redirect') bytes = Buffer.from(renderRedirect(JSON.parse(bytes.toString('utf8')), {legacy:!allNative}));
   else if (entry.render === 'legal') {
     const { renderLegalPage } = await import('../src/components/site-layout.mjs');
     bytes = Buffer.from(await renderLegalPage(JSON.parse(bytes.toString('utf8'))));
+  }
+  else if (entry.render === 'page') {
+    const {renderPage}=await import('../src/components/page.mjs');
+    bytes=Buffer.from(await renderPage(JSON.parse(bytes.toString('utf8'))));
   }
   else if (entry.render) throw new Error(`Unknown renderer: ${entry.render}`);
   if (textExtensions.test(target)) {
@@ -80,6 +106,10 @@ for (const entry of inputs) {
 }
 // Keep the preceding build recoverable until the new output has been completed.
 await rm(previous, { recursive: true, force: true });
+if(allNative){
+ const {build}=await import('esbuild');
+ await build({entryPoints:[resolve(root,'src/client/globe.js')],bundle:true,minify:true,format:'iife',target:'es2020',outfile:resolve(staging,'assets/native-globe.js'),legalComments:'linked'});
+}
 try { await rename(output, previous); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 try { await rename(staging, output); }
 catch (error) { await rename(previous, output).catch(() => {}); throw error; }

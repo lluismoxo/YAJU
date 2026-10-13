@@ -1,0 +1,886 @@
+[
+  {
+    "group": "extended-dark",
+    "comparisons": [
+      {
+        "width": 390,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      }
+    ]
+  },
+  {
+    "group": "extended-light",
+    "comparisons": [
+      {
+        "width": 390,
+        "index": 0,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 2,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 2,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      }
+    ]
+  },
+  {
+    "group": "solid",
+    "comparisons": [
+      {
+        "width": 390,
+        "index": 0,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 0,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 0,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      }
+    ]
+  },
+  {
+    "group": "reference-repeat",
+    "comparisons": [
+      {
+        "width": 390,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "idle",
+        "glowRegionPixels": 5639,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "hover",
+        "glowRegionPixels": 5639,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "pressed",
+        "glowRegionPixels": 5639,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "released",
+        "glowRegionPixels": 5639,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "leave",
+        "glowRegionPixels": 5639,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 390,
+        "index": 3,
+        "state": "keyboard",
+        "glowRegionPixels": 5286,
+        "stylesMatch": true,
+        "differentPixels": 1747,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 1,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "idle",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "hover",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "pressed",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "released",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "leave",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      },
+      {
+        "width": 1440,
+        "index": 3,
+        "state": "keyboard",
+        "glowRegionPixels": 0,
+        "stylesMatch": true,
+        "differentPixels": 0,
+        "geometryMatch": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,2824 @@
+{
+  "generatedAt": "2026-10-13T14:16:47.858Z",
+  "scope": "Local native production build; external requests blocked, form responses mocked",
+  "reports": {
+    "browser": [
+      {
+        "route": "/agent-academy/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/about/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/agent-hub/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-approach/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/agent-orchestration-system/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-governance/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-spend/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-spend-explorer/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-observability/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/ai-transformation/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/2026-summer-merch-collection/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/a-day-in-the-life-of-a-wealth-manager-with-and-without-ai/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/a-small-agent-for-a-narrow-job/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agent-workloads-and-infrastructure/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agent-rollouts-across-business-units/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agentic-task-ecosystem/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-in-manufacturing-operations/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-and-systems-of-record/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-in-regulated-industries/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-on-your-own-hardware/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-in-telecom-operations/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-that-plan-and-agents-that-react/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/air-gapped-agent-deployments/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/agents-that-work-outside-english/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/announcement/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/automations-early-footprint/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/automating-fork-maintenance-with-ai-agents/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/building-for-ai-regulation/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/choosing-a-model-is-an-operations-decision/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/chunking-for-rag-maximize-enterprise-knowledge-retrieval/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/community-research-across-regions/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/documents-are-not-text/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/enterprise-ai-maturity-model/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/connect-2025/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/exploring-ai-in-education/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/forward-deployed-engineers-capability-building/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/evaluating-an-agent-platform/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/generative-ai-for-business/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/hiring-engineers-new-to-agents/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/hardware-aware-dynamic-speculative-decoding/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/how-small-models-can-make-a-big-impact-for-enterprises/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/how-our-early-access-programme-works/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/how-we-are-growing-the-team/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/introducing-the-software-factory/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/latency-budgets-for-agents/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/meet-the-software-factory/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/multimodal-embeddings/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/megakernels/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/oran-in-the-wild/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/reranking-in-your-own-cloud/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/reranking-is-the-cheapest-accuracy/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/retrieval-evaluation-from-a-public-corpus/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/running-agents-under-eu-data-rules/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/small-agents-scoped-tightly/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/state-of-sovereign-ai-adoption-2026/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/ai-for-developers/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/ai-governance/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/company-news/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/enterprise-ai/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/financial-services/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/for-business/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/healthcare-life-sciences/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/open-science/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/partner/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/research/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/product-launch/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/technology/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/tag/sovereign-ai/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/the-yaju-approach-to-ai-governance/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/the-total-cost-of-ai-ownership/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/transcription-is-an-input-problem/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/what-changed-in-oran-3-6/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/transcription-outside-tuned-languages/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/what-an-embedding-commits-you-to/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/what-sovereign-deployment-requires/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/what-your-corpus-leaves-out/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/what-we-look-for-in-scholars/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/when-a-bigger-model-is-the-wrong-answer/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/working-with-delivery-partners/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/blog/why-agent-programmes-stall/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/careers/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/contact-sales/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/cli/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/cookies/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/credential-vault/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/cost-control/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customer-stories/agents-in-cloud-operations/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customer-stories/agents-in-contract-review/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customer-stories/agents-in-enterprise-integration/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customer-stories/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customization/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/deployment-options/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/data-commitments/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/customer-stories/support-triage-with-agents/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/developers/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/get-started/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/catalyst-grants/application/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/agentic-task-ecosystem/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/education/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/catalyst-grants/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/futures-of-work/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/newsletter/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/open-development/application/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/scholars/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/open-development/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/lp/thank-you/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/labs/oran/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/mcp-gateway/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/newsroom/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/optimizer/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/oran-mini-code/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/partners/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/partners/application/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/privacy/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/responsible-disclosure/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/pricing/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/security/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/self-hosted/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/reports/state-of-sovereign-ai-adoption-2026/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/software-factory/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/software-factory-demo/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/engineering/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/healthcare-and-life-sciences/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/financial-services/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/manufacturing/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/public-sector/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/terms/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/solutions/telecommunications/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/terms-of-use/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/token-monitoring/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/versions/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/usage-policy/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/register/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      },
+      {
+        "route": "/",
+        "errors": [],
+        "missing": [],
+        "legacy": []
+      }
+    ],
+    "forms": [
+      {
+        "route": "/ai-spend-explorer",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/ai-observability",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/contact-sales",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/credential-vault",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "early_access",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/cost-control",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/customization",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/developers",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/get-started",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/labs/catalyst-grants/application",
+        "endpoint": "/functions/v1/form-submit",
+        "form": "labs_research_grant",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/labs/newsletter",
+        "endpoint": "/functions/v1/form-submit",
+        "form": "labs_newsletter",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/labs/open-development/application",
+        "endpoint": "/functions/v1/form-submit",
+        "form": "labs_open_science",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/mcp-gateway",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "early_access",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/optimizer",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/partners/application",
+        "endpoint": "/functions/v1/form-submit",
+        "form": "partner_application",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/pricing",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/reports/state-of-sovereign-ai-adoption-2026",
+        "endpoint": "/functions/v1/form-submit",
+        "form": "report_download",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/self-hosted",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/healthcare-and-life-sciences",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      },
+      {
+        "route": "/token-monitoring",
+        "endpoint": "/functions/v1/contact-sales",
+        "form": "contact_sales",
+        "consents": true,
+        "invalidBlocked": true,
+        "rateLimitRetry": true,
+        "success": true
+      }
+    ],
+    "tabs": [
+      {
+        "route": "/ai-spend-explorer",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/ai-transformation",
+        "width": 1440,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/optimizer",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/versions",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/ai-spend-explorer",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/ai-transformation",
+        "width": 390,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/optimizer",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/versions",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      }
+    ],
+    "carousels": [
+      {
+        "route": "/about",
+        "width": 1440,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/agent-hub",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/ai-spend-explorer",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/blog",
+        "width": 1440,
+        "states": 1,
+        "passed": true
+      },
+      {
+        "route": "/cost-control",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/get-started",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/labs/open-development",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/optimizer",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/partners",
+        "width": 1440,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/software-factory",
+        "width": 1440,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/about",
+        "width": 390,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/agent-hub",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/ai-spend-explorer",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/blog",
+        "width": 390,
+        "states": 1,
+        "passed": true
+      },
+      {
+        "route": "/cost-control",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/get-started",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/labs/open-development",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/optimizer",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/partners",
+        "width": 390,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/software-factory",
+        "width": 390,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      }
+    ],
+    "navigation": {
+      "origin": "http://127.0.0.1:4184",
+      "results": [
+        {
+          "route": "/",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/blog/what-your-corpus-leaves-out",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/agent-academy",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/labs/futures-of-work",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/software-factory-demo",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/labs/scholars",
+          "width": 1440,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close"
+          ]
+        },
+        {
+          "route": "/",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/blog/what-your-corpus-leaves-out",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/agent-academy",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/labs/futures-of-work",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/software-factory-demo",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/labs/scholars",
+          "width": 768,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/blog/what-your-corpus-leaves-out",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/agent-academy",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/labs/futures-of-work",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/software-factory-demo",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        },
+        {
+          "route": "/labs/scholars",
+          "width": 390,
+          "pass": true,
+          "checks": [
+            "Product: keyboard open, navigate and close",
+            "Solutions: keyboard open, navigate and close",
+            "Resources: keyboard open, navigate and close",
+            "Blog: keyboard open, navigate and close",
+            "Company: keyboard open, navigate and close",
+            "resize to desktop closes drawer and unlocks scroll"
+          ]
+        }
+      ]
+    },
+    "search": [
+      {
+        "scope": "blog",
+        "width": 1440,
+        "triggers": 2,
+        "passed": true,
+        "submission": "mocked"
+      },
+      {
+        "scope": "newsroom",
+        "width": 1440,
+        "triggers": 1,
+        "passed": true,
+        "submission": "mocked"
+      },
+      {
+        "scope": "blog",
+        "width": 768,
+        "triggers": 2,
+        "passed": true,
+        "submission": "mocked"
+      },
+      {
+        "scope": "newsroom",
+        "width": 768,
+        "triggers": 1,
+        "passed": true,
+        "submission": "mocked"
+      },
+      {
+        "scope": "blog",
+        "width": 390,
+        "triggers": 2,
+        "passed": true,
+        "submission": "mocked"
+      },
+      {
+        "scope": "newsroom",
+        "width": 390,
+        "triggers": 1,
+        "passed": true,
+        "submission": "mocked"
+      }
+    ],
+    "special-controls": [
+      {
+        "route": "/ai-observability",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/reports/state-of-sovereign-ai-adoption-2026",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/reports/state-of-sovereign-ai-adoption-2026",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      }
+    ],
+    "video": [
+      {
+        "route": "/careers",
+        "source": "http://127.0.0.1:4183",
+        "muted": true,
+        "paused": false,
+        "controls": false,
+        "ready": 4,
+        "passed": true
+      },
+      {
+        "route": "/get-started",
+        "source": "http://127.0.0.1:4183",
+        "muted": true,
+        "paused": false,
+        "controls": true,
+        "ready": 4,
+        "passed": true
+      },
+      {
+        "route": "/labs/oran",
+        "source": "http://127.0.0.1:4183",
+        "muted": true,
+        "paused": false,
+        "controls": true,
+        "ready": 4,
+        "passed": true
+      },
+      {
+        "route": "/agent-hub",
+        "source": "http://127.0.0.1:4183",
+        "muted": false,
+        "paused": true,
+        "controls": true,
+        "ready": 4,
+        "passed": true
+      },
+      {
+        "route": "/ai-observability",
+        "source": "http://127.0.0.1:4183",
+        "muted": false,
+        "paused": true,
+        "controls": true,
+        "ready": 4,
+        "passed": true
+      }
+    ],
+    "accordions": [
+      {
+        "route": "/agent-orchestration-system",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/careers",
+        "width": 1440,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/cli",
+        "width": 1440,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/credential-vault",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/cost-control",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/customization",
+        "width": 1440,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/developers",
+        "width": 1440,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/labs/catalyst-grants",
+        "width": 1440,
+        "states": 10,
+        "passed": true
+      },
+      {
+        "route": "/labs/education",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/labs",
+        "width": 1440,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/labs/scholars",
+        "width": 1440,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/labs/open-development",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/labs/oran",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/mcp-gateway",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/partners",
+        "width": 1440,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 1440,
+        "states": 8,
+        "passed": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/healthcare-and-life-sciences",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "width": 1440,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/token-monitoring",
+        "width": 1440,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/agent-orchestration-system",
+        "width": 768,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/careers",
+        "width": 768,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/cli",
+        "width": 768,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/credential-vault",
+        "width": 768,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/cost-control",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/customization",
+        "width": 768,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/developers",
+        "width": 768,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/labs/catalyst-grants",
+        "width": 768,
+        "states": 10,
+        "passed": true
+      },
+      {
+        "route": "/labs/education",
+        "width": 768,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/labs",
+        "width": 768,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/labs/scholars",
+        "width": 768,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/labs/open-development",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/labs/oran",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/mcp-gateway",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/partners",
+        "width": 768,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 768,
+        "states": 8,
+        "passed": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/healthcare-and-life-sciences",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "width": 768,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/token-monitoring",
+        "width": 768,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/agent-orchestration-system",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/careers",
+        "width": 390,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/cli",
+        "width": 390,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/credential-vault",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/cost-control",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/customization",
+        "width": 390,
+        "states": 2,
+        "passed": true
+      },
+      {
+        "route": "/developers",
+        "width": 390,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/labs/catalyst-grants",
+        "width": 390,
+        "states": 10,
+        "passed": true
+      },
+      {
+        "route": "/labs/education",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      },
+      {
+        "route": "/labs",
+        "width": 390,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/labs/scholars",
+        "width": 390,
+        "states": 7,
+        "passed": true
+      },
+      {
+        "route": "/labs/open-development",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/labs/oran",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/mcp-gateway",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/partners",
+        "width": 390,
+        "states": 5,
+        "passed": true
+      },
+      {
+        "route": "/pricing",
+        "width": 390,
+        "states": 8,
+        "passed": true
+      },
+      {
+        "route": "/solutions/engineering",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/financial-services",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/healthcare-and-life-sciences",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/manufacturing",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/public-sector",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/solutions/telecommunications",
+        "width": 390,
+        "states": 3,
+        "passed": true
+      },
+      {
+        "route": "/token-monitoring",
+        "width": 390,
+        "states": 6,
+        "passed": true
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "states": 4,
+        "passed": true
+      }
+    ],
+    "campaign-menu": [
+      {
+        "width": 1440,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "shareDestinationsMocked": true
+      },
+      {
+        "width": 1440,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "shareDestinationsMocked": true
+      },
+      {
+        "width": 768,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "shareDestinationsMocked": true
+      },
+      {
+        "width": 768,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "shareDestinationsMocked": true
+      },
+      {
+        "width": 390,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "shareDestinationsMocked": true
+      },
+      {
+        "width": 390,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "shareDestinationsMocked": true
+      }
+    ],
+    "dissolve": [
+      {
+        "index": 0,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "active": true,
+        "mask": "radial-gradient(126px 86.4px at 324.404px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 358.404px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 348.404px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 334.404px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+        "ink": 6562,
+        "width": 998,
+        "height": 606
+      },
+      {
+        "index": 1,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "active": true,
+        "mask": "radial-gradient(126px 86.4px at 500.404px 139.601px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 534.404px 115.601px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 524.404px 145.601px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 510.404px 121.601px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+        "ink": 4173,
+        "width": 1350,
+        "height": 606
+      },
+      {
+        "index": 13,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "active": true,
+        "mask": "radial-gradient(126px 86.4px at 224.477px 108.657px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 258.477px 84.6566px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 248.477px 114.657px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 234.477px 90.6566px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+        "ink": 7020,
+        "width": 657,
+        "height": 539
+      },
+      {
+        "index": 14,
+        "reducedMotion": "no-preference",
+        "passed": true,
+        "active": true,
+        "mask": "radial-gradient(126px 86.4px at 168.303px 108.657px, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.4) 48%, black 78%), radial-gradient(81.6px 134.4px at 202.303px 84.6566px, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.35) 44%, black 76%), radial-gradient(105.6px 98.4px at 192.303px 114.657px, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.45) 50%, black 80%), radial-gradient(93.6px 114px at 178.303px 90.6566px, transparent 0%, transparent 16%, rgba(0, 0, 0, 0.3) 46%, black 74%)",
+        "ink": 6554,
+        "width": 832,
+        "height": 539
+      },
+      {
+        "index": 0,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "active": false,
+        "mask": "",
+        "ink": 0,
+        "width": 300,
+        "height": 150
+      },
+      {
+        "index": 1,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "active": false,
+        "mask": "",
+        "ink": 0,
+        "width": 300,
+        "height": 150
+      },
+      {
+        "index": 13,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "active": false,
+        "mask": "",
+        "ink": 0,
+        "width": 300,
+        "height": 150
+      },
+      {
+        "index": 14,
+        "reducedMotion": "reduce",
+        "passed": true,
+        "active": false,
+        "mask": "",
+        "ink": 0,
+        "width": 300,
+        "height": 150
+      }
+    ],
+    "card-dates": {
+      "origins": [
+        "http://127.0.0.1:4185",
+        "http://127.0.0.1:4184"
+      ],
+      "results": [
+        {
+          "route": "/agent-hub",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 07, 2026",
+                "Yaju Team - Mar 26, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-observability",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - Jun 23, 2026",
+                "Yaju Team - Apr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - Jun 23, 2026",
+                "Yaju Team - Apr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - Apr 07, 2026",
+                "Yaju Team - Mar 18, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            },
+            {
+              "state": "page-3",
+              "dates": [
+                "Yaju Team - Sep 02, 2026",
+                "Yaju Team - Apr 08, 2026",
+                "Yaju Team - Mar 18, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-spend-explorer",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - Mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/cost-control",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Apr 29, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/developers",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/lp/thank-you",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 20, 2026",
+                "Yaju Team - Jun 15, 2026",
+                "Yaju Team - May 26, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/partners",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 14, 2026",
+                "Yaju Team - May 06, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/financial-services",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yael Malamatinas - Jul 27, 2026",
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - May 14, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yael Malamatinas - Jul 27, 2026",
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - May 14, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - Jun 09, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/healthcare-and-life-sciences",
+          "locale": "en-US",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jun 10, 2026",
+                "Yaju Team - Jun 10, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/agent-hub",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - jul 07, 2026",
+                "Yaju Team - mar 26, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-observability",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - may 20, 2026",
+                "Yaju Team - jun 23, 2026",
+                "Yaju Team - abr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yaju Team - may 20, 2026",
+                "Yaju Team - jun 23, 2026",
+                "Yaju Team - abr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - abr 07, 2026",
+                "Yaju Team - mar 18, 2026",
+                "Yaju Team - jun 10, 2026"
+              ]
+            },
+            {
+              "state": "page-3",
+              "dates": [
+                "Yaju Team - sept 02, 2026",
+                "Yaju Team - abr 08, 2026",
+                "Yaju Team - mar 18, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-spend-explorer",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - may 20, 2026",
+                "Yaju Team - may 20, 2026",
+                "Yaju Team - mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/cost-control",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - abr 29, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/developers",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/lp/thank-you",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - jul 20, 2026",
+                "Yaju Team - jun 15, 2026",
+                "Yaju Team - may 26, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/partners",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - jul 14, 2026",
+                "Yaju Team - may 06, 2026",
+                "Yaju Team - jun 10, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/financial-services",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yael Malamatinas - jul 27, 2026",
+                "Yaju Team - jun 09, 2026",
+                "Yaju Team - may 14, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yael Malamatinas - jul 27, 2026",
+                "Yaju Team - jun 09, 2026",
+                "Yaju Team - may 14, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - jun 09, 2026",
+                "Yaju Team - jun 09, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/healthcare-and-life-sciences",
+          "locale": "es-ES",
+          "timezoneId": "Europe/Madrid",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - jun 10, 2026",
+                "Yaju Team - jun 10, 2026",
+                "Yaju Team - jun 10, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/agent-hub",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 07, 2026",
+                "Yaju Team - Mar 25, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-observability",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - May 19, 2026",
+                "Yaju Team - Jun 23, 2026",
+                "Yaju Team - Apr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yaju Team - May 19, 2026",
+                "Yaju Team - Jun 23, 2026",
+                "Yaju Team - Apr 01, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - Apr 07, 2026",
+                "Yaju Team - Mar 18, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            },
+            {
+              "state": "page-3",
+              "dates": [
+                "Yaju Team - Sep 02, 2026",
+                "Yaju Team - Apr 08, 2026",
+                "Yaju Team - Mar 18, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/ai-spend-explorer",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - May 20, 2026",
+                "Yaju Team - Mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/cost-control",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Apr 29, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/developers",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Mar 03, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/lp/thank-you",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 20, 2026",
+                "Yaju Team - Jun 15, 2026",
+                "Yaju Team - May 26, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/partners",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jul 14, 2026",
+                "Yaju Team - May 06, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/financial-services",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yael Malamatinas - Jul 27, 2026",
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - May 14, 2026"
+              ]
+            },
+            {
+              "state": "page-1",
+              "dates": [
+                "Yael Malamatinas - Jul 27, 2026",
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - May 14, 2026"
+              ]
+            },
+            {
+              "state": "page-2",
+              "dates": [
+                "Yaju Team - Jun 09, 2026",
+                "Yaju Team - Jun 09, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "/solutions/healthcare-and-life-sciences",
+          "locale": "en-US",
+          "timezoneId": "America/Los_Angeles",
+          "pass": true,
+          "states": [
+            {
+              "state": "initial",
+              "dates": [
+                "Yaju Team - Jun 10, 2026",
+                "Yaju Team - Jun 10, 2026",
+                "Yaju Team - Jun 10, 2026"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

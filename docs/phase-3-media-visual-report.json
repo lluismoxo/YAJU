@@ -1,0 +1,1180 @@
+{
+  "motion": "reduce",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-04T09:25:27.565Z",
+  "results": [
+    {
+      "route": "/agent-hub",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-agent-hub-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-hub-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-hub-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-hub-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-hub-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/reports/state-of-sovereign-ai-adoption-2026",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-reports-state-of-sovereign-ai-adoption-2026-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-reports-state-of-sovereign-ai-adoption-2026-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-reports-state-of-sovereign-ai-adoption-2026-scroll",
+          "pass": false,
+          "changedPixels": 531481,
+          "totalPixels": 1296000,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53367/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=1440",
+                  "width": 1382,
+                  "rect": {
+                    "x": 64.81157684326172,
+                    "y": 489.6937561035156,
+                    "width": 1361.40625,
+                    "height": 748.8125,
+                    "top": 489.6937561035156,
+                    "right": 1426.2178268432617,
+                    "bottom": 1238.5062561035156,
+                    "left": 64.81157684326172
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=1440",
+                  "width": 1382,
+                  "rect": {
+                    "x": 39.296875,
+                    "y": -455.3062744140625,
+                    "width": 1361.40625,
+                    "height": 748.8125,
+                    "top": -455.3062744140625,
+                    "right": 1400.703125,
+                    "bottom": 293.5062255859375,
+                    "left": 39.296875
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53368/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 40,
+                    "y": 14,
+                    "width": 118,
+                    "height": 28,
+                    "top": 14,
+                    "right": 158,
+                    "bottom": 42,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/assets/blog-covers/yaju-blog-cover-01.webp",
+                  "width": 1088,
+                  "rect": {
+                    "x": 1112,
+                    "y": 116.796875,
+                    "width": 288,
+                    "height": 162,
+                    "top": 116.796875,
+                    "right": 1400,
+                    "bottom": 278.796875,
+                    "left": 1112
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/assets/blog-covers/yaju-logo-blanco.png",
+                  "width": 720,
+                  "rect": {
+                    "x": 1195.5234375,
+                    "y": 177.9765625,
+                    "width": 120.953125,
+                    "height": 39.640625,
+                    "top": 177.9765625,
+                    "right": 1316.4765625,
+                    "bottom": 217.6171875,
+                    "left": 1195.5234375
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=1440",
+                  "width": 1382,
+                  "rect": {
+                    "x": 96.8968734741211,
+                    "y": 264.09375,
+                    "width": 1361.40625,
+                    "height": 748.8125,
+                    "top": 264.09375,
+                    "right": 1458.303123474121,
+                    "bottom": 1012.90625,
+                    "left": 96.8968734741211
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=1440",
+                  "width": 1382,
+                  "rect": {
+                    "x": 39.296875,
+                    "y": -680.90625,
+                    "width": 1361.40625,
+                    "height": 748.8125,
+                    "top": -680.90625,
+                    "right": 1400.703125,
+                    "bottom": 67.90625,
+                    "left": 39.296875
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-hub",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-agent-hub-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-hub-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-hub-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-hub-carousel-0-next",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d7cbfe4997f8a029552e4ec9ff70728ae93cb4c6-1104x1104.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/reports/state-of-sovereign-ai-adoption-2026",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-reports-state-of-sovereign-ai-adoption-2026-top",
+          "pass": false,
+          "changedPixels": 641699,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53367/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/nav_icon_dark.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 20.953125,
+                    "y": 132.890625,
+                    "width": 726.09375,
+                    "height": 851.984375,
+                    "top": 132.890625,
+                    "right": 747.046875,
+                    "bottom": 984.875,
+                    "left": 20.953125
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53368/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 68,
+                    "width": 118,
+                    "height": 28,
+                    "top": 68,
+                    "right": 134,
+                    "bottom": 96,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/nav_icon_dark.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 720,
+                    "y": 66,
+                    "width": 32,
+                    "height": 32,
+                    "top": 66,
+                    "right": 752,
+                    "bottom": 98,
+                    "left": 720
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 20.953125,
+                    "y": 123.09375,
+                    "width": 1398.09375,
+                    "height": 748.8125,
+                    "top": 123.09375,
+                    "right": 1419.046875,
+                    "bottom": 871.90625,
+                    "left": 20.953125
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-reports-state-of-sovereign-ai-adoption-2026-scroll",
+          "pass": false,
+          "changedPixels": 475030,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 36.71312713623047,
+                    "y": 632.491943359375,
+                    "width": 726.09375,
+                    "height": 851.984375,
+                    "top": 632.491943359375,
+                    "right": 762.8068771362305,
+                    "bottom": 1484.476318359375,
+                    "left": 36.71312713623047
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 20.953125,
+                    "y": -442.70806884765625,
+                    "width": 726.09375,
+                    "height": 851.984375,
+                    "top": -442.70806884765625,
+                    "right": 747.046875,
+                    "bottom": 409.27630615234375,
+                    "left": 20.953125
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 78.5531234741211,
+                    "y": 268.09375,
+                    "width": 1398.09375,
+                    "height": 748.8125,
+                    "top": 268.09375,
+                    "right": 1476.646873474121,
+                    "bottom": 1016.90625,
+                    "left": 78.5531234741211
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=960",
+                  "width": 737,
+                  "rect": {
+                    "x": 20.953125,
+                    "y": -676.90625,
+                    "width": 1398.09375,
+                    "height": 748.8125,
+                    "top": -676.90625,
+                    "right": 1419.046875,
+                    "bottom": 71.90625,
+                    "left": 20.953125
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/agent-hub",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-agent-hub-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-hub-scroll",
+          "pass": false,
+          "changedPixels": 52792,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53367/assets/img/000000000000b038ce03227b40c70954f744adec-2256x2256.webp?auto=format&fit=max&q=80&w=480",
+                  "width": 974,
+                  "rect": {
+                    "x": 16,
+                    "y": 270.796875,
+                    "width": 358,
+                    "height": 358,
+                    "top": 270.796875,
+                    "right": 374,
+                    "bottom": 628.796875,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53368/assets/img/000000000000b038ce03227b40c70954f744adec-2256x2256.webp?auto=format&fit=max&q=80&w=480",
+                  "width": 974,
+                  "rect": {
+                    "x": 16,
+                    "y": 270.796875,
+                    "width": 358,
+                    "height": 358,
+                    "top": 270.796875,
+                    "right": 374,
+                    "bottom": 628.796875,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-agent-hub-carousel-0-initial",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-hub-carousel-0-next",
+          "pass": false,
+          "changedPixels": 66,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 3302,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/10164c497c9761696869114d7ed1ce33db42ee68-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 16,
+                    "y": 82.0625,
+                    "width": 24,
+                    "height": 48,
+                    "top": 82.0625,
+                    "right": 40,
+                    "bottom": 130.0625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dfe72238ff53a611182fce3ad673474b7c29e7f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 16,
+                    "y": 252.875,
+                    "width": 24,
+                    "height": 48,
+                    "top": 252.875,
+                    "right": 40,
+                    "bottom": 300.875,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/assets/img/0000000000005d51b83347a8c0f6f1c8c6f87756-174x32.png?auto=format&fit=max&q=80&w=120",
+                  "width": 1130,
+                  "rect": {
+                    "x": 41,
+                    "y": 532.6875,
+                    "width": 261,
+                    "height": 48,
+                    "top": 532.6875,
+                    "right": 302,
+                    "bottom": 580.6875,
+                    "left": 41
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/assets/img/0000000000009b169ccbd596deaa8e3a643f1b59-1436x1080.webp?auto=format&fit=max&q=80&w=560",
+                  "width": 835,
+                  "rect": {
+                    "x": 16,
+                    "y": 843.6875,
+                    "width": 358,
+                    "height": 464,
+                    "top": 843.6875,
+                    "right": 374,
+                    "bottom": 1307.6875,
+                    "left": 16
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 3302,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/10164c497c9761696869114d7ed1ce33db42ee68-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 16,
+                    "y": 82.0625,
+                    "width": 24,
+                    "height": 48,
+                    "top": 82.0625,
+                    "right": 40,
+                    "bottom": 130.0625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0dfe72238ff53a611182fce3ad673474b7c29e7f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 16,
+                    "y": 252.875,
+                    "width": 24,
+                    "height": 48,
+                    "top": 252.875,
+                    "right": 40,
+                    "bottom": 300.875,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/assets/img/0000000000005d51b83347a8c0f6f1c8c6f87756-174x32.png?auto=format&fit=max&q=80&w=120",
+                  "width": 1130,
+                  "rect": {
+                    "x": 41,
+                    "y": 532.6875,
+                    "width": 261,
+                    "height": 48,
+                    "top": 532.6875,
+                    "right": 302,
+                    "bottom": 580.6875,
+                    "left": 41
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/assets/img/0000000000009b169ccbd596deaa8e3a643f1b59-1436x1080.webp?auto=format&fit=max&q=80&w=560",
+                  "width": 835,
+                  "rect": {
+                    "x": 16,
+                    "y": 843.6875,
+                    "width": 358,
+                    "height": 464,
+                    "top": 843.6875,
+                    "right": 374,
+                    "bottom": 1307.6875,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/9ec256a80d5d91336b7fa8097ab340e3b6d5d503-2160x900.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/reports/state-of-sovereign-ai-adoption-2026",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-top",
+          "pass": false,
+          "changedPixels": 19424,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53367/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 117.40625,
+                    "width": 118,
+                    "height": 28,
+                    "top": 117.40625,
+                    "right": 134,
+                    "bottom": 145.40625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53367/nav_icon_dark.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 342,
+                    "y": 115.40625,
+                    "width": 32,
+                    "height": 32,
+                    "top": 115.40625,
+                    "right": 374,
+                    "bottom": 147.40625,
+                    "left": 342
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 170.8125,
+                    "width": 343.21875,
+                    "height": 522.59375,
+                    "top": 170.8125,
+                    "right": 366.609375,
+                    "bottom": 693.40625,
+                    "left": 23.390625
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 810.40625,
+                    "width": 343.21875,
+                    "height": 468,
+                    "top": 810.40625,
+                    "right": 366.609375,
+                    "bottom": 1278.40625,
+                    "left": 23.390625
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 0,
+              "images": [
+                {
+                  "src": "http://127.0.0.1:53368/logo_dark.svg",
+                  "width": 118,
+                  "rect": {
+                    "x": 16,
+                    "y": 117.40625,
+                    "width": 118,
+                    "height": 28,
+                    "top": 117.40625,
+                    "right": 134,
+                    "bottom": 145.40625,
+                    "left": 16
+                  }
+                },
+                {
+                  "src": "http://127.0.0.1:53368/nav_icon_dark.svg",
+                  "width": 33,
+                  "rect": {
+                    "x": 342,
+                    "y": 115.40625,
+                    "width": 32,
+                    "height": 32,
+                    "top": 115.40625,
+                    "right": 374,
+                    "bottom": 147.40625,
+                    "left": 342
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/5a3ec85ae1b3ed0e443bcc5a348ca7a6486d8c52-2774x1716.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 170.8125,
+                    "width": 343.21875,
+                    "height": 522.59375,
+                    "top": 170.8125,
+                    "right": 366.609375,
+                    "bottom": 693.40625,
+                    "left": 23.390625
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 810.40625,
+                    "width": 343.21875,
+                    "height": 468,
+                    "top": 810.40625,
+                    "right": 366.609375,
+                    "bottom": 1278.40625,
+                    "left": 23.390625
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-reports-state-of-sovereign-ai-adoption-2026-scroll",
+          "pass": false,
+          "changedPixels": 68344,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 10.40625,
+                    "width": 343.21875,
+                    "height": 468,
+                    "top": 10.40625,
+                    "right": 366.609375,
+                    "bottom": 478.40625,
+                    "left": 23.390625
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/7401716c37099fa84354bc927309e1e3b2134133-471x435.jpg?auto=format&fit=max&q=80&w=236",
+                  "width": 175,
+                  "rect": {
+                    "x": -46.796875,
+                    "y": 586.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 586.796875,
+                    "right": 117,
+                    "bottom": 650.796875,
+                    "left": -46.796875
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/4b234bd0bbc74874fb10ca4a7a6bf47f7edb1af6-780x435.jpg?auto=format&fit=max&q=80&w=195",
+                  "width": 175,
+                  "rect": {
+                    "x": 280.796875,
+                    "y": 522.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 522.796875,
+                    "right": 444.59375,
+                    "bottom": 586.796875,
+                    "left": 280.796875
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2c81c7753f89851725beadc8cad1d2f96e3cba8c-801x435.jpg?auto=format&fit=max&q=80&w=200",
+                  "width": 175,
+                  "rect": {
+                    "x": 280.796875,
+                    "y": 842.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 842.796875,
+                    "right": 444.59375,
+                    "bottom": 906.796875,
+                    "left": 280.796875
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 800,
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/eb443ddeb1b37ae9dec845c07a59b50ae6125bc9-2718x1680.jpg?auto=format&fit=max&q=80&w=450",
+                  "width": 390,
+                  "rect": {
+                    "x": 23.390625,
+                    "y": 10.40625,
+                    "width": 343.21875,
+                    "height": 468,
+                    "top": 10.40625,
+                    "right": 366.609375,
+                    "bottom": 478.40625,
+                    "left": 23.390625
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/7401716c37099fa84354bc927309e1e3b2134133-471x435.jpg?auto=format&fit=max&q=80&w=236",
+                  "width": 175,
+                  "rect": {
+                    "x": -46.796875,
+                    "y": 586.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 586.796875,
+                    "right": 117,
+                    "bottom": 650.796875,
+                    "left": -46.796875
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/4b234bd0bbc74874fb10ca4a7a6bf47f7edb1af6-780x435.jpg?auto=format&fit=max&q=80&w=195",
+                  "width": 175,
+                  "rect": {
+                    "x": 280.796875,
+                    "y": 522.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 522.796875,
+                    "right": 444.59375,
+                    "bottom": 586.796875,
+                    "left": 280.796875
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/2c81c7753f89851725beadc8cad1d2f96e3cba8c-801x435.jpg?auto=format&fit=max&q=80&w=200",
+                  "width": 175,
+                  "rect": {
+                    "x": 280.796875,
+                    "y": 842.796875,
+                    "width": 163.796875,
+                    "height": 64,
+                    "top": 842.796875,
+                    "right": 444.59375,
+                    "bottom": 906.796875,
+                    "left": 280.796875
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/be70148c3134a04e5c6fbcdc4e2a0da8a10345b4-2880x1820.jpg?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    }
+  ]
+}

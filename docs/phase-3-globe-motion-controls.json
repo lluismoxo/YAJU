@@ -1,0 +1,119 @@
+{
+  "mode": "normal rotation",
+  "results": [
+    {
+      "port": 4185,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 15852
+      },
+      "errors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ]
+    },
+    {
+      "port": 4184,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 15831
+      },
+      "errors": []
+    },
+    {
+      "port": 4185,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 8396
+      },
+      "errors": [
+        "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ]
+    },
+    {
+      "port": 4184,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 8278
+      },
+      "errors": []
+    }
+  ],
+  "checks": {
+    "visible": true,
+    "resize": true,
+    "dispose": true,
+    "historyRestore": true
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "origin": "http://127.0.0.1:4184",
+  "results": [
+    {
+      "route": "/",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/blog/what-your-corpus-leaves-out",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/labs/futures-of-work",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/software-factory-demo",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "width": 1440,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/blog/what-your-corpus-leaves-out",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/labs/futures-of-work",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/software-factory-demo",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "width": 768,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/blog/what-your-corpus-leaves-out",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/agent-academy",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/labs/futures-of-work",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/software-factory-demo",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    },
+    {
+      "route": "/labs/scholars",
+      "width": 390,
+      "pass": true,
+      "checks": [
+        "Product: keyboard open, navigate and close",
+        "Solutions: keyboard open, navigate and close",
+        "Resources: keyboard open, navigate and close",
+        "Blog: keyboard open, navigate and close",
+        "Company: keyboard open, navigate and close",
+        "resize to desktop closes drawer and unlocks scroll"
+      ]
+    }
+  ]
+}

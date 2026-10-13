@@ -10,11 +10,21 @@
     "build": "node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
     "check:parity": "node scripts/check-parity.mjs",
-    "verify": "npm run build && npm test && npm run check:parity",
+    "verify": "npm run build && npm test && npm run check:native",
+    "check:native": "node scripts/check-native-build.mjs public && node scripts/check-native-assets.mjs",
+    "verify:legacy": "node scripts/build.mjs --legacy-reference && npm run check:parity",
     "check:visual": "node scripts/visual-parity.mjs",
     "reference:freeze": "node scripts/freeze-reference.mjs",
     "build:pilot": "node scripts/build.mjs --native-legal",
     "check:pilot": "node scripts/check-native-pilot.mjs",
     "check:interactions": "node scripts/check-pilot-interactions.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9",
+    "globe.gl": "2.44.0",
+    "gsap": "3.13.0",
+    "three": "0.179.1",
+    "three-globe": "2.44.0",
+    "three-render-objects": "1.40.0"
   }
 }

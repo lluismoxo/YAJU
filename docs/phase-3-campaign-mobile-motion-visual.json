@@ -1,0 +1,629 @@
+{
+  "motion": "no-preference",
+  "rendering": "software",
+  "browser": "155.0.8059.39",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-09T16:21:01.129Z",
+  "results": [
+    {
+      "route": "/ai-spend",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-ai-spend-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-1700",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-2800",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-4000",
+          "pass": false,
+          "changedPixels": 76,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 4000,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 388,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 420,
+                    "bottom": 310.1875,
+                    "left": 388
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 444,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 476,
+                    "bottom": 310.1875,
+                    "left": 444
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d36972fd770aaf2bce128c81a1caefc40ac95d76-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": -678.03125,
+                    "width": 768,
+                    "height": 768,
+                    "top": -678.03125,
+                    "right": 768,
+                    "bottom": 89.96875,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 732.15625,
+                    "width": 768,
+                    "height": 716.796875,
+                    "top": 732.15625,
+                    "right": 768,
+                    "bottom": 1448.953125,
+                    "left": 0
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 4000,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 388,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 420,
+                    "bottom": 310.1875,
+                    "left": 388
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 444,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 476,
+                    "bottom": 310.1875,
+                    "left": 444
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d36972fd770aaf2bce128c81a1caefc40ac95d76-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": -678.03125,
+                    "width": 768,
+                    "height": 768,
+                    "top": -678.03125,
+                    "right": 768,
+                    "bottom": 89.96875,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 732.15625,
+                    "width": 768,
+                    "height": 716.796875,
+                    "top": 732.15625,
+                    "right": 768,
+                    "bottom": 1448.953125,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "tablet-ai-spend-scroll-5100",
+          "pass": false,
+          "changedPixels": 36,
+          "totalPixels": 786432,
+          "diagnostics": [
+            {
+              "scrollY": 5100,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 388,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 420,
+                    "bottom": 310.1875,
+                    "left": 388
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 444,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 476,
+                    "bottom": 310.1875,
+                    "left": 444
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": -367.84375,
+                    "width": 768,
+                    "height": 716.796875,
+                    "top": -367.84375,
+                    "right": 768,
+                    "bottom": 348.953125,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/873099d41649a3aaa2a80fce9172b6bc6d75d33f-3360x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 938.109375,
+                    "width": 768,
+                    "height": 703.15625,
+                    "top": 938.109375,
+                    "right": 768,
+                    "bottom": 1641.265625,
+                    "left": 0
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 5100,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 388,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 420,
+                    "bottom": 310.1875,
+                    "left": 388
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 444,
+                    "y": 278.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 278.1875,
+                    "right": 476,
+                    "bottom": 310.1875,
+                    "left": 444
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": -367.84375,
+                    "width": 768,
+                    "height": 716.796875,
+                    "top": -367.84375,
+                    "right": 768,
+                    "bottom": 348.953125,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/873099d41649a3aaa2a80fce9172b6bc6d75d33f-3360x2160.png?auto=format&fit=max&q=80&w=960",
+                  "width": 768,
+                  "rect": {
+                    "x": 0,
+                    "y": 938.109375,
+                    "width": 768,
+                    "height": 703.15625,
+                    "top": 938.109375,
+                    "right": 768,
+                    "bottom": 1641.265625,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/ai-spend",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-ai-spend-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-1700",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-2800",
+          "pass": false,
+          "changedPixels": 76,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 2800,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 40,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 72,
+                    "bottom": 285.1875,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 96,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 128,
+                    "bottom": 285.1875,
+                    "left": 96
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d36972fd770aaf2bce128c81a1caefc40ac95d76-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": -230.21875,
+                    "width": 390,
+                    "height": 390,
+                    "top": -230.21875,
+                    "right": 390,
+                    "bottom": 159.78125,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": 639.765625,
+                    "width": 390,
+                    "height": 590.796875,
+                    "top": 639.765625,
+                    "right": 390,
+                    "bottom": 1230.5625,
+                    "left": 0
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 2800,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 40,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 72,
+                    "bottom": 285.1875,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 96,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 128,
+                    "bottom": 285.1875,
+                    "left": 96
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d36972fd770aaf2bce128c81a1caefc40ac95d76-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": -230.21875,
+                    "width": 390,
+                    "height": 390,
+                    "top": -230.21875,
+                    "right": 390,
+                    "bottom": 159.78125,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": 639.765625,
+                    "width": 390,
+                    "height": 590.796875,
+                    "top": 639.765625,
+                    "right": 390,
+                    "bottom": 1230.5625,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-ai-spend-scroll-4000",
+          "pass": false,
+          "changedPixels": 36,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 4000,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 40,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 72,
+                    "bottom": 285.1875,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 96,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 128,
+                    "bottom": 285.1875,
+                    "left": 96
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": -560.234375,
+                    "width": 390,
+                    "height": 590.796875,
+                    "top": -560.234375,
+                    "right": 390,
+                    "bottom": 30.5625,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/873099d41649a3aaa2a80fce9172b6bc6d75d33f-3360x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": 517.15625,
+                    "width": 390,
+                    "height": 434.46875,
+                    "top": 517.15625,
+                    "right": 390,
+                    "bottom": 951.625,
+                    "left": 0
+                  }
+                }
+              ]
+            },
+            {
+              "scrollY": 4000,
+              "heroMotion": [],
+              "hero": [],
+              "images": [
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/628ea2b2645074c7a44eadd1adb231be3d9a190f-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 40,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 72,
+                    "bottom": 285.1875,
+                    "left": 40
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/708af388b22c38c0837eb9382c6d2401afb79ae8-24x24.svg",
+                  "width": 24,
+                  "rect": {
+                    "x": 96,
+                    "y": 253.1875,
+                    "width": 32,
+                    "height": 32,
+                    "top": 253.1875,
+                    "right": 128,
+                    "bottom": 285.1875,
+                    "left": 96
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/28933ea3fd936ee6cd5e15db0ab4c4429656a10c-2000x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": -560.234375,
+                    "width": 390,
+                    "height": 590.796875,
+                    "top": -560.234375,
+                    "right": 390,
+                    "bottom": 30.5625,
+                    "left": 0
+                  }
+                },
+                {
+                  "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/873099d41649a3aaa2a80fce9172b6bc6d75d33f-3360x2160.png?auto=format&fit=max&q=80&w=480",
+                  "width": 389,
+                  "rect": {
+                    "x": 0,
+                    "y": 517.15625,
+                    "width": 390,
+                    "height": 434.46875,
+                    "top": 517.15625,
+                    "right": 390,
+                    "bottom": 951.625,
+                    "left": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "mobile-ai-spend-scroll-5100",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}

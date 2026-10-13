@@ -1,0 +1,575 @@
+{
+  "motion": "reduce",
+  "rendering": "software",
+  "browser": "154.0.8037.93",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-05T16:01:34.471Z",
+  "results": [
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-agent-orchestration-system-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "desktop",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "desktop-solutions-engineering-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-product-menu",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        },
+        {
+          "key": "desktop-solutions-engineering-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 1296000
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-agent-orchestration-system-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png?auto=format&fit=max&q=80&w=192"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=768",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=192"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-solutions-engineering-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-solutions-engineering-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/agent-orchestration-system",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-agent-orchestration-system-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-2",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-agent-orchestration-system-accordion-3",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          }
+        ],
+        [
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/b4e7ba3f91ff34abcfb9ae61e610e810e1bc89b5-2880x1680.jpg?auto=format&fit=max&q=80&w=256"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1920",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=480"
+          },
+          {
+            "src": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=1024",
+            "currentSrc": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/85cb7a821297ea12cc97c7c5d99743c160907a82-5760x2401.png?auto=format&fit=max&q=80&w=256"
+          }
+        ]
+      ]
+    },
+    {
+      "route": "/solutions/engineering",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-solutions-engineering-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-0",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-1",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-solutions-engineering-accordion-2",
+          "pass": false,
+          "changedPixels": 6,
+          "totalPixels": 329160,
+          "diagnostics": [
+            {
+              "scrollY": 2578,
+              "heroMotion": [],
+              "hero": [],
+              "images": []
+            },
+            {
+              "scrollY": 2578,
+              "heroMotion": [],
+              "hero": [],
+              "images": []
+            }
+          ]
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "TypeError",
+          "message": "Cannot read properties of null (reading 'parentNode')"
+        },
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}

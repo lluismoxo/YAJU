@@ -1,0 +1,2012 @@
+[
+  {
+    "route": "/about",
+    "port": 4185,
+    "width": 390,
+    "base": 1339,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1339.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              1368.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1638.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              1667.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1915.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              1944.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2169.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              2198.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1039,
+        "cards": [
+          {
+            "rect": [
+              16,
+              300.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              329.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              599.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              628.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              876.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              905.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1130.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              1159.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1339,
+        "cards": [
+          {
+            "rect": [
+              16,
+              0.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              29.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              299.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              328.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              576.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              605.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              830.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              859.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1639,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -299.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -270.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -0.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              28.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              276.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              305.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              530.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              559.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1939,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -599.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -570.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -300.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -271.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -23.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              5.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              230.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              259.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2339,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -999.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -970.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -700.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -671.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -423.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              -394.6875,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -169.265625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -140.265625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2939,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1599.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -1570.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1300.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -1271.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1023.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              -994.6875,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -769.265625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -740.265625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/about",
+    "port": 4184,
+    "width": 390,
+    "base": 1339,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              1339.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              1368.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1638.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              1667.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1915.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              1944.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              2169.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              2198.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1039,
+        "cards": [
+          {
+            "rect": [
+              16,
+              300.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              329.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              599.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              628.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              876.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              905.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1130.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              1159.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1339,
+        "cards": [
+          {
+            "rect": [
+              16,
+              0.25,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              29.25,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              299.484375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              328.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              576.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              605.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              830.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              859.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1639,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -299.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -270.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -0.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              28.484375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              276.3125,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              305.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              530.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              559.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1939,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -599.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -570.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -300.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -271.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -23.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              5.3125,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              230.734375,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              259.734375,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2339,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -999.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -970.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -700.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -671.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -423.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              -394.6875,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -169.265625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -140.265625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2939,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1599.75,
+              358,
+              311.234375
+            ],
+            "textRect": [
+              41,
+              -1570.75,
+              308,
+              245.234375
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1300.515625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -1271.515625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -1023.6875,
+              358,
+              266.421875
+            ],
+            "textRect": [
+              41,
+              -994.6875,
+              308,
+              200.421875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -769.265625,
+              358,
+              288.828125
+            ],
+            "textRect": [
+              41,
+              -740.265625,
+              308,
+              222.828125
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      },
+      {
+        "buttons": [],
+        "images": []
+      }
+    ]
+  },
+  {
+    "route": "/labs/agentic-task-ecosystem",
+    "port": 4185,
+    "width": 390,
+    "base": 723,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              723.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              752.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1346.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              1375.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1947.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1976.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 423,
+        "cards": [
+          {
+            "rect": [
+              16,
+              300.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              329.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              923.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              952.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1524.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1553.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 723,
+        "cards": [
+          {
+            "rect": [
+              16,
+              0.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              29.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              623.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              652.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1224.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1253.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1023,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -299.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -270.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              323.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              352.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              924.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              953.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1323,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -599.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -570.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              23.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              52.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              624.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              653.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1723,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -999.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -970.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -376.328125,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              -347.328125,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              224.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              253.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2323,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1599.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -1570.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -976.328125,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              -947.328125,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -375.078125,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              -346.078125,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none\" href=\"/labs\"><span class=\"text-web3-14 font-body\">See what's being built</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/pause.svg",
+            "width": 48,
+            "height": 48,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/yaju-agentic-ecosystem-tools-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": -1239.765625,
+              "width": 307.96875,
+              "height": 238.4375,
+              "top": -1239.765625,
+              "right": 348.96875,
+              "bottom": -1001.328125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none\" href=\"/labs\"><span class=\"text-web3-14 font-body\">Understand task automation</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/pause.svg",
+            "width": 48,
+            "height": 48,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/yaju-agentic-task-change-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": -638.515625,
+              "width": 307.96875,
+              "height": 238.4375,
+              "top": -638.515625,
+              "right": 348.96875,
+              "bottom": -400.078125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full h-9 px-4 border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none\" href=\"/labs\"><span class=\"text-web3-14 font-body\">Explore ATE</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4185/assets/img/yaju-agentic-insights-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4185/assets/img/yaju-agentic-insights-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": 7.546875,
+              "width": 308,
+              "height": 238.4375,
+              "top": 7.546875,
+              "right": 349,
+              "bottom": 245.984375,
+              "left": 41
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/labs/agentic-task-ecosystem",
+    "port": 4184,
+    "width": 390,
+    "base": 723,
+    "states": [
+      {
+        "y": 0,
+        "cards": [
+          {
+            "rect": [
+              16,
+              723.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              752.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1346.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              1375.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1947.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1976.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 423,
+        "cards": [
+          {
+            "rect": [
+              16,
+              300.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              329.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              923.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              952.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1524.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1553.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 723,
+        "cards": [
+          {
+            "rect": [
+              16,
+              0.015625,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              29.015625,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              623.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              652.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              1224.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              1253.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1023,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -299.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -270.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              323.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              352.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              924.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              953.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1323,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -599.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -570.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              23.671875,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              52.671875,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              624.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              653.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 1723,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -999.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -970.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -376.328125,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              -347.328125,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              224.921875,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              253.921875,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      },
+      {
+        "y": 2323,
+        "cards": [
+          {
+            "rect": [
+              16,
+              -1599.984375,
+              358,
+              635.65625
+            ],
+            "textRect": [
+              41,
+              -1570.984375,
+              308,
+              239.21875
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -976.328125,
+              358,
+              613.25
+            ],
+            "textRect": [
+              41,
+              -947.328125,
+              308,
+              216.8125
+            ],
+            "transform": "none",
+            "position": "static"
+          },
+          {
+            "rect": [
+              16,
+              -375.078125,
+              358,
+              658.0625
+            ],
+            "textRect": [
+              41,
+              -346.078125,
+              308,
+              261.625
+            ],
+            "transform": "none",
+            "position": "static"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "media": [
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none h-9 px-4\" href=\"/labs\"><span class=\"text-web3-14 font-body\">See what's being built</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/pause.svg",
+            "width": 48,
+            "height": 48,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/yaju-agentic-ecosystem-tools-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": -1239.765625,
+              "width": 307.96875,
+              "height": 238.4375,
+              "top": -1239.765625,
+              "right": 348.96875,
+              "bottom": -1001.328125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-pureWhite text-neutral-15 web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:shadow-[0_0_0_2px_transparent,0_0_0_4px_#4C6EE6,0_0_0_6px_#FFF] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none h-9 px-4\" href=\"/labs\"><span class=\"text-web3-14 font-body\">Understand task automation</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/pause.svg",
+            "width": 48,
+            "height": 48,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/yaju-agentic-task-change-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": -638.515625,
+              "width": 307.96875,
+              "height": 238.4375,
+              "top": -638.515625,
+              "right": 348.96875,
+              "bottom": -400.078125,
+              "left": 41
+            }
+          }
+        ]
+      },
+      {
+        "buttons": [
+          "<a target=\"_blank\" tabindex=\"0\" aria-disabled=\"false\" class=\"relative flex w-fit items-center justify-center transition-all duration-300 ease-button-gradient cursor-pointer bg-neutral-15 text-pureWhite web3-primary-solid-btn rounded-full border-2 border-transparent focus-visible:border-white focus-visible:shadow-[0_0_0_2px_#4C6EE6] focus-visible:outline-none [&amp;&gt;*]:text-web3-14 gap-2 outline-none h-9 px-4\" href=\"/labs\"><span class=\"text-web3-14 font-body\">Explore ATE</span><span class=\"flex shrink-0 items-center\"><i class=\"icon-default icon-arrow-up-right text-icon-sm\"></i></span></a>"
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4184/assets/img/yaju-agentic-insights-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "src": "http://127.0.0.1:4184/assets/img/yaju-agentic-insights-1240x960.webp",
+            "width": 1240,
+            "height": 960,
+            "rect": {
+              "x": 41,
+              "y": 7.546875,
+              "width": 308,
+              "height": 238.4375,
+              "top": 7.546875,
+              "right": 349,
+              "bottom": 245.984375,
+              "left": 41
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

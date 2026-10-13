@@ -1,0 +1,18 @@
+[
+  {
+    "width": 1440,
+    "headline": "passed",
+    "deferredImages": "passed",
+    "preferenceChange": "passed",
+    "responsiveSwitch": "passed",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "headline": "passed",
+    "deferredImages": "passed",
+    "preferenceChange": "passed",
+    "responsiveSwitch": "passed",
+    "errors": []
+  }
+]

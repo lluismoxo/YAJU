@@ -1,0 +1,542 @@
+{
+  "origins": [
+    "http://127.0.0.1:4185",
+    "http://127.0.0.1:4184"
+  ],
+  "results": [
+    {
+      "route": "/agent-hub",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 07, 2026",
+            "Yaju Team - Mar 26, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-observability",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - Jun 23, 2026",
+            "Yaju Team - Apr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - Jun 23, 2026",
+            "Yaju Team - Apr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - Apr 07, 2026",
+            "Yaju Team - Mar 18, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        },
+        {
+          "state": "page-3",
+          "dates": [
+            "Yaju Team - Sep 02, 2026",
+            "Yaju Team - Apr 08, 2026",
+            "Yaju Team - Mar 18, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-spend-explorer",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - Mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/cost-control",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Apr 29, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/developers",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/lp/thank-you",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 20, 2026",
+            "Yaju Team - Jun 15, 2026",
+            "Yaju Team - May 26, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/partners",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 14, 2026",
+            "Yaju Team - May 06, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/financial-services",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yael Malamatinas - Jul 27, 2026",
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - May 14, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yael Malamatinas - Jul 27, 2026",
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - May 14, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - Jun 09, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/healthcare-and-life-sciences",
+      "locale": "en-US",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jun 10, 2026",
+            "Yaju Team - Jun 10, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/agent-hub",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - jul 07, 2026",
+            "Yaju Team - mar 26, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-observability",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - may 20, 2026",
+            "Yaju Team - jun 23, 2026",
+            "Yaju Team - abr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yaju Team - may 20, 2026",
+            "Yaju Team - jun 23, 2026",
+            "Yaju Team - abr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - abr 07, 2026",
+            "Yaju Team - mar 18, 2026",
+            "Yaju Team - jun 10, 2026"
+          ]
+        },
+        {
+          "state": "page-3",
+          "dates": [
+            "Yaju Team - sept 02, 2026",
+            "Yaju Team - abr 08, 2026",
+            "Yaju Team - mar 18, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-spend-explorer",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - may 20, 2026",
+            "Yaju Team - may 20, 2026",
+            "Yaju Team - mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/cost-control",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - abr 29, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/developers",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/lp/thank-you",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - jul 20, 2026",
+            "Yaju Team - jun 15, 2026",
+            "Yaju Team - may 26, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/partners",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - jul 14, 2026",
+            "Yaju Team - may 06, 2026",
+            "Yaju Team - jun 10, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/financial-services",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yael Malamatinas - jul 27, 2026",
+            "Yaju Team - jun 09, 2026",
+            "Yaju Team - may 14, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yael Malamatinas - jul 27, 2026",
+            "Yaju Team - jun 09, 2026",
+            "Yaju Team - may 14, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - jun 09, 2026",
+            "Yaju Team - jun 09, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/healthcare-and-life-sciences",
+      "locale": "es-ES",
+      "timezoneId": "Europe/Madrid",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - jun 10, 2026",
+            "Yaju Team - jun 10, 2026",
+            "Yaju Team - jun 10, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/agent-hub",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 07, 2026",
+            "Yaju Team - Mar 25, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-observability",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - May 19, 2026",
+            "Yaju Team - Jun 23, 2026",
+            "Yaju Team - Apr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yaju Team - May 19, 2026",
+            "Yaju Team - Jun 23, 2026",
+            "Yaju Team - Apr 01, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - Apr 07, 2026",
+            "Yaju Team - Mar 18, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        },
+        {
+          "state": "page-3",
+          "dates": [
+            "Yaju Team - Sep 02, 2026",
+            "Yaju Team - Apr 08, 2026",
+            "Yaju Team - Mar 18, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/ai-spend-explorer",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - May 20, 2026",
+            "Yaju Team - Mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/cost-control",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Apr 29, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/developers",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Mar 03, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/lp/thank-you",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 20, 2026",
+            "Yaju Team - Jun 15, 2026",
+            "Yaju Team - May 26, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/partners",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jul 14, 2026",
+            "Yaju Team - May 06, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/financial-services",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yael Malamatinas - Jul 27, 2026",
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - May 14, 2026"
+          ]
+        },
+        {
+          "state": "page-1",
+          "dates": [
+            "Yael Malamatinas - Jul 27, 2026",
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - May 14, 2026"
+          ]
+        },
+        {
+          "state": "page-2",
+          "dates": [
+            "Yaju Team - Jun 09, 2026",
+            "Yaju Team - Jun 09, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/solutions/healthcare-and-life-sciences",
+      "locale": "en-US",
+      "timezoneId": "America/Los_Angeles",
+      "pass": true,
+      "states": [
+        {
+          "state": "initial",
+          "dates": [
+            "Yaju Team - Jun 10, 2026",
+            "Yaju Team - Jun 10, 2026",
+            "Yaju Team - Jun 10, 2026"
+          ]
+        }
+      ]
+    }
+  ]
+}

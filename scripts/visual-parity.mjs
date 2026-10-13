@@ -19,14 +19,14 @@ for (const [name, hash] of Object.entries(fixture.files)) {
   const bytes = await readFile(resolve(baselineDirectory, name));
   assert.equal(createHash('sha256').update(bytes).digest('hex'), hash, `Modified reference: ${name}`);
 }
-const artifacts = resolve(root, 'artifacts/visual-parity');
+const artifacts = resolve(root, process.env.YAJU_VISUAL_OUTPUT || 'artifacts/visual-parity');
 await mkdir(artifacts, { recursive: true });
 const routes = process.argv[4]?.split(',') || ['/', '/labs/scholars', '/agent-academy'];
 const viewports = [
   { name: 'desktop', width: 1440, height: 900 },
   { name: 'tablet', width: 768, height: 1024 },
   { name: 'mobile', width: 390, height: 844 },
-];
+].filter(viewport=>!process.env.YAJU_TEST_VIEWPORTS||process.env.YAJU_TEST_VIEWPORTS.split(',').includes(viewport.name));
 const mime = { '.html':'text/html', '.js':'text/javascript', '.css':'text/css', '.json':'application/json',
   '.svg':'image/svg+xml', '.png':'image/png', '.jpg':'image/jpeg', '.webp':'image/webp',
   '.woff2':'font/woff2', '.woff':'font/woff', '.mp4':'video/mp4' };
@@ -48,10 +48,12 @@ async function serve(directory) {
 }
 const reference = await serve(baselineDirectory);
 const candidate = await serve(process.argv[3] || resolve(root, 'public'));
-const browser = await chromium.launch({ headless: true, channel: 'chrome' }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
+const softwareRendering = process.env.YAJU_TEST_SOFTWARE_RENDERING === '1';
+const browser = await chromium.launch({ headless: true, channel: 'chrome', ...(softwareRendering ? {args:['--disable-gpu']} : {}) }).catch(error => { reference.server.close(); candidate.server.close(); throw error; });
 const externalMedia = new Map();
 const motion = process.env.YAJU_TEST_MOTION === 'normal' ? 'no-preference' : 'reduce';
-const report = { motion, browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
+const locale=process.env.YAJU_TEST_LOCALE || 'en-US';
+const report = { locale, motion, rendering:softwareRendering?'software':'default', browser: browser.version(), baseline: 'a1c700f', generatedAt: new Date().toISOString(), results: [] };
 
 async function prepare(page, origin, route) {
   const errors = [];
@@ -79,7 +81,8 @@ async function prepare(page, origin, route) {
   await page.waitForTimeout(3000);
   if (motion === 'reduce') await page.addStyleTag({ content: '*,:before,:after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}' });
   await page.evaluate(() => { document.querySelectorAll('video').forEach(video => { video.pause(); video.currentTime = 0; }); });
-  assert.ok((await page.locator('main').innerText()).trim().length > 100, `Blank main: ${route}`);
+  const content=route==='/register' ? page.locator('body') : page.locator('main');
+  assert.ok((await content.innerText()).trim().length > 100, `Blank main: ${route}`);
   return errors;
 }
 async function compare(left, right, key) {
@@ -95,11 +98,18 @@ try {
   for (const viewport of viewports) {
     for (const route of routes) {
       const key = `${viewport.name}-${route === '/' ? 'home' : route.slice(1).replaceAll('/', '-')}`;
-      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale:'en-US', timezoneId:'Europe/Madrid', reducedMotion:motion })));
+      const contexts = await Promise.all([reference, candidate].map(() => browser.newContext({ viewport:{width:viewport.width,height:viewport.height}, deviceScaleFactor:1, locale, timezoneId:'Europe/Madrid', reducedMotion:motion })));
       const pages = await Promise.all(contexts.map(context => context.newPage()));
       const errors = await Promise.all(pages.map((page,index) => prepare(page, [reference,candidate][index].origin, route)));
       const states = [];
-      async function capture(state) {
+      async function capture(state, selector) {
+        let clip;
+        if(selector){
+          const bounds=await Promise.all(pages.map(page=>page.locator(selector).boundingBox()));
+          assert.ok(bounds[0],`Missing comparison region: ${selector}`);
+          assert.deepEqual(bounds[1],bounds[0],`Region geometry: ${key}-${state}`);
+          clip=bounds[0];
+        }
         await Promise.all(pages.map(page => page.evaluate(async () => {
           await Promise.all([...document.images].filter(image => { const r=image.getBoundingClientRect(); return r.bottom>0 && r.top<innerHeight; }).map(image => image.decode().catch(() => {})));
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
@@ -107,10 +117,10 @@ try {
         const shots = await Promise.all(pages.map(async (page,index) => {
           // Image rasterisation can finish after decode. Require two stable paints,
           // independently on each page, before comparing the two implementations.
-          let previous = await page.screenshot({animations:'disabled'});
+          let previous = await page.screenshot({animations:'disabled',...(clip?{clip}:{})});
           for (let attempt=0;attempt<5;attempt++) {
             await page.waitForTimeout(200);
-            const next = await page.screenshot({animations:'disabled'});
+            const next = await page.screenshot({animations:'disabled',...(clip?{clip}:{})});
             if (next.equals(previous)) {
               await writeFile(resolve(artifacts, `${key}-${state}-${index ? 'candidate' : 'reference'}.png`),next);
               return next;
@@ -121,21 +131,131 @@ try {
         }));
         const comparison = await compare(shots[0],shots[1],`${key}-${state}`);
         if (!comparison.pass) comparison.diagnostics = await Promise.all(pages.map(page => page.evaluate(() => ({
-          scrollY, images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
+          scrollY, heroMotion: [...document.querySelectorAll('[data-component="idc-report-hero"] [data-idc-grid], [data-component="idc-report-hero"] [data-idc-plane], [data-component="idc-report-hero"] [data-slide1-image], [data-component="idc-report-hero"] [data-slide2-image]')].map(el=>({attributes:[...el.attributes].filter(a=>a.name.startsWith('data-')).map(a=>a.name),transform:el.style.transform,rect:el.getBoundingClientRect().toJSON()})), hero: [...document.querySelectorAll('[data-slide1-copy], [data-slide2-copy]')].map(el=>({rect:el.getBoundingClientRect().toJSON(),styles:[el,...el.querySelectorAll('*')].map(node=>({tag:node.tagName,text:node.childElementCount?'':node.textContent,rect:node.getBoundingClientRect().toJSON(),font:getComputedStyle(node).font,cls:node.className,width:getComputedStyle(node).width,maxWidth:getComputedStyle(node).maxWidth,transform:getComputedStyle(node).transform}))})), images: [...document.images].filter(image => {const r=image.getBoundingClientRect(); return r.width && r.bottom>0 && r.top<innerHeight;}).map(image => ({src:image.currentSrc, width:image.naturalWidth, rect:image.getBoundingClientRect().toJSON()}))
         }))));
+        if(selector)comparison.region={selector,...clip};
         states.push(comparison);
       }
       await capture('top');
-      if (viewport.name === 'desktop') {
+      if(process.env.YAJU_TEST_SEARCH==='1'){
+        await Promise.all(pages.map(page=>page.getByRole('button',{name:'Open blog search'}).first().click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(500)));
+        await capture('search-open');
+        await capture('search-dialog-open','[role="dialog"] > div > div');
+        await Promise.all(pages.map(page=>page.getByRole('searchbox',{name:'Search articles'}).fill('Yaju agents')));
+        await capture('search-query');
+        await capture('search-dialog-query','[role="dialog"] > div > div');
+        await Promise.all(pages.map(page=>page.keyboard.press('Escape')));
+        await Promise.all(pages.map(page=>page.waitForTimeout(400)));
+        await capture('search-closed');
+        await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
+      }
+      if(process.env.YAJU_TEST_CAMPAIGN_MENU==='1'){
+        const selector='button[data-campaign-chrome-mark]';
+        await Promise.all(pages.map(page=>page.locator(selector).click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(1200)));
+        await capture('campaign-menu');
+        await Promise.all(pages.map(page=>page.getByRole('dialog',{name:'Navigation',exact:true}).locator('button').filter({hasText:/^English$/}).click()));
+        await Promise.all(pages.map(page=>page.waitForTimeout(500)));
+        await capture('campaign-language');
+        await Promise.all(pages.map(page=>page.keyboard.press('Escape')));
+        await Promise.all(pages.map(page=>page.mouse.move(2,400)));
+        await Promise.all(pages.map(page=>page.waitForTimeout(800)));
+        await capture('campaign-menu-closed');
+      }
+      if(process.env.YAJU_TEST_CAMPAIGN_THUMBS==='1'){
+        const selector='.campaign-up-next__copy';
+        for(let index=0;index<3;index++){
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).scrollIntoViewIfNeeded()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1800)));
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).hover()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(600)));
+          await capture(`campaign-thumbnail-${index}`);
+          await capture(`campaign-thumbnail-${index}-region`,'.campaign-up-next__thumb-cursor-frame');
+          await Promise.all(pages.map(page=>page.mouse.move(2,400)));
+        }
+        await Promise.all(pages.map(page=>page.mouse.move(10,10)));
+        await Promise.all(pages.map(page=>page.evaluate(()=>scrollTo(0,0))));
+      }
+      const productMenus=await Promise.all(pages.map(page=>page.getByRole('link',{name:'Product',exact:true}).count()));
+      assert.equal(productMenus[1],productMenus[0],`Product navigation count: ${route}`);
+      if (viewport.name === 'desktop'&&productMenus[0]) {
         await Promise.all(pages.map(page => page.getByRole('link',{name:'Product',exact:true}).first().locator('xpath=ancestor::li[1]').hover()));
         await Promise.all(pages.map(page => page.waitForTimeout(300)));
         await capture('product-menu');
         await Promise.all(pages.map(page => page.mouse.move(10,500)));
       }
       await Promise.all(pages.map(page => page.evaluate(() => window.scrollTo(0,800))));
-      await Promise.all(pages.map(page => page.waitForTimeout(1500)));
+      await Promise.all(pages.map(page => page.waitForTimeout(motion==='reduce'?1500:3500)));
       await capture('scroll');
-      if (route === '/legal') {
+      for(const offset of (process.env.YAJU_TEST_SCROLL_OFFSETS||'').split(',').filter(Boolean).map(Number)) {
+        assert.ok(Number.isFinite(offset)&&offset>=0,'Invalid scroll offset');
+        await Promise.all(pages.map(page=>page.evaluate(y=>window.scrollTo(0,y),offset)));
+        await Promise.all(pages.map(page=>page.waitForTimeout(motion==='reduce'?1500:3500)));
+        await capture(`scroll-${offset}`);
+      }
+      if(process.env.YAJU_TEST_FULL_SCROLL==='1') {
+        const heights=await Promise.all(pages.map(page=>page.evaluate(()=>document.documentElement.scrollHeight)));
+        const maximum=Math.max(...heights)-viewport.height;
+        const step=Math.floor(viewport.height*0.8);
+        for(let offset=0;offset<maximum+step;offset+=step){
+          const y=Math.min(offset,maximum);
+          await Promise.all(pages.map(page=>page.evaluate(y=>scrollTo(0,y),y)));
+          await Promise.all(pages.map(page=>page.waitForTimeout(motion==='reduce'?1500:3500)));
+          await capture(`sweep-${y}`);
+        }
+      }
+      if(process.env.YAJU_TEST_CAROUSELS === '1') {
+        const counts=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').count()));
+        assert.equal(counts[0],counts[1],`Carousel count: ${route}`);
+        for(let group=0;group<counts[0];group++){
+          await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).scrollIntoViewIfNeeded()));
+          await pages[0].waitForTimeout(1800);
+          await capture(`carousel-${group}-initial`);
+          const enabled=await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).isEnabled()));
+          assert.equal(enabled[0],enabled[1],`Carousel availability: ${route}`);
+          if(enabled[0]){
+            await Promise.all(pages.map(p=>p.locator('main button[aria-label="Next"]').nth(group).click()));
+            await pages[0].waitForTimeout(1800);
+            await capture(`carousel-${group}-next`);
+          }
+        }
+      }
+      if(process.env.YAJU_TEST_PAGINATION === '1') {
+        const sections=pages.map(page=>page.getByRole('button',{name:'1',exact:true}).first().locator('xpath=ancestor::section[1]'));
+        for(const section of sections) assert.equal(await section.count(),1,`Numbered pagination section: ${route}`);
+        const counts=await Promise.all(sections.map(section=>section.getByRole('button',{name:/^\d+$/}).count()));
+        assert.equal(counts[1],counts[0],`Pagination count: ${route}`);
+        for(let index=0;index<counts[0];index++) {
+          await Promise.all(sections.map(section=>section.getByRole('button',{name:String(index+1),exact:true}).click()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1800)));
+          const cards=sections.map(section=>section.locator('a.group\\/calloutCard'));
+          const links=await Promise.all(cards.map(group=>group.evaluateAll(nodes=>nodes.map(node=>({href:node.getAttribute('href'),text:node.textContent.trim()})))));
+          assert.ok(links[0].length>0,`Missing pagination cards: ${route} page ${index+1}`);
+          assert.deepEqual(links[1],links[0],`Pagination content: ${route} page ${index+1}`);
+          for(let card=0;card<links[0].length;card++) {
+            await Promise.all(cards.map(group=>group.nth(card).scrollIntoViewIfNeeded()));
+            await Promise.all(pages.map(page=>page.waitForTimeout(1200)));
+            await capture(`pagination-${index+1}-card-${card+1}`);
+            await Promise.all(cards.map(group=>group.nth(card).evaluate(node=>node.setAttribute('data-parity-pagination-card',''))));
+            await capture(`pagination-${index+1}-card-${card+1}-region`,'[data-parity-pagination-card]');
+            await Promise.all(pages.map(page=>page.locator('[data-parity-pagination-card]').evaluate(node=>node.removeAttribute('data-parity-pagination-card'))));
+          }
+        }
+      }
+      if(process.env.YAJU_TEST_ACCORDIONS === '1') {
+        const selector='main button.pb-9';
+        const count=await pages[0].locator(selector).count();
+        assert.equal(await pages[1].locator(selector).count(),count,`Accordion count ${route}`);
+        for(let index=0;index<count;index++) {
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).scrollIntoViewIfNeeded()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(800)));
+          await Promise.all(pages.map(page=>page.locator(selector).nth(index).click()));
+          await Promise.all(pages.map(page=>page.waitForTimeout(1000)));
+          await capture(`accordion-${index}`);
+        }
+      }
+      if (route === '/legal' || process.env.YAJU_TEST_NAVIGATION === '1') {
         await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,0))));
         await Promise.all(pages.map(page => page.waitForTimeout(500)));
         if (viewport.name === 'desktop') {
@@ -159,6 +279,8 @@ try {
           }
           await Promise.all(pages.map(page => page.getByRole('button',{name:'Close navigation menu',exact:true}).click()));
         }
+      }
+      if (route === '/legal') {
         await Promise.all(pages.map(page => page.evaluate(() => scrollTo(0,document.body.scrollHeight))));
         await Promise.all(pages.map(page => page.waitForTimeout(500)));
         await capture('footer');

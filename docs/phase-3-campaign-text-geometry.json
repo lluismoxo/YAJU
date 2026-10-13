@@ -1,0 +1,13 @@
+{
+  "offset": 11500,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "motion": "normal",
+  "rendering": "software",
+  "groups": 3,
+  "glyphs": 205,
+  "sameGlyphGeometryAndStyles": true,
+  "note": "Compared each text character using DOM Range and computed styles; not a screenshot-parity approval."
+}

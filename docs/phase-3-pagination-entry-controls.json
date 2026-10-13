@@ -1,0 +1,218 @@
+[
+  {
+    "route": "/ai-observability",
+    "width": 1440,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 18
+      }
+    ]
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 1440,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 12
+      }
+    ]
+  },
+  {
+    "route": "/ai-observability",
+    "width": 768,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 18
+      }
+    ]
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 768,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 12
+      }
+    ]
+  },
+  {
+    "route": "/ai-observability",
+    "width": 390,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 18
+      }
+    ]
+  },
+  {
+    "route": "/solutions/financial-services",
+    "width": 390,
+    "pass": true,
+    "checks": [
+      {
+        "state": "before entering",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "15% visible",
+        "animated": false,
+        "elements": 18
+      },
+      {
+        "state": "25% visible",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "stays revealed after leaving",
+        "animated": true,
+        "elements": 18
+      },
+      {
+        "state": "selected page preserves DOM",
+        "passed": true
+      },
+      {
+        "state": "next page after reveal",
+        "animated": true,
+        "elements": 12
+      }
+    ]
+  }
+]

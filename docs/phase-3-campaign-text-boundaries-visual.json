@@ -1,0 +1,117 @@
+{
+  "motion": "no-preference",
+  "rendering": "software",
+  "browser": "155.0.8059.39",
+  "baseline": "a1c700f",
+  "generatedAt": "2026-10-09T21:32:24.102Z",
+  "results": [
+    {
+      "route": "/ai-spend",
+      "viewport": "tablet",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "tablet-ai-spend-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-1700",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-2800",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-4000",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        },
+        {
+          "key": "tablet-ai-spend-scroll-5100",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 786432
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    },
+    {
+      "route": "/ai-spend",
+      "viewport": "mobile",
+      "errorParity": true,
+      "states": [
+        {
+          "key": "mobile-ai-spend-top",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-1700",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-2800",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-4000",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        },
+        {
+          "key": "mobile-ai-spend-scroll-5100",
+          "pass": true,
+          "changedPixels": 0,
+          "totalPixels": 329160
+        }
+      ],
+      "baselineErrors": [
+        {
+          "name": "Error",
+          "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ],
+      "candidateErrors": [],
+      "brokenImages": [
+        [],
+        []
+      ]
+    }
+  ]
+}

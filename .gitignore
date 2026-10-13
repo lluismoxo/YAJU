@@ -1,6 +1,8 @@
 .vercel
 .env*
 /public/
+/public.staging/
+/public.previous/
 /.build-staging/
 /.build-previous/
 /node_modules/

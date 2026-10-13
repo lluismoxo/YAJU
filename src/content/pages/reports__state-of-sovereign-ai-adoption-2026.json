@@ -1,0 +1,41 @@
+{
+  "route": "/reports/state-of-sovereign-ai-adoption-2026",
+  "title": "State of Sovereign AI at Global Enterprises | Yaju",
+  "key": "reports__state-of-sovereign-ai-adoption-2026",
+  "header": "header-caddc8817940",
+  "footer": "footer-44280ce54388",
+  "bodyClass": "bg-surface-inverse",
+  "htmlClass": "",
+  "lang": "en-US",
+  "dir": "ltr",
+  "extra": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"https://yajuas.com\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script><div hidden=\"\"></div><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Yaju AS\",\"url\":\"/\",\"logo\":\"/assets/img/5b7ba1e2dedf61f5bc9285a0cce50b8e8cda9a72-118x20.svg\",\"foundingDate\":\"2024\"}</script>",
+  "navigation": {
+    "desktop": "z-nav hidden lg:block fixed left-0 right-0 transition-transform duration-300 ease-in-out translate-y-0 text-pureWhite",
+    "bar": "relative z-10 w-full transition-colors duration-300 ease-in-out border-transparent border-b-transparent bg-transparent",
+    "mobile": "z-nav flex h-[60px] items-center justify-between px-4 lg:hidden fixed left-0 right-0 transition-[transform,background-color,color] duration-300 ease-in-out translate-y-0 bg-transparent text-pureWhite"
+  },
+  "buttons": [
+    "1Why is owning your AI important?",
+    "2Key findings from the InfoBrief",
+    "3Yaju’s perspective on sovereign AI",
+    "4Who we surveyed",
+    "",
+    "",
+    "1Why is owning your AI important?",
+    "",
+    "",
+    "Download now"
+  ],
+  "forms": 1,
+  "interactions": {
+    "toc": {
+      "html": "<div id=\"blog-mobile-toc-list\" class=\"absolute inset-x-0 top-0 z-10 overflow-hidden rounded-xl border border-neutral-30 bg-pureBlack\"><ol class=\"list-none\"><li><div class=\"flex w-full items-center\"><button type=\"button\" class=\"flex min-w-0 flex-1 items-center gap-3 pl-3 pr-3 pt-5 text-left focus-visible:outline-none pb-3\"><span class=\"shrink-0 font-body text-neutral-70\">1</span><span class=\"min-w-0 flex-1 font-body text-pureWhite\">Why is owning your AI important?</span></button><button type=\"button\" class=\"shrink-0 pl-0 pr-3 pt-5 focus-visible:outline-none pb-3\" aria-label=\"Close table of contents\"><i class=\"icon-default icon-chevron-up text-pureWhite\" aria-hidden=\"true\"></i></button></div><div class=\"relative h-px w-full bg-neutral-30\" aria-hidden=\"true\"><div class=\"absolute inset-y-0 left-0 bg-gradient-to-r from-coral-500 via-violet-500 to-blue-500\" style=\"width: 0%;\"></div></div></li><li><div class=\"flex w-full items-center\"><button type=\"button\" class=\"flex min-w-0 flex-1 items-center gap-3 pl-3 pr-3 pt-5 text-left focus-visible:outline-none pb-3\"><span class=\"shrink-0 font-body text-neutral-70\">2</span><span class=\"min-w-0 flex-1 font-body text-neutral-70\">Key findings from the InfoBrief</span></button></div><hr class=\"h-px w-full border-0 bg-neutral-30\" aria-hidden=\"true\"></li><li><div class=\"flex w-full items-center\"><button type=\"button\" class=\"flex min-w-0 flex-1 items-center gap-3 pl-3 pr-3 pt-5 text-left focus-visible:outline-none pb-3\"><span class=\"shrink-0 font-body text-neutral-70\">3</span><span class=\"min-w-0 flex-1 font-body text-neutral-70\">Yaju’s perspective on sovereign AI</span></button></div><hr class=\"h-px w-full border-0 bg-neutral-30\" aria-hidden=\"true\"></li><li><div class=\"flex w-full items-center\"><button type=\"button\" class=\"flex min-w-0 flex-1 items-center gap-3 pl-3 pr-3 pt-5 text-left focus-visible:outline-none pb-5\"><span class=\"shrink-0 font-body text-neutral-70\">4</span><span class=\"min-w-0 flex-1 font-body text-neutral-70\">Who we surveyed</span></button></div></li></ol></div>",
+      "ids": [
+        "why-is-owning-your-ai-important",
+        "key-findings-from-the-infobrief",
+        "coheres-perspective-on-sovereign-ai",
+        "who-we-surveyed"
+      ]
+    }
+  }
+}

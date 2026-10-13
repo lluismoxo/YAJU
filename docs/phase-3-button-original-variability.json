@@ -1,0 +1,194 @@
+[
+  {
+    "width": 390,
+    "index": 1,
+    "state": "idle",
+    "glowRegionPixels": 7,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "state": "hover",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "state": "pressed",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "state": "released",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "state": "leave",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 1,
+    "state": "keyboard",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "idle",
+    "glowRegionPixels": 5550,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "hover",
+    "glowRegionPixels": 5545,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "pressed",
+    "glowRegionPixels": 5545,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "released",
+    "glowRegionPixels": 5545,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "leave",
+    "glowRegionPixels": 5545,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 390,
+    "index": 3,
+    "state": "keyboard",
+    "glowRegionPixels": 5192,
+    "stylesMatch": true,
+    "differentPixels": 1750
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "idle",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "hover",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "pressed",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "released",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "leave",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 1,
+    "state": "keyboard",
+    "glowRegionPixels": 20,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "idle",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "hover",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "pressed",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "released",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "leave",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  },
+  {
+    "width": 1440,
+    "index": 3,
+    "state": "keyboard",
+    "glowRegionPixels": 0,
+    "stylesMatch": true,
+    "differentPixels": 0
+  }
+]

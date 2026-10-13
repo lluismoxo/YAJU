@@ -1,0 +1,343 @@
+{
+  "scope": "Strict mobile root-menu repeat/control; editorial header coverage follows separately.",
+  "referenceControl": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:31:47.346Z",
+    "results": [
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "brokenImages": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  "nativeRepeat": {
+    "motion": "no-preference",
+    "rendering": "default",
+    "browser": "155.0.8059.39",
+    "baseline": "a1c700f",
+    "generatedAt": "2026-10-12T21:31:49.579Z",
+    "results": [
+      {
+        "route": "/blog/the-future-of-work-debate-has-an-evidence-problem",
+        "viewport": "mobile",
+        "errorParity": true,
+        "states": [
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-top",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-scroll",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-menu",
+            "pass": false,
+            "changedPixels": 390,
+            "totalPixels": 329160,
+            "diagnostics": [
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:49451/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 117.40625,
+                      "width": 118,
+                      "height": 28,
+                      "top": 117.40625,
+                      "right": 134,
+                      "bottom": 145.40625,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:49451/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 346,
+                      "y": 119.40625,
+                      "width": 24,
+                      "height": 24,
+                      "top": 119.40625,
+                      "right": 370,
+                      "bottom": 143.40625,
+                      "left": 346
+                    }
+                  }
+                ]
+              },
+              {
+                "scrollY": 0,
+                "heroMotion": [],
+                "hero": [],
+                "images": [
+                  {
+                    "src": "http://127.0.0.1:49452/logo.svg",
+                    "width": 118,
+                    "rect": {
+                      "x": 16,
+                      "y": 117.40625,
+                      "width": 118,
+                      "height": 28,
+                      "top": 117.40625,
+                      "right": 134,
+                      "bottom": 145.40625,
+                      "left": 16
+                    }
+                  },
+                  {
+                    "src": "http://127.0.0.1:49452/nav_close.svg",
+                    "width": 18,
+                    "rect": {
+                      "x": 346,
+                      "y": 119.40625,
+                      "width": 24,
+                      "height": 24,
+                      "top": 119.40625,
+                      "right": 370,
+                      "bottom": 143.40625,
+                      "left": 346
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-product",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-solutions",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-resources",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-blog",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          },
+          {
+            "key": "mobile-blog-the-future-of-work-debate-has-an-evidence-problem-mobile-company",
+            "pass": true,
+            "changedPixels": 0,
+            "totalPixels": 329160
+          }
+        ],
+        "baselineErrors": [
+          {
+            "name": "Error",
+            "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+          }
+        ],
+        "candidateErrors": [],
+        "brokenImages": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  "difference": {
+    "row": 161,
+    "pixels": 390,
+    "referenceRGBA": [
+      232,
+      231,
+      230,
+      255
+    ],
+    "candidateRGBA": [
+      232,
+      232,
+      230,
+      255
+    ],
+    "description": "Entire horizontal row; green channel differs by one. No tolerance introduced."
+  },
+  "layers": [
+    {
+      "port": 4185,
+      "nodes": [
+        {
+          "tag": "DIV",
+          "cls": "fixed left-0 top-0 z-[99] pointer-events-none min-h-[100vh] w-full bg-black/20 backdrop-blur-[30px] lg:min-h-[90vh] transition-opacity duration-300 ease-in-out opacity-100",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844,
+            "top": 0,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "background": "rgba(33, 33, 33, 0.2) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "transform": "none",
+          "filter": "none",
+          "backdrop": "blur(30px)",
+          "clip": "none",
+          "z": "99"
+        },
+        {
+          "tag": "DIV",
+          "cls": "group/navContent fixed inset-x-0 bottom-0 z-[99] flex flex-col overflow-hidden lg:hidden transition-[clip-path] duration-500 ease-in-out motion-reduce:transition-none [clip-path:inset(0_0_0_0)] bg-pureWhite pointer-events-auto",
+          "rect": {
+            "x": 0,
+            "y": 161.40625,
+            "width": 390,
+            "height": 682.59375,
+            "top": 161.40625,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "transform": "none",
+          "filter": "none",
+          "backdrop": "none",
+          "clip": "inset(0px)",
+          "z": "99"
+        }
+      ]
+    },
+    {
+      "port": 4184,
+      "nodes": [
+        {
+          "tag": "DIV",
+          "cls": "fixed left-0 top-0 z-[99] pointer-events-none min-h-[100vh] w-full bg-black/20 backdrop-blur-[30px] lg:min-h-[90vh] transition-opacity duration-300 ease-in-out opacity-100",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844,
+            "top": 0,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "background": "rgba(33, 33, 33, 0.2) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "transform": "none",
+          "filter": "none",
+          "backdrop": "blur(30px)",
+          "clip": "none",
+          "z": "99"
+        },
+        {
+          "tag": "DIV",
+          "cls": "group/navContent fixed inset-x-0 bottom-0 z-[99] flex flex-col overflow-hidden lg:hidden transition-[clip-path] duration-500 ease-in-out motion-reduce:transition-none bg-pureWhite [clip-path:inset(0_0_0_0)] pointer-events-auto",
+          "rect": {
+            "x": 0,
+            "y": 161.40625,
+            "width": 390,
+            "height": 682.59375,
+            "top": 161.40625,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "transform": "none",
+          "filter": "none",
+          "backdrop": "none",
+          "clip": "inset(0px)",
+          "z": "99"
+        }
+      ]
+    }
+  ]
+}

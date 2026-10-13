@@ -1,0 +1,44 @@
+[
+  {
+    "scope": "blog",
+    "width": 1440,
+    "triggers": 2,
+    "passed": true,
+    "submission": "mocked"
+  },
+  {
+    "scope": "newsroom",
+    "width": 1440,
+    "triggers": 1,
+    "passed": true,
+    "submission": "mocked"
+  },
+  {
+    "scope": "blog",
+    "width": 768,
+    "triggers": 2,
+    "passed": true,
+    "submission": "mocked"
+  },
+  {
+    "scope": "newsroom",
+    "width": 768,
+    "triggers": 1,
+    "passed": true,
+    "submission": "mocked"
+  },
+  {
+    "scope": "blog",
+    "width": 390,
+    "triggers": 2,
+    "passed": true,
+    "submission": "mocked"
+  },
+  {
+    "scope": "newsroom",
+    "width": 390,
+    "triggers": 1,
+    "passed": true,
+    "submission": "mocked"
+  }
+]

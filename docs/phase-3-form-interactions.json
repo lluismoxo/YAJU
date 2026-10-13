@@ -1,0 +1,218 @@
+[
+  {
+    "route": "/ai-spend-explorer",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/ai-observability",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/contact-sales",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/credential-vault",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "early_access",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/cost-control",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/customization",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/developers",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/get-started",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/labs/catalyst-grants/application",
+    "endpoint": "/functions/v1/form-submit",
+    "form": "labs_research_grant",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/labs/newsletter",
+    "endpoint": "/functions/v1/form-submit",
+    "form": "labs_newsletter",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/labs/open-development/application",
+    "endpoint": "/functions/v1/form-submit",
+    "form": "labs_open_science",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/mcp-gateway",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "early_access",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/optimizer",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/partners/application",
+    "endpoint": "/functions/v1/form-submit",
+    "form": "partner_application",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/pricing",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/reports/state-of-sovereign-ai-adoption-2026",
+    "endpoint": "/functions/v1/form-submit",
+    "form": "report_download",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/self-hosted",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/engineering",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/financial-services",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/healthcare-and-life-sciences",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/manufacturing",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/public-sector",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/solutions/telecommunications",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  },
+  {
+    "route": "/token-monitoring",
+    "endpoint": "/functions/v1/contact-sales",
+    "form": "contact_sales",
+    "consents": true,
+    "invalidBlocked": true,
+    "rateLimitRetry": true,
+    "success": true
+  }
+]

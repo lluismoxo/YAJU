@@ -1,0 +1,630 @@
+{
+  "comparison": "static globe with original surrounding gradient",
+  "results": [
+    {
+      "port": 4185,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 30971
+      },
+      "composition": [
+        {
+          "tag": "DIV",
+          "className": "globe-viz loaded",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "globe-animation-container",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-[300px] w-[300px] md:h-[500px] md:w-[500px]",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "pointer-events-none flex w-full justify-center md:pointer-events-auto",
+          "rect": {
+            "x": 40,
+            "y": 400,
+            "width": 1360,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative z-content mx-auto w-full max-w-web3-full-screen",
+          "rect": {
+            "x": 40,
+            "y": 400,
+            "width": 1360,
+            "height": 866.421875
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "SECTION",
+          "className": "relative w-full px-4 lg:px-10 pb-12 text-white bg-gradient-to-b from-blue-700 to-[#142253] md:pb-48",
+          "rect": {
+            "x": 0,
+            "y": 400,
+            "width": 1440,
+            "height": 1058.421875
+          },
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(45, 76, 185), rgb(20, 34, 83)) repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px 40px 192px"
+        },
+        {
+          "tag": "MAIN",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": -56,
+            "width": 1440,
+            "height": 7210.34375
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-full bg-pureWhite",
+          "rect": {
+            "x": 0,
+            "y": -56,
+            "width": 1440,
+            "height": 7210.34375
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": -104,
+            "width": 1440,
+            "height": 8749.53125
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        }
+      ],
+      "missionRect": {
+        "x": 40,
+        "y": 1050,
+        "width": 1360,
+        "height": 366.421875,
+        "top": 1050,
+        "right": 1400,
+        "bottom": 1416.421875,
+        "left": 40
+      },
+      "screenshotSha256": "4232f76c9c5d2ebf9f1503b78467945a1ecb1f26d0d539e3b7df06e2012fe579"
+    },
+    {
+      "port": 4184,
+      "width": 1440,
+      "state": {
+        "rect": {
+          "width": 500,
+          "height": 500
+        },
+        "canvases": [
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 500,
+            "height": 500,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 30971
+      },
+      "composition": [
+        {
+          "tag": "DIV",
+          "className": "globe-viz loaded",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "globe-animation-container",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-[300px] w-[300px] md:h-[500px] md:w-[500px]",
+          "rect": {
+            "x": 470,
+            "y": 400,
+            "width": 500,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "pointer-events-none flex w-full justify-center md:pointer-events-auto",
+          "rect": {
+            "x": 40,
+            "y": 400,
+            "width": 1360,
+            "height": 500
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative z-content mx-auto w-full max-w-web3-full-screen",
+          "rect": {
+            "x": 40,
+            "y": 400,
+            "width": 1360,
+            "height": 866.421875
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "SECTION",
+          "className": "relative w-full px-4 lg:px-10 pb-12 text-white bg-gradient-to-b from-blue-700 to-[#142253] md:pb-48",
+          "rect": {
+            "x": 0,
+            "y": 400,
+            "width": 1440,
+            "height": 1058.421875
+          },
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(45, 76, 185), rgb(20, 34, 83)) repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px 40px 192px"
+        },
+        {
+          "tag": "MAIN",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": -56,
+            "width": 1440,
+            "height": 7210.34375
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-full bg-pureWhite",
+          "rect": {
+            "x": 0,
+            "y": -56,
+            "width": 1440,
+            "height": 7210.34375
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": -104,
+            "width": 1440,
+            "height": 8749.53125
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        }
+      ],
+      "missionRect": {
+        "x": 40,
+        "y": 1050,
+        "width": 1360,
+        "height": 366.421875,
+        "top": 1050,
+        "right": 1400,
+        "bottom": 1416.421875,
+        "left": 40
+      },
+      "screenshotSha256": "4232f76c9c5d2ebf9f1503b78467945a1ecb1f26d0d539e3b7df06e2012fe579"
+    },
+    {
+      "port": 4185,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 14828
+      },
+      "composition": [
+        {
+          "tag": "DIV",
+          "className": "globe-viz loaded",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "globe-animation-container",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-[300px] w-[300px] md:h-[500px] md:w-[500px]",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "pointer-events-none flex w-full justify-center md:pointer-events-auto",
+          "rect": {
+            "x": 16,
+            "y": 429.40625,
+            "width": 358,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative z-content mx-auto w-full max-w-web3-full-screen",
+          "rect": {
+            "x": 16,
+            "y": 429.40625,
+            "width": 358,
+            "height": 621.21875
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "SECTION",
+          "className": "relative w-full px-4 lg:px-10 pb-12 text-white bg-gradient-to-b from-blue-700 to-[#142253] md:pb-48",
+          "rect": {
+            "x": 0,
+            "y": 429.40625,
+            "width": 390,
+            "height": 669.21875
+          },
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(45, 76, 185), rgb(20, 34, 83)) repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px 16px 48px"
+        },
+        {
+          "tag": "MAIN",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 101.40625,
+            "width": 390,
+            "height": 8837.234375
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-full bg-pureWhite",
+          "rect": {
+            "x": 0,
+            "y": 101.40625,
+            "width": 390,
+            "height": 8837.234375
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 10334.09375
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        }
+      ],
+      "missionRect": {
+        "x": 16,
+        "y": 729.40625,
+        "width": 358,
+        "height": 321.21875,
+        "top": 729.40625,
+        "right": 374,
+        "bottom": 1050.625,
+        "left": 16
+      },
+      "screenshotSha256": "e0fc756ba0553c557cfd668d766670eee5569e4b65fa437b0855015e0b55d5d1"
+    },
+    {
+      "port": 4184,
+      "width": 390,
+      "state": {
+        "rect": {
+          "width": 300,
+          "height": 300
+        },
+        "canvases": [
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "0",
+            "engine": "three.js r179"
+          },
+          {
+            "width": 300,
+            "height": 300,
+            "opacity": "",
+            "engine": null
+          }
+        ],
+        "pixels": 14828
+      },
+      "composition": [
+        {
+          "tag": "DIV",
+          "className": "globe-viz loaded",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "globe-animation-container",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-[300px] w-[300px] md:h-[500px] md:w-[500px]",
+          "rect": {
+            "x": 45,
+            "y": 429.40625,
+            "width": 300,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "pointer-events-none flex w-full justify-center md:pointer-events-auto",
+          "rect": {
+            "x": 16,
+            "y": 429.40625,
+            "width": 358,
+            "height": 300
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative z-content mx-auto w-full max-w-web3-full-screen",
+          "rect": {
+            "x": 16,
+            "y": 429.40625,
+            "width": 358,
+            "height": 621.21875
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "SECTION",
+          "className": "relative w-full px-4 lg:px-10 pb-12 text-white bg-gradient-to-b from-blue-700 to-[#142253] md:pb-48",
+          "rect": {
+            "x": 0,
+            "y": 429.40625,
+            "width": 390,
+            "height": 669.21875
+          },
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(45, 76, 185), rgb(20, 34, 83)) repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px 16px 48px"
+        },
+        {
+          "tag": "MAIN",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 101.40625,
+            "width": 390,
+            "height": 8941.84375
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "h-full bg-pureWhite",
+          "rect": {
+            "x": 0,
+            "y": 101.40625,
+            "width": 390,
+            "height": 8941.84375
+          },
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        },
+        {
+          "tag": "DIV",
+          "className": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 10438.703125
+          },
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "transform": "none",
+          "padding": "0px"
+        }
+      ],
+      "missionRect": {
+        "x": 16,
+        "y": 729.40625,
+        "width": 358,
+        "height": 321.21875,
+        "top": 729.40625,
+        "right": 374,
+        "bottom": 1050.625,
+        "left": 16
+      },
+      "screenshotSha256": "e0fc756ba0553c557cfd668d766670eee5569e4b65fa437b0855015e0b55d5d1"
+    }
+  ],
+  "differentPixels": {
+    "desktop": 0,
+    "mobile": 0
+  },
+  "fullPageParity": false
+}
