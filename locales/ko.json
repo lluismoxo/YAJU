@@ -38,7 +38,6 @@
   "11. Privacy and cookies": "11. 개인정보 보호 및 쿠키",
   "11. Your rights": "11. 귀하의 권리",
   "12 months": "12개월",
-  "12 months after last contact": "마지막 연락 후 12개월",
   "12. Changes": "12. 변경 사항",
   "12. Marketing emails": "12. 마케팅 이메일",
   "12. Third-party services": "12. 제3자 서비스",
@@ -5039,5 +5038,6 @@
   "“With Yaju we can give our clients agents that are governed from day one, with clear owners, budgets and limits, instead of pilots nobody can account for.”": "\"Yaju를 사용하면 누구도 설명할 수 없는 파일럿 대신 명확한 소유자, 예산 및 한도를 갖춘 첫날부터 관리되는 에이전트를 고객에게 제공할 수 있습니다.\"",
   "“Yaju agents take care of order follow-ups and stock updates, so our small team can run the store and still answer every customer quickly.”": "\"Yaju 상담원이 주문 후속 조치와 재고 업데이트를 처리하므로 소규모 팀이 매장을 운영하면서 모든 고객에게 신속하게 답변할 수 있습니다.\"",
   "“Yaju gave us one place to run and govern the agents that handle our client reporting. Our consultants now spend that time with clients, not spreadsheets.”": "\"Yaju는 고객 보고를 처리하는 에이전트를 운영하고 관리할 수 있는 단일 공간을 제공했습니다. 이제 컨설턴트는 스프레드시트가 아닌 고객과 함께 그 시간을 보냅니다.\"",
-  "Sending…": "전송 중…"
+  "Sending…": "전송 중…",
+  "Pending or spam submissions: 6 months without recorded activity. Active enquiries: retained while follow-up is needed.": "대기 중이거나 스팸으로 분류된 문의: 기록된 활동 없이 6개월. 진행 중인 문의: 후속 대응에 필요한 기간."
 }

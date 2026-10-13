@@ -38,7 +38,6 @@
   "11. Privacy and cookies": "11. Privacidad y cookies",
   "11. Your rights": "11. Tus derechos",
   "12 months": "12 meses",
-  "12 months after last contact": "12 meses después del último contacto",
   "12. Changes": "12. Cambios",
   "12. Marketing emails": "12. Correos electrónicos de marketing",
   "12. Third-party services": "12. Servicios de terceros",
@@ -5039,5 +5038,6 @@
   "“With Yaju we can give our clients agents that are governed from day one, with clear owners, budgets and limits, instead of pilots nobody can account for.”": "\"Con Yaju podemos ofrecer a nuestros clientes agentes gobernados desde el primer día, con propietarios, presupuestos y límites claros, en lugar de pilotos que nadie puede dar cuenta\".",
   "“Yaju agents take care of order follow-ups and stock updates, so our small team can run the store and still answer every customer quickly.”": "\"Los agentes de YAJU__ se encargan del seguimiento de los pedidos y de las actualizaciones de existencias, por lo que nuestro pequeño equipo puede administrar la tienda y aun así responder a cada cliente rápidamente\".",
   "“Yaju gave us one place to run and govern the agents that handle our client reporting. Our consultants now spend that time with clients, not spreadsheets.”": "\"Yaju nos brindó un lugar para ejecutar y controlar a los agentes que manejan los informes de nuestros clientes. Nuestros consultores ahora dedican ese tiempo a los clientes, no a las hojas de cálculo\".",
-  "Sending…": "Enviando…"
+  "Sending…": "Enviando…",
+  "Pending or spam submissions: 6 months without recorded activity. Active enquiries: retained while follow-up is needed.": "Solicitudes pendientes o marcadas como spam: 6 meses sin actividad registrada. Consultas activas: mientras sea necesario su seguimiento."
 }

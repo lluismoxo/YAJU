@@ -6,6 +6,7 @@
 /.build-staging/
 /.build-previous/
 /node_modules/
+/supabase/.temp/
 /artifacts/
 
 /public 2/

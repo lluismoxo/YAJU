@@ -9,17 +9,17 @@
 // la configuracion y la clave de Resend salen de Vault y hay limite de envios.
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { createClient } from "npm:@supabase/supabase-js@2";
+import { createClient } from "npm:@supabase/supabase-js@2.117.3";
+
+import {RequestError,json,corsHeaders,readBody,consent,safeUrl,safePath,controlCharacters,reserve} from "../_shared/security.ts";
+import {fieldRules} from "../_shared/field-rules.ts";
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const db = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, { auth: { persistSession: false } });
+const db = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, { auth: { persistSession: false }, global: { fetch: (url,options) => fetch(url,{...options,signal:AbortSignal.timeout(10000)}) } });
 
-const DEFAULT_ORIGINS = ["http://localhost:8080", "https://yajuas.com", "https://www.yajuas.com"];
-const MAX_POR_IP = 5;        // envios por IP ...
-const VENTANA_IP_MIN = 15;   // ... en estos minutos
-const MAX_POR_EMAIL = 3;     // envios por email ...
-const VENTANA_EMAIL_MIN = 60;
+const DEFAULT_ORIGINS = ["https://yajuas.com", "https://www.yajuas.com"];
+
 
 // formulario -> nombre en el aviso y campos obligatorios (nombres de campo de Marketo)
 const FORMS: Record<string, { nombre: string; obligatorios: string[] }> = {
@@ -59,21 +59,6 @@ async function getConfig(): Promise<Config> {
   return value;
 }
 
-function corsHeaders(origin: string | null, allowed: string[]): Record<string, string> {
-  const h: Record<string, string> = {
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "content-type",
-    "Access-Control-Max-Age": "86400",
-    "Vary": "Origin",
-  };
-  if (origin && allowed.includes(origin)) h["Access-Control-Allow-Origin"] = origin;
-  return h;
-}
-
-function json(status: number, body: unknown, headers: Record<string, string>): Response {
-  return new Response(JSON.stringify(body), { status, headers: { ...headers, "Content-Type": "application/json" } });
-}
-
 // ---- validacion
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
@@ -96,13 +81,21 @@ function si(v: unknown): boolean {
 }
 
 function limpiar(b: Record<string, unknown>) {
-  const fields: Record<string, string> = {};
-  const labels: Record<string, string> = {};
+  const fields: Record<string, string> = Object.create(null);
+  const labels: Record<string, string> = Object.create(null);
   const entrada = b.fields && typeof b.fields === "object" && !Array.isArray(b.fields) ? b.fields as Record<string, unknown> : {};
   const etiquetas = b.labels && typeof b.labels === "object" && !Array.isArray(b.labels) ? b.labels as Record<string, unknown> : {};
   for (const [k, v] of Object.entries(entrada)) {
     if (Object.keys(fields).length >= MAX_CAMPOS) break;
-    if (!CLAVE.test(k) || IGNORADOS.test(k)) continue;
+    if (!CLAVE.test(k) || IGNORADOS.test(k) || !Object.hasOwn(fieldRules[str(b.form)]||{},k)) continue;
+    const rule=fieldRules[str(b.form)][k];
+    if (controlCharacters(v)|| (typeof v!=="string" && typeof v!=="boolean" && typeof v!=="number" && !Array.isArray(v))) throw new RequestError(400,"validation");
+    if (Array.isArray(v) && (v.length>30 || v.some(x=>typeof x!=="string"||controlCharacters(x)))) throw new RequestError(400,"validation");
+    const raw=Array.isArray(v)?v.join(", "):String(v);
+    if (raw.length>rule.max) throw new RequestError(400,"validation");
+    if (raw && rule.values && !rule.values.includes(raw)) throw new RequestError(400,"validation");
+    if (raw && rule.type==="number" && (!Number.isSafeInteger(Number(raw))||Number(raw)<0)) throw new RequestError(400,"validation");
+    if (k==="Website" && raw && !safeUrl(raw)) throw new RequestError(400,"validation");
     const s = valor(v);
     if (!s) continue;
     fields[k] = s;
@@ -112,10 +105,6 @@ function limpiar(b: Record<string, unknown>) {
   return { fields, labels };
 }
 
-async function sha256(s: string): Promise<string> {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(buf)).map((x) => x.toString(16).padStart(2, "0")).join("");
-}
 
 // ---- email
 function esc(v: unknown): string {
@@ -150,7 +139,7 @@ function emailHtml(r: Record<string, unknown>): string {
 async function enviarAviso(cfg: Config, r: Record<string, unknown>): Promise<{ ok: true; id: string } | { ok: false; error: string }> {
   const key = cfg.resend_api_key || Deno.env.get("RESEND_API_KEY");
   if (!key) return { ok: false, error: "resend_api_key no configurada" };
-  const quien = [r.first_name, r.last_name].filter(Boolean).join(" ") || String(r.email ?? "");
+  const quien = ([r.first_name, r.last_name].filter(Boolean).join(" ") || String(r.email ?? "")).replace(/[\r\n]/g," ");
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), 10_000);
   try {
@@ -167,12 +156,12 @@ async function enviarAviso(cfg: Config, r: Record<string, unknown>): Promise<{ o
       }),
     });
     const body = await res.text();
-    if (!res.ok) return { ok: false, error: `resend ${res.status}: ${body.slice(0, 400)}` };
+    if (!res.ok) return { ok: false, error: `resend_http_${res.status}` };
     let id = "";
     try { id = JSON.parse(body).id ?? ""; } catch { /* sin id */ }
     return { ok: true, id };
   } catch (e) {
-    return { ok: false, error: `resend: ${String(e).slice(0, 400)}` };
+    return { ok: false, error: "resend_unavailable" };
   } finally {
     clearTimeout(t);
   }
@@ -181,30 +170,21 @@ async function enviarAviso(cfg: Config, r: Record<string, unknown>): Promise<{ o
 // ---- entrada
 Deno.serve(async (req: Request) => {
   const origin = req.headers.get("origin");
-  let cfg: Config = {};
-  try { cfg = await getConfig(); } catch (e) { console.error(String(e)); }
-  const allowed = (cfg.contact_allowed_origins || DEFAULT_ORIGINS.join(",")).split(",").map((s) => s.trim()).filter(Boolean);
-  const cors = corsHeaders(origin, allowed);
-
-  if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
-  if (req.method !== "POST") return json(405, { ok: false, error: "method_not_allowed" }, cors);
-  if (origin && !allowed.includes(origin)) return json(403, { ok: false, error: "origin_not_allowed" }, cors);
-
-  let body: Record<string, unknown>;
+  let cors = corsHeaders(origin, DEFAULT_ORIGINS);
+  if (req.method !== "POST" && req.method !== "OPTIONS") return json(405,{ok:false,error:"method_not_allowed"},cors);
   try {
-    const raw = await req.text();
-    if (raw.length > 60_000) return json(413, { ok: false, error: "too_large" }, cors);
-    body = JSON.parse(raw);
-    if (!body || typeof body !== "object" || Array.isArray(body)) throw new Error("no object");
-  } catch {
-    return json(400, { ok: false, error: "invalid_json" }, cors);
-  }
-
+  const cfg = await getConfig();
+  const allowed = (cfg.contact_allowed_origins || DEFAULT_ORIGINS.join(",")).split(",").map(s=>s.trim()).filter(s=>s.startsWith("https://"));
+  cors = corsHeaders(origin,allowed);
+  if (!origin || !allowed.includes(origin)) return json(403,{ok:false,error:"origin_not_allowed"},cors);
+  if (req.method === "OPTIONS") return new Response(null,{status:204,headers:cors});
+  const body = await readBody(req,60000);
   // campo trampa: los humanos no lo ven; si viene relleno, es un robot
   if (str(body.hp)) return json(200, { ok: true }, cors);
 
+  const consentRecord = consent(body);
   const formKey = str(body.form);
-  const form = FORMS[formKey];
+  const form = Object.hasOwn(FORMS,formKey) ? FORMS[formKey] : undefined;
   if (!form) return json(400, { ok: false, error: "unknown_form" }, cors);
 
   // validacion
@@ -218,23 +198,11 @@ Deno.serve(async (req: Request) => {
   if (Object.keys(errores).length) return json(400, { ok: false, error: "validation", fields: errores }, cors);
   if (email) fields.Email = email;
 
-  // limite de envios
-  const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || req.headers.get("cf-connecting-ip") || "";
-  const ip_hash = ip ? await sha256(`${cfg.contact_ip_salt || ""}:${ip}`) : null;
-  const desde = (min: number) => new Date(Date.now() - min * 60_000).toISOString();
-  if (ip_hash) {
-    const { count } = await db.from("form_submissions").select("id", { count: "exact", head: true })
-      .eq("ip_hash", ip_hash).gte("created_at", desde(VENTANA_IP_MIN));
-    if ((count ?? 0) >= MAX_POR_IP) return json(429, { ok: false, error: "rate_limited" }, cors);
-  }
-  if (email) {
-    const { count } = await db.from("form_submissions").select("id", { count: "exact", head: true })
-      .eq("email", email).eq("form", formKey).gte("created_at", desde(VENTANA_EMAIL_MIN));
-    if ((count ?? 0) >= MAX_POR_EMAIL) return json(429, { ok: false, error: "rate_limited" }, cors);
-  }
+  const ip_hash = await reserve(db,req,cfg,email);
 
   // 1. guardar (fuente de verdad)
   const fila = {
+    ...consentRecord,
     form: formKey,
     email: email || null,
     first_name: fields.FirstName ?? null,
@@ -244,9 +212,9 @@ Deno.serve(async (req: Request) => {
     marketing_opt_in: si(fields.emailOptIn) || si(fields.mkto_labs_opted_in),
     fields,
     labels,
-    source_page: opcional(body.source_page, 500),
-    source_url: opcional(body.source_url, 2000),
-    referrer: opcional(body.referrer, 2000),
+    source_page: safePath(body.source_page),
+    source_url: safeUrl(body.source_url,true),
+    referrer: safeUrl(body.referrer),
     utm_source: opcional(body.utm_source, 200),
     utm_medium: opcional(body.utm_medium, 200),
     utm_campaign: opcional(body.utm_campaign, 200),
@@ -257,7 +225,7 @@ Deno.serve(async (req: Request) => {
   };
   const { data: guardado, error: errGuardar } = await db.from("form_submissions").insert(fila).select().single();
   if (errGuardar || !guardado) {
-    console.error("guardar formulario:", errGuardar?.message);
+    console.error("form_save_failed");
     return json(500, { ok: false, error: "save_failed" }, cors);
   }
 
@@ -269,7 +237,12 @@ Deno.serve(async (req: Request) => {
       : { notification_status: "failed", notification_error: aviso.error },
   ).eq("id", guardado.id);
   if (!aviso.ok) console.error("aviso por email:", aviso.error);
-  if (errAviso) console.error("marcar aviso:", errAviso.message);
+  if (errAviso) console.error("notification_status_update_failed");
 
-  return json(201, { ok: true, id: guardado.id }, cors);
+  return json(201, { ok: true }, cors);
+  } catch(error) {
+    if(error instanceof RequestError) return json(error.status,{ok:false,error:error.code},cors);
+    console.error("form_request_failed");
+    return json(503,{ok:false,error:"temporarily_unavailable"},cors);
+  }
 });
