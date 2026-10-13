@@ -38,7 +38,6 @@
   "11. Privacy and cookies": "11. プライバシーとクッキー",
   "11. Your rights": "11.あなたの権利",
   "12 months": "12ヶ月",
-  "12 months after last contact": "最後の連絡から12か月後",
   "12. Changes": "12. 変更点",
   "12. Marketing emails": "12. マーケティングメール",
   "12. Third-party services": "12. サードパーティのサービス",
@@ -5039,5 +5038,6 @@
   "“With Yaju we can give our clients agents that are governed from day one, with clear owners, budgets and limits, instead of pilots nobody can account for.”": "「Yaju を使用すると、誰も説明できないパイロットの代わりに、明確な所有者、予算、制限が設定された、初日から管理されるエージェントをクライアントに提供できます。」",
   "“Yaju agents take care of order follow-ups and stock updates, so our small team can run the store and still answer every customer quickly.”": "「Yaju のエージェントが注文のフォローアップと在庫の更新を担当するため、私たちの少人数のチームが店舗を運営しながら、すべての顧客に迅速に対応できます。」",
   "“Yaju gave us one place to run and govern the agents that handle our client reporting. Our consultants now spend that time with clients, not spreadsheets.”": "「Yaju は、クライアントのレポートを処理するエージェントを実行および管理するための 1 つの場所を提供してくれました。当社のコンサルタントは、その時間をスプレッドシートではなくクライアントと過ごすようになりました。」",
-  "Sending…": "送信中…"
+  "Sending…": "送信中…",
+  "Pending or spam submissions: 6 months without recorded activity. Active enquiries: retained while follow-up is needed.": "保留中または迷惑メールに分類されたお問い合わせ：活動記録がない状態で6か月。対応中のお問い合わせ：フォローアップに必要な期間。"
 }

@@ -1,3 +1,4 @@
+import {secureHtml} from '../components/security.mjs';
 import {readFile,writeFile,mkdir,readdir} from 'node:fs/promises';
 import {dirname,resolve} from 'node:path';
 import {languages,createTranslator} from './translate.mjs';
@@ -19,7 +20,7 @@ export async function buildLanguages(staging,root,inputs){
   const tr=createTranslator({language,dictionary,routes,scripts});
   for(const page of pages){
    const route=routeFor(page),source=sources.get(page.output);
-   const html=localizedPage(source,route,language,dictionary,routes,scripts);
+   const html=secureHtml(localizedPage(source,route,language,dictionary,routes,scripts));
    await emit(resolve(staging,'.'+language.prefix+'/'+page.output),html);
    if(!/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(source))sitemap.push('<url><loc>https://yajuas.com'+languagePath(route,language)+'</loc>'+alternates(route).map(a=>`<xhtml:link rel="alternate" hreflang="${a.lang}" href="${a.href}" />`).join('')+'</url>');
   }

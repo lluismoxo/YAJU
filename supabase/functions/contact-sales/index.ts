@@ -11,17 +11,17 @@
 // - Limite de envios por IP (guardada como hash con sal, no en claro) y por email.
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { createClient } from "npm:@supabase/supabase-js@2";
+import { createClient } from "npm:@supabase/supabase-js@2.117.3";
+
+import {RequestError,json,corsHeaders,readBody,consent,safeUrl,safePath,controlCharacters,reserve} from "../_shared/security.ts";
+import {fieldRules} from "../_shared/field-rules.ts";
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const db = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, { auth: { persistSession: false } });
+const db = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, { auth: { persistSession: false }, global: { fetch: (url,options) => fetch(url,{...options,signal:AbortSignal.timeout(10000)}) } });
 
-const DEFAULT_ORIGINS = ["http://localhost:8080", "https://yajuas.com", "https://www.yajuas.com"];
-const MAX_POR_IP = 5;        // envios por IP ...
-const VENTANA_IP_MIN = 15;   // ... en estos minutos
-const MAX_POR_EMAIL = 3;     // envios por email ...
-const VENTANA_EMAIL_MIN = 60;
+const DEFAULT_ORIGINS = ["https://yajuas.com", "https://www.yajuas.com"];
+
 
 type Config = Record<string, string>;
 let configCache: { at: number; value: Config } | null = null;
@@ -33,21 +33,6 @@ async function getConfig(): Promise<Config> {
   const value = (data ?? {}) as Config;
   configCache = { at: Date.now(), value };
   return value;
-}
-
-function corsHeaders(origin: string | null, allowed: string[]): Record<string, string> {
-  const h: Record<string, string> = {
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "content-type",
-    "Access-Control-Max-Age": "86400",
-    "Vary": "Origin",
-  };
-  if (origin && allowed.includes(origin)) h["Access-Control-Allow-Origin"] = origin;
-  return h;
-}
-
-function json(status: number, body: unknown, headers: Record<string, string>): Response {
-  return new Response(JSON.stringify(body), { status, headers: { ...headers, "Content-Type": "application/json" } });
 }
 
 // ---- validacion
@@ -73,6 +58,10 @@ interface Contacto {
 
 function validar(b: Record<string, unknown>): { ok: true; data: Contacto } | { ok: false; fields: Record<string, string> } {
   const fields: Record<string, string> = {};
+  if (Object.values(b).some(controlCharacters)) fields.input="invalid";
+  const rules=fieldRules[str(b.form)];
+  if (!rules?.Country.values?.includes(str(b.country))) fields.country="invalid";
+  if (!rules?.No_of_Employees_Range__c.values?.includes(str(b.company_size))) fields.company_size="invalid";
   const req = (key: string, v: string, max: number) => {
     if (!v) fields[key] = "required";
     else if (v.length > max) fields[key] = `max_${max}`;
@@ -102,10 +91,6 @@ function validar(b: Record<string, unknown>): { ok: true; data: Contacto } | { o
   };
 }
 
-async function sha256(s: string): Promise<string> {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(buf)).map((x) => x.toString(16).padStart(2, "0")).join("");
-}
 
 // formularios que llegan a esta funcion (misma estructura de campos)
 const FORMS: Record<string, { asunto: string; titulo: string }> = {
@@ -166,12 +151,12 @@ async function enviarAviso(cfg: Config, r: Record<string, unknown>): Promise<{ o
       }),
     });
     const body = await res.text();
-    if (!res.ok) return { ok: false, error: `resend ${res.status}: ${body.slice(0, 400)}` };
+    if (!res.ok) return { ok: false, error: `resend_http_${res.status}` };
     let id = "";
     try { id = JSON.parse(body).id ?? ""; } catch { /* sin id */ }
     return { ok: true, id };
   } catch (e) {
-    return { ok: false, error: `resend: ${String(e).slice(0, 400)}` };
+    return { ok: false, error: "resend_unavailable" };
   } finally {
     clearTimeout(t);
   }
@@ -180,53 +165,33 @@ async function enviarAviso(cfg: Config, r: Record<string, unknown>): Promise<{ o
 // ---- entrada
 Deno.serve(async (req: Request) => {
   const origin = req.headers.get("origin");
-  let cfg: Config = {};
-  try { cfg = await getConfig(); } catch (e) { console.error(String(e)); }
-  const allowed = (cfg.contact_allowed_origins || DEFAULT_ORIGINS.join(",")).split(",").map((s) => s.trim()).filter(Boolean);
-  const cors = corsHeaders(origin, allowed);
-
-  if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
-  if (req.method !== "POST") return json(405, { ok: false, error: "method_not_allowed" }, cors);
-  if (origin && !allowed.includes(origin)) return json(403, { ok: false, error: "origin_not_allowed" }, cors);
-
-  let body: Record<string, unknown>;
+  let cors = corsHeaders(origin, DEFAULT_ORIGINS);
+  if (req.method !== "POST" && req.method !== "OPTIONS") return json(405,{ok:false,error:"method_not_allowed"},cors);
   try {
-    const raw = await req.text();
-    if (raw.length > 20_000) return json(413, { ok: false, error: "too_large" }, cors);
-    body = JSON.parse(raw);
-    if (!body || typeof body !== "object" || Array.isArray(body)) throw new Error("no object");
-  } catch {
-    return json(400, { ok: false, error: "invalid_json" }, cors);
-  }
-
+  const cfg = await getConfig();
+  const allowed = (cfg.contact_allowed_origins || DEFAULT_ORIGINS.join(",")).split(",").map(s=>s.trim()).filter(s=>s.startsWith("https://"));
+  cors = corsHeaders(origin,allowed);
+  if (!origin || !allowed.includes(origin)) return json(403,{ok:false,error:"origin_not_allowed"},cors);
+  if (req.method === "OPTIONS") return new Response(null,{status:204,headers:cors});
+  const body = await readBody(req,20000);
   // campo trampa: los humanos no lo ven; si viene relleno, es un robot
   if (str(body.website)) return json(200, { ok: true }, cors);
 
+  const consentRecord = consent(body);
+  if (!Object.hasOwn(FORMS,str(body.form))) return json(400,{ok:false,error:"unknown_form"},cors);
   const v = validar(body);
   if (!v.ok) return json(400, { ok: false, error: "validation", fields: v.fields }, cors);
 
-  // limite de envios
-  const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || req.headers.get("cf-connecting-ip") || "";
-  const ip_hash = ip ? await sha256(`${cfg.contact_ip_salt || ""}:${ip}`) : null;
-  const desde = (min: number) => new Date(Date.now() - min * 60_000).toISOString();
-  if (ip_hash) {
-    const { count } = await db.from("contact_requests").select("id", { count: "exact", head: true })
-      .eq("ip_hash", ip_hash).gte("created_at", desde(VENTANA_IP_MIN));
-    if ((count ?? 0) >= MAX_POR_IP) return json(429, { ok: false, error: "rate_limited" }, cors);
-  }
-  {
-    const { count } = await db.from("contact_requests").select("id", { count: "exact", head: true })
-      .eq("email", v.data.email).gte("created_at", desde(VENTANA_EMAIL_MIN));
-    if ((count ?? 0) >= MAX_POR_EMAIL) return json(429, { ok: false, error: "rate_limited" }, cors);
-  }
+  const ip_hash = await reserve(db,req,cfg,v.data.email);
 
   // 1. guardar (fuente de verdad)
   const fila = {
+    ...consentRecord,
     ...v.data,
     form: FORMS[str(body.form)] ? str(body.form) : "contact_sales",
-    source_page: opcional(body.source_page, 500),
-    source_url: opcional(body.source_url, 2000),
-    referrer: opcional(body.referrer, 2000),
+    source_page: safePath(body.source_page),
+    source_url: safeUrl(body.source_url,true),
+    referrer: safeUrl(body.referrer),
     utm_source: opcional(body.utm_source, 200),
     utm_medium: opcional(body.utm_medium, 200),
     utm_campaign: opcional(body.utm_campaign, 200),
@@ -237,7 +202,7 @@ Deno.serve(async (req: Request) => {
   };
   const { data: guardado, error: errGuardar } = await db.from("contact_requests").insert(fila).select().single();
   if (errGuardar || !guardado) {
-    console.error("guardar contacto:", errGuardar?.message);
+    console.error("contact_save_failed");
     return json(500, { ok: false, error: "save_failed" }, cors);
   }
 
@@ -249,7 +214,12 @@ Deno.serve(async (req: Request) => {
       : { notification_status: "failed", notification_error: aviso.error },
   ).eq("id", guardado.id);
   if (!aviso.ok) console.error("aviso por email:", aviso.error);
-  if (errAviso) console.error("marcar aviso:", errAviso.message);
+  if (errAviso) console.error("notification_status_update_failed");
 
-  return json(201, { ok: true, id: guardado.id }, cors);
+  return json(201, { ok: true }, cors);
+  } catch(error) {
+    if(error instanceof RequestError) return json(error.status,{ok:false,error:error.code},cors);
+    console.error("form_request_failed");
+    return json(503,{ok:false,error:"temporarily_unavailable"},cors);
+  }
 });

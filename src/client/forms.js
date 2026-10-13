@@ -18,7 +18,7 @@
      fields[key]=values[key];const input=[...element.elements].find(e=>e.name===key);const label=input?.closest('.mktoFieldWrap')?.querySelector('label');if(label)labels[key]=label.textContent.replace(/\s+/g,' ').trim().replace(/^\*\s*/,'').slice(0,300);
     }body={form:type[1],fields,labels};
    }
-   Object.assign(body,{source_page:location.pathname,source_url:location.href,referrer:document.referrer});
+   Object.assign(body,{age_confirmed:element.querySelector('[name="yajuAgeConfirmed"]').checked,privacy_accepted:element.querySelector('[name="yajuPrivacyAccepted"]').checked,source_page:location.pathname,source_url:location.origin+location.pathname,referrer:document.referrer?new URL(document.referrer).origin+new URL(document.referrer).pathname:""});
    for(const key of ['source','medium','campaign','term','content'])body[`utm_${key}`]=get(`utm_${key}__c`);
    function failure(message){pending=false;element.removeAttribute('data-yaju-sending');button.disabled=!form._hasConsent();button.innerHTML=label;const error=document.createElement('p');error.className='yaju-form-error font-body';error.setAttribute('role','alert');error.style.cssText='color:#c4320a;margin-top:12px;font-size:14px';error.textContent=message;const row=button.closest('.mktoButtonRow');if(row)row.before(error);else element.append(error);}
    fetch(`https://axtvwhltyxwufqhsasqd.supabase.co/functions/v1/${type[0]}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(30000)})
