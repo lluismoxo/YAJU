@@ -1,15 +1,8 @@
+import { readFileSync } from 'node:fs';
 import { site } from '../../config/site.mjs';
-
-// Preserve the existing consent defaults and Tag Manager integration during migration.
-// Third-party requests are blocked by the visual test harness.
+const script = readFileSync(new URL('../client/consent.js', import.meta.url), 'utf8').replaceAll('__ANALYTICS_ID__', site.analyticsId);
+const styles = readFileSync(new URL('../client/consent.css', import.meta.url), 'utf8');
+// Basic consent mode: only this first-party controller runs before opt-in.
 export function renderAnalytics() {
-  return `<script data-cookieyes="ignore" id="gtag-consent-default">
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:2000});
-gtag('js',new Date());
-gtag('config', '${site.analyticsId}');
-</script><script id="gtm-script" data-cookieyes="cookieyes-analytics">
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${site.legacyTagManagerId}');
-</script>`;
+  return `<style id="yaju-consent-styles">${styles}</style><script id="yaju-consent-controller">${script}</script>`;
 }

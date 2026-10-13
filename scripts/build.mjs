@@ -104,6 +104,19 @@ for (const entry of inputs) {
   await mkdir(dirname(destination), { recursive: true });
   await writeFile(destination, bytes);
 }
+if (allNative) {
+ const pages = JSON.parse(await readFile(resolve(root,'config/native-pages.json'),'utf8'));
+ const urls = [];
+ for (const page of pages) {
+  const html = await readFile(resolve(staging,page.output),'utf8');
+  if (/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html)) continue;
+  const canonical = html.match(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/i)?.[1];
+  if (canonical) { const url = new URL(canonical, site.origin); if (url.origin === site.origin) urls.push(url.href); }
+ }
+ urls.push(site.origin + '/legal');
+ await writeFile(resolve(staging,'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + [...new Set(urls)].sort().map(url=>'<url><loc>'+url.replaceAll('&','&amp;')+'</loc></url>').join('') + '</urlset>\n');
+ await writeFile(resolve(staging,'robots.txt'), 'User-agent: *\nAllow: /\n\nSitemap: '+site.origin+'/sitemap.xml\n');
+}
 // Keep the preceding build recoverable until the new output has been completed.
 await rm(previous, { recursive: true, force: true });
 if(allNative){
