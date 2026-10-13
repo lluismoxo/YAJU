@@ -5,7 +5,7 @@
   root.querySelectorAll('[data-native-card-date]').forEach(node=>{
    const date=new Date(node.dataset.nativeCardDate);
    const year=date.getFullYear(),day=date.getDate();
-   const label=date.toLocaleString('default',{month:'short'});
+   const label=date.toLocaleString(document.documentElement.lang||'en-US',{month:'short'});
    node.textContent=node.textContent.replace(/ - [^<>]*$/,` - ${label} ${String(day).padStart(2,'0')}, ${year}`);
   });
  }
